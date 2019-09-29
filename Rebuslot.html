@@ -1,0 +1,91 @@
+<DOCTYPE! html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Rebuslot</title>
+	<script language="javascript">
+	var index, imagearray = ["zero", "un", "doi", "trei", "patru", "cinci", "sase", "sapte", "opt", "noua"];
+	var index1, imagearray1 = ["elev", "scriitor", "pom", "pantof", "student", "specialist", "general", "spaniol", 
+	"copil", "cal", "miel", "vitel", "porumbel", "metru", "leu", "fiu", "membru", "ministru", "iepure", "peste", "caine", "frate", "perete", "unchi", "ochi", "tata", "popa",
+	"studenta", "eleva", "casa", "englezoaica", "usa", "masina", "fabrica"];
+	function RightAnswer()
+	{
+		document.getElementById("p1").innerHTML = imagearray[index]+" "+imagearray1[index1];
+		if(index != 1)
+		{
+		document.getElementById("p1").innerHTML = imagearray[index]+" "+imagearray1[index1]+"i";
+		if(index1 > 7 && index1 < 27){
+		document.getElementById("p1").innerHTML = imagearray[index]+" "+imagearray1[index1].substring(0, imagearray1[index1].length-1)+"i";
+		}
+		if(index1 > 26 && index1 < 31){
+		document.getElementById("p1").innerHTML = imagearray[index].replace("doi","doua")+" "+imagearray1[index1].substring(0, imagearray1[index1].length-1)+"e";
+		}
+		}else
+		if(index1 > 26)
+		{
+		document.getElementById("p1").innerHTML = "o "+imagearray1[index1];
+		}
+	} 
+	function RandomImage()
+	{
+		index = Math.random();
+		index = Math.floor(index*10);
+		if(index > (imagearray.length-1))
+		index = index%(imagearray.length-1);
+		document.rebuslot.subjectquantity.src = index+".jpg";
+		index1 = Math.random();
+		index1 = Math.floor(index1*1000);
+		if(index1 > (imagearray1.length-1))
+		index1 = index1%(imagearray1.length-1);
+		document.rebuslot.subjectessence.src = index1+"n.jpg";
+	}
+	
+	</script>
+	<style>
+		p {
+		color: white;
+	}
+	</style>
+</head>
+<body style=background-color:black;>
+		<form name="rebuslot" style=background-color:black; >
+		<table>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><h2 style=color:white;>Rebuslot</h2></td>   
+		</tr>
+		<tr>
+			<td></td>
+			<td><p>Essence</p></td>
+			<td><p>Quality</p></td>
+			<td><p>Quantity</p></td>
+		</tr>
+		<tr>
+			<td><p>Subject</p></td>
+			<td><img name="subjectessence" height="150" width="150" /><br /></td>
+			<td><img name="subjectquality" height="150" width="150" /><br /></td>
+			<td><img name="subjectquantity" height="150" width="150"/><br /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><p>Verb</p></td>
+			<td><img name="verbessence" height="150" width="150" /><br /></td>
+			<td><img name="verbquality" height="150" width="150" /><br /></td>
+			<td><img name="verbquantity" height="150" width="150"/><br /></td>
+		</tr>
+		<tr>
+			<td><p>Object</p></td>
+			<td><img name="objectessence" height="150" width="150" /><br /></td>
+			<td><img name="objectquality" height="150" width="150" /><br /></td>
+			<td><img name="objectquantity" height="150" width="150"/><br /></td>
+			<td></td>
+		</tr>
+		</table>
+		<input type="text" name="input" size="70"/>
+		<p id="p1">the right answer</p>	
+		</form>
+	<button onclick="RandomImage()">Generate a sentence</button>
+	<button onclick="RightAnswer()">Show the right answer</button>
+</body>
+</html>
