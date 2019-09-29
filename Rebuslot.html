@@ -8,7 +8,8 @@
 	var index1, imagearray1 = ["elev", "scriitor", "pom", "pantof", "student", "specialist", "general", "spaniol", 
 	"copil", "cal", "miel", "vitel", "porumbel", "metru", "leu", "fiu", "membru", "ministru", "iepure", "peste", "caine", "frate", "perete", "unchi", "ochi", "tata", "popa",
 	"studenta", "eleva", "casa", "englezoaica", 
-	"usa", "masina", "fabrica"];
+	"usa", "masina", "fabrica",
+	"marfa", "blana"];
 	function RightAnswer()
 	{
 		document.getElementById("p1").innerHTML = imagearray[index]+" "+imagearray1[index1];
@@ -21,8 +22,11 @@
 		if(index1 > 26 && index1 < 31){
 		document.getElementById("p1").innerHTML = imagearray[index].replace("doi","doua")+" "+imagearray1[index1].substring(0, imagearray1[index1].length-1)+"e";
 		}
-		if(index1 > 30 && index1 < 31){
-		document.getElementById("p1").innerHTML = imagearray[index].replace("doi","doua")+" "+imagearray1[index1].substring(0, imagearray1[index1].length-1)+"e";
+		if(index1 > 30 && index1 < 34){
+		document.getElementById("p1").innerHTML = imagearray[index].replace("doi","doua")+" "+imagearray1[index1].substring(0, imagearray1[index1].length-1)+"i";
+		}
+		if(index1 > 33 && index1 < 36){
+		document.getElementById("p1").innerHTML = imagearray[index].replace("doi","doua")+" "+imagearray1[index1].substring(0, imagearray1[index1].length-1)+"uri";
 		}
 		}else
 		if(index1 > 26)
