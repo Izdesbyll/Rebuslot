@@ -10,7 +10,8 @@
 	"studenta", "eleva", "casa", "englezoaica", 
 	"usa", "masina", "fabrica",
 	"marfa", "blana",
-	"lume", "paine", "curte", "carte", "mare", "idee"];
+	"lume", "paine", "curte", "carte", "mare", "idee",
+	"scriitoare", "dansatoare"];
 	function RightAnswer()
 	{
 		document.getElementById("p1").innerHTML = imagearray[index]+" "+imagearray1[index1];
@@ -28,6 +29,9 @@
 		}
 		if(index1 > 33 && index1 < 36){
 		document.getElementById("p1").innerHTML = imagearray[index].replace("doi","doua")+" "+imagearray1[index1].substring(0, imagearray1[index1].length-1)+"uri";
+		}
+		if(index1 > 42 && index1 < 45){
+		document.getElementById("p1").innerHTML = imagearray[index].replace("doi","doua")+" "+imagearray1[index1];
 		}
 		}else
 		if(index1 > 26)
