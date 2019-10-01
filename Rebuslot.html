@@ -15,7 +15,13 @@
 	"cheie", "baie",
 	"bucatarie", "farfurie",
 	"sofa", "pijama",
-	"cafea", "stea", "sosea", "masea"];
+	"cafea", "stea", "sosea", "masea"
+	"marti", "tanti",
+	"tren", "pat", "loc",
+	"institut", "apartamente", "oras", "capac",
+	"lucru", "tablou", "birou",
+	"muzeu", "teatru", 
+	"fotoliu", "mileniu", "exercitiu", "salariu"];
 	function RightAnswer()
 	{
 		document.getElementById("p1").innerHTML = imagearray[index]+" "+imagearray1[index1];
@@ -25,16 +31,16 @@
 		if(index1 > 7 && index1 < 27){
 		document.getElementById("p1").innerHTML = imagearray[index]+" "+imagearray1[index1].substring(0, imagearray1[index1].length-1)+"i";
 		}
-		if(index1 > 26 && index1 < 31){
+		if((index1 > 26 && index1 < 31) || (index1 > 65 && index1 < 68)){
 		document.getElementById("p1").innerHTML = imagearray[index].replace("doi","doua")+" "+imagearray1[index1].substring(0, imagearray1[index1].length-1)+"e";
 		}
-		if((index1 > 30 && index1 < 34) || (index1 > 35 && index1 < 42) || (index1 > 45 && index1 < 48)){
+		if((index1 > 30 && index1 < 34) || (index1 > 35 && index1 < 42) || (index1 > 45 && index1 < 48) || (index1 > 67 && index1 < 72)){
 		document.getElementById("p1").innerHTML = imagearray[index].replace("doi","doua")+" "+imagearray1[index1].substring(0, imagearray1[index1].length-1)+"i";
 		}
-		if(index1 > 33 && index1 < 36){
+		if(index1 > 33 && index1 < 36) || (index1 > 62 && index1 < 66){
 		document.getElementById("p1").innerHTML = imagearray[index].replace("doi","doua")+" "+imagearray1[index1].substring(0, imagearray1[index1].length-1)+"uri";
 		}
-		if(index1 > 41 && index1 < 44){
+		if((index1 > 41 && index1 < 44) || (index1 > 53 && index1 < 56)){
 		document.getElementById("p1").innerHTML = imagearray[index].replace("doi","doua")+" "+imagearray1[index1];
 		}
 		if(index1 > 43 && index1 < 46){
@@ -46,8 +52,14 @@
 		if(index1 > 49 && index1 < 54){
 		document.getElementById("p1").innerHTML = imagearray[index].replace("doi","doua")+" "+imagearray1[index1].substring(0, imagearray1[index1].length-1)+"le";
 		}
+		if(index1 > 56 && index1 < 59){
+		document.getElementById("p1").innerHTML = imagearray[index].replace("doi","doua")+" "+imagearray1[index1]+"uri";
+		}
+		if(index1 > 58 && index1 < 63){
+		document.getElementById("p1").innerHTML = imagearray[index].replace("doi","doua")+" "+imagearray1[index1]+"e";
+		}
 		}else
-		if(index1 > 26)
+		if(index1 > 26 && index < 56)
 		{
 		document.getElementById("p1").innerHTML = "o "+imagearray1[index1];
 		}
