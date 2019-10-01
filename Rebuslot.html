@@ -13,7 +13,9 @@
 	"lume", "paine", "curte", "carte", "mare", "idee",
 	"scriitoare", "dansatoare",
 	"cheie", "baie",
-	"bucatarie", "farfurie"];
+	"bucatarie", "farfurie",
+	"sofa", "pijama",
+	"cafea", "stea", "sosea", "masea"];
 	function RightAnswer()
 	{
 		document.getElementById("p1").innerHTML = imagearray[index]+" "+imagearray1[index1];
@@ -26,17 +28,23 @@
 		if(index1 > 26 && index1 < 31){
 		document.getElementById("p1").innerHTML = imagearray[index].replace("doi","doua")+" "+imagearray1[index1].substring(0, imagearray1[index1].length-1)+"e";
 		}
-		if((index1 > 30 && index1 < 34) || (index1 > 35 && index1 < 43) || (index1 > 46 && index1 < 49)){
+		if((index1 > 30 && index1 < 34) || (index1 > 35 && index1 < 42) || (index1 > 45 && index1 < 48)){
 		document.getElementById("p1").innerHTML = imagearray[index].replace("doi","doua")+" "+imagearray1[index1].substring(0, imagearray1[index1].length-1)+"i";
 		}
 		if(index1 > 33 && index1 < 36){
 		document.getElementById("p1").innerHTML = imagearray[index].replace("doi","doua")+" "+imagearray1[index1].substring(0, imagearray1[index1].length-1)+"uri";
 		}
-		if(index1 > 42 && index1 < 45){
+		if(index1 > 41 && index1 < 44){
 		document.getElementById("p1").innerHTML = imagearray[index].replace("doi","doua")+" "+imagearray1[index1];
 		}
-		if(index1 > 44 && index1 < 47){
+		if(index1 > 43 && index1 < 46){
 		document.getElementById("p1").innerHTML = imagearray[index].replace("doi","doua")+" "+imagearray1[index1].substring(0, imagearray1[index1].length-2)+"i";
+		}
+		if(index1 > 47 && index1 < 50){
+		document.getElementById("p1").innerHTML = imagearray[index].replace("doi","doua")+" "+imagearray1[index1]+"le";
+		}
+		if(index1 > 49 && index1 < 54){
+		document.getElementById("p1").innerHTML = imagearray[index].replace("doi","doua")+" "+imagearray1[index1].substring(0, imagearray1[index1].length-1)+"le";
 		}
 		}else
 		if(index1 > 26)
