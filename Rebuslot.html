@@ -22,6 +22,10 @@
 	"lucru", "tablou", "birou",
 	"muzeu", "teatru", 
 	"fotoliu", "mileniu", "exercitiu", "salariu"];
+	var index2, imagearray2 = ["bun", "frumos",
+	"mandru", "albastru", "continuu",
+	"mic", "larg", "romanesc",
+	"rosu", "viu", "auriu"];
 	function RightAnswer()
 	{
 		document.getElementById("p1").innerHTML = imagearray[index]+" "+imagearray1[index1];
@@ -58,11 +62,13 @@
 		if(index1 > 58 && index1 < 63){
 		document.getElementById("p1").innerHTML = imagearray[index].replace("doi","doua")+" "+imagearray1[index1]+"e";
 		}
-		}else
+		}else{
 		if(index1 > 26 && index < 56)
 		{
 		document.getElementById("p1").innerHTML = "o "+imagearray1[index1];
 		}
+		}
+		
 	} 
 	function RandomImage()
 	{
@@ -76,6 +82,11 @@
 		if(index1 > (imagearray1.length-1))
 		index1 = index1%(imagearray1.length-1);
 		document.rebuslot.subjectessence.src = index1+"n.jpg";
+		index2 = Math.random();
+		index2 = Math.floor(index2*50);
+		if(index2 > (imagearray2.length-1))
+		index2 = index2%(imagearray2.length-1);
+		document.rebuslot.subjectquality.src = index2+"adj.jpg";
 	}
 	
 	</script>
