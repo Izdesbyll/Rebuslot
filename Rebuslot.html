@@ -25,10 +25,13 @@
 	var index2, imagearray2 = ["bun", "frumos",
 	"mandru", "albastru", "continuu",
 	"mic", "larg", "romanesc",
-	"rosu", "viu", "auriu"];
+	"rosu", "viu", "auriu",
+	"mare", "verde", "dulce",
+	"vechi", "galbui", 
+	"eficace", "cumsecade", "roz", "kaki", "gri", "bleu", "maro"];
 	function RightAnswer()
 	{
-		document.getElementById("p1").innerHTML = imagearray[index]+" "+imagearray1[index1];
+		document.getElementById("p1").innerHTML = imagearray[index]+" "+imagearray1[index1]+" "+imagearray2[index2];
 		if(index != 1)
 		{
 		document.getElementById("p1").innerHTML = imagearray[index]+" "+imagearray1[index1]+"i";
@@ -63,9 +66,27 @@
 		document.getElementById("p1").innerHTML = imagearray[index].replace("doi","doua")+" "+imagearray1[index1]+"e";
 		}
 		}else{
-		if(index1 > 26 && index < 56)
+		if(index1 > 26 && index1 < 56)
 		{
-		document.getElementById("p1").innerHTML = "o "+imagearray1[index1];
+		document.getElementById("p1").innerHTML = "o "+imagearray1[index1]+" "+imagearray2[index2]+"a";
+		if(index2 > 1 && index2 < 5){
+		document.getElementById("p1").innerHTML = "o "+imagearray1[index1]+" "+imagearray2[index2].substring(0, imagearray2[index2].length-1)+"a";
+		}
+		if(index2 == 1){
+		document.getElementById("p1").innerHTML = "o "+imagearray1[index1]+" "+imagearray2[index2].substring(0, imagearray2[index2].length-1)+"asa";
+		}
+		if(index2 == 7){
+		document.getElementById("p1").innerHTML = "o "+imagearray1[index1]+" "+imagearray2[index2].substring(0, imagearray2[index2].length-2)+"asca";
+		}
+		if((index2 == 8) || (index2 == 15)){
+		document.getElementById("p1").innerHTML = "o "+imagearray1[index1]+" "+imagearray2[index2].substring(0, imagearray2[index2].length-1)+"ie";
+		}
+		if((index2 > 8 && index2 < 11) || (index2 == 14)){
+		document.getElementById("p1").innerHTML = "o "+imagearray1[index1]+" "+imagearray2[index2].substring(0, imagearray2[index2].length-1)+"e";
+		}
+		if((index2 > 10 && index2 < 14) || (index2 > 15 && index2 < 23)){
+		document.getElementById("p1").innerHTML = "o "+imagearray1[index1]+" "+imagearray2[index2];
+		}
 		}
 		}
 		
