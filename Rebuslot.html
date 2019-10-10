@@ -30,6 +30,7 @@
 	"mare", "verde", "dulce",
 	"vechi", "galbui", 
 	"eficace", "cumsecade", "roz", "kaki", "gri", "bleu", "maro"];
+	var index3, imagearray3 = ["canta", "intra", "intarzie", "lucreaza", "copiaza", "vad", "pot", "merg", "vin", "opresc", "locuiesc", "hotarasc"];
 	function RightAnswer()
 	{
 		document.getElementById("p1").innerHTML = imagearray[index]+" "+imagearray1[index1]+" "+imagearray2[index2];
@@ -68,6 +69,45 @@
 		}
 		answer = document.getElementById("p1").textContent;
 		document.getElementById("p1").innerHTML = answer + " " + imagearray2[index2] + "i";
+		if((index2 > 1 && index2 < 5) || (index2 > 8 && index2 < 11) || (index2 == 11) || (index2 == 13) || (index2 > 13 && index2 < 16)){
+		document.getElementById("p1").innerHTML = answer + " " + imagearray2[index2].substring(0, imagearray2[index2].length-1)+"i";
+		}
+		if(index2 == 7){
+		document.getElementById("p1").innerHTML = answer + " " + imagearray2[index2].substring(0, imagearray2[index2].length-1)+"ti";
+		}
+		if(index2 == 8){
+		document.getElementById("p1").innerHTML = answer + " " + imagearray2[index2].substring(0, imagearray2[index2].length-1)+"ii";
+		}
+		if(index2 == 12){
+		document.getElementById("p1").innerHTML = answer + " " + imagearray2[index2].substring(0, imagearray2[index2].length-1)+"zi";
+		}
+		if(index2 > 15 && index2 < 23){
+		document.getElementById("p1").innerHTML = answer + " " + imagearray2[index2];
+		}
+		if(index1 > 26 && index1 < 72){
+			document.getElementById("p1").innerHTML = answer + " " + imagearray2[index2] + "e";
+			if(index2 == 1){
+			document.getElementById("p1").innerHTML = answer + " " + imagearray2[index2].substring(0, imagearray2[index2].length-1)+"ase";
+			}
+			if(index2 > 1 && index2 < 5){
+			document.getElementById("p1").innerHTML = answer + " " + imagearray2[index2].substring(0, imagearray2[index2].length-1)+"e";
+			}
+			if((index2 > 4 && index2 < 11) || (index2 == 11) || (index2 == 13) || (index2 > 13 && index2 < 16)){
+			document.getElementById("p1").innerHTML = answer + " " + imagearray2[index2].substring(0, imagearray2[index2].length-1)+"i";
+			}
+			if(index2 == 7){
+			document.getElementById("p1").innerHTML = answer + " " + imagearray2[index2].substring(0, imagearray2[index2].length-1)+"ti";
+			}
+			if(index2 == 8){
+			document.getElementById("p1").innerHTML = answer + " " + imagearray2[index2].substring(0, imagearray2[index2].length-1)+"ii";
+			}
+			if(index2 == 12){
+			document.getElementById("p1").innerHTML = answer + " " + imagearray2[index2].substring(0, imagearray2[index2].length-1)+"zi";
+			}
+			if(index2 > 15 && index2 < 23){
+			document.getElementById("p1").innerHTML = answer + " " + imagearray2[index2];
+		}
+		}
 		}else{
 		if(index1 > 26 && index1 < 56)
 		{
@@ -92,7 +132,8 @@
 		}
 		}
 		}
-		
+		answer = document.getElementById("p1").textContent;
+		document.getElementById("p1").innerHTML = answer + " " + imagearray3[index3];
 	} 
 	function RandomImage()
 	{
@@ -111,6 +152,11 @@
 		if(index2 > (imagearray2.length-1))
 		index2 = index2%(imagearray2.length-1);
 		document.rebuslot.subjectquality.src = index2+"adj.jpg";
+		index3 = Math.random();
+		index3 = Math.floor(index3*50);
+		if(index3 > (imagearray3.length-1))
+		index3 = index3%(imagearray3.length-1);
+		document.rebuslot.verbessence.src = index3+"v.jpg";
 	}
 	
 	</script>
