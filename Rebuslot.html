@@ -31,6 +31,11 @@
 	"vechi", "galbui", 
 	"eficace", "cumsecade", "roz", "kaki", "gri", "bleu", "maro"];
 	var index3, imagearray3 = ["canta", "intra", "intarzie", "lucreaza", "copiaza", "vad", "pot", "merg", "vin", "opresc", "locuiesc", "hotarasc"];
+	var index4, imagearray4 = ["asa", "altfel", "bine", "degeaba", "impreuna", "incet", "repede", "separat", "pe neasteptate", "pe de rost"];
+	var index5, imagearray5 = ["acasa", "acolo", "afara", "aici", "apoi", "departe", "inainte", "inapoi", "inauntru", "jos", "pretutindeni", "sus", "undevai", 
+	"acum", "alaltaieri", "aseara", "astazi", "candva", "cateodata", "curand", "demult", "deocamdata", "devreme", "dimineata", "iarna", "ieri", "imediat", "maine", "noaptea", "poimaine", "seara", "tarziu", "intotdeauna", "ziua", "zi de zi",
+	"destul", "mult", "putin",
+	"nicaieri", "niciodata"];
 	function RightAnswer()
 	{
 		document.getElementById("p1").innerHTML = imagearray[index]+" "+imagearray1[index1]+" "+imagearray2[index2];
@@ -133,7 +138,7 @@
 		}
 		}
 		answer = document.getElementById("p1").textContent;
-		document.getElementById("p1").innerHTML = answer + " " + imagearray3[index3];
+		document.getElementById("p1").innerHTML = answer + " " + imagearray3[index3]+ " " +imagearray4[index4]+ " " +imagearray5[index5];
 	} 
 	function RandomImage()
 	{
@@ -157,6 +162,16 @@
 		if(index3 > (imagearray3.length-1))
 		index3 = index3%(imagearray3.length-1);
 		document.rebuslot.verbessence.src = index3+"v.jpg";
+		index4 = Math.random();
+		index4 = Math.floor(index4*50);
+		if(index4 > (imagearray4.length-1))
+		index4 = index4%(imagearray4.length-1);
+		document.rebuslot.verbquality.src = index4+"adv1.jpg";
+		index5 = Math.random();
+		index5 = Math.floor(index5*50);
+		if(index5 > (imagearray5.length-1))
+		index5 = index5%(imagearray5.length-1);
+		document.rebuslot.verbquantity.src = index5+"adv2.jpg";
 	}
 	
 	</script>
