@@ -30,7 +30,8 @@
 	"mare", "verde", "dulce",
 	"vechi", "galbui", 
 	"eficace", "cumsecade", "roz", "kaki", "gri", "bleu", "maro"];
-	var index3, imagearray3 = ["canta", "intra", "intarzie", "lucreaza", "copiaza", "vad", "pot", "merg", "vin", "opresc", "locuiesc", "hotarasc"];
+	var index3, imagearray3 = ["canta", "intra", "intarzie", "lucreaza", "copiaza", 
+	"vad", "pot", "merg", "vin", "opresc", "locuiesc", "hotarasc"];
 	var index4, imagearray4 = ["asa", "altfel", "bine", "degeaba", "impreuna", "incet", "repede", "separat", "pe neasteptate", "pe de rost"];
 	var index5, imagearray5 = ["acasa", "acolo", "afara", "aici", "apoi", "departe", "inainte", "inapoi", "inauntru", "jos", "pretutindeni", "sus", "undevai", 
 	"acum", "alaltaieri", "aseara", "astazi", "candva", "cateodata", "curand", "demult", "deocamdata", "devreme", "dimineata", "iarna", "ieri", "imediat", "maine", "noaptea", "poimaine", "seara", "tarziu", "intotdeauna", "ziua", "zi de zi",
@@ -84,7 +85,7 @@
 		document.getElementById("p1").innerHTML = answer + " " + imagearray2[index2].substring(0, imagearray2[index2].length-1)+"ii";
 		}
 		if(index2 == 12){
-		document.getElementById("p1").innerHTML = answer + " " + imagearray2[index2].substring(0, imagearray2[index2].length-1)+"zi";
+		document.getElementById("p1").innerHTML = answer + " " + imagearray2[index2].substring(0, imagearray2[index2].length-2)+"zi";
 		}
 		if(index2 > 15 && index2 < 23){
 		document.getElementById("p1").innerHTML = answer + " " + imagearray2[index2];
@@ -107,12 +108,54 @@
 			document.getElementById("p1").innerHTML = answer + " " + imagearray2[index2].substring(0, imagearray2[index2].length-1)+"ii";
 			}
 			if(index2 == 12){
-			document.getElementById("p1").innerHTML = answer + " " + imagearray2[index2].substring(0, imagearray2[index2].length-1)+"zi";
+			document.getElementById("p1").innerHTML = answer + " " + imagearray2[index2].substring(0, imagearray2[index2].length-2)+"zi";
 			}
 			if(index2 > 15 && index2 < 23){
 			document.getElementById("p1").innerHTML = answer + " " + imagearray2[index2];
 		}
 		}
+		answer = document.getElementById("p1").textContent;
+		if ((index5 != 14) && (index5 != 15) && (index5 != 17) && (index5 != 19) && (index5 != 20) && (index5 != 25) && (index5 != 27)  && (index5 != 29)){
+		document.getElementById("p1").innerHTML = answer + " " + imagearray3[index3];
+		}else{
+		if ((index5 == 14) || (index5 == 15) || (index5 == 20) || (index5 == 25) ){
+		if ((index3 == 0) || (index3 == 1)){
+		document.getElementById("p1").innerHTML = answer + " au " + imagearray3[index3] + "t";
+		}
+		if ((index3 == 2)){
+		document.getElementById("p1").innerHTML = answer + " au " + imagearray3[index3].substring(0, imagearray3[index3].length-1) + "at";
+		}
+		if ((index3 == 3)){
+		document.getElementById("p1").innerHTML = answer + " au " + imagearray3[index3].substring(0, imagearray3[index3].length-4) + "at";
+		}
+		if ((index3 == 4) || (index3 == 11)){
+		document.getElementById("p1").innerHTML = answer + " au " + imagearray3[index3].substring(0, imagearray3[index3].length-2) + "t";
+		}
+		if ((index3 == 5)){
+		document.getElementById("p1").innerHTML = answer + " au " + imagearray3[index3].substring(0, imagearray3[index3].length-1) + "zut";
+		}
+		if ((index3 == 6)){
+		document.getElementById("p1").innerHTML = answer + " au " + imagearray3[index3].substring(0, imagearray3[index3].length-2) + "utut";
+		}
+		if ((index3 == 7)){
+		document.getElementById("p1").innerHTML = answer + " au " + imagearray3[index3].substring(0, imagearray3[index3].length-1) + "s";
+		}
+		if ((index3 == 8)){
+		document.getElementById("p1").innerHTML = answer + " au " + imagearray3[index3].substring(0, imagearray3[index3].length-2) + "enit";
+		}
+		if ((index3 == 9)){
+		document.getElementById("p1").innerHTML = answer + " au " + imagearray3[index3].substring(0, imagearray3[index3].length-3) + "it";
+		}
+		if ((index3 == 10)){
+		document.getElementById("p1").innerHTML = answer + " au " + imagearray3[index3].substring(0, imagearray3[index3].length-3) + "t";
+		}
+		}
+		if ((index5 == 17) || (index5 == 19) || (index5 == 27) || (index5 == 29)){ 
+		document.getElementById("p1").innerHTML = answer + " o sa " + imagearray3[index3];
+		}
+		}
+		answer = document.getElementById("p1").textContent;
+		document.getElementById("p1").innerHTML = answer +  " " +imagearray4[index4]+ " " +imagearray5[index5];
 		}else{
 		if(index1 > 26 && index1 < 56)
 		{
@@ -136,9 +179,34 @@
 		document.getElementById("p1").innerHTML = "o "+imagearray1[index1]+" "+imagearray2[index2];
 		}
 		}
+		answer = document.getElementById("p1").textContent;
+		document.getElementById("p1").innerHTML = answer+ " " +imagearray3[index3];
+		if (index3 == 5){
+		document.getElementById("p1").innerHTML = answer+ " " +imagearray3[index3].substring(0, imagearray3[index3].length-2)+"ede";
+		}
+		if (index3 == 6){
+		document.getElementById("p1").innerHTML = answer+ " " +imagearray3[index3].substring(0, imagearray3[index3].length-1)+"ate";
+		}
+		if (index3 > 6 && index3 < 9){
+		document.getElementById("p1").innerHTML = answer+ " " +imagearray3[index3]+"e";
+		}
+		if (index3 > 8 && index3 < 12){
+		document.getElementById("p1").innerHTML = answer+ " " +imagearray3[index3].substring(0, imagearray3[index3].length-1)+"te";
+		}
+		if ((index5 != 14) && (index5 != 15) && (index5 != 17) && (index5 != 19) && (index5 != 20) && (index5 != 25) && (index5 != 27)  && (index5 != 29)){
+		document.getElementById("p1").innerHTML = answer + " " + imagearray3[index3];
+		if ((index5 == 5)){
+		
+		}
+		}else{
+		if ((index5 == 14) || (index5 == 15) || (index5 == 20) || (index5 == 25) ){
+		// vad - vede; pot - poate; merg - merge; vin - vine; opresc - opreste; locuiesc - locuieste; hotarasc - hotaraste;
+		}
 		}
 		answer = document.getElementById("p1").textContent;
-		document.getElementById("p1").innerHTML = answer + " " + imagearray3[index3]+ " " +imagearray4[index4]+ " " +imagearray5[index5];
+		document.getElementById("p1").innerHTML = answer+ " " +imagearray4[index4]+ " " +imagearray5[index5];
+		}
+		
 	} 
 	function RandomImage()
 	{
