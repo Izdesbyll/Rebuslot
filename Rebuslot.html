@@ -37,6 +37,7 @@
 	"acum", "alaltaieri", "aseara", "astazi", "candva", "cateodata", "curand", "demult", "deocamdata", "devreme", "dimineata", "iarna", "ieri", "imediat", "maine", "noaptea", "poimaine", "seara", "tarziu", "intotdeauna", "ziua", "zi de zi",
 	"destul", "mult", "putin",
 	"nicaieri", "niciodata"];
+	var index6;
 	function RightAnswer()
 	{
 		document.getElementById("p1").innerHTML = imagearray[index]+" "+imagearray1[index1]+" "+imagearray2[index2];
@@ -200,7 +201,18 @@
 		}
 		}else{
 		if ((index5 == 14) || (index5 == 15) || (index5 == 20) || (index5 == 25) ){
-		// vad - vede; pot - poate; merg - merge; vin - vine; opresc - opreste; locuiesc - locuieste; hotarasc - hotaraste;
+		if (index3 == 5){
+		document.getElementById("p1").innerHTML = answer + " " + imagearray3[index3].substring(0, imagearray3[index3].length-2) + "ede";
+		}
+		if (index3 == 6){
+		document.getElementById("p1").innerHTML = answer + " " + imagearray3[index3].substring(0, imagearray3[index3].length-1) + "ate";
+		}
+		if ((index3 == 7) || (index3 == 8)){
+		document.getElementById("p1").innerHTML = answer + " " + imagearray3[index3] + "e";
+		}
+		if (index3 > 8 && index3 < 12){
+		document.getElementById("p1").innerHTML = answer + " " + imagearray3[index3].substring(0, imagearray3[index3].length-1) + "te";
+		}
 		}
 		}
 		answer = document.getElementById("p1").textContent;
@@ -240,6 +252,12 @@
 		if(index5 > (imagearray5.length-1))
 		index5 = index5%(imagearray5.length-1);
 		document.rebuslot.verbquantity.src = index5+"adv2.jpg";
+		index6 = Math.random();
+		index6 = Math.floor(index6*50);
+		if(index6 > (imagearray1.length-1))
+		index6 = index6%(imagearray1.length-1);
+		document.rebuslot.objectessence.src = index6+"n.jpg";
+		// accusative+dative
 	}
 	
 	</script>
