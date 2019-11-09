@@ -37,7 +37,7 @@
 	"acum", "alaltaieri", "aseara", "astazi", "candva", "cateodata", "curand", "demult", "deocamdata", "devreme", "dimineata", "iarna", "ieri", "imediat", "maine", "noaptea", "poimaine", "seara", "tarziu", "intotdeauna", "ziua", "zi de zi",
 	"destul", "mult", "putin",
 	"nicaieri", "niciodata"];
-	var index6;
+	var index6, index7, index8;
 	function RightAnswer()
 	{
 		document.getElementById("p1").innerHTML = imagearray[index]+" "+imagearray1[index1]+" "+imagearray2[index2];
@@ -218,7 +218,20 @@
 		answer = document.getElementById("p1").textContent;
 		document.getElementById("p1").innerHTML = answer+ " " +imagearray4[index4]+ " " +imagearray5[index5];
 		}
-		
+		answer = document.getElementById("p1").textContent;
+		document.getElementById("p1").innerHTML = answer+ " " +imagearray1[index6];
+		if (index3 == 0){
+		document.getElementById("p1").innerHTML = answer+ " despre " +imagearray1[index6];
+		}
+		if (index3 == 1){
+		document.getElementById("p1").innerHTML = answer+ " in " +imagearray1[index6];
+		}
+		if (index3 == 2){
+		document.getElementById("p1").innerHTML = answer+ " la " +imagearray1[index6];
+		}
+		if (index3 == 3){
+		document.getElementById("p1").innerHTML = answer+ " pe " +imagearray1[index6];
+		}
 	} 
 	function RandomImage()
 	{
@@ -257,7 +270,18 @@
 		if(index6 > (imagearray1.length-1))
 		index6 = index6%(imagearray1.length-1);
 		document.rebuslot.objectessence.src = index6+"n.jpg";
-		// accusative+dative
+		index8 = Math.random();
+		index8 = Math.floor(index8*10);
+		if(index8 > (imagearray.length-1))
+		index8 = index8%(imagearray.length-1);
+		document.rebuslot.objectquantity.src = index8+".jpg";
+		index7 = Math.random();
+		index7 = Math.floor(index7*50);
+		if(index7 > (imagearray2.length-1))
+		index7 = index7%(imagearray2.length-1);
+		document.rebuslot.objectquality.src = index7+"adj.jpg";
+		// index3: 0 - despre; 1 - in; 2 - la; 3 - pe; 4 - acc; 5 - acc; 6 - fi ca; 7 - langa; 8 - pentru; 9 - acc; 10 - cu; 11 - fara; 
+		// dubliruvaty uze zroblene
 	}
 	
 	</script>
