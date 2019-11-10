@@ -219,18 +219,133 @@
 		document.getElementById("p1").innerHTML = answer+ " " +imagearray4[index4]+ " " +imagearray5[index5];
 		}
 		answer = document.getElementById("p1").textContent;
-		document.getElementById("p1").innerHTML = answer+ " " +imagearray1[index6];
 		if (index3 == 0){
-		document.getElementById("p1").innerHTML = answer+ " despre " +imagearray1[index6];
+		document.getElementById("p1").innerHTML = answer+ " despre";
 		}
 		if (index3 == 1){
-		document.getElementById("p1").innerHTML = answer+ " in " +imagearray1[index6];
+		document.getElementById("p1").innerHTML = answer+ " in";
 		}
 		if (index3 == 2){
-		document.getElementById("p1").innerHTML = answer+ " la " +imagearray1[index6];
+		document.getElementById("p1").innerHTML = answer+ " la";
 		}
 		if (index3 == 3){
-		document.getElementById("p1").innerHTML = answer+ " pe " +imagearray1[index6];
+		document.getElementById("p1").innerHTML = answer+ " pe";
+		}
+		if (index3 == 6){
+		document.getElementById("p1").innerHTML = answer+ " fi ca";
+		}
+		if (index3 == 7){
+		document.getElementById("p1").innerHTML = answer+ " langa";
+		}
+		if (index3 == 8){
+		document.getElementById("p1").innerHTML = answer+ " pentru";
+		}
+		if (index3 == 10){
+		document.getElementById("p1").innerHTML = answer+ " cu";
+		}
+		if (index3 == 11){
+		document.getElementById("p1").innerHTML = answer+ " fara";
+		}
+		answer = document.getElementById("p1").textContent;
+		document.getElementById("p1").innerHTML = answer +" "+ imagearray[index8]+" "+imagearray1[index6]+" "+imagearray2[index7];
+		if(index8 != 1)
+		{
+		document.getElementById("p1").innerHTML = answer +" "+ imagearray[index8]+" "+imagearray1[index6]+"i";
+		if(index6 > 7 && index6 < 27){
+		document.getElementById("p1").innerHTML = answer +" "+ imagearray[index8]+" "+imagearray1[index6].substring(0, imagearray1[index6].length-1)+"i";
+		}
+		if((index6 > 26 && index6 < 31) || (index6 > 65 && index6 < 68)){
+		document.getElementById("p1").innerHTML = answer +" "+ imagearray[index8].replace("doi","doua")+" "+imagearray1[index6].substring(0, imagearray1[index6].length-1)+"e";
+		}
+		if((index6 > 30 && index6 < 34) || (index6 > 35 && index6 < 42) || (index6 > 45 && index6 < 48) || (index6 > 67 && index6 < 72)){
+		document.getElementById("p1").innerHTML = answer +" "+ imagearray[index8].replace("doi","doua")+" "+imagearray1[index6].substring(0, imagearray1[index6].length-1)+"i";
+		}
+		if((index6 > 33 && index6 < 36) || (index6 > 62 && index6 < 66)){
+		document.getElementById("p1").innerHTML = answer +" "+ imagearray[index8].replace("doi","doua")+" "+imagearray1[index6].substring(0, imagearray1[index6].length-1)+"uri";
+		}
+		if((index6 > 41 && index6 < 44) || (index6 > 53 && index6 < 56)){
+		document.getElementById("p1").innerHTML = answer +" "+ imagearray[index8].replace("doi","doua")+" "+imagearray1[index6];
+		}
+		if(index6 > 43 && index6 < 46){
+		document.getElementById("p1").innerHTML = answer +" "+ imagearray[index8].replace("doi","doua")+" "+imagearray1[index6].substring(0, imagearray1[index6].length-2)+"i";
+		}
+		if(index6 > 47 && index6 < 50){
+		document.getElementById("p1").innerHTML = answer +" "+ imagearray[index8].replace("doi","doua")+" "+imagearray1[index6]+"le";
+		}
+		if(index6 > 49 && index6 < 54){
+		document.getElementById("p1").innerHTML = answer +" "+ imagearray[index8].replace("doi","doua")+" "+imagearray1[index6].substring(0, imagearray1[index6].length-1)+"le";
+		}
+		if(index6 > 56 && index6 < 59){
+		document.getElementById("p1").innerHTML = answer +" "+ imagearray[index8].replace("doi","doua")+" "+imagearray1[index6]+"uri";
+		}
+		if(index6 > 58 && index6 < 63){
+		document.getElementById("p1").innerHTML = answer +" "+ imagearray[index8].replace("doi","doua")+" "+imagearray1[index6]+"e";
+		}
+		answer = document.getElementById("p1").textContent;
+		document.getElementById("p1").innerHTML = answer + " " + imagearray2[index7] + "i";
+		if((index7 > 1 && index7 < 5) || (index7 > 8 && index7 < 11) || (index7 == 11) || (index7 == 13) || (index7 > 13 && index7 < 16)){
+		document.getElementById("p1").innerHTML = answer + " " + imagearray2[index7].substring(0, imagearray2[index7].length-1)+"i";
+		}
+		if(index7 == 7){
+		document.getElementById("p1").innerHTML = answer + " " + imagearray2[index7].substring(0, imagearray2[index7].length-1)+"ti";
+		}
+		if(index7 == 8){
+		document.getElementById("p1").innerHTML = answer + " " + imagearray2[index7].substring(0, imagearray2[index7].length-1)+"ii";
+		}
+		if(index7 == 12){
+		document.getElementById("p1").innerHTML = answer + " " + imagearray2[index7].substring(0, imagearray2[index7].length-2)+"zi";
+		}
+		if(index7 > 15 && index7 < 23){
+		document.getElementById("p1").innerHTML = answer + " " + imagearray2[index7];
+		}
+		if(index6 > 26 && index6 < 72){
+			document.getElementById("p1").innerHTML = answer + " " + imagearray2[index7] + "e";
+			if(index7 == 1){
+			document.getElementById("p1").innerHTML = answer + " " + imagearray2[index7].substring(0, imagearray2[index7].length-1)+"ase";
+			}
+			if(index7 > 1 && index7 < 5){
+			document.getElementById("p1").innerHTML = answer + " " + imagearray2[index7].substring(0, imagearray2[index7].length-1)+"e";
+			}
+			if((index7 > 4 && index7 < 11) || (index7 == 11) || (index7 == 13) || (index7 > 13 && index7 < 16)){
+			document.getElementById("p1").innerHTML = answer + " " + imagearray2[index7].substring(0, imagearray2[index7].length-1)+"i";
+			}
+			if(index7 == 7){
+			document.getElementById("p1").innerHTML = answer + " " + imagearray2[index7].substring(0, imagearray2[index7].length-1)+"ti";
+			}
+			if(index7 == 8){
+			document.getElementById("p1").innerHTML = answer + " " + imagearray2[index7].substring(0, imagearray2[index7].length-1)+"ii";
+			}
+			if(index7 == 12){
+			document.getElementById("p1").innerHTML = answer + " " + imagearray2[index7].substring(0, imagearray2[index7].length-2)+"zi";
+			}
+			if(index7 > 15 && index7 < 23){
+			document.getElementById("p1").innerHTML = answer + " " + imagearray2[index7];
+		}
+		}	
+		answer = document.getElementById("p1").textContent;
+		}else{
+		if(index6 > 26 && index6 < 56)
+		{
+		document.getElementById("p1").innerHTML = answer +" "+ "o "+imagearray1[index6]+" "+imagearray2[index7]+"a";
+		if(index7 > 1 && index7 < 5){
+		document.getElementById("p1").innerHTML = answer +" "+ "o "+imagearray1[index6]+" "+imagearray2[index7].substring(0, imagearray2[index7].length-1)+"a";
+		}
+		if(index7 == 1){
+		document.getElementById("p1").innerHTML = answer +" "+ "o "+imagearray1[index6]+" "+imagearray2[index7].substring(0, imagearray2[index7].length-1)+"asa";
+		}
+		if(index7 == 7){
+		document.getElementById("p1").innerHTML = answer +" "+ "o "+imagearray1[index6]+" "+imagearray2[index7].substring(0, imagearray2[index7].length-2)+"asca";
+		}
+		if((index7 == 8) || (index7 == 15)){
+		document.getElementById("p1").innerHTML = answer +" "+ "o "+imagearray1[index6]+" "+imagearray2[index7].substring(0, imagearray2[index7].length-1)+"ie";
+		}
+		if((index7 > 8 && index7 < 11) || (index7 == 14)){
+		document.getElementById("p1").innerHTML = answer +" "+ "o "+imagearray1[index6]+" "+imagearray2[index7].substring(0, imagearray2[index7].length-1)+"e";
+		}
+		if((index7 > 10 && index7 < 14) || (index7 > 15 && index7 < 23)){
+		document.getElementById("p1").innerHTML = answer +" "+ "o "+imagearray1[index6]+" "+imagearray2[index7];
+		}
+		}
 		}
 	} 
 	function RandomImage()
@@ -280,8 +395,6 @@
 		if(index7 > (imagearray2.length-1))
 		index7 = index7%(imagearray2.length-1);
 		document.rebuslot.objectquality.src = index7+"adj.jpg";
-		// index3: 0 - despre; 1 - in; 2 - la; 3 - pe; 4 - acc; 5 - acc; 6 - fi ca; 7 - langa; 8 - pentru; 9 - acc; 10 - cu; 11 - fara; 
-		// dubliruvaty uze zroblene
 	}
 	
 	</script>
