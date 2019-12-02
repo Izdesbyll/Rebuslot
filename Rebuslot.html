@@ -350,51 +350,78 @@
 	} 
 	function RandomImage()
 	{
+		if (document.getElementById("3").src != "file:///D:/WebPages/Rebuslot/off.jpg") 
+        {
 		index = Math.random();
 		index = Math.floor(index*10);
 		if(index > (imagearray.length-1))
 		index = index%(imagearray.length-1);
 		document.rebuslot.subjectquantity.src = index+".jpg";
+		}
+		if (document.getElementById("1").src != "file:///D:/WebPages/Rebuslot/off.jpg") 
+        {
 		index1 = Math.random();
 		index1 = Math.floor(index1*1000);
 		if(index1 > (imagearray1.length-1))
 		index1 = index1%(imagearray1.length-1);
 		document.rebuslot.subjectessence.src = index1+"n.jpg";
+		}
+		if (document.getElementById("2").src != "file:///D:/WebPages/Rebuslot/off.jpg") 
+        {
 		index2 = Math.random();
 		index2 = Math.floor(index2*50);
 		if(index2 > (imagearray2.length-1))
 		index2 = index2%(imagearray2.length-1);
 		document.rebuslot.subjectquality.src = index2+"adj.jpg";
+		}
+		if (document.getElementById("4").src != "file:///D:/WebPages/Rebuslot/off.jpg") 
+        {
 		index3 = Math.random();
 		index3 = Math.floor(index3*50);
 		if(index3 > (imagearray3.length-1))
 		index3 = index3%(imagearray3.length-1);
 		document.rebuslot.verbessence.src = index3+"v.jpg";
+		}
+		if (document.getElementById("5").src != "file:///D:/WebPages/Rebuslot/off.jpg") 
+        {
 		index4 = Math.random();
 		index4 = Math.floor(index4*50);
 		if(index4 > (imagearray4.length-1))
 		index4 = index4%(imagearray4.length-1);
 		document.rebuslot.verbquality.src = index4+"adv1.jpg";
+		}
+		if (document.getElementById("6").src != "file:///D:/WebPages/Rebuslot/off.jpg") 
+        {
 		index5 = Math.random();
 		index5 = Math.floor(index5*50);
 		if(index5 > (imagearray5.length-1))
 		index5 = index5%(imagearray5.length-1);
 		document.rebuslot.verbquantity.src = index5+"adv2.jpg";
+		}
+		if (document.getElementById("7").src != "file:///D:/WebPages/Rebuslot/off.jpg") 
+        {
 		index6 = Math.random();
 		index6 = Math.floor(index6*50);
 		if(index6 > (imagearray1.length-1))
 		index6 = index6%(imagearray1.length-1);
 		document.rebuslot.objectessence.src = index6+"n.jpg";
+		}
+		if (document.getElementById("9").src != "file:///D:/WebPages/Rebuslot/off.jpg") 
+        {
 		index8 = Math.random();
 		index8 = Math.floor(index8*10);
 		if(index8 > (imagearray.length-1))
 		index8 = index8%(imagearray.length-1);
 		document.rebuslot.objectquantity.src = index8+".jpg";
+		}
+		if (document.getElementById("8").src != "file:///D:/WebPages/Rebuslot/off.jpg") 
+        {
 		index7 = Math.random();
 		index7 = Math.floor(index7*50);
 		if(index7 > (imagearray2.length-1))
 		index7 = index7%(imagearray2.length-1);
 		document.rebuslot.objectquality.src = index7+"adj.jpg";
+		}
 	}
 	function off1()
 	{
