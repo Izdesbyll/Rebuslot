@@ -347,6 +347,8 @@
 		}
 		}
 		}
+	answer = document.getElementById("p1").textContent;
+	
 	} 
 	function RandomImage()
 	{
@@ -357,6 +359,8 @@
 		if(index > (imagearray.length-1))
 		index = index%(imagearray.length-1);
 		document.rebuslot.subjectquantity.src = index+".jpg";
+		}else{
+		index = 1; 
 		}
 		if (document.getElementById("1").src != "file:///D:/WebPages/Rebuslot/off.jpg") 
         {
@@ -365,6 +369,8 @@
 		if(index1 > (imagearray1.length-1))
 		index1 = index1%(imagearray1.length-1);
 		document.rebuslot.subjectessence.src = index1+"n.jpg";
+		}else{
+		index1 = 0;
 		}
 		if (document.getElementById("2").src != "file:///D:/WebPages/Rebuslot/off.jpg") 
         {
@@ -373,6 +379,8 @@
 		if(index2 > (imagearray2.length-1))
 		index2 = index2%(imagearray2.length-1);
 		document.rebuslot.subjectquality.src = index2+"adj.jpg";
+		}else{
+		index2 = 0;
 		}
 		if (document.getElementById("4").src != "file:///D:/WebPages/Rebuslot/off.jpg") 
         {
@@ -381,6 +389,8 @@
 		if(index3 > (imagearray3.length-1))
 		index3 = index3%(imagearray3.length-1);
 		document.rebuslot.verbessence.src = index3+"v.jpg";
+		}else{
+		index3 = 5;
 		}
 		if (document.getElementById("5").src != "file:///D:/WebPages/Rebuslot/off.jpg") 
         {
@@ -389,6 +399,8 @@
 		if(index4 > (imagearray4.length-1))
 		index4 = index4%(imagearray4.length-1);
 		document.rebuslot.verbquality.src = index4+"adv1.jpg";
+		}else{
+		index4 = 2; 
 		}
 		if (document.getElementById("6").src != "file:///D:/WebPages/Rebuslot/off.jpg") 
         {
@@ -397,6 +409,8 @@
 		if(index5 > (imagearray5.length-1))
 		index5 = index5%(imagearray5.length-1);
 		document.rebuslot.verbquantity.src = index5+"adv2.jpg";
+		}else{
+		index5 = 16;
 		}
 		if (document.getElementById("7").src != "file:///D:/WebPages/Rebuslot/off.jpg") 
         {
@@ -405,6 +419,8 @@
 		if(index6 > (imagearray1.length-1))
 		index6 = index6%(imagearray1.length-1);
 		document.rebuslot.objectessence.src = index6+"n.jpg";
+		}else{
+		index6 = 0;
 		}
 		if (document.getElementById("9").src != "file:///D:/WebPages/Rebuslot/off.jpg") 
         {
@@ -413,6 +429,8 @@
 		if(index8 > (imagearray.length-1))
 		index8 = index8%(imagearray.length-1);
 		document.rebuslot.objectquantity.src = index8+".jpg";
+		}else{
+		index8 = 1;
 		}
 		if (document.getElementById("8").src != "file:///D:/WebPages/Rebuslot/off.jpg") 
         {
@@ -421,6 +439,8 @@
 		if(index7 > (imagearray2.length-1))
 		index7 = index7%(imagearray2.length-1);
 		document.rebuslot.objectquality.src = index7+"adj.jpg";
+		}else{
+		index7 = 0;
 		}
 	}
 	function off1()
