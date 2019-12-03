@@ -348,8 +348,55 @@
 		}
 		}
 	answer = document.getElementById("p1").textContent;
-	
+	if (document.getElementById("3").src == "file:///D:/WebPages/Rebuslot/off.jpg")
+	{
+		answer = answer.replace("un ", "");
+		answer = answer.replace("o ", "");
+	}
+	if (document.getElementById("2").src == "file:///D:/WebPages/Rebuslot/off.jpg")
+	{
+		
+		answer = answer.replace(" buni ", " ");
+		answer = answer.replace(" buna ", " ");
+		answer = answer.replace(" bune ", " ");
+		answer = answer.replace(" bun ", " ");
+	}
+	if (document.getElementById("6").src == "file:///D:/WebPages/Rebuslot/off.jpg")
+	{
+		answer = answer.replace(" astazi ", " ");
+	}
+	if (document.getElementById("5").src == "file:///D:/WebPages/Rebuslot/off.jpg")
+	{
+		answer = answer.replace(" bine ", " ");
+	}
+	if (document.getElementById("9").src == "file:///D:/WebPages/Rebuslot/off.jpg")
+	{
+		answer = answer.replace(" un ", " ");
+		answer = answer.replace(" o ", " ");
+	}
+	if (document.getElementById("8").src == "file:///D:/WebPages/Rebuslot/off.jpg")
+	{
+		
+		answer = answer.replace(" buni", " ");
+		answer = answer.replace(" buna", " ");
+		answer = answer.replace(" bune", " ");
+		answer = answer.replace(" bun", " ");
+	}
+	if (document.getElementById("7").src == "file:///D:/WebPages/Rebuslot/off.jpg")
+	{
+		answer = answer.replace(" elev ", " ");
+	}
+	if (document.getElementById("4").src == "file:///D:/WebPages/Rebuslot/off.jpg")
+	{
+		answer = answer.replace(" vad ", " ");
+	}
+	if (document.getElementById("2").src == "file:///D:/WebPages/Rebuslot/off.jpg")
+	{
+		answer = answer.replace("elev ", " ");
+	}
+	document.getElementById("p1").innerHTML = answer;
 	} 
+	
 	function RandomImage()
 	{
 		if (document.getElementById("3").src != "file:///D:/WebPages/Rebuslot/off.jpg") 
