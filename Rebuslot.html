@@ -195,10 +195,6 @@
 		document.getElementById("p1").innerHTML = answer+ " " +imagearray3[index3].substring(0, imagearray3[index3].length-1)+"te";
 		}
 		if ((index5 != 14) && (index5 != 15) && (index5 != 17) && (index5 != 19) && (index5 != 20) && (index5 != 25) && (index5 != 27)  && (index5 != 29)){
-		document.getElementById("p1").innerHTML = answer + " " + imagearray3[index3];
-		if ((index5 == 5)){
-		
-		}
 		}else{
 		if ((index5 == 14) || (index5 == 15) || (index5 == 20) || (index5 == 25) ){
 		if (index3 == 5){
@@ -219,6 +215,7 @@
 		document.getElementById("p1").innerHTML = answer+ " " +imagearray4[index4]+ " " +imagearray5[index5];
 		}
 		answer = document.getElementById("p1").textContent;
+		if (document.getElementById("7").src != "file:///D:/WebPages/Rebuslot/off.jpg"){
 		if (index3 == 0){
 		document.getElementById("p1").innerHTML = answer+ " despre";
 		}
@@ -245,6 +242,7 @@
 		}
 		if (index3 == 11){
 		document.getElementById("p1").innerHTML = answer+ " fara";
+		}
 		}
 		answer = document.getElementById("p1").textContent;
 		document.getElementById("p1").innerHTML = answer +" "+ imagearray[index8]+" "+imagearray1[index6]+" "+imagearray2[index7];
@@ -633,16 +631,41 @@
 		p {
 		color: white;
 	}
+	.posit {
+	position: absolute;
+	}
+	.posit-1 {
+	left: 780px;
+	bottom: 300px;
+	}
+	.posit-2 {
+	top: 60px;
+	}
+	.posit-3 {
+	bottom: 53px;
+	}
+	.posit-4 {
+	bottom: 53px;
+	left: 150px;
+	}
+	.posit-5 {
+	left: 600px;
+	}
+	.posit-6 {
+	left: 780px;
+	bottom: 250px;
+	}
+	.posit-7 {
+	left: 1050px;
+	bottom: 250px;
+	}
 	</style>
 </head>
 <body style=background-color:black;>
-		<form name="rebuslot" style=background-color:black; >
+		<iframe class="posit posit-1" width="560" height="315" src="https://www.youtube.com/embed/TH0oCDziVQQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<h2 class="posit posit-5" style=color:white;>Rebuslot</h2>
+		<form class="posit posit-2" name="rebuslot" style=background-color:black; >
 		<table>
-		<tr>
-			<td></td>
-			<td></td>
-			<td><h2 style=color:white;>Rebuslot</h2></td>   
-		</tr>
 		<tr>
 			<td></td>
 			<td><p>Essence</p></td>
@@ -673,7 +696,9 @@
 		<input type="text" name="input" size="70"/>
 		<p id="p1">the right answer</p>	
 		</form>
-	<button onclick="RandomImage()">Generate a sentence</button>
-	<button onclick="RightAnswer()">Show the right answer</button>
+	<button class="posit posit-3" onclick="RandomImage()">Generate a sentence</button>
+	<button class="posit posit-4"onclick="RightAnswer()">Show the right answer</button>
+	<p class="posit posit-6" id="p2">Song lyrics</p> 
+	<p class="posit posit-7" id="p3">Lyrics translation</p> 
 </body>
 </html>
