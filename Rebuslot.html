@@ -635,7 +635,7 @@
 		color: white;
 	}
 	.posit {
-	position: absolute;
+	position:absolute;
 	}
 	.posit-1 {
 	left: 780px;
@@ -656,11 +656,12 @@
 	}
 	.posit-6 {
 	left: 780px;
-	bottom: 250px;
+	top: 400px;
+	width: 265px;
 	}
 	.posit-7 {
 	left: 1050px;
-	bottom: 250px;
+	top: 400px;
 	}
 	</style>
 </head>
@@ -694,8 +695,9 @@
       // 4. The API will call this function when the video player is ready.
       function onPlayerReady(event) {
         event.target.playVideo();
-		document.getElementById("p2").innerHTML = "Eu îs fată tinerică, tre’ să fiu cuminte,\nÎi-e ruşine şi e frig, aşa o zis părintele.\nDar eu m-am săturat să stau la colţ de masă,\nEu azi m-am îmbracat în rochia cea frumoasă.\n \nLa nunta asta-i numa’ muzică de nuntă,\nToţi vorbesc, nimeni n-ascultă.\nAtâta am muncit de dimineaţă,\nAm să joc măcar o dată-n viaţă (x2).\n \nSpune, ce n-ar spune, nu mă interesează,\nDe ce să stau de-o parte când sufletu-mi dansează.\nMi-e a început să-mi placă după colivie,\nŞi am să gust oleacă, diseară, de rachie.\n \nLa nunta asta-i numa’ muzică de nuntă,\nToţi vorbesc, nimeni n-ascultă.\nAtâta am muncit de dimineaţă,\nAm să joc măcar o dată-n viaţă (x4).";
-      }
+		document.getElementById("p2").innerHTML = "Eu îs fată tinerică, tre’ să fiu cuminte, <br/> Îi-e ruşine şi e frig, aşa o zis părintele.<br/>Dar eu m-am săturat să stau la colţ de masă,<br/>Eu azi m-am îmbracat în rochia cea frumoasă.<br/><br/>La nunta asta-i numa’ muzică de nuntă,<br/>Toţi vorbesc, nimeni n-ascultă.<br/>Atâta am muncit de dimineaţă,<br/>Am să joc măcar o dată-n viaţă (x2).<br/><br/>Spune, ce n-ar spune, nu mă interesează,<br/>De ce să stau de-o parte când sufletu-mi dansează.<br/>Mi-e a început să-mi placă după colivie,<br/>Şi am să gust oleacă, diseară, de rachie.<br/><br/>La nunta asta-i numa’ muzică de nuntă,<br/>Toţi vorbesc, nimeni n-ascultă.<br/>Atâta am muncit de dimineaţă,<br/>Am să joc măcar o dată-n viaţă (x4).";
+		document.getElementById("p3").innerHTML = "Я молоденькая девушка, я должна быть послушной, <br/>Она стесняется, ей холодно, - так сказал батюшка.<br/>Но мне надоело сидеть в углу стола,<br/>Сегодня я надела красивое платье.<br/><br/>На этой свадьбе играет только весёлая музыка,<br/>Все говорят, никто не слушает.<br/>Я так много сегодня поработала с утра,<br/>Станцую-ка я хоть разок (х2).<br/><br/>Пусть говорят что угодно, меня не волнует,<br/>Почему я должна стоять в стороне, когда моя душа хочет танцевать?<br/>Мне нравится то, что я вырвалась из клетки,<br/>Сегодня вечером я попробую немножечко вина.<br/><br/>На этой свадьбе играет только весёлая музыка,<br/>Все говорят, никто не слушает.<br/>Я так много сегодня поработала с утра,<br/>Станцую-ка я хоть разок (х4).";
+	  }
 
       // 5. The API calls this function when the player's state changes.
       //    The function indicates that when playing a video (state=1),
