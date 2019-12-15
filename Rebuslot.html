@@ -714,7 +714,6 @@ ul li:hover {
 ul li.checked {
   background: #888;
   color: #fff;
-  text-decoration: line-through;
 }
 
 /* Add a "checked" mark when clicked on */
@@ -782,7 +781,18 @@ ul li.checked::before {
 		<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
     <div id="player" class="posit posit-1"></div>
 
-    <script>
+    
+	<ul id="myUL">
+  <li class="checked">All songs</li>
+  <li>La nunta asta</li>
+  <li>Dragostea din tej</li>
+  <li>Despre tine</li>
+  <li>De ce plang chitarele</li>
+  <li>Disko partizani</li>
+</ul>
+	
+	
+	<script>
       // 2. This code loads the IFrame Player API code asynchronously.
       var tag = document.createElement('script');
 
@@ -818,32 +828,20 @@ ul li.checked::before {
       var done = false;
       function onPlayerStateChange(event) {
         if (event.data == YT.PlayerState.PLAYING && !done) {
-          setTimeout(stopVideo, 6000);
+          setTimeout(stopVideo, 600000);
           done = true;
         }
       }
       function stopVideo() {
         player.stopVideo();
+		
       }
-    </script>
-
-
-<ul id="myUL">
-  <li class="checked">All songs</li>
-  <li>La nunta asta</li>
-  <li>Dragostea din tej</li>
-  <li>Despre tine</li>
-  <li>De ce plang chitarele</li>
-  <li>Disko partizani</li>
-</ul>
-
-<script>
-// Create a "close" button and append it to each list item
+		// Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
   var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
+  var txt = document.createTextNode("\u009B");
   span.className = "close";
   span.appendChild(txt);
   myNodelist[i].appendChild(span);
@@ -854,8 +852,7 @@ var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
   close[i].onclick = function() {
-    var div = this.parentElement;
-   // div.style.display = "none";
+	player.loadVideoById("YnopHCL1Jk8", 45, "large");
   }
 }
 
@@ -866,8 +863,8 @@ list.addEventListener('click', function(ev) {
     ev.target.classList.toggle('checked');
   }
 }, false);
+    </script>
 
-</script>
 		
 		<h2 class="posit posit-5" style=color:white;>Rebuslot</h2>
 		<form class="posit posit-2" name="rebuslot" style=background-color:black; >
