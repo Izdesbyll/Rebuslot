@@ -851,8 +851,30 @@ for (i = 0; i < myNodelist.length; i++) {
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
+  if (i == 1){
+  close[i].onclick = function() {
+	player.loadVideoById("TH0oCDziVQQ", 0, "large");
+  }
+  }
+  if (i == 2){
   close[i].onclick = function() {
 	player.loadVideoById("YnopHCL1Jk8", 45, "large");
+  }
+  }
+  if (i == 3){
+  close[i].onclick = function() {
+	player.loadVideoById("RYK8OmhYr5I", 0, "large");
+  }
+  }
+  if (i == 4){
+  close[i].onclick = function() {
+	player.loadVideoById("p-5braYTxE4", 0, "large");
+  }
+  }
+  if (i == 5){
+  close[i].onclick = function() {
+	player.loadVideoById("gViaOYgV8yI", 0, "large");
+  }
   }
 }
 
