@@ -3,7 +3,22 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Rebuslot</title>
-	<script language="javascript">
+	</head>
+<body style=background-color:black;>
+		<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+    <div id="player" class="posit posit-1"></div>
+
+    
+	<ul id="myUL">
+  <li>All songs</li>
+  <li>La nunta asta</li>
+  <li>Dragostea din tej</li>
+  <li>Disko partizani</li>
+</ul>
+	
+	
+	<script>
+	var song;
 	var player;
 	var answer;
 	var index, imagearray = ["zero", "un", "doi", "trei", "patru", "cinci", "sase", "sapte", "opt", "noua"];
@@ -39,6 +54,10 @@
 	"destul", "mult", "putin",
 	"nicaieri", "niciodata"];
 	var index6, index7, index8;
+	function getRndmFromSet(set){
+		var rndm = Math.floor(Math.random()*set.length);
+		return set[rndm];
+		}
 	function RightAnswer()
 	{
 		document.getElementById("p1").innerHTML = imagearray[index]+" "+imagearray1[index1]+" "+imagearray2[index2];
@@ -397,15 +416,107 @@
 	document.getElementById("p1").innerHTML = answer;
 	} 
 	
+	      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '315',
+          width: '560',
+          videoId: 'TH0oCDziVQQ',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+		document.getElementById("p2").innerHTML = "Eu îs fată tinerică, tre’ să fiu cuminte, <br/> Îi-e ruşine şi e frig, aşa o zis părintele.<br/>Dar eu m-am săturat să stau la colţ de masă,<br/>Eu azi m-am îmbracat în rochia cea frumoasă.<br/><br/>La nunta asta-i numa’ muzică de nuntă,<br/>Toţi vorbesc, nimeni n-ascultă.<br/>Atâta am muncit de dimineaţă,<br/>Am să joc măcar o dată-n viaţă (x2).<br/><br/>Spune, ce n-ar spune, nu mă interesează,<br/>De ce să stau de-o parte când sufletu-mi dansează.<br/>Mi-e a început să-mi placă după colivie,<br/>Şi am să gust oleacă, diseară, de rachie.<br/><br/>La nunta asta-i numa’ muzică de nuntă,<br/>Toţi vorbesc, nimeni n-ascultă.<br/>Atâta am muncit de dimineaţă,<br/>Am să joc măcar o dată-n viaţă (x4).";
+		document.getElementById("p3").innerHTML = "Я молоденькая девушка, я должна быть послушной, <br/>Она стесняется, ей холодно, - так сказал батюшка.<br/>Но мне надоело сидеть в углу стола,<br/>Сегодня я надела красивое платье.<br/><br/>На этой свадьбе играет только весёлая музыка,<br/>Все говорят, никто не слушает.<br/>Я так много сегодня поработала с утра,<br/>Станцую-ка я хоть разок (х2).<br/><br/>Пусть говорят что угодно, меня не волнует,<br/>Почему я должна стоять в стороне, когда моя душа хочет танцевать?<br/>Мне нравится то, что я вырвалась из клетки,<br/>Сегодня вечером я попробую немножечко вина.<br/><br/>На этой свадьбе играет только весёлая музыка,<br/>Все говорят, никто не слушает.<br/>Я так много сегодня поработала с утра,<br/>Станцую-ка я хоть разок (х4).";
+	  }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 600000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+		
+      }
+		// Create a "close" button and append it to each list item
+var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u009B");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
+}
+
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  if (i == 1){
+  close[i].onclick = function() {
+	player.loadVideoById("TH0oCDziVQQ", 0, "large");
+	document.getElementById("p2").innerHTML = "Eu îs fată tinerică, tre’ să fiu cuminte, <br/> Îi-e ruşine şi e frig, aşa o zis părintele.<br/>Dar eu m-am săturat să stau la colţ de masă,<br/>Eu azi m-am îmbracat în rochia cea frumoasă.<br/><br/>La nunta asta-i numa’ muzică de nuntă,<br/>Toţi vorbesc, nimeni n-ascultă.<br/>Atâta am muncit de dimineaţă,<br/>Am să joc măcar o dată-n viaţă (x2).<br/><br/>Spune, ce n-ar spune, nu mă interesează,<br/>De ce să stau de-o parte când sufletu-mi dansează.<br/>Mi-e a început să-mi placă după colivie,<br/>Şi am să gust oleacă, diseară, de rachie.<br/><br/>La nunta asta-i numa’ muzică de nuntă,<br/>Toţi vorbesc, nimeni n-ascultă.<br/>Atâta am muncit de dimineaţă,<br/>Am să joc măcar o dată-n viaţă (x4).";
+	document.getElementById("p3").innerHTML = "Я молоденькая девушка, я должна быть послушной, <br/>Она стесняется, ей холодно, - так сказал батюшка.<br/>Но мне надоело сидеть в углу стола,<br/>Сегодня я надела красивое платье.<br/><br/>На этой свадьбе играет только весёлая музыка,<br/>Все говорят, никто не слушает.<br/>Я так много сегодня поработала с утра,<br/>Станцую-ка я хоть разок (х2).<br/><br/>Пусть говорят что угодно, меня не волнует,<br/>Почему я должна стоять в стороне, когда моя душа хочет танцевать?<br/>Мне нравится то, что я вырвалась из клетки,<br/>Сегодня вечером я попробую немножечко вина.<br/><br/>На этой свадьбе играет только весёлая музыка,<br/>Все говорят, никто не слушает.<br/>Я так много сегодня поработала с утра,<br/>Станцую-ка я хоть разок (х4).";
+  }
+  }
+  if (i == 2){
+  close[i].onclick = function() {
+	player.loadVideoById("YnopHCL1Jk8", 45, "large");
+	document.getElementById("p2").innerHTML = "Mai-ha-hi <br/>Mai-ha-hu<br\>Mai-ha-ha<br\>Mai-ha-ha-ha (x2)<br\> <br\>Alo, salut,<br\>Sunt eu, un haiduc<br\>Și te rog, iubirea mea, primește fericirea.<br\>Alo, alo,<br\>Sunt eu, Picasso,<br\>Ți-am dat bip<br\>și sunt voinic,<br\>dar să știi, nu-ți cer nimic.<br\> <br\>Vrei să pleci, dar nu mă, nu mă iei,<br\>Nu mă, nu mă iei,<br\>Nu mă, nu mă, nu mă iei ,<br\>Chipul tău și dragostea din tei<br\>Mi-amintesc de ochii tăi (x2)<br\> <br\>Te sun să-ți spun<br\>ce simt acum,<br\>Alo, iubirea mea, sunt eu, fericirea.<br\>Alo, alo,<br\>sunt iarăși eu, Picasso,<br\>Ți-am dat bip, și sunt voinic<br\>Dar să știi nu-ți cer nimic.<br\> <br\>Vrei să pleci, dar nu mă, nu mă iei,<br\>Nu mă, nu mă iei,<br\>Nu mă, nu mă, nu mă iei,<br\>Chipul tău și dragostea din tei<br\>Mi-amintesc de ochii tăi. (x2)<br\> <br\>Mai-ha-hi<br\>Mai-ha-hu<br\>Mai-ha-ha<br\>Mai-ha-ha-ha (x2)<br\> <br\>Vrei să pleci, dar nu mă, nu mă iei<br\>Nu mă, nu mă iei<br\>Nu mă, nu mă, nu mă iei,<br\>Chipul tău și dragostea din tei,<br\>Mi-amintesc de ochii tăi. (x2)";
+	document.getElementById("p3").innerHTML = "Mai-ha-hi<br/>Mai-ha-hi<br/>Mai-ha-hu<br/>Mai-ha-ha<br/>Mai-ha-ha-ha (x2)<br/><br/>Алло, привет,<br/>Это я… Хайдук<br/>И я прошу, моя любимая, сделай меня счастливым,<br/>Алло… алло,<br/>Это я… Пикассо,<br/>Я тебе звоню,<br/>И я чист перед тобой,<br/>Знай, я ни о чем тебя не прошу<br/> <br/>Ты хочешь идти, но ты не берёшь меня с собой,<br/>нет, ты не берёшь меня с собой,<br/>не берёшь меня с собой, нет<br/>Твоё лицо и любовь под липами<br/>Напоминают мне о твоих глазах (х2)<br/> <br/>Я звоню тебе, чтобы сказать,<br/>Что я чувствую сейчас.<br/>Алло, любовь моя, это я, счастье моё,<br/>Алло, алло, это опять я, Пикассо.<br/>Я тебе звоню, я чист перед тобой<br/>Знай, я ни о чем тебя не прошу<br/> <br/>Ты хочешь идти, но ты не берёшь меня с собой,<br/>Нет, ты не берёшь меня с собой,<br/>Не берёшь меня с собой, нет<br/>Твоё лицо и любовь под липами<br/>Напоминают мне о твоих глазах (х2)<br/><br/>Mai-ha-hi<br/>Mai-ha-hu<br/>Mai-ha-ha<br/>Mai-ha-ha-ha (x2)<br/> <br/>Ты хочешь идти, но ты не берёшь меня с собой,<br/>Нет, ты не берёшь меня с собой,<br/>Не берёшь меня с собой, нет<br/>Tвоё лицо и любовь под липами<br/>Напоминают мне о твоих глазах (х2)<br/>Mai-ha-hu<br/>Mai-ha-ha<br/>Mai-ha-ha-ha (x2)";
+  }
+  }
+  if (i == 3){
+  close[i].onclick = function() {
+	player.loadVideoById("gViaOYgV8yI", 0, "large");
+	document.getElementById("p2").innerHTML = "My baby came down from Romania<br/>She was the queen of Transylvania<br/>But now we live in suburbia<br/>Without any friends buzzing you(x2)<br/> <br/>Tsiganizatsia tsiganizatsia<br/>Come on baby this is what you need<br/>Tsiganizatsia tsiganizatsia<br/>Everybody dancing to this beat<br/>Tsiganizatsia tsiganizatsia<br/>Come on baby this is what you need<br/>Tsiganizatsia tsiganizatsia<br/><br/>Disko disko partizani<br/>Disko disko partizani<br/>Parti parti partizani(x2)<br/><br/>Zece, alege,<br/>Nu am, înțelege,<br/>Opt, un tot, (upgrade)<br/>Muzica nonstop.(x2)<br/> <br/>Când te văd mă pierd cu firea,<br/>Nu-mi pot stăpâni privirea,<br/>Dansezi bine, ești mortală,<br/>Și cu frumusețea ta îi bagi pe toți în boală;<br/>Orice bărbat te dorește,<br/>Când te vede înnebunește,<br/>Ți-ar da bani, ți-ar da orice, ți-ar da și casa,<br/>Pentru tine și-ar lăsa nevasta.<br/> <br/>Tsiganizatsia tsiganizatsia<br/>Come on baby this is what you need<br/>Tsiganizatsia tsiganizatsia<br/>Everybody dancing to this beat<br/>Tsiganizatsia tsiganizatsia<br/>Come on baby this is what you need<br/>Tsiganizatsia tsiganizatsia<br/> <br/>Disko disko partizani<br/>Disko disko partizani<br/>Parti parti partizani(x2)<br/> <br/>Zece, alege,<br/>Nu am, înțelege,<br/>Opt, un tot, (upgrade)<br/>Muzica nonstop.(x2)<br/> <br/>Disko disko partizani<br/>Parti parti partizani";
+	document.getElementById("p3").innerHTML = "Моя любимая родом из Румынии,<br/>Она была королевой Трансильвании*,<br/>Но сейчас мы живем в пригороде<br/>Без жужжания друзей вокруг тебя.<br/> <br/>Цыганизация, цыганизация<br/>Давай, детка, это то, что тебе нужно<br/>Цыганизация, цыганизация<br/>Все танцуют в этом ритме<br/>Цыганизация, цыганизация<br/>Давай, детка, это то, что тебе нужно<br/>Цыганизация цыганизация<br/> <br/>Диско диско партизаны<br/>Диско диско партизаны<br/>Парти парти партизаны<br/> <br/>Десять-выбирай<br/>Я не получил что мне было нужно, пойми<br/>Восемь-объединились<br/>Музыка бесконечна!...<br/> <br/>Когда я вижу тебя, я теряю голову,<br/>Я не могу контролировать свои глаза,<br/>Ты хорошо танцуешь, ты сногшибательно красива,<br/>И твоя красота сводит всех с ума,<br/>Каждый мужчина хочет тебя,<br/>Они становятся дикими, когда смотрят на тебя,<br/>Они отдали бы тебе деньги, отдали бы тебе все, даже дом свой​​,<br/>Они оставили бы своих девушек ради тебя.<br/>Музыка бесконечна.<br/> <br/>Цыганизация, цыганизация<br/>Давай, детка, это то, что тебе нужно<br/>Цыганизация, цыганизация<br/>Все танцуют в этом ритме<br/>Цыганизация, цыганизация<br/>Давай, детка, это то, что тебе нужно<br/> <br/>Диско диско партизаны<br/>Диско диско партизаны<br/>Парти парти партизаны";
+  }
+  }
+}
+
+// Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+	song = ev.target.textContent;
+  }
+}, false);
+	
 	function RandomImage()
 	{
 		if (document.getElementById("3").src != "file:///D:/WebPages/Rebuslot/off.jpg") 
         {
-		index = Math.random();
-		index = Math.floor(index*10);
-		if(index > (imagearray.length-1))
-		index = index%(imagearray.length-1);
+		if (song == "La nunta asta"){
+		index = 1;
 		document.rebuslot.subjectquantity.src = index+".jpg";
+		}else{
+		index = getRndmFromSet([0,1,2,3,4,5,6,7,8,9]);
+		document.rebuslot.subjectquantity.src = index+".jpg";
+		}
 		}else{
 		index = 1; 
 		}
@@ -628,7 +739,6 @@
 			document.rebuslot.subjectessence.src = "clear.jpg";
         }
 	}	
-	
 	</script>
 	<style>
 		p {
@@ -776,126 +886,7 @@ ul li.checked::before {
   background-color: black;
 }
 	</style>
-</head>
-<body style=background-color:black;>
-		<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-    <div id="player" class="posit posit-1"></div>
 
-    
-	<ul id="myUL">
-  <li class="checked">All songs</li>
-  <li>La nunta asta</li>
-  <li>Dragostea din tej</li>
-  <li>Despre tine</li>
-  <li>De ce plang chitarele</li>
-  <li>Disko partizani</li>
-</ul>
-	
-	
-	<script>
-      // 2. This code loads the IFrame Player API code asynchronously.
-      var tag = document.createElement('script');
-
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-      // 3. This function creates an <iframe> (and YouTube player)
-      //    after the API code downloads.
-      var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          height: '315',
-          width: '560',
-          videoId: 'TH0oCDziVQQ',
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        });
-      }
-
-      // 4. The API will call this function when the video player is ready.
-      function onPlayerReady(event) {
-        event.target.playVideo();
-		document.getElementById("p2").innerHTML = "Eu îs fată tinerică, tre’ să fiu cuminte, <br/> Îi-e ruşine şi e frig, aşa o zis părintele.<br/>Dar eu m-am săturat să stau la colţ de masă,<br/>Eu azi m-am îmbracat în rochia cea frumoasă.<br/><br/>La nunta asta-i numa’ muzică de nuntă,<br/>Toţi vorbesc, nimeni n-ascultă.<br/>Atâta am muncit de dimineaţă,<br/>Am să joc măcar o dată-n viaţă (x2).<br/><br/>Spune, ce n-ar spune, nu mă interesează,<br/>De ce să stau de-o parte când sufletu-mi dansează.<br/>Mi-e a început să-mi placă după colivie,<br/>Şi am să gust oleacă, diseară, de rachie.<br/><br/>La nunta asta-i numa’ muzică de nuntă,<br/>Toţi vorbesc, nimeni n-ascultă.<br/>Atâta am muncit de dimineaţă,<br/>Am să joc măcar o dată-n viaţă (x4).";
-		document.getElementById("p3").innerHTML = "Я молоденькая девушка, я должна быть послушной, <br/>Она стесняется, ей холодно, - так сказал батюшка.<br/>Но мне надоело сидеть в углу стола,<br/>Сегодня я надела красивое платье.<br/><br/>На этой свадьбе играет только весёлая музыка,<br/>Все говорят, никто не слушает.<br/>Я так много сегодня поработала с утра,<br/>Станцую-ка я хоть разок (х2).<br/><br/>Пусть говорят что угодно, меня не волнует,<br/>Почему я должна стоять в стороне, когда моя душа хочет танцевать?<br/>Мне нравится то, что я вырвалась из клетки,<br/>Сегодня вечером я попробую немножечко вина.<br/><br/>На этой свадьбе играет только весёлая музыка,<br/>Все говорят, никто не слушает.<br/>Я так много сегодня поработала с утра,<br/>Станцую-ка я хоть разок (х4).";
-	  }
-
-      // 5. The API calls this function when the player's state changes.
-      //    The function indicates that when playing a video (state=1),
-      //    the player should play for six seconds and then stop.
-      var done = false;
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-          setTimeout(stopVideo, 600000);
-          done = true;
-        }
-      }
-      function stopVideo() {
-        player.stopVideo();
-		
-      }
-		// Create a "close" button and append it to each list item
-var myNodelist = document.getElementsByTagName("LI");
-var i;
-for (i = 0; i < myNodelist.length; i++) {
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u009B");
-  span.className = "close";
-  span.appendChild(txt);
-  myNodelist[i].appendChild(span);
-}
-
-// Click on a close button to hide the current list item
-var close = document.getElementsByClassName("close");
-var i;
-for (i = 0; i < close.length; i++) {
-  if (i == 1){
-  close[i].onclick = function() {
-	player.loadVideoById("TH0oCDziVQQ", 0, "large");
-	document.getElementById("p2").innerHTML = "Eu îs fată tinerică, tre’ să fiu cuminte, <br/> Îi-e ruşine şi e frig, aşa o zis părintele.<br/>Dar eu m-am săturat să stau la colţ de masă,<br/>Eu azi m-am îmbracat în rochia cea frumoasă.<br/><br/>La nunta asta-i numa’ muzică de nuntă,<br/>Toţi vorbesc, nimeni n-ascultă.<br/>Atâta am muncit de dimineaţă,<br/>Am să joc măcar o dată-n viaţă (x2).<br/><br/>Spune, ce n-ar spune, nu mă interesează,<br/>De ce să stau de-o parte când sufletu-mi dansează.<br/>Mi-e a început să-mi placă după colivie,<br/>Şi am să gust oleacă, diseară, de rachie.<br/><br/>La nunta asta-i numa’ muzică de nuntă,<br/>Toţi vorbesc, nimeni n-ascultă.<br/>Atâta am muncit de dimineaţă,<br/>Am să joc măcar o dată-n viaţă (x4).";
-	document.getElementById("p3").innerHTML = "Я молоденькая девушка, я должна быть послушной, <br/>Она стесняется, ей холодно, - так сказал батюшка.<br/>Но мне надоело сидеть в углу стола,<br/>Сегодня я надела красивое платье.<br/><br/>На этой свадьбе играет только весёлая музыка,<br/>Все говорят, никто не слушает.<br/>Я так много сегодня поработала с утра,<br/>Станцую-ка я хоть разок (х2).<br/><br/>Пусть говорят что угодно, меня не волнует,<br/>Почему я должна стоять в стороне, когда моя душа хочет танцевать?<br/>Мне нравится то, что я вырвалась из клетки,<br/>Сегодня вечером я попробую немножечко вина.<br/><br/>На этой свадьбе играет только весёлая музыка,<br/>Все говорят, никто не слушает.<br/>Я так много сегодня поработала с утра,<br/>Станцую-ка я хоть разок (х4).";
-  }
-  }
-  if (i == 2){
-  close[i].onclick = function() {
-	player.loadVideoById("YnopHCL1Jk8", 45, "large");
-	document.getElementById("p2").innerHTML = "Mai-ha-hi <br/>Mai-ha-hu<br\>Mai-ha-ha<br\>Mai-ha-ha-ha (x2)<br\> <br\>Alo, salut,<br\>Sunt eu, un haiduc<br\>Și te rog, iubirea mea, primește fericirea.<br\>Alo, alo,<br\>Sunt eu, Picasso,<br\>Ți-am dat bip<br\>și sunt voinic,<br\>dar să știi, nu-ți cer nimic.<br\> <br\>Vrei să pleci, dar nu mă, nu mă iei,<br\>Nu mă, nu mă iei,<br\>Nu mă, nu mă, nu mă iei ,<br\>Chipul tău și dragostea din tei<br\>Mi-amintesc de ochii tăi (x2)<br\> <br\>Te sun să-ți spun<br\>ce simt acum,<br\>Alo, iubirea mea, sunt eu, fericirea.<br\>Alo, alo,<br\>sunt iarăși eu, Picasso,<br\>Ți-am dat bip, și sunt voinic<br\>Dar să știi nu-ți cer nimic.<br\> <br\>Vrei să pleci, dar nu mă, nu mă iei,<br\>Nu mă, nu mă iei,<br\>Nu mă, nu mă, nu mă iei,<br\>Chipul tău și dragostea din tei<br\>Mi-amintesc de ochii tăi. (x2)<br\> <br\>Mai-ha-hi<br\>Mai-ha-hu<br\>Mai-ha-ha<br\>Mai-ha-ha-ha (x2)<br\> <br\>Vrei să pleci, dar nu mă, nu mă iei<br\>Nu mă, nu mă iei<br\>Nu mă, nu mă, nu mă iei,<br\>Chipul tău și dragostea din tei,<br\>Mi-amintesc de ochii tăi. (x2)";
-	document.getElementById("p3").innerHTML = "Mai-ha-hi<br/>Mai-ha-hi<br/>Mai-ha-hu<br/>Mai-ha-ha<br/>Mai-ha-ha-ha (x2)<br/><br/>Алло, привет,<br/>Это я… Хайдук<br/>И я прошу, моя любимая, сделай меня счастливым,<br/>Алло… алло,<br/>Это я… Пикассо,<br/>Я тебе звоню,<br/>И я чист перед тобой,<br/>Знай, я ни о чем тебя не прошу<br/> <br/>Ты хочешь идти, но ты не берёшь меня с собой,<br/>нет, ты не берёшь меня с собой,<br/>не берёшь меня с собой, нет<br/>Твоё лицо и любовь под липами<br/>Напоминают мне о твоих глазах (х2)<br/> <br/>Я звоню тебе, чтобы сказать,<br/>Что я чувствую сейчас.<br/>Алло, любовь моя, это я, счастье моё,<br/>Алло, алло, это опять я, Пикассо.<br/>Я тебе звоню, я чист перед тобой<br/>Знай, я ни о чем тебя не прошу<br/> <br/>Ты хочешь идти, но ты не берёшь меня с собой,<br/>Нет, ты не берёшь меня с собой,<br/>Не берёшь меня с собой, нет<br/>Твоё лицо и любовь под липами<br/>Напоминают мне о твоих глазах (х2)<br/><br/>Mai-ha-hi<br/>Mai-ha-hu<br/>Mai-ha-ha<br/>Mai-ha-ha-ha (x2)<br/> <br/>Ты хочешь идти, но ты не берёшь меня с собой,<br/>Нет, ты не берёшь меня с собой,<br/>Не берёшь меня с собой, нет<br/>Tвоё лицо и любовь под липами<br/>Напоминают мне о твоих глазах (х2)<br/>Mai-ha-hu<br/>Mai-ha-ha<br/>Mai-ha-ha-ha (x2)";
-  }
-  }
-  if (i == 3){
-  close[i].onclick = function() {
-	player.loadVideoById("RYK8OmhYr5I", 0, "large");
-	document.getElementById("p2").innerHTML = "Mă trezesc cu tine-n gând,<br/>Despre tine vreau să cânt,<br/>Melodia mea de dor,<br/>Care place tuturor.<br/><br/>Nu răspunzi la SMS,<br/>Eu îţi scriu atât de des,<br/>Poate m-am purtat urât,<br/>Dar să ştii că te-am iubit.<br/> <br/>Mă înec în ochii tăi larolararolei,<br/>Plânge lumea după ei larolararolei.<br/>Eşti un înger pe pământ,<br/>Despre tine cânt,<br/>Şi zi şi noapte larolei.<br/> <br/>Mă înec în ochii tăi larolararolei,<br/>Plânge lumea după ei larolararolei.<br/>Eşti un înger pe pământ,<br/>Despre tine cânt,<br/>Şi zi şi noapte larolei.<br/> <br/>Dacă mergi cu mine-n vis,<br/>Am să te învăţ să râzi,<br/>Şi-am să-ţi cânt până în zori,<br/>Cântecelul meu de dor.<br/><br/>Nu răspunzi la SMS,<br/>Eu îţi scriu atât de des,<br/>Poate m-am purtat urât,<br/>Dar să ştii că te-am iubit.<br/> <br/>Mă înec în ochii tăi larolararolei,<br/>Plânge lumea după ei larolararolei.<br/>Eşti un înger pe pământ,<br/>Despre tine cânt,<br/>Şi zi şi noapte larolei.<br/> <br/>Mă înec în ochii tăi larolararolei,<br/>Plânge lumea după ei larolararolei.<br/>Eşti un înger pe pământ,<br/>Despre tine cânt,<br/>Şi zi şi noapte larolei.<br/> <br/>Mă înec în ochii tăi larolararolei,<br/>Plânge lumea după ei larolararolei.<br/>Eşti un înger pe pământ,<br/>Despre tine cânt,<br/>Şi zi şi noapte larolei.<br/> <br/>Mă înec în ochii tăi larolararolei,<br/>Plânge lumea după ei larolararolei.<br/>Eşti un înger pe pământ,<br/>Despre tine cânt,<br/>Şi zi şi noapte larolei.";
-	document.getElementById("p3").innerHTML = "Я просыпаюсь с мыслями о тебе,<br/>Я хочу петь о тебе<br/>Мелодию моей тоски,<br/>Которая нравится всем.<br/> <br/>Не отвечаешь на СМС,<br/>Я тебе очень часто пишу,<br/>Может быть, я плохо себя вёл,<br/>Но знай, что я тебя люблю.<br/><br/>Я тону в твоих глазах,<br/>Плачет мир после них,<br/>Ты - ангел на земле,<br/>Я о тебе пою,<br/>И днём, и ночью.<br/> <br/>Я тону в твоих глазах,<br/>Плачет мир после них,<br/>Ты - ангел на земле,<br/>Я о тебе пою,<br/>И днём, и ночью.<br/> <br/>Если ты пойдёшь со мной во сне,<br/>Я научу тебя смеяться,<br/>И я буду петь до рассвета,<br/>Песню моей тоски<br/> <br/>Не отвечаешь на СМС,<br/>Я тебе очень часто пишу,<br/>Можешь быть, я плохо себя вёл,<br/>Но знай, что я тебя люблю.<br/> <br/>Я тону в твоих глазах,<br/>Плачет мир после них,<br/>Ты - ангел на земле,<br/>Я о тебе пою,<br/>И днём, и ночью.<br/> <br/>Я тону в твоих глазах,<br/>Плачет мир после них,<br/>Ты - ангел на земле,<br/>Я о тебе пою,<br/>И днём, и ночью.<br/> <br/>Я тону в твоих глазах,<br/>Плачет мир после них,<br/>Ты - ангел на земле,<br/>Я о тебе пою,<br/>И днём, и ночью.<br/> <br/>Я тону в твоих глазах,<br/>Плачет мир после них,<br/>Ты - ангел на земле,<br/>Я о тебе пою,<br/>И днём, и ночью.";
-  }
-  }
-  if (i == 4){
-  close[i].onclick = function() {
-	player.loadVideoById("FjJyaT-igAE", 0, "large");
-	document.getElementById("p2").innerHTML = "Ştii de ce plâng chitarele?<br/>Le-au rănit amintirile<br/>Tu, iubire, spune-le ce a fost nu s-a pierdut.<br/>De ce plâng chitarele<br/>Ştiu doar felinarele<br/>Strunele amarele<br/>Ce oare au pierdut?<br/> <br/>Merg pe stradă fetele,<br/>Fetele cochetele<br/>Mă privesc şi-mi strigă-n urmă<br/>Hei! Nu-mi răspunzi la SMS!<br/> <br/>Pe străzi pluteşte doar dragostea,<br/>Noaptea-i amară fără ea<br/>Ea cheamă, cheamă pe-altcineva<br/>Plânge chitara mea!<br/> <br/>Ştii de ce plâng chitarele?<br/>Le-au rănit amintirile<br/>Tu, iubire, spune-le ce a fost nu s-a pierdut.<br/>De ce plâng chitarele<br/>Ştiu doar felinarele<br/>Strunele amarele<br/>Ce oare au pierdut?<br/><br/>De ce plâng chitarele<br/>Când răsare soarele<br/>Cântă păsărilele<br/>Despre durerea mea!<br/> <br/>Pe străzi pluteşte doar dragostea<br/>Noaptea-i amară fără ea<br/>Ea cheamă, cheamă pe-altcineva,<br/>Plânge chitara mea!<br/> <br/>Ştii de ce plâng chitarele?<br/>Le-au rănit amintirile<br/>Tu, iubire, spune-le ce a fost nu s-a pierdut.<br/>De ce plâng chitarele<br/>Ştiu doar felinarele<br/>Strunele amarele<br/>Ce oare au pierdut?<br/> <br/>Ştii de ce plâng chitarele,<br/>Le-au rănit amintirile<br/>Tu, iubire, spune-le<br/>Ce-a fost nu s-a pierdut!<br/>Plâng în noapte strunele,<br/>Strunele nebunele ,<br/>Tu, iubire, spune-le<br/>Ce-a fost nu s-a pierdut!";
-	document.getElementById("p3").innerHTML = "Ты знаешь, отчего плачут гитары?<br/>Их ранили воспоминания.<br/>Ты, любовь, сказажи им, что было, то не потеряно.<br/>Отчего плачут гитары<br/>Знают лишь фонари.<br/>Горькие струны<br/>Что на самом деле потеряли?<br/> <br/>Девушки идут по улице,<br/>Девушки-кокетки.<br/>Видят меня и кричат вслед<br/>Эй! Ты не отвечаешь на СМС!<br/> <br/>По улицам бродит лишь любовь,<br/>Ночь горька без неё.<br/>Она зовёт, зовёт кого-то другого,<br/>Плачет моя гитара!<br/> <br/>Ты знаешь, отчего плачут гитары?<br/>Их ранили воспоминания.<br/>Ты, любовь, сказажи им, что было, то не потеряно.<br/>Отчего плачут гитары<br/>Знают лишь фонари.<br/>Горькие струны,<br/>Что на самом деле потеряли?<br/> <br/>Отчего плачут гитары,<br/>Когда встаёт солнце,<br/>Поют птицы<br/>О моей боли!<br/> <br/>По улицам бродит лишь любовь,<br/>Ночь горька без неё.<br/>Она зовёт, зовут кого-то другого,<br/>Плачет моя гитара!<br/> <br/>Ты знаешь, отчего плачут гитары?<br/>Их ранили воспоминания.<br/>Ты, любовь, сказажи им, что было, то не потеряно.<br/>Отчего плачут гитары<br/>Знают лишь фонари.<br/>Горькие струны,<br/>Что на самом деле потеряли?<br/><br/>Ты знаешь, отчего плачут гитары?<br/>Их ранили воспоминания.<br/>Ты, любовь, скажи им,<br/>Что было, то не потеряно!<br/>Плачут в ночи струны,<br/>Безумные струны,<br/>Ты, любовь, скажи им,<br/>Что было, то не потеряно!";
-  }
-  }
-  if (i == 5){
-  close[i].onclick = function() {
-	player.loadVideoById("gViaOYgV8yI", 0, "large");
-	document.getElementById("p2").innerHTML = "My baby came down from Romania<br/>She was the queen of Transylvania<br/>But now we live in suburbia<br/>Without any friends buzzing you(x2)<br/> <br/>Tsiganizatsia tsiganizatsia<br/>Come on baby this is what you need<br/>Tsiganizatsia tsiganizatsia<br/>Everybody dancing to this beat<br/>Tsiganizatsia tsiganizatsia<br/>Come on baby this is what you need<br/>Tsiganizatsia tsiganizatsia<br/><br/>Disko disko partizani<br/>Disko disko partizani<br/>Parti parti partizani(x2)<br/><br/>Zece, alege,<br/>Nu am, înțelege,<br/>Opt, un tot, (upgrade)<br/>Muzica nonstop.(x2)<br/> <br/>Când te văd mă pierd cu firea,<br/>Nu-mi pot stăpâni privirea,<br/>Dansezi bine, ești mortală,<br/>Și cu frumusețea ta îi bagi pe toți în boală;<br/>Orice bărbat te dorește,<br/>Când te vede înnebunește,<br/>Ți-ar da bani, ți-ar da orice, ți-ar da și casa,<br/>Pentru tine și-ar lăsa nevasta.<br/> <br/>Tsiganizatsia tsiganizatsia<br/>Come on baby this is what you need<br/>Tsiganizatsia tsiganizatsia<br/>Everybody dancing to this beat<br/>Tsiganizatsia tsiganizatsia<br/>Come on baby this is what you need<br/>Tsiganizatsia tsiganizatsia<br/> <br/>Disko disko partizani<br/>Disko disko partizani<br/>Parti parti partizani(x2)<br/> <br/>Zece, alege,<br/>Nu am, înțelege,<br/>Opt, un tot, (upgrade)<br/>Muzica nonstop.(x2)<br/> <br/>Disko disko partizani<br/>Parti parti partizani";
-	document.getElementById("p3").innerHTML = "Моя любимая родом из Румынии,<br/>Она была королевой Трансильвании*,<br/>Но сейчас мы живем в пригороде<br/>Без жужжания друзей вокруг тебя.<br/> <br/>Цыганизация, цыганизация<br/>Давай, детка, это то, что тебе нужно<br/>Цыганизация, цыганизация<br/>Все танцуют в этом ритме<br/>Цыганизация, цыганизация<br/>Давай, детка, это то, что тебе нужно<br/>Цыганизация цыганизация<br/> <br/>Диско диско партизаны<br/>Диско диско партизаны<br/>Парти парти партизаны<br/> <br/>Десять-выбирай<br/>Я не получил что мне было нужно, пойми<br/>Восемь-объединились<br/>Музыка бесконечна!...<br/> <br/>Когда я вижу тебя, я теряю голову,<br/>Я не могу контролировать свои глаза,<br/>Ты хорошо танцуешь, ты сногшибательно красива,<br/>И твоя красота сводит всех с ума,<br/>Каждый мужчина хочет тебя,<br/>Они становятся дикими, когда смотрят на тебя,<br/>Они отдали бы тебе деньги, отдали бы тебе все, даже дом свой​​,<br/>Они оставили бы своих девушек ради тебя.<br/>Музыка бесконечна.<br/> <br/>Цыганизация, цыганизация<br/>Давай, детка, это то, что тебе нужно<br/>Цыганизация, цыганизация<br/>Все танцуют в этом ритме<br/>Цыганизация, цыганизация<br/>Давай, детка, это то, что тебе нужно<br/> <br/>Диско диско партизаны<br/>Диско диско партизаны<br/>Парти парти партизаны";
-  }
-  }
-}
-
-// Add a "checked" symbol when clicking on a list item
-var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'LI') {
-    ev.target.classList.toggle('checked');
-  }
-}, false);
-    </script>
 
 		
 		<h2 class="posit posit-5" style=color:white;>Rebuslot</h2>
