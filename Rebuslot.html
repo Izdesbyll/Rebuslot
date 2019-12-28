@@ -46,7 +46,8 @@
 	"rosu", "viu", "auriu",
 	"mare", "verde", "dulce",
 	"vechi", "galbui", 
-	"eficace", "cumsecade", "roz", "kaki", "gri", "bleu", "maro"];
+	"eficace", "cumsecade", "roz", "kaki", "gri", "bleu", "maro",
+	"tinerică", "cuminte", "săturat", "îmbracat", "ăsta", "muncit", "început"];
 	var index3, imagearray3 = ["canta", "intra", "intarzie", "lucreaza", "copiaza", 
 	"vad", "pot", "merg", "vin", "opresc", "locuiesc", "hotarasc"];
 	var index4, imagearray4 = ["asa", "altfel", "bine", "degeaba", "impreuna", "incet", "repede", "separat", "pe neasteptate", "pe de rost"];
@@ -535,11 +536,13 @@ list.addEventListener('click', function(ev) {
 		}
 		if (document.getElementById("2").src != "file:///D:/WebPages/Rebuslot/off.jpg") 
         {
-		index2 = Math.random();
-		index2 = Math.floor(index2*50);
-		if(index2 > (imagearray2.length-1))
-		index2 = index2%(imagearray2.length-1);
+	if (song == "La nunta asta"){
+		index2 = getRndmFromSet([1,23,24,25,26,27,28,29]);
 		document.rebuslot.subjectquality.src = index2+"adj.jpg";
+		}else{
+		index2 = getRndmFromSet([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29]);
+		document.rebuslot.subjectquality.src = index2+"adj.jpg";
+		}
 		}else{
 		index2 = 0;
 		}
