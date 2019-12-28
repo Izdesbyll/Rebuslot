@@ -742,6 +742,7 @@ list.addEventListener('click', function(ev) {
 			document.rebuslot.subjectessence.src = "clear.jpg";
         }
 	}	
+
 	</script>
 	<style>
 		p {
@@ -896,7 +897,7 @@ ul li.checked::before {
 
 		
 		<h2 class="posit posit-5" style=color:white;>Rebuslot</h2>
-		<form class="posit posit-2" name="rebuslot" style=background-color:black; >
+		<form class="posit posit-2" name="rebuslot" style=background-color:black; onkeypress="return event.keyCode != 13">
 		<table>
 		<tr>
 			<td></td>
@@ -925,12 +926,26 @@ ul li.checked::before {
 			<td></td>
 		</tr>
 		</table>
-		<input type="text" name="input" size="70"/>
+		<input type="text" id="TextBoxId" name="input" size="70"/>
 		<p id="p1">the right answer</p>	
 		</form>
-	<button class="posit posit-3" onclick="RandomImage()">Generate a sentence</button>
-	<button class="posit posit-4"onclick="RightAnswer()">Show the right answer</button>
+	<button id="random" class="posit posit-3" onclick="RandomImage()">Generate a sentence</button>
+	<button id="right" class="posit posit-4"onclick="RightAnswer()">Show the right answer</button>
 	<textarea rows="16" cols="35" class="posit posit-6" id="p2">Song lyrics</textarea> 
 	<textarea rows="16" cols="40" class="posit posit-7" id="p3">Lyrics translation</textarea> 
+<script>
+var input = document.getElementById("TextBoxId");
+// Execute a function when the user releases a key on the keyboard
+input.addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("right").click();
+	document.getElementById("random").click();
+  }
+});
+</script>
 </body>
 </html>
