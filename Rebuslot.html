@@ -39,7 +39,7 @@
 	"lucru", "tablou", "birou",
 	"muzeu", "teatru", 
 	"fotoliu", "mileniu", "exercitiu", "salariu",
-	"eu", "fată", "ea", "părintele", "colț", "masă", "rochia", "nunta", "muzică", "toți", "nimeni", "viață", "suflet", "colivie", "rachie"];
+	"eu", "fată", "ea", "părintele", "colț", "masă", "rochie", "nuntă", "muzică", "toți", "nimeni", "viață", "suflet", "colivie", "rachie"];
 	var index2, imagearray2 = ["bun", "frumos",
 	"mandru", "albastru", "continuu",
 	"mic", "larg", "romanesc",
@@ -47,7 +47,7 @@
 	"mare", "verde", "dulce",
 	"vechi", "galbui", 
 	"eficace", "cumsecade", "roz", "kaki", "gri", "bleu", "maro",
-	"tinerică", "cuminte", "săturat", "îmbracat", "ăsta", "muncit", "început"];
+	"tineric", "cuminte", "săturat", "îmbracat", "ăsta", "muncit", "început"];
 	var index3, imagearray3 = ["canta", "intra", "intarzie", "lucreaza", "copiaza", 
 	"vad", "pot", "merg", "vin", "opresc", "locuiesc", "hotarasc"];
 	var index4, imagearray4 = ["asa", "altfel", "bine", "degeaba", "impreuna", "incet", "repede", "separat", "pe neasteptate", "pe de rost"];
@@ -895,6 +895,29 @@ ul li.checked::before {
 .addBtn:hover {
   background-color: black;
 }
+
+.menu {
+  width: 120px;
+  box-shadow: 0 4px 5px 3px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: none;
+
+  .menu-options {
+    list-style: none;
+    padding: 10px 0;
+
+    .menu-option {
+      font-weight: 500;
+      font-size: 14px;
+      padding: 10px 40px 10px 20px;
+      cursor: pointer;
+	}
+      .menu-option:hover {
+        background: rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
 	</style>
 
 
@@ -936,6 +959,14 @@ ul li.checked::before {
 	<button id="right" class="posit posit-4"onclick="RightAnswer()">Show the right answer</button>
 	<textarea rows="16" cols="35" class="posit posit-6" id="p2">Song lyrics</textarea> 
 	<textarea rows="16" cols="40" class="posit posit-7" id="p3">Lyrics translation</textarea> 
+	
+	<div class="menu">
+  <ul class="menu-options">
+    <li class="menu-option">Russian</li>
+    <li class="menu-option">Surżyk</li>
+    <li class="menu-option">Surid</li>
+  </ul>
+</div>
 <script>
 var input = document.getElementById("TextBoxId");
 // Execute a function when the user releases a key on the keyboard
@@ -949,6 +980,34 @@ input.addEventListener("keyup", function(event) {
 	document.getElementById("random").click();
   }
 });
+const menu = document.querySelector(".menu");
+let menuVisible = false;
+
+const toggleMenu = command => {
+  menu.style.display = command === "show" ? "block" : "none";
+   menuVisible = !menuVisible;
+};
+
+const setPosition = ({ top, left }) => {
+  menu.style.left = `${left}px`;
+  menu.style.top = `${top}px`;
+  toggleMenu('show');
+};
+var output = document.getElementById("p3");
+
+output.addEventListener("click", e => {
+	if(menuVisible)toggleMenu("hide");
+});
+
+output.addEventListener("contextmenu", e => {
+	e.preventDefault();
+	const origin = {
+    left: 600,
+    top: 170
+  };
+  setPosition(origin);
+  return false;
+})
 </script>
 </body>
 </html>
