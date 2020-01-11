@@ -56,6 +56,9 @@
 	"destul", "mult", "putin",
 	"nicaieri", "niciodata"];
 	var index6, index7, index8;
+	var guess, videoPlayer;
+	var videoList = ["TH0oCDziVQQ", "YnopHCL1Jk8", "gViaOYgV8yI"];
+	var curVideo = 0;
 	function getRndmFromSet(set){
 		var rndm = Math.floor(Math.random()*set.length);
 		return set[rndm];
@@ -388,7 +391,7 @@
 	{
 		
 		answer = answer.replace(" buni ", " ");
-		answer = answer.replace(" buna ", " ");
+		answer = answer.replace(" bună ", " ");
 		answer = answer.replace(" bune ", " ");
 		answer = answer.replace(" bun ", " ");
 	}
@@ -409,7 +412,7 @@
 	{
 		
 		answer = answer.replace(" buni", " ");
-		answer = answer.replace(" buna", " ");
+		answer = answer.replace(" bună", " ");
 		answer = answer.replace(" bune", " ");
 		answer = answer.replace(" bun", " ");
 	}
@@ -427,6 +430,12 @@
 		answer = answer.replace("elev ", " ");
 	}
 	document.getElementById("p1").innerHTML = answer;
+	guess = document.getElementById("TextBoxId").value + " ";
+	if (guess == answer){
+	document.getElementById("TextBoxId").style.color = "green";
+	}else{
+	document.getElementById("TextBoxId").style.color = "black";
+	}
 	} 
 	
 	      // 2. This code loads the IFrame Player API code asynchronously.
@@ -464,7 +473,7 @@
       var done = false;
       function onPlayerStateChange(event) {
         if (event.data == YT.PlayerState.PLAYING && !done) {
-          setTimeout(stopVideo, 600000);
+          setTimeout(stopVideo, 6000000);
           done = true;
         }
       }
@@ -487,6 +496,13 @@ var lyrics = 1;
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
+  if (i == 0){
+  close[i].onclick = function() {
+  curVideo = getRndmFromSet([0,1,2]);          
+  player.loadVideoById (videoList[curVideo], 0, "large");  
+	}
+  }
+  
   if (i == 1){
   close[i].onclick = function() {
 	lyrics = 1;
