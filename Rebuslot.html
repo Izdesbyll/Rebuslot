@@ -5,9 +5,10 @@
 	<title>Rebuslot</title>
 	</head>
 <body style=background-color:black;>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
     <div id="player" class="posit posit-1"></div>
-
+	<div class="all">
     
 	<ul id="myUL">
   <li>All songs</li>
@@ -430,12 +431,46 @@
 		answer = answer.replace("elev ", " ");
 	}
 	document.getElementById("p1").innerHTML = answer;
-	guess = document.getElementById("TextBoxId").value + " ";
-	if (guess == answer){
-	document.getElementById("TextBoxId").style.color = "green";
-	}else{
-	document.getElementById("TextBoxId").style.color = "black";
-	}
+	var node = document.getElementById('editor');
+	guess = node.textContent + " ";
+//	if (guess == answer){
+//	document.getElementById("editor").style.color = "green";
+//	}else{
+//	document.getElementById("editor").style.color = "black";
+//	}
+// SQL keywords
+//var keywords = ["select","FROM","WHERE","LIKE","BETWEEN","NOT LIKE","FALSE","NULL","FROM","TRUE","NOT IN"];
+var keywords;
+
+// Keyup event
+$("#editor").on("keyup", function(e){
+  // Space key pressed
+  if (e.keyCode == 32){
+    var newHTML = "";
+	var ans = answer.toUpperCase();
+     keywords = ans.split(" ");
+    // Loop through words
+    $(this).text().replace(/[\s]+/g, " ").trim().split(" ").forEach(function(val){
+      // If word is statement
+      if (keywords.indexOf(val.trim().toUpperCase()) > -1)
+        newHTML += "<span class='statement'>" + val + "&nbsp;</span>";
+      else
+        newHTML += "<span class='other'>" + val + "&nbsp;</span>"; 
+    });
+    $(this).html(newHTML);
+
+    // Set cursor postion to end of text
+    var child = $(this).children();
+    var range = document.createRange();
+    var sel = window.getSelection();
+    range.setStart(child[child.length-1], 1);
+    range.collapse(true);
+    sel.removeAllRanges();
+    sel.addRange(range);
+    this.focus();
+  }
+});
+
 	} 
 	
 	      // 2. This code loads the IFrame Player API code asynchronously.
@@ -792,10 +827,10 @@ list.addEventListener('click', function(ev) {
 	top: 60px;
 	}
 	.posit-3 {
-	bottom: 53px;
+	bottom: 33px;
 	}
 	.posit-4 {
-	bottom: 53px;
+	bottom: 33px;
 	left: 150px;
 	}
 	.posit-5 {
@@ -815,10 +850,21 @@ list.addEventListener('click', function(ev) {
 	color: white;
 	}
 	body {
+	padding: 0;
   margin: 0;
   max-width: 250px;
 }
-
+#editor {
+    width: 511px;
+    height: 20px;
+    padding: 0;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+	}
+.statement {
+	color: red;
+}
 /* Include the padding and border in an element's total width and height */
 * {
   box-sizing: border-box;
@@ -982,7 +1028,8 @@ ul li.checked::before {
 			<td></td>
 		</tr>
 		</table>
-		<input type="text" id="TextBoxId" name="input" size="70"/>
+		
+		<div id="editor" contenteditable="true"></div>
 		<p id="p1">the right answer</p>	
 		</form>
 	<button id="random" class="posit posit-3" onclick="RandomImage()">Generate a sentence</button>
@@ -999,7 +1046,7 @@ ul li.checked::before {
   </ul>
 </div>
 <script>
-var input = document.getElementById("TextBoxId");
+var input = document.getElementById("editor");
 // Execute a function when the user releases a key on the keyboard
 input.addEventListener("keyup", function(event) {
   // Number 13 is the "Enter" key on the keyboard
@@ -1058,5 +1105,6 @@ document.getElementById("p3").innerHTML = "Ea is giotă tinedaya, trăv tă biu 
 }
 }})
 </script>
+</div>
 </body>
 </html>
