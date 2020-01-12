@@ -21,7 +21,7 @@
 	<script>
 	var song;
 	var player;
-	var answer;
+	var answer, answer2;
 	var index, imagearray = ["zero", "un", "doi", "trei", "patru", "cinci", "sase", "sapte", "opt", "noua"];
 	var index1, imagearray1 = ["elev", "scriitor", "pom", "pantof", "student", "specialist", "general", "spaniol", 
 	"copil", "cal", "miel", "vitel", "porumbel", "metru", "leu", "fiu", "membru", "ministru", "iepure", "peste", "caine", "frate", "perete", "unchi", "ochi", "tata", "popa",
@@ -66,6 +66,7 @@
 		}
 	function RightAnswer()
 	{
+		answer2 = answer; 
 		document.getElementById("p1").innerHTML = imagearray[index]+" "+imagearray1[index1]+" "+imagearray2[index2];
 		if((index != 1) || (index1 > 80 && index1 < 83))
 		{
@@ -383,6 +384,7 @@
 		}
 		}
 	answer = document.getElementById("p1").textContent;
+	
 	if (document.getElementById("3").src == "file:///D:/WebPages/Rebuslot/off.jpg")
 	{
 		answer = answer.replace("un ", "");
@@ -430,16 +432,8 @@
 	{
 		answer = answer.replace("elev ", " ");
 	}
-	document.getElementById("p1").innerHTML = answer;
-	var node = document.getElementById('editor');
-	guess = node.textContent + " ";
-//	if (guess == answer){
-//	document.getElementById("editor").style.color = "green";
-//	}else{
-//	document.getElementById("editor").style.color = "black";
-//	}
-// SQL keywords
-//var keywords = ["select","FROM","WHERE","LIKE","BETWEEN","NOT LIKE","FALSE","NULL","FROM","TRUE","NOT IN"];
+	document.getElementById("p1").innerHTML = answer2;
+	
 var keywords;
 
 // Keyup event
@@ -453,9 +447,9 @@ $("#editor").on("keyup", function(e){
     $(this).text().replace(/[\s]+/g, " ").trim().split(" ").forEach(function(val){
       // If word is statement
       if (keywords.indexOf(val.trim().toUpperCase()) > -1)
-        newHTML += "<span class='statement'>" + val + "&nbsp;</span>";
-      else
         newHTML += "<span class='other'>" + val + "&nbsp;</span>"; 
+      else
+		newHTML += "<span class='statement'>" + val + "&nbsp;</span>";
     });
     $(this).html(newHTML);
 
@@ -488,6 +482,10 @@ $("#editor").on("keyup", function(e){
           height: '315',
           width: '560',
           videoId: 'TH0oCDziVQQ',
+		  playerVars: {
+            color: 'white',
+            playlist: "YnopHCL1Jk8,gViaOYgV8yI"
+			},
           events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
@@ -1054,8 +1052,8 @@ input.addEventListener("keyup", function(event) {
     // Cancel the default action, if needed
     event.preventDefault();
     // Trigger the button element with a click
-    document.getElementById("right").click();
-	document.getElementById("random").click();
+    document.getElementById("random").click();
+	document.getElementById("right").click();
   }
 });
 const menu = document.querySelector(".menu");
