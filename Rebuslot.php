@@ -253,7 +253,7 @@
 		document.getElementById("p1").innerHTML = answer+ " " +imagearray4[index4]+ " " +imagearray5[index5];
 		}
 		answer = document.getElementById("p1").textContent;
-		if (document.getElementById("7").src != "file:///C:/wamp64/www/Rebuslot/off.jpg"){
+		if (document.getElementById("7").src != "http://localhost/Rebuslot/off.jpg"){
 		if (index3 == 0){
 		document.getElementById("p1").innerHTML = answer+ " despre";
 		}
@@ -385,12 +385,12 @@
 		}
 	answer = document.getElementById("p1").textContent;
 	
-	if (document.getElementById("3").src == "file:///C:/wamp64/www/Rebuslot/off.jpg")
+	if (document.getElementById("3").src == "http://localhost/Rebuslot/off.jpg")
 	{
 		answer = answer.replace("un ", "");
 		answer = answer.replace("o ", "");
 	}
-	if (document.getElementById("2").src == "file:///C:/wamp64/www/Rebuslot/off.jpg")
+	if (document.getElementById("2").src == "http://localhost/Rebuslot/off.jpg")
 	{
 		
 		answer = answer.replace(" buni ", " ");
@@ -398,20 +398,20 @@
 		answer = answer.replace(" bune ", " ");
 		answer = answer.replace(" bun ", " ");
 	}
-	if (document.getElementById("6").src == "file:///C:/wamp64/www/Rebuslot/off.jpg")
+	if (document.getElementById("6").src == "http://localhost/Rebuslot/off.jpg")
 	{
 		answer = answer.replace(" astazi ", " ");
 	}
-	if (document.getElementById("5").src == "file:///C:/wamp64/www/Rebuslot/off.jpg")
+	if (document.getElementById("5").src == "http://localhost/Rebuslot/off.jpg")
 	{
 		answer = answer.replace(" bine ", " ");
 	}
-	if (document.getElementById("9").src == "file:///C:/wamp64/www/Rebuslot/off.jpg")
+	if (document.getElementById("9").src == "http://localhost/Rebuslot/off.jpg")
 	{
 		answer = answer.replace(" un ", " ");
 		answer = answer.replace(" o ", " ");
 	}
-	if (document.getElementById("8").src == "file:///C:/wamp64/www/Rebuslot/off.jpg")
+	if (document.getElementById("8").src == "http://localhost/Rebuslot/off.jpg")
 	{
 		
 		answer = answer.replace(" buni", " ");
@@ -419,16 +419,16 @@
 		answer = answer.replace(" bune", " ");
 		answer = answer.replace(" bun", " ");
 	}
-	if (document.getElementById("7").src == "file:///C:/wamp64/www/Rebuslot/off.jpg")
+	if (document.getElementById("7").src == "http://localhost/Rebuslot/off.jpg")
 	{
 		answer = answer.replace(" elev ", " ");
 	}
-	if (document.getElementById("4").src == "file:///C:/wamp64/www/Rebuslot/off.jpg")
+	if (document.getElementById("4").src == "http://localhost/Rebuslot/off.jpg")
 	{
 		answer = answer.replace(" vede ", " ");
 		answer = answer.replace(" vad ", " ");
 	}
-	if (document.getElementById("2").src == "file:///C:/wamp64/www/Rebuslot/off.jpg")
+	if (document.getElementById("2").src == "http://localhost/Rebuslot/off.jpg")
 	{
 		answer = answer.replace("elev ", " ");
 	}
@@ -573,7 +573,7 @@ list.addEventListener('click', function(ev) {
 	
 	function RandomImage()
 	{
-		if (document.getElementById("3").src != "file:///C:/wamp64/www/Rebuslot/off.jpg") 
+		if (document.getElementById("3").src != "http://localhost/Rebuslot/off.jpg") 
         {
 		if (song == "La nunta asta"){
 		index = 1;
@@ -585,7 +585,7 @@ list.addEventListener('click', function(ev) {
 		}else{
 		index = 1; 
 		}
-		if (document.getElementById("1").src != "file:///C:/wamp64/www/Rebuslot/off.jpg") 
+		if (document.getElementById("1").src != "http://localhost/Rebuslot/off.jpg") 
         {
 		if (song == "La nunta asta"){
 		index1 = getRndmFromSet([72,73,74,75,76,77,78,79,80,81,82,83,84,85,86]);
@@ -597,7 +597,7 @@ list.addEventListener('click', function(ev) {
 		}else{
 		index1 = 0;
 		}
-		if (document.getElementById("2").src != "file:///C:/wamp64/www/Rebuslot/off.jpg") 
+		if (document.getElementById("2").src != "http://localhost/Rebuslot/off.jpg") 
         {
 	if (song == "La nunta asta"){
 		index2 = getRndmFromSet([1,23,24,25,26,27,28,29]);
@@ -609,7 +609,7 @@ list.addEventListener('click', function(ev) {
 		}else{
 		index2 = 0;
 		}
-		if (document.getElementById("4").src != "file:///C:/wamp64/www/Rebuslot/off.jpg") 
+		if (document.getElementById("4").src != "http://localhost/Rebuslot/off.jpg") 
         {
 		index3 = Math.random();
 		index3 = Math.floor(index3*50);
@@ -619,7 +619,7 @@ list.addEventListener('click', function(ev) {
 		}else{
 		index3 = 5;
 		}
-		if (document.getElementById("5").src != "file:///C:/wamp64/www/Rebuslot/off.jpg") 
+		if (document.getElementById("5").src != "http://localhost/Rebuslot/off.jpg") 
         {
 		index4 = Math.random();
 		index4 = Math.floor(index4*50);
@@ -629,7 +629,7 @@ list.addEventListener('click', function(ev) {
 		}else{
 		index4 = 2; 
 		}
-		if (document.getElementById("6").src != "file:///C:/wamp64/www/Rebuslot/off.jpg") 
+		if (document.getElementById("6").src != "http://localhost/Rebuslot/off.jpg") 
         {
 		index5 = Math.random();
 		index5 = Math.floor(index5*50);
@@ -639,7 +639,7 @@ list.addEventListener('click', function(ev) {
 		}else{
 		index5 = 16;
 		}
-		if (document.getElementById("7").src != "file:///C:/wamp64/www/Rebuslot/off.jpg") 
+		if (document.getElementById("7").src != "http://localhost/Rebuslot/off.jpg") 
         {
 		index6 = Math.random();
 		index6 = Math.floor(index6*50);
@@ -649,7 +649,7 @@ list.addEventListener('click', function(ev) {
 		}else{
 		index6 = 0;
 		}
-		if (document.getElementById("9").src != "file:///C:/wamp64/www/Rebuslot/off.jpg") 
+		if (document.getElementById("9").src != "http://localhost/Rebuslot/off.jpg") 
         {
 		index8 = Math.random();
 		index8 = Math.floor(index8*10);
@@ -659,7 +659,7 @@ list.addEventListener('click', function(ev) {
 		}else{
 		index8 = 1;
 		}
-		if (document.getElementById("8").src != "file:///C:/wamp64/www/Rebuslot/off.jpg") 
+		if (document.getElementById("8").src != "http://localhost/Rebuslot/off.jpg") 
         {
 		index7 = Math.random();
 		index7 = Math.floor(index7*50);
@@ -673,7 +673,7 @@ list.addEventListener('click', function(ev) {
 	function off1()
 	{
 	var x1 = document.getElementById("1").src;
-	 if (x1 != "file:///C:/wamp64/www/Rebuslot/off.jpg") 
+	 if (x1 != "http://localhost/Rebuslot/off.jpg") 
         {
             document.rebuslot.subjectessence.src = "off.jpg";
 			document.rebuslot.subjectquality.src = "off.jpg";
@@ -685,7 +685,7 @@ list.addEventListener('click', function(ev) {
 			document.rebuslot.objectquality.src = "off.jpg";
 			document.rebuslot.objectquantity.src = "off.jpg";
         }
-	if (x1 == "file:///C:/wamp64/www/Rebuslot/off.jpg") 
+	if (x1 == "http://localhost/Rebuslot/off.jpg") 
         {
             document.rebuslot.subjectessence.src = "clear.jpg";
         }
@@ -693,11 +693,11 @@ list.addEventListener('click', function(ev) {
 	function off2()
 	{
 	var x2 = document.getElementById("2").src;
-	 if (x2 != "file:///C:/wamp64/www/Rebuslot/off.jpg") 
+	 if (x2 != "http://localhost/Rebuslot/off.jpg") 
         {
             document.rebuslot.subjectquality.src = "off.jpg";
         }
-	if (x2 == "file:///C:/wamp64/www/Rebuslot/off.jpg") 
+	if (x2 == "http://localhost/Rebuslot/off.jpg") 
         {
             document.rebuslot.subjectquality.src = "clear.jpg";
 			document.rebuslot.subjectessence.src = "clear.jpg";
@@ -706,11 +706,11 @@ list.addEventListener('click', function(ev) {
 	function off3()
 	{
 	var x3 = document.getElementById("3").src;
-	 if (x3 != "file:///C:/wamp64/www/Rebuslot/off.jpg") 
+	 if (x3 != "http://localhost/Rebuslot/off.jpg") 
         {
             document.rebuslot.subjectquantity.src = "off.jpg";
         }
-	if (x3 == "file:///C:/wamp64/www/Rebuslot/off.jpg") 
+	if (x3 == "http://localhost/Rebuslot/off.jpg") 
         {
             document.rebuslot.subjectquantity.src = "clear.jpg";
 			document.rebuslot.subjectessence.src = "clear.jpg";
@@ -719,7 +719,7 @@ list.addEventListener('click', function(ev) {
 	function off4()
 	{
 	var x4 = document.getElementById("4").src;
-	 if (x4 != "file:///C:/wamp64/www/Rebuslot/off.jpg") 
+	 if (x4 != "http://localhost/Rebuslot/off.jpg") 
         {
             document.rebuslot.verbessence.src = "off.jpg";
 			document.rebuslot.verbquality.src = "off.jpg";
@@ -728,7 +728,7 @@ list.addEventListener('click', function(ev) {
 			document.rebuslot.objectquality.src = "off.jpg";
 			document.rebuslot.objectquantity.src = "off.jpg";
         }
-	if (x4 == "file:///C:/wamp64/www/Rebuslot/off.jpg") 
+	if (x4 == "http://localhost/Rebuslot/off.jpg") 
         {
             document.rebuslot.verbessence.src = "clear.jpg";
 			document.rebuslot.subjectessence.src = "clear.jpg";
@@ -737,11 +737,11 @@ list.addEventListener('click', function(ev) {
 	function off5()
 	{
 	var x5 = document.getElementById("5").src;
-	 if (x5 != "file:///C:/wamp64/www/Rebuslot/off.jpg") 
+	 if (x5 != "http://localhost/Rebuslot/off.jpg") 
         {
             document.rebuslot.verbquality.src = "off.jpg";
         }
-	if (x5 == "file:///C:/wamp64/www/Rebuslot/off.jpg") 
+	if (x5 == "http://localhost/Rebuslot/off.jpg") 
         {
             document.rebuslot.verbquality.src = "clear.jpg";
 			document.rebuslot.verbessence.src = "clear.jpg";
@@ -751,11 +751,11 @@ list.addEventListener('click', function(ev) {
 	function off6()
 	{
 	var x6 = document.getElementById("6").src;
-	 if (x6 != "file:///C:/wamp64/www/Rebuslot/off.jpg") 
+	 if (x6 != "http://localhost/Rebuslot/off.jpg") 
         {
             document.rebuslot.verbquantity.src = "off.jpg";
         }
-	if (x6 == "file:///C:/wamp64/www/Rebuslot/off.jpg") 
+	if (x6 == "http://localhost/Rebuslot/off.jpg") 
         {
             document.rebuslot.verbquantity.src = "clear.jpg";
             document.rebuslot.verbessence.src = "clear.jpg";
@@ -765,13 +765,13 @@ list.addEventListener('click', function(ev) {
 	function off7()
 	{
 	var x7 = document.getElementById("7").src;
-	 if (x7 != "file:///C:/wamp64/www/Rebuslot/off.jpg") 
+	 if (x7 != "http://localhost/Rebuslot/off.jpg") 
         {
             document.rebuslot.objectessence.src = "off.jpg";
 			document.rebuslot.objectquality.src = "off.jpg";
 			document.rebuslot.objectquantity.src = "off.jpg";
         }
-	if (x7 == "file:///C:/wamp64/www/Rebuslot/off.jpg") 
+	if (x7 == "http://localhost/Rebuslot/off.jpg") 
         {
             document.rebuslot.objectessence.src = "clear.jpg";
 			document.rebuslot.verbessence.src = "clear.jpg";
@@ -781,11 +781,11 @@ list.addEventListener('click', function(ev) {
 	function off8()
 	{
 	var x8 = document.getElementById("8").src;
-	 if (x8 != "file:///C:/wamp64/www/Rebuslot/off.jpg") 
+	 if (x8 != "http://localhost/Rebuslot/off.jpg") 
         {
             document.rebuslot.objectquality.src = "off.jpg";
         }
-	if (x8 == "file:///C:/wamp64/www/Rebuslot/off.jpg") 
+	if (x8 == "http://localhost/Rebuslot/off.jpg") 
         {
             document.rebuslot.objectquality.src = "clear.jpg";
 			document.rebuslot.objectessence.src = "clear.jpg";
@@ -796,11 +796,11 @@ list.addEventListener('click', function(ev) {
 	function off9()
 	{
 	var x9 = document.getElementById("9").src;
-	 if (x9 != "file:///C:/wamp64/www/Rebuslot/off.jpg") 
+	 if (x9 != "http://localhost/Rebuslot/off.jpg") 
         {
             document.rebuslot.objectquantity.src = "off.jpg";
         }
-	if (x9 == "file:///C:/wamp64/www/Rebuslot/off.jpg") 
+	if (x9 == "http://localhost/Rebuslot/off.jpg") 
         {
             document.rebuslot.objectquantity.src = "clear.jpg";
 			document.rebuslot.objectessence.src = "clear.jpg";
