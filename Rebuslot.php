@@ -5,7 +5,34 @@
 	<title>Rebuslot</title>
 	</head>
 <body style=background-color:black;>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<?php
+	
+	// Create connection_aborted
+	$conn = new mysqli ('localhost','root','');
+	
+	// Check connection 
+	if ($conn->connect_error) {
+		die("Connection failed: " . $conn->connect_error);
+	}
+	//echo "DB Connected successfully";
+	//$result = $conn->query('SHOW databases')
+   // or trigger_error('connect failed: '.join(',', $conn->error_list), E_USER_ERROR);
+	//foreach( $result as $row ) {
+   // echo join(', ', $row), "<br />\r\n";
+	//}
+	$db = mysqli_select_db ($conn, "vocabulary") or die (mysqli_error($conn)); 
+	//	echo " DB is selected as Test successfully";
+	// create INSERT query
+	$sql="INSERT INTO words (Word) VALUES ('eu')";
+	
+	if ($conn->query($sql) === TRUE) {
+	//	echo "New record created successfully";
+	} else {
+		echo "\n Error: " . $conn->error;
+	}
+	
+	mysqli_close($conn);
+	?>
 		<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
     <div id="player" class="posit posit-1"></div>
 	<div class="all">
@@ -435,6 +462,8 @@
 	document.getElementById("p1").innerHTML = answer2;
 	
 var keywords;
+var right = [];
+var wrong = [];
 
 // Keyup event
 $("#editor").on("keyup", function(e){
@@ -448,6 +477,7 @@ $("#editor").on("keyup", function(e){
       // If word is statement
       if (keywords.indexOf(val.trim().toUpperCase()) > -1)
         newHTML += "<span class='other'>" + val + "&nbsp;</span>"; 
+	
       else
 		newHTML += "<span class='statement'>" + val + "&nbsp;</span>";
     });
