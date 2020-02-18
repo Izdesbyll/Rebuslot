@@ -4,38 +4,13 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Rebuslot</title>
 	</head>
+
 <body style=background-color:black;>
-	<?php
-	
-	// Create connection_aborted
-	$conn = new mysqli ('localhost','root','');
-	
-	// Check connection 
-	if ($conn->connect_error) {
-		die("Connection failed: " . $conn->connect_error);
-	}
-	//echo "DB Connected successfully";
-	//$result = $conn->query('SHOW databases')
-   // or trigger_error('connect failed: '.join(',', $conn->error_list), E_USER_ERROR);
-	//foreach( $result as $row ) {
-   // echo join(', ', $row), "<br />\r\n";
-	//}
-	$db = mysqli_select_db ($conn, "vocabulary") or die (mysqli_error($conn)); 
-	//	echo " DB is selected as Test successfully";
-	// create INSERT query
-	$sql="INSERT INTO words (Word) VALUES ('eu')";
-	
-	if ($conn->query($sql) === TRUE) {
-	//	echo "New record created successfully";
-	} else {
-		echo "\n Error: " . $conn->error;
-	}
-	
-	mysqli_close($conn);
-	?>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 		<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
     <div id="player" class="posit posit-1"></div>
-	<div class="all">
     
 	<ul id="myUL">
   <li>All songs</li>
@@ -280,7 +255,7 @@
 		document.getElementById("p1").innerHTML = answer+ " " +imagearray4[index4]+ " " +imagearray5[index5];
 		}
 		answer = document.getElementById("p1").textContent;
-		if (document.getElementById("7").src != "http://localhost/Rebuslot/off.jpg"){
+		if (document.getElementById("7").src != "http://localhost/off.jpg"){
 		if (index3 == 0){
 		document.getElementById("p1").innerHTML = answer+ " despre";
 		}
@@ -412,12 +387,12 @@
 		}
 	answer = document.getElementById("p1").textContent;
 	
-	if (document.getElementById("3").src == "http://localhost/Rebuslot/off.jpg")
+	if (document.getElementById("3").src == "http://localhost/off.jpg")
 	{
 		answer = answer.replace("un ", "");
 		answer = answer.replace("o ", "");
 	}
-	if (document.getElementById("2").src == "http://localhost/Rebuslot/off.jpg")
+	if (document.getElementById("2").src == "http://localhost/off.jpg")
 	{
 		
 		answer = answer.replace(" buni ", " ");
@@ -425,20 +400,20 @@
 		answer = answer.replace(" bune ", " ");
 		answer = answer.replace(" bun ", " ");
 	}
-	if (document.getElementById("6").src == "http://localhost/Rebuslot/off.jpg")
+	if (document.getElementById("6").src == "http://localhost/off.jpg")
 	{
 		answer = answer.replace(" astazi ", " ");
 	}
-	if (document.getElementById("5").src == "http://localhost/Rebuslot/off.jpg")
+	if (document.getElementById("5").src == "http://localhost/off.jpg")
 	{
 		answer = answer.replace(" bine ", " ");
 	}
-	if (document.getElementById("9").src == "http://localhost/Rebuslot/off.jpg")
+	if (document.getElementById("9").src == "http://localhost/off.jpg")
 	{
 		answer = answer.replace(" un ", " ");
 		answer = answer.replace(" o ", " ");
 	}
-	if (document.getElementById("8").src == "http://localhost/Rebuslot/off.jpg")
+	if (document.getElementById("8").src == "http://localhost/off.jpg")
 	{
 		
 		answer = answer.replace(" buni", " ");
@@ -446,24 +421,22 @@
 		answer = answer.replace(" bune", " ");
 		answer = answer.replace(" bun", " ");
 	}
-	if (document.getElementById("7").src == "http://localhost/Rebuslot/off.jpg")
+	if (document.getElementById("7").src == "http://localhost/off.jpg")
 	{
 		answer = answer.replace(" elev ", " ");
 	}
-	if (document.getElementById("4").src == "http://localhost/Rebuslot/off.jpg")
+	if (document.getElementById("4").src == "http://localhost/off.jpg")
 	{
 		answer = answer.replace(" vede ", " ");
 		answer = answer.replace(" vad ", " ");
 	}
-	if (document.getElementById("2").src == "http://localhost/Rebuslot/off.jpg")
+	if (document.getElementById("2").src == "http://localhost/off.jpg")
 	{
 		answer = answer.replace("elev ", " ");
 	}
 	document.getElementById("p1").innerHTML = answer2;
 	
 var keywords;
-var right = [];
-var wrong = [];
 
 // Keyup event
 $("#editor").on("keyup", function(e){
@@ -477,7 +450,6 @@ $("#editor").on("keyup", function(e){
       // If word is statement
       if (keywords.indexOf(val.trim().toUpperCase()) > -1)
         newHTML += "<span class='other'>" + val + "&nbsp;</span>"; 
-	
       else
 		newHTML += "<span class='statement'>" + val + "&nbsp;</span>";
     });
@@ -509,16 +481,15 @@ $("#editor").on("keyup", function(e){
       var player;
       function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
-          height: '315',
-          width: '560',
+          height: '300',
+          width: '540',
           videoId: 'TH0oCDziVQQ',
 		  playerVars: {
             color: 'white',
             playlist: "YnopHCL1Jk8,gViaOYgV8yI"
 			},
           events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
+            'onReady': onPlayerReady
           }
         });
       }
@@ -530,20 +501,6 @@ $("#editor").on("keyup", function(e){
 		document.getElementById("p3").innerHTML = "Я молоденькая девушка, я должна быть послушной,&#13;&#10;Она стесняется, ей холодно, - так сказал батюшка.&#13;&#10;Но мне надоело сидеть в углу стола,&#13;&#10;Сегодня я надела красивое платье.&#13;&#10;&#13;&#10;На этой свадьбе играет только весёлая музыка,&#13;&#10;Все говорят, никто не слушает.&#13;&#10;Я так много сегодня поработала с утра,&#13;&#10;Станцую-ка я хоть разок (х2).&#13;&#10;&#13;&#10;Пусть говорят что угодно, меня не волнует,&#13;&#10;Почему я должна стоять в стороне, когда моя душа хочет танцевать?&#13;&#10;Мне нравится то, что я вырвалась из клетки,&#13;&#10;Сегодня вечером я попробую немножечко вина.&#13;&#10;&#13;&#10;На этой свадьбе играет только весёлая музыка,&#13;&#10;Все говорят, никто не слушает.&#13;&#10;Я так много сегодня поработала с утра,&#13;&#10;Станцую-ка я хоть разок (х4).";
 	  }
 
-      // 5. The API calls this function when the player's state changes.
-      //    The function indicates that when playing a video (state=1),
-      //    the player should play for six seconds and then stop.
-      var done = false;
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-          setTimeout(stopVideo, 6000000);
-          done = true;
-        }
-      }
-      function stopVideo() {
-        player.stopVideo();
-		
-      }
 		// Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
 var i;
@@ -598,12 +555,12 @@ list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');
 	song = ev.target.textContent;
-  }
-}, false);
+  }  
+}, song = "All songs", false);
 	
 	function RandomImage()
 	{
-		if (document.getElementById("3").src != "http://localhost/Rebuslot/off.jpg") 
+		if (document.getElementById("3").src != "http://localhost/off.jpg") 
         {
 		if (song == "La nunta asta"){
 		index = 1;
@@ -615,7 +572,7 @@ list.addEventListener('click', function(ev) {
 		}else{
 		index = 1; 
 		}
-		if (document.getElementById("1").src != "http://localhost/Rebuslot/off.jpg") 
+		if (document.getElementById("1").src != "http://localhost/off.jpg") 
         {
 		if (song == "La nunta asta"){
 		index1 = getRndmFromSet([72,73,74,75,76,77,78,79,80,81,82,83,84,85,86]);
@@ -627,7 +584,7 @@ list.addEventListener('click', function(ev) {
 		}else{
 		index1 = 0;
 		}
-		if (document.getElementById("2").src != "http://localhost/Rebuslot/off.jpg") 
+		if (document.getElementById("2").src != "http://localhost/off.jpg") 
         {
 	if (song == "La nunta asta"){
 		index2 = getRndmFromSet([1,23,24,25,26,27,28,29]);
@@ -639,7 +596,7 @@ list.addEventListener('click', function(ev) {
 		}else{
 		index2 = 0;
 		}
-		if (document.getElementById("4").src != "http://localhost/Rebuslot/off.jpg") 
+		if (document.getElementById("4").src != "http://localhost/off.jpg") 
         {
 		index3 = Math.random();
 		index3 = Math.floor(index3*50);
@@ -649,7 +606,7 @@ list.addEventListener('click', function(ev) {
 		}else{
 		index3 = 5;
 		}
-		if (document.getElementById("5").src != "http://localhost/Rebuslot/off.jpg") 
+		if (document.getElementById("5").src != "http://localhost/off.jpg") 
         {
 		index4 = Math.random();
 		index4 = Math.floor(index4*50);
@@ -659,7 +616,7 @@ list.addEventListener('click', function(ev) {
 		}else{
 		index4 = 2; 
 		}
-		if (document.getElementById("6").src != "http://localhost/Rebuslot/off.jpg") 
+		if (document.getElementById("6").src != "http://localhost/off.jpg") 
         {
 		index5 = Math.random();
 		index5 = Math.floor(index5*50);
@@ -669,7 +626,7 @@ list.addEventListener('click', function(ev) {
 		}else{
 		index5 = 16;
 		}
-		if (document.getElementById("7").src != "http://localhost/Rebuslot/off.jpg") 
+		if (document.getElementById("7").src != "http://localhost/off.jpg") 
         {
 		index6 = Math.random();
 		index6 = Math.floor(index6*50);
@@ -679,7 +636,7 @@ list.addEventListener('click', function(ev) {
 		}else{
 		index6 = 0;
 		}
-		if (document.getElementById("9").src != "http://localhost/Rebuslot/off.jpg") 
+		if (document.getElementById("9").src != "http://localhost/off.jpg") 
         {
 		index8 = Math.random();
 		index8 = Math.floor(index8*10);
@@ -689,7 +646,7 @@ list.addEventListener('click', function(ev) {
 		}else{
 		index8 = 1;
 		}
-		if (document.getElementById("8").src != "http://localhost/Rebuslot/off.jpg") 
+		if (document.getElementById("8").src != "http://localhost/off.jpg") 
         {
 		index7 = Math.random();
 		index7 = Math.floor(index7*50);
@@ -703,7 +660,7 @@ list.addEventListener('click', function(ev) {
 	function off1()
 	{
 	var x1 = document.getElementById("1").src;
-	 if (x1 != "http://localhost/Rebuslot/off.jpg") 
+	 if (x1 != "http://localhost/off.jpg") 
         {
             document.rebuslot.subjectessence.src = "off.jpg";
 			document.rebuslot.subjectquality.src = "off.jpg";
@@ -715,7 +672,7 @@ list.addEventListener('click', function(ev) {
 			document.rebuslot.objectquality.src = "off.jpg";
 			document.rebuslot.objectquantity.src = "off.jpg";
         }
-	if (x1 == "http://localhost/Rebuslot/off.jpg") 
+	if (x1 == "http://localhost/off.jpg") 
         {
             document.rebuslot.subjectessence.src = "clear.jpg";
         }
@@ -723,11 +680,11 @@ list.addEventListener('click', function(ev) {
 	function off2()
 	{
 	var x2 = document.getElementById("2").src;
-	 if (x2 != "http://localhost/Rebuslot/off.jpg") 
+	 if (x2 != "http://localhost/off.jpg") 
         {
             document.rebuslot.subjectquality.src = "off.jpg";
         }
-	if (x2 == "http://localhost/Rebuslot/off.jpg") 
+	if (x2 == "http://localhost/off.jpg") 
         {
             document.rebuslot.subjectquality.src = "clear.jpg";
 			document.rebuslot.subjectessence.src = "clear.jpg";
@@ -736,11 +693,11 @@ list.addEventListener('click', function(ev) {
 	function off3()
 	{
 	var x3 = document.getElementById("3").src;
-	 if (x3 != "http://localhost/Rebuslot/off.jpg") 
+	 if (x3 != "http://localhost/off.jpg") 
         {
             document.rebuslot.subjectquantity.src = "off.jpg";
         }
-	if (x3 == "http://localhost/Rebuslot/off.jpg") 
+	if (x3 == "http://localhost/off.jpg") 
         {
             document.rebuslot.subjectquantity.src = "clear.jpg";
 			document.rebuslot.subjectessence.src = "clear.jpg";
@@ -749,7 +706,7 @@ list.addEventListener('click', function(ev) {
 	function off4()
 	{
 	var x4 = document.getElementById("4").src;
-	 if (x4 != "http://localhost/Rebuslot/off.jpg") 
+	 if (x4 != "http://localhost/off.jpg") 
         {
             document.rebuslot.verbessence.src = "off.jpg";
 			document.rebuslot.verbquality.src = "off.jpg";
@@ -758,7 +715,7 @@ list.addEventListener('click', function(ev) {
 			document.rebuslot.objectquality.src = "off.jpg";
 			document.rebuslot.objectquantity.src = "off.jpg";
         }
-	if (x4 == "http://localhost/Rebuslot/off.jpg") 
+	if (x4 == "http://localhost/off.jpg") 
         {
             document.rebuslot.verbessence.src = "clear.jpg";
 			document.rebuslot.subjectessence.src = "clear.jpg";
@@ -767,11 +724,11 @@ list.addEventListener('click', function(ev) {
 	function off5()
 	{
 	var x5 = document.getElementById("5").src;
-	 if (x5 != "http://localhost/Rebuslot/off.jpg") 
+	 if (x5 != "http://localhost/off.jpg") 
         {
             document.rebuslot.verbquality.src = "off.jpg";
         }
-	if (x5 == "http://localhost/Rebuslot/off.jpg") 
+	if (x5 == "http://localhost/off.jpg") 
         {
             document.rebuslot.verbquality.src = "clear.jpg";
 			document.rebuslot.verbessence.src = "clear.jpg";
@@ -781,11 +738,11 @@ list.addEventListener('click', function(ev) {
 	function off6()
 	{
 	var x6 = document.getElementById("6").src;
-	 if (x6 != "http://localhost/Rebuslot/off.jpg") 
+	 if (x6 != "http://localhost/off.jpg") 
         {
             document.rebuslot.verbquantity.src = "off.jpg";
         }
-	if (x6 == "http://localhost/Rebuslot/off.jpg") 
+	if (x6 == "http://localhost/off.jpg") 
         {
             document.rebuslot.verbquantity.src = "clear.jpg";
             document.rebuslot.verbessence.src = "clear.jpg";
@@ -795,13 +752,13 @@ list.addEventListener('click', function(ev) {
 	function off7()
 	{
 	var x7 = document.getElementById("7").src;
-	 if (x7 != "http://localhost/Rebuslot/off.jpg") 
+	 if (x7 != "http://localhost/off.jpg") 
         {
             document.rebuslot.objectessence.src = "off.jpg";
 			document.rebuslot.objectquality.src = "off.jpg";
 			document.rebuslot.objectquantity.src = "off.jpg";
         }
-	if (x7 == "http://localhost/Rebuslot/off.jpg") 
+	if (x7 == "http://localhost/off.jpg") 
         {
             document.rebuslot.objectessence.src = "clear.jpg";
 			document.rebuslot.verbessence.src = "clear.jpg";
@@ -811,11 +768,11 @@ list.addEventListener('click', function(ev) {
 	function off8()
 	{
 	var x8 = document.getElementById("8").src;
-	 if (x8 != "http://localhost/Rebuslot/off.jpg") 
+	 if (x8 != "http://localhost/off.jpg") 
         {
             document.rebuslot.objectquality.src = "off.jpg";
         }
-	if (x8 == "http://localhost/Rebuslot/off.jpg") 
+	if (x8 == "http://localhost/off.jpg") 
         {
             document.rebuslot.objectquality.src = "clear.jpg";
 			document.rebuslot.objectessence.src = "clear.jpg";
@@ -826,11 +783,11 @@ list.addEventListener('click', function(ev) {
 	function off9()
 	{
 	var x9 = document.getElementById("9").src;
-	 if (x9 != "http://localhost/Rebuslot/off.jpg") 
+	 if (x9 != "http://localhost/off.jpg") 
         {
             document.rebuslot.objectquantity.src = "off.jpg";
         }
-	if (x9 == "http://localhost/Rebuslot/off.jpg") 
+	if (x9 == "http://localhost/off.jpg") 
         {
             document.rebuslot.objectquantity.src = "clear.jpg";
 			document.rebuslot.objectessence.src = "clear.jpg";
@@ -843,37 +800,38 @@ list.addEventListener('click', function(ev) {
 	<style>
 		p {
 		color: white;
+		font-size: 14px;
 	}
 	.posit {
 	position:absolute;
 	}
 	.posit-1 {
-	left: 780px;
-	bottom: 300px;
+	left: 57%;
+	bottom: 40%;
 	}
 	.posit-2 {
-	top: 60px;
+	top: 9%;
 	}
 	.posit-3 {
-	bottom: 33px;
+	bottom: 8%;
 	}
 	.posit-4 {
-	bottom: 33px;
-	left: 150px;
+	bottom: 8%;
+	left: 13%;
 	}
 	.posit-5 {
-	left: 600px;
-	top:10px;
+	left: 43%;
+	top: 0%;
 	}
 	.posit-6 {
-	left: 780px;
-	top: 400px;
+	left: 57%;
+	top: 60%;
 	background-color: black;
 	color: white;
 	}
 	.posit-7 {
-	left: 1050px;
-	top: 400px;
+	left: 78%;
+	top: 60%;
 	background-color: black;
 	color: white;
 	}
@@ -883,7 +841,7 @@ list.addEventListener('click', function(ev) {
   max-width: 250px;
 }
 #editor {
-    width: 511px;
+    width: 465px;
     height: 20px;
     padding: 0;
     background-color: white;
@@ -901,8 +859,8 @@ list.addEventListener('click', function(ev) {
 /* Remove margins and padding from the list */
 ul {
 position: relative;
-left: 520px;
-top: 87px;
+left: 475px;
+top: 85px;
   margin: 0;
   padding: 0;
 }
@@ -914,7 +872,7 @@ ul li {
   padding: 12px 8px 12px 40px;
   list-style-type: none;
   background: #eee;
-  font-size: 18px;
+  font-size: 16px;
   transition: 0.2s;
   
   /* make the list items unselectable */
@@ -1037,22 +995,22 @@ ul li.checked::before {
 		</tr>
 		<tr>
 			<td><p>Subject</p></td>
-			<td><img id="1" name="subjectessence" height="150" width="150" onclick="off1(); return false;"/><br /></td>
-			<td><img id="2" name="subjectquality" height="150" width="150" onclick="off2()"/><br /></td>
-			<td><img id="3" name="subjectquantity" height="150" width="150" onclick="off3()"/><br /></td>
+			<td><img id="1" name="subjectessence" height="130" width="130" onclick="off1(); return false;"/><br /></td>
+			<td><img id="2" name="subjectquality" height="130" width="130" onclick="off2()"/><br /></td>
+			<td><img id="3" name="subjectquantity" height="130" width="130" onclick="off3()"/><br /></td>
 			<td></td>
 		</tr>
 		<tr>
 			<td><p>Verb</p></td>
-			<td><img id="4" name="verbessence" height="150" width="150" onclick="off4()"/><br /></td>
-			<td><img id="5" name="verbquality" height="150" width="150" onclick="off5()"/><br /></td>
-			<td><img id="6" name="verbquantity" height="150" width="150" onclick="off6()"/><br /></td>
+			<td><img id="4" name="verbessence" height="130" width="130" onclick="off4()"/><br /></td>
+			<td><img id="5" name="verbquality" height="130" width="130" onclick="off5()"/><br /></td>
+			<td><img id="6" name="verbquantity" height="130" width="130" onclick="off6()"/><br /></td>
 		</tr>
 		<tr>
 			<td><p>Object</p></td>
-			<td><img id="7" name="objectessence" height="150" width="150" onclick="off7()"/><br /></td>
-			<td><img id="8" name="objectquality" height="150" width="150" onclick="off8()"/><br /></td>
-			<td><img id="9" name="objectquantity" height="150" width="150" onclick="off9()"/><br /></td>
+			<td><img id="7" name="objectessence" height="130" width="130" onclick="off7()"/><br /></td>
+			<td><img id="8" name="objectquality" height="130" width="130" onclick="off8()"/><br /></td>
+			<td><img id="9" name="objectquantity" height="130" width="130" onclick="off9()"/><br /></td>
 			<td></td>
 		</tr>
 		</table>
@@ -1062,8 +1020,8 @@ ul li.checked::before {
 		</form>
 	<button id="random" class="posit posit-3" onclick="RandomImage()">Generate a sentence</button>
 	<button id="right" class="posit posit-4"onclick="RightAnswer()">Show the right answer</button>
-	<textarea rows="16" cols="35" class="posit posit-6" id="p2">Song lyrics</textarea> 
-	<textarea rows="16" cols="40" class="posit posit-7" id="p3">Lyrics translation</textarea> 
+	<textarea rows="13" cols="35" class="posit posit-6" id="p2">Song lyrics</textarea> 
+	<textarea rows="13" cols="35" class="posit posit-7" id="p3">Lyrics translation</textarea> 
 	
 	<div class="menu">
   <ul class="menu-options" id="context">
@@ -1133,6 +1091,5 @@ document.getElementById("p3").innerHTML = "Ea is giotă tinedaya, trăv tă biu 
 }
 }})
 </script>
-</div>
 </body>
 </html>
