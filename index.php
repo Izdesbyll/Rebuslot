@@ -4,22 +4,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Rebuslot</title>
 	</head>
- <?php
-$servername = "localhost";
-$username = "izdesbyll";
-$password = "q14103755.";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-?> 
+ 
 <body style=background-color:black;>
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 		<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
@@ -95,6 +81,26 @@ if ($conn->connect_error) {
 		var rndm = Math.floor(Math.random()*set.length);
 		return set[rndm];
 		}
+	function convert(){
+	var string1=document.getElementById("arr_serialize1");
+	var string2=document.getElementById("arr_serialize2");
+	var string3=document.getElementById("arr_serialize3");
+	var string4=document.getElementById("arr_serialize4");
+	var string5=document.getElementById("arr_serialize5");
+	var string6=document.getElementById("arr_serialize6");
+	NEWstring1 = indexarray.toString();
+	NEWstring2 = index1array.toString();
+	NEWstring3 = index2array.toString();
+	NEWstring4 = index3array.toString();
+	NEWstring5 = index4array.toString();
+	NEWstring6 = index5array.toString();
+	string1.value=NEWstring1;
+	string2.value=NEWstring2;
+	string3.value=NEWstring3;
+	string4.value=NEWstring4;
+	string5.value=NEWstring5;
+	string6.value=NEWstring6;
+	}
 	function RightAnswer()
 	{
 		answer2 = answer; 
@@ -631,6 +637,7 @@ wordcount = indexarray.length + index1array.length + index2array.length + index3
       }
 
       // 4. The API will call this function when the video player is ready.
+	
       function onPlayerReady(event) {
         event.target.playVideo();
 		document.getElementById("p2").innerHTML = "Eu îs fată tinerică, tre’ să fiu cuminte,&#13;&#10;Îi-e ruşine şi e frig, aşa o zis părintele.&#13;&#10;Dar eu m-am săturat să stau la colţ de masă,&#13;&#10;Eu azi m-am îmbracat în rochia cea frumoasă.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă (x2).&#13;&#10;&#13;&#10;Spune, ce n-ar spune, nu mă interesează,&#13;&#10;De ce să stau de-o parte când sufletu-mi dansează.&#13;&#10;Mi-e a început să-mi placă după colivie,&#13;&#10;Şi am să gust oleacă, diseară, de rachie.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă (x4).";
@@ -930,8 +937,8 @@ list.addEventListener('click', function(ev) {
 			document.rebuslot.verbessence.src = "clear.jpg";
 			document.rebuslot.subjectessence.src = "clear.jpg";
         }
-	}	
-	
+	}
+
 	</script>
 	<style>
 		p {
@@ -974,6 +981,10 @@ list.addEventListener('click', function(ev) {
 	.posit-8 {
 	left: 0%;
 	top: 0%;
+	}
+	.posit-9 {
+	left: 12%;
+	top: 1%;
 	}
 	body {
 	padding: 0;
@@ -1122,6 +1133,15 @@ ul li.checked::before {
 }
 	</style>
 		<p class="posit posit-8" style=color:white; id="kw">Known words: </p>
+<form action="config.php" method="post">
+	<input name="arr_serialize1" id="arr_serialize1" type="hidden" value=""/>
+<input name="arr_serialize2" id="arr_serialize2" type="hidden" value=""/>
+<input name="arr_serialize3" id="arr_serialize3" type="hidden" value=""/>
+<input name="arr_serialize4" id="arr_serialize4" type="hidden" value=""/>
+<input name="arr_serialize5" id="arr_serialize5" type="hidden" value=""/>
+<input name="arr_serialize6" id="arr_serialize6" type="hidden" value=""/>		
+	<input id="save" class="posit posit-9" onclick="convert();" name="BTN" type="submit" value="Save progress"/>
+</form>
 		<h2 class="posit posit-5" style=color:white;>Rebuslot</h2>
 		<form class="posit posit-2" name="rebuslot" style=background-color:black; onkeypress="return event.keyCode != 13">
 		<table>
@@ -1155,9 +1175,11 @@ ul li.checked::before {
 		
 		<div id="editor" contenteditable="true"></div>
 		<p id="p1">the right answer</p>	
-		</form>
+	</form>	
+
 	<button id="random" class="posit posit-3" onclick="RandomImage()">Generate a sentence</button>
-	<button id="right" class="posit posit-4"onclick="RightAnswer()">Show the right answer</button>
+	<button id="right" class="posit posit-4" onclick="RightAnswer()">Show the right answer</button>
+
 	<textarea rows="13" cols="35" class="posit posit-6" id="p2">Song lyrics</textarea> 
 	<textarea rows="13" cols="35" class="posit posit-7" id="p3">Lyrics translation</textarea> 
 	
