@@ -20,6 +20,8 @@
 	
 	
 	<script>
+	var phparray2 = new Array();
+	var JSvalue = document.getElementById("PHPvalue2");
 	var song;
 	var player;
 	var answer, answer2;
@@ -77,6 +79,7 @@
 	var guess, videoPlayer;
 	var videoList = ["TH0oCDziVQQ", "YnopHCL1Jk8", "gViaOYgV8yI"];
 	var curVideo = 0;
+
 	function getRndmFromSet(set){
 		var rndm = Math.floor(Math.random()*set.length);
 		return set[rndm];
@@ -100,6 +103,7 @@
 	string4.value=NEWstring4;
 	string5.value=NEWstring5;
 	string6.value=NEWstring6;
+
 	}
 	function RightAnswer()
 	{
@@ -640,6 +644,7 @@ wordcount = indexarray.length + index1array.length + index2array.length + index3
 	
       function onPlayerReady(event) {
         event.target.playVideo();
+	phparray2 = JSvalue.value.split(',');
 		document.getElementById("p2").innerHTML = "Eu îs fată tinerică, tre’ să fiu cuminte,&#13;&#10;Îi-e ruşine şi e frig, aşa o zis părintele.&#13;&#10;Dar eu m-am săturat să stau la colţ de masă,&#13;&#10;Eu azi m-am îmbracat în rochia cea frumoasă.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă (x2).&#13;&#10;&#13;&#10;Spune, ce n-ar spune, nu mă interesează,&#13;&#10;De ce să stau de-o parte când sufletu-mi dansează.&#13;&#10;Mi-e a început să-mi placă după colivie,&#13;&#10;Şi am să gust oleacă, diseară, de rachie.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă (x4).";
 		document.getElementById("p3").innerHTML = "Я молоденькая девушка, я должна быть послушной,&#13;&#10;Она стесняется, ей холодно, - так сказал батюшка.&#13;&#10;Но мне надоело сидеть в углу стола,&#13;&#10;Сегодня я надела красивое платье.&#13;&#10;&#13;&#10;На этой свадьбе играет только весёлая музыка,&#13;&#10;Все говорят, никто не слушает.&#13;&#10;Я так много сегодня поработала с утра,&#13;&#10;Станцую-ка я хоть разок (х2).&#13;&#10;&#13;&#10;Пусть говорят что угодно, меня не волнует,&#13;&#10;Почему я должна стоять в стороне, когда моя душа хочет танцевать?&#13;&#10;Мне нравится то, что я вырвалась из клетки,&#13;&#10;Сегодня вечером я попробую немножечко вина.&#13;&#10;&#13;&#10;На этой свадьбе играет только весёлая музыка,&#13;&#10;Все говорят, никто не слушает.&#13;&#10;Я так много сегодня поработала с утра,&#13;&#10;Станцую-ка я хоть разок (х4).";
 	  }
@@ -1141,6 +1146,9 @@ ul li.checked::before {
 <input name="arr_serialize5" id="arr_serialize5" type="hidden" value=""/>
 <input name="arr_serialize6" id="arr_serialize6" type="hidden" value=""/>		
 	<input id="save" class="posit posit-9" onclick="convert();" name="BTN" type="submit" value="Save progress"/>
+</form>
+<form method="get">
+<input name="PHPvalue2" id="PHPvalue2" type="hidden" value="<?= $arr_serialize2?>"/>
 </form>
 		<h2 class="posit posit-5" style=color:white;>Rebuslot</h2>
 		<form class="posit posit-2" name="rebuslot" style=background-color:black; onkeypress="return event.keyCode != 13">
