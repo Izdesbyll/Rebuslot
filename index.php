@@ -4,7 +4,41 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Rebuslot</title>
 	</head>
- 
+<?php
+$servername = "localhost";
+$username = "izdesbyll";
+$password = "q14103755.";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
+
+mysqli_select_db($conn, "vocabulary");
+
+$sql = mysqli_query($conn, "SELECT * FROM contents_arr");
+while($row = mysqli_fetch_assoc($sql)){
+	
+	$serialize1_explode = explode(" , ",$row['arr_serialize1']); 
+	$serialize2_explode = explode(" , ",$row['arr_serialize2']); 
+	$serialize3_explode = explode(" , ",$row['arr_serialize3']); 
+	$serialize4_explode = explode(" , ",$row['arr_serialize4']); 
+	$serialize5_explode = explode(" , ",$row['arr_serialize5']); 
+	$serialize6_explode = explode(" , ",$row['arr_serialize6']);
+
+}
+
+$arr_serialize1=implode(" , ",$serialize1_explode);
+$arr_serialize2=implode(" , ",$serialize2_explode);
+$arr_serialize3=implode(" , ",$serialize3_explode);
+$arr_serialize4=implode(" , ",$serialize4_explode);
+$arr_serialize5=implode(" , ",$serialize5_explode);
+$arr_serialize6=implode(" , ",$serialize6_explode);
+?> 
 <body style=background-color:black;>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
@@ -20,8 +54,6 @@
 	
 	
 	<script>
-	var phparray2 = new Array();
-	var JSvalue = document.getElementById("PHPvalue2");
 	var song;
 	var player;
 	var answer, answer2;
@@ -103,7 +135,6 @@
 	string4.value=NEWstring4;
 	string5.value=NEWstring5;
 	string6.value=NEWstring6;
-
 	}
 	function RightAnswer()
 	{
@@ -644,9 +675,9 @@ wordcount = indexarray.length + index1array.length + index2array.length + index3
 	
       function onPlayerReady(event) {
         event.target.playVideo();
-	phparray2 = JSvalue.value.split(',');
 		document.getElementById("p2").innerHTML = "Eu îs fată tinerică, tre’ să fiu cuminte,&#13;&#10;Îi-e ruşine şi e frig, aşa o zis părintele.&#13;&#10;Dar eu m-am săturat să stau la colţ de masă,&#13;&#10;Eu azi m-am îmbracat în rochia cea frumoasă.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă (x2).&#13;&#10;&#13;&#10;Spune, ce n-ar spune, nu mă interesează,&#13;&#10;De ce să stau de-o parte când sufletu-mi dansează.&#13;&#10;Mi-e a început să-mi placă după colivie,&#13;&#10;Şi am să gust oleacă, diseară, de rachie.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă (x4).";
 		document.getElementById("p3").innerHTML = "Я молоденькая девушка, я должна быть послушной,&#13;&#10;Она стесняется, ей холодно, - так сказал батюшка.&#13;&#10;Но мне надоело сидеть в углу стола,&#13;&#10;Сегодня я надела красивое платье.&#13;&#10;&#13;&#10;На этой свадьбе играет только весёлая музыка,&#13;&#10;Все говорят, никто не слушает.&#13;&#10;Я так много сегодня поработала с утра,&#13;&#10;Станцую-ка я хоть разок (х2).&#13;&#10;&#13;&#10;Пусть говорят что угодно, меня не волнует,&#13;&#10;Почему я должна стоять в стороне, когда моя душа хочет танцевать?&#13;&#10;Мне нравится то, что я вырвалась из клетки,&#13;&#10;Сегодня вечером я попробую немножечко вина.&#13;&#10;&#13;&#10;На этой свадьбе играет только весёлая музыка,&#13;&#10;Все говорят, никто не слушает.&#13;&#10;Я так много сегодня поработала с утра,&#13;&#10;Станцую-ка я хоть разок (х4).";
+
 	  }
 
 		// Create a "close" button and append it to each list item
@@ -991,6 +1022,10 @@ list.addEventListener('click', function(ev) {
 	left: 12%;
 	top: 1%;
 	}
+.posit-10 {
+	left: 23%;
+	top: 1%;
+	}
 	body {
 	padding: 0;
   margin: 0;
@@ -1144,11 +1179,12 @@ ul li.checked::before {
 <input name="arr_serialize3" id="arr_serialize3" type="hidden" value=""/>
 <input name="arr_serialize4" id="arr_serialize4" type="hidden" value=""/>
 <input name="arr_serialize5" id="arr_serialize5" type="hidden" value=""/>
-<input name="arr_serialize6" id="arr_serialize6" type="hidden" value=""/>		
+<input name="arr_serialize6" id="arr_serialize6" type="hidden" value=""/>	
+	
 	<input id="save" class="posit posit-9" onclick="convert();" name="BTN" type="submit" value="Save progress"/>
 </form>
 <form method="get">
-<input name="PHPvalue2" id="PHPvalue2" type="hidden" value="<?= $arr_serialize2?>"/>
+<input name="PHPvalue" id="PHPvalue" class="posit posit-10" value="<?=$arr_serialize2?>"/>
 </form>
 		<h2 class="posit posit-5" style=color:white;>Rebuslot</h2>
 		<form class="posit posit-2" name="rebuslot" style=background-color:black; onkeypress="return event.keyCode != 13">

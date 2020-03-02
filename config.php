@@ -53,10 +53,10 @@ $sql = "INSERT INTO contents_arr(arr_serialize1, arr_serialize2, arr_serialize3,
 mysqli_query($conn,$sql);
 
 
-	echo "<pre>";
-	echo "1 : ";
-	print_r($arr_serialize7);
-	echo "</pre>";
+//	echo "<pre>";
+//	echo "1 : ";
+//	print_r($arr_serialize7);
+//	echo "</pre>";
 
 	echo "<pre>";
 	echo "2 : ";
@@ -68,24 +68,25 @@ mysqli_query($conn,$sql);
 	print_r($arr_serialize9);
 	echo "</pre>";
 
-	echo "<pre>";
-	echo "4 : ";
-	print_r($arr_serialize10);
-	echo "</pre>";
+//	echo "<pre>";
+//	echo "4 : ";
+//	print_r($arr_serialize10);
+//	echo "</pre>";
 
-	echo "<pre>";
-	echo "5 : ";
-	print_r($arr_serialize11);
-	echo "</pre>";
+//	echo "<pre>";
+//	echo "5 : ";
+//	print_r($arr_serialize11);
+//	echo "</pre>";
 
-	echo "<pre>";
-	echo "6 : ";
-	print_r($arr_serialize12);
-	echo "</pre>";
-
-
+//	echo "<pre>";
+//	echo "6 : ";
+//	print_r($arr_serialize12);
+//	echo "</pre>";
 
 $sql = "DELETE FROM contents_arr WHERE arr_serialize1 = '' AND arr_serialize2 = '' AND arr_serialize3 = '' AND arr_serialize4 ='' AND arr_serialize5 = '' AND arr_serialize6 = '';";
 mysqli_query($conn,$sql);
+
+header("Location: http://localhost/index.php");
 ?> 
+
 	
