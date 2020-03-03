@@ -54,6 +54,7 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 	
 	
 	<script>
+	var JSvalue1, JSvalue2, JSvalue3, JSvalue4, JSvalue5, JSvalue6; 
 	var song;
 	var player;
 	var answer, answer2;
@@ -676,8 +677,44 @@ wordcount = indexarray.length + index1array.length + index2array.length + index3
       function onPlayerReady(event) {
         event.target.playVideo();
 		document.getElementById("p2").innerHTML = "Eu îs fată tinerică, tre’ să fiu cuminte,&#13;&#10;Îi-e ruşine şi e frig, aşa o zis părintele.&#13;&#10;Dar eu m-am săturat să stau la colţ de masă,&#13;&#10;Eu azi m-am îmbracat în rochia cea frumoasă.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă (x2).&#13;&#10;&#13;&#10;Spune, ce n-ar spune, nu mă interesează,&#13;&#10;De ce să stau de-o parte când sufletu-mi dansează.&#13;&#10;Mi-e a început să-mi placă după colivie,&#13;&#10;Şi am să gust oleacă, diseară, de rachie.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă (x4).";
+	JSvalue1 = document.getElementById("PHPvalue1");
+	JSvalue2 = document.getElementById("PHPvalue2");
+	JSvalue3 = document.getElementById("PHPvalue3");
+	JSvalue4 = document.getElementById("PHPvalue4");
+	JSvalue5 = document.getElementById("PHPvalue5");
+	JSvalue6 = document.getElementById("PHPvalue6");
+	indexarray = JSvalue1.value.split(',');
+	index1array = JSvalue2.value.split(',');
+	index2array = JSvalue3.value.split(',');
+	index3array = JSvalue4.value.split(',');
+	index4array = JSvalue5.value.split(',');
+	index5array = JSvalue6.value.split(',');	
+ for( var i = indexarray.length-1; i--;){
+if ( indexarray[i] == "") indexarray.splice(i, 1);
+}
+ for( var i = index1array.length-1; i--;){
+if ( index1array[i] == "") index1array.splice(i, 1);
+}
+ for( var i = index2array.length-1; i--;){
+if ( index2array[i] == "") index2array.splice(i, 1);
+}
+ for( var i = index3array.length-1; i--;){
+if ( index3array[i] == "") index3array.splice(i, 1);
+}
+ for( var i = index4array.length-1; i--;){
+if ( index4array[i] == "") index4array.splice(i, 1);
+}
+ for( var i = index5array.length-1; i--;){
+if ( index5array[i] == "") index5array.splice(i, 1);
+}
+//indexarray = [...new Set(indexarray)];
+//index1array = [...new Set(index1array)];
+//index2array = [...new Set(index2array)];
+//index3array = [...new Set(index3array)];
+//index4array = [...new Set(index4array)];
+//index5array = [...new Set(index5array)];
+ 
 		document.getElementById("p3").innerHTML = "Я молоденькая девушка, я должна быть послушной,&#13;&#10;Она стесняется, ей холодно, - так сказал батюшка.&#13;&#10;Но мне надоело сидеть в углу стола,&#13;&#10;Сегодня я надела красивое платье.&#13;&#10;&#13;&#10;На этой свадьбе играет только весёлая музыка,&#13;&#10;Все говорят, никто не слушает.&#13;&#10;Я так много сегодня поработала с утра,&#13;&#10;Станцую-ка я хоть разок (х2).&#13;&#10;&#13;&#10;Пусть говорят что угодно, меня не волнует,&#13;&#10;Почему я должна стоять в стороне, когда моя душа хочет танцевать?&#13;&#10;Мне нравится то, что я вырвалась из клетки,&#13;&#10;Сегодня вечером я попробую немножечко вина.&#13;&#10;&#13;&#10;На этой свадьбе играет только весёлая музыка,&#13;&#10;Все говорят, никто не слушает.&#13;&#10;Я так много сегодня поработала с утра,&#13;&#10;Станцую-ка я хоть разок (х4).";
-
 	  }
 
 		// Create a "close" button and append it to each list item
@@ -1184,7 +1221,12 @@ ul li.checked::before {
 	<input id="save" class="posit posit-9" onclick="convert();" name="BTN" type="submit" value="Save progress"/>
 </form>
 <form method="get">
-<input name="PHPvalue" id="PHPvalue" class="posit posit-10" value="<?=$arr_serialize2?>"/>
+<input name="PHPvalue1" id="PHPvalue1" type="hidden" value="<?=$arr_serialize1?>"/>
+<input name="PHPvalue2" id="PHPvalue2" type="hidden" value="<?=$arr_serialize2?>"/>
+<input name="PHPvalue3" id="PHPvalue3" type="hidden" value="<?=$arr_serialize3?>"/>
+<input name="PHPvalue4" id="PHPvalue4" type="hidden" value="<?=$arr_serialize4?>"/>
+<input name="PHPvalue5" id="PHPvalue5" type="hidden" value="<?=$arr_serialize5?>"/>
+<input name="PHPvalue6" id="PHPvalue6" type="hidden" value="<?=$arr_serialize6?>"/>
 </form>
 		<h2 class="posit posit-5" style=color:white;>Rebuslot</h2>
 		<form class="posit posit-2" name="rebuslot" style=background-color:black; onkeypress="return event.keyCode != 13">
