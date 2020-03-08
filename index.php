@@ -16,7 +16,7 @@ $conn = new mysqli($servername, $username, $password);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-echo "Connected successfully";
+//echo "Connected successfully";
 
 mysqli_select_db($conn, "vocabulary");
 
@@ -640,7 +640,7 @@ $("#editor").on("keyup", function(e){
     this.focus();
   }
 });
-wordcount = indexarray.length + index1array.length + index2array.length + index3array.length + index4array.length + index5array.length;
+wordcount = indexarray.length + index1array.length + index2array.length + index3array.length + index4array.length + index5array.length -6;
 	var wc = wordcount.toString();
 	document.getElementById("kw").innerHTML = "Known words: " + wc;
 	} 
@@ -689,30 +689,7 @@ wordcount = indexarray.length + index1array.length + index2array.length + index3
 	index3array = JSvalue4.value.split(',');
 	index4array = JSvalue5.value.split(',');
 	index5array = JSvalue6.value.split(',');	
- for( var i = indexarray.length-1; i--;){
-if ( indexarray[i] == "") indexarray.splice(i, 1);
-}
- for( var i = index1array.length-1; i--;){
-if ( index1array[i] == "") index1array.splice(i, 1);
-}
- for( var i = index2array.length-1; i--;){
-if ( index2array[i] == "") index2array.splice(i, 1);
-}
- for( var i = index3array.length-1; i--;){
-if ( index3array[i] == "") index3array.splice(i, 1);
-}
- for( var i = index4array.length-1; i--;){
-if ( index4array[i] == "") index4array.splice(i, 1);
-}
- for( var i = index5array.length-1; i--;){
-if ( index5array[i] == "") index5array.splice(i, 1);
-}
-//indexarray = [...new Set(indexarray)];
-//index1array = [...new Set(index1array)];
-//index2array = [...new Set(index2array)];
-//index3array = [...new Set(index3array)];
-//index4array = [...new Set(index4array)];
-//index5array = [...new Set(index5array)];
+
  
 		document.getElementById("p3").innerHTML = "Я молоденькая девушка, я должна быть послушной,&#13;&#10;Она стесняется, ей холодно, - так сказал батюшка.&#13;&#10;Но мне надоело сидеть в углу стола,&#13;&#10;Сегодня я надела красивое платье.&#13;&#10;&#13;&#10;На этой свадьбе играет только весёлая музыка,&#13;&#10;Все говорят, никто не слушает.&#13;&#10;Я так много сегодня поработала с утра,&#13;&#10;Станцую-ка я хоть разок (х2).&#13;&#10;&#13;&#10;Пусть говорят что угодно, меня не волнует,&#13;&#10;Почему я должна стоять в стороне, когда моя душа хочет танцевать?&#13;&#10;Мне нравится то, что я вырвалась из клетки,&#13;&#10;Сегодня вечером я попробую немножечко вина.&#13;&#10;&#13;&#10;На этой свадьбе играет только весёлая музыка,&#13;&#10;Все говорят, никто не слушает.&#13;&#10;Я так много сегодня поработала с утра,&#13;&#10;Станцую-ка я хоть разок (х4).";
 	  }
