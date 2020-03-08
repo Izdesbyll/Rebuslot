@@ -52,8 +52,8 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
   <li>Disko partizani</li>
 </ul>
 	
-	
 	<script>
+	var synthesis = window.speechSynthesis;
 	var JSvalue1, JSvalue2, JSvalue3, JSvalue4, JSvalue5, JSvalue6; 
 	var song;
 	var player;
@@ -533,6 +533,31 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 		image1 = true;
 	}
 	document.getElementById("p1").innerHTML = answer2;
+
+if ('speechSynthesis' in window) {
+
+  var synthesis = window.speechSynthesis;
+
+  // Get the first `en` language voice in the list
+  var voice = synthesis.getVoices().filter(function(voice) {
+    return voice.lang === 'ro';
+  })[0];
+
+  // Create an utterance object
+  var utterance = new SpeechSynthesisUtterance(answer2);
+
+  // Set utterance properties
+  utterance.voice = voice;
+  utterance.pitch = 0.5;
+  utterance.rate = 1.0;
+  utterance.volume = 0.8;
+
+  // Speak the utterance
+  synthesis.speak(utterance);
+
+} else {
+  console.log('Text-to-speech not supported.');
+}
 	
 var keywords;
 var spacecount = 0;
