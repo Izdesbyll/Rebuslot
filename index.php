@@ -665,7 +665,26 @@ $("#editor").on("keyup", function(e){
     this.focus();
   }
 });
-wordcount = indexarray.length + index1array.length + index2array.length + index3array.length + index4array.length + index5array.length -6;
+var minus = 0; 
+if (indexarray.includes(0)){
+	minus = minus + 1;
+}
+if (index1array.includes(0)){
+	minus = minus + 1;
+}
+if (index2array.includes(0)){
+	minus = minus + 1;
+}
+if (index3array.includes(0)){
+	minus = minus + 1;
+}
+if (index4array.includes(0)){
+	minus = minus + 1;
+}
+if (index5array.includes(0)){
+	minus = minus + 1;
+}
+wordcount = indexarray.length + index1array.length + index2array.length + index3array.length + index4array.length + index5array.length - minus;
 	var wc = wordcount.toString();
 	document.getElementById("kw").innerHTML = "Known words: " + wc;
 	} 
@@ -708,12 +727,18 @@ wordcount = indexarray.length + index1array.length + index2array.length + index3
 	JSvalue4 = document.getElementById("PHPvalue4");
 	JSvalue5 = document.getElementById("PHPvalue5");
 	JSvalue6 = document.getElementById("PHPvalue6");
-	indexarray = JSvalue1.value.split(',');
-	index1array = JSvalue2.value.split(',');
-	index2array = JSvalue3.value.split(',');
-	index3array = JSvalue4.value.split(',');
-	index4array = JSvalue5.value.split(',');
-	index5array = JSvalue6.value.split(',');	
+	index6array = JSvalue1.value.split(',');
+	index7array = JSvalue2.value.split(',');
+	index8array = JSvalue3.value.split(',');
+	index9array = JSvalue4.value.split(',');
+	index10array = JSvalue5.value.split(',');
+	index11array = JSvalue6.value.split(',');	
+	indexarray = index6array.map(Number);
+	index1array = index7array.map(Number);
+	index2array = index8array.map(Number);
+	index3array = index9array.map(Number);
+	index4array = index10array.map(Number);
+	index5array = index11array.map(Number);
 
  
 		document.getElementById("p3").innerHTML = "Я молоденькая девушка, я должна быть послушной,&#13;&#10;Она стесняется, ей холодно, - так сказал батюшка.&#13;&#10;Но мне надоело сидеть в углу стола,&#13;&#10;Сегодня я надела красивое платье.&#13;&#10;&#13;&#10;На этой свадьбе играет только весёлая музыка,&#13;&#10;Все говорят, никто не слушает.&#13;&#10;Я так много сегодня поработала с утра,&#13;&#10;Станцую-ка я хоть разок (х2).&#13;&#10;&#13;&#10;Пусть говорят что угодно, меня не волнует,&#13;&#10;Почему я должна стоять в стороне, когда моя душа хочет танцевать?&#13;&#10;Мне нравится то, что я вырвалась из клетки,&#13;&#10;Сегодня вечером я попробую немножечко вина.&#13;&#10;&#13;&#10;На этой свадьбе играет только весёлая музыка,&#13;&#10;Все говорят, никто не слушает.&#13;&#10;Я так много сегодня поработала с утра,&#13;&#10;Станцую-ка я хоть разок (х4).";
@@ -1062,8 +1087,8 @@ list.addEventListener('click', function(ev) {
 	top: 1%;
 	}
 .posit-10 {
-	left: 23%;
-	top: 1%;
+	left: 28%;
+	top: 86%;
 	}
 	body {
 	padding: 0;
@@ -1267,6 +1292,7 @@ ul li.checked::before {
 
 	<button id="random" class="posit posit-3" onclick="RandomImage()">Generate a sentence</button>
 	<button id="right" class="posit posit-4" onclick="RightAnswer()">Show the right answer</button>
+	<img id="10" name="sound" class="posit posit-10" height ="50" width="50" onclick="off10()" src="soundon.jpg"/>
 
 	<textarea rows="13" cols="35" class="posit posit-6" id="p2">Song lyrics</textarea> 
 	<textarea rows="13" cols="35" class="posit posit-7" id="p3">Lyrics translation</textarea> 
