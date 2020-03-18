@@ -553,8 +553,10 @@ if ('speechSynthesis' in window) {
   utterance.volume = 0.8;
 
   // Speak the utterance
+  var x10 = document.getElementById("10").src;
+  if (x10 == "http://localhost/soundon.jpg"){
   synthesis.speak(utterance);
-
+  }
 } else {
   console.log('Text-to-speech not supported.');
 }
@@ -1038,6 +1040,15 @@ list.addEventListener('click', function(ev) {
 			document.rebuslot.subjectessence.src = "clear.jpg";
         }
 	}
+	function off10()
+	{
+		var x10 = document.getElementById("10").src;
+		if (x10 == "http://localhost/soundon.jpg"){
+			document.sound.src = "soundoff.jpg";
+		}else{
+			document.sound.src = "soundon.jpg";
+		}
+	}
 
 	</script>
 	<style>
@@ -1292,7 +1303,7 @@ ul li.checked::before {
 
 	<button id="random" class="posit posit-3" onclick="RandomImage()">Generate a sentence</button>
 	<button id="right" class="posit posit-4" onclick="RightAnswer()">Show the right answer</button>
-	<img id="10" name="sound" class="posit posit-10" height ="50" width="50" onclick="off10()" src="soundon.jpg"/>
+	<img id="10" name="sound" class="posit posit-10" height ="50" width="50" src="soundon.jpg" onclick="off10()" />
 
 	<textarea rows="13" cols="35" class="posit posit-6" id="p2">Song lyrics</textarea> 
 	<textarea rows="13" cols="35" class="posit posit-7" id="p3">Lyrics translation</textarea> 
