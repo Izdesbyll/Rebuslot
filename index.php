@@ -813,6 +813,36 @@ list.addEventListener('click', function(ev) {
 		}else{
 		index = getRndmFromSet([0,1,2,3,4,5,6,7,8,9]);
 		document.rebuslot.subjectquantity.src = index+".jpg";
+		if (index == 0){
+			document.rebuslot.subjectquantity.title = "0";
+		}
+		if (index == 1){
+			document.rebuslot.subjectquantity.title = "1";
+		}
+		if (index == 2){
+			document.rebuslot.subjectquantity.title = "2";
+		}
+		if (index == 3){
+			document.rebuslot.subjectquantity.title = "3";
+		}
+		if (index == 4){
+			document.rebuslot.subjectquantity.title = "4";
+		}
+		if (index == 5){
+			document.rebuslot.subjectquantity.title = "5";
+		}
+		if (index == 6){
+			document.rebuslot.subjectquantity.title = "6";
+		}
+		if (index == 7){
+			document.rebuslot.subjectquantity.title = "7";
+		}
+		if (index == 8){
+			document.rebuslot.subjectquantity.title = "8";
+		}
+		if (index == 9){
+			document.rebuslot.subjectquantity.title = "9";
+		}
 		}
 		}else{
 		index = 1; 
@@ -1052,6 +1082,7 @@ list.addEventListener('click', function(ev) {
 
 	</script>
 	<style>
+
 		p {
 		color: white;
 		font-size: 14px;
@@ -1277,22 +1308,22 @@ ul li.checked::before {
 		</tr>
 		<tr>
 			<td><p>Subject</p></td>
-			<td><img id="1" name="subjectessence" height="130" width="130" onclick="off1(); return false;"/><br /></td>
-			<td><img id="2" name="subjectquality" height="130" width="130" onclick="off2()"/><br /></td>
-			<td><img id="3" name="subjectquantity" height="130" width="130" onclick="off3()"/><br /></td>
+			<td><img id="1" title="?" name="subjectessence" height="130" width="130" onclick="off1(); return false;"/><br /></td>
+			<td><img id="2" title="?" name="subjectquality" height="130" width="130" onclick="off2()"/><br /></td>
+			<td><img id="3" title="?" name="subjectquantity" height="130" width="130" onclick="off3()"/><br /></td>
 			<td></td>
 		</tr>
 		<tr>
 			<td><p>Verb</p></td>
-			<td><img id="4" name="verbessence" height="130" width="130" onclick="off4()"/><br /></td>
-			<td><img id="5" name="verbquality" height="130" width="130" onclick="off5()"/><br /></td>
-			<td><img id="6" name="verbquantity" height="130" width="130" onclick="off6()"/><br /></td>
+			<td><img id="4" title="?" name="verbessence" height="130" width="130" onclick="off4()"/><br /></td>
+			<td><img id="5" title="?" name="verbquality" height="130" width="130" onclick="off5()"/><br /></td>
+			<td><img id="6" title="?" name="verbquantity" height="130" width="130" onclick="off6()"/><br /></td>
 		</tr>
 		<tr>
 			<td><p>Object</p></td>
-			<td><img id="7" name="objectessence" height="130" width="130" onclick="off7()"/><br /></td>
-			<td><img id="8" name="objectquality" height="130" width="130" onclick="off8()"/><br /></td>
-			<td><img id="9" name="objectquantity" height="130" width="130" onclick="off9()"/><br /></td>
+			<td><img id="7" title="?" name="objectessence" height="130" width="130" onclick="off7()"/><br /></td>
+			<td><img id="8" title="?" name="objectquality" height="130" width="130" onclick="off8()"/><br /></td>
+			<td><img id="9" title="?" name="objectquantity" height="130" width="130" onclick="off9()"/><br /></td>
 			<td></td>
 		</tr>
 		</table>
