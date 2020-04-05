@@ -722,7 +722,7 @@ wordcount = indexarray.length + index1array.length + index2array.length + index3
 	
       function onPlayerReady(event) {
         event.target.playVideo();
-		document.getElementById("p2").innerHTML = "Eu îs fată tinerică, tre’ să fiu cuminte,&#13;&#10;Îi-e ruşine şi e frig, aşa o zis părintele.&#13;&#10;Dar eu m-am săturat să stau la colţ de masă,&#13;&#10;Eu azi m-am îmbracat în rochia cea frumoasă.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă (x2).&#13;&#10;&#13;&#10;Spune, ce n-ar spune, nu mă interesează,&#13;&#10;De ce să stau de-o parte când sufletu-mi dansează.&#13;&#10;Mi-e a început să-mi placă după colivie,&#13;&#10;Şi am să gust oleacă, diseară, de rachie.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă (x4).";
+		document.getElementById("p2").innerHTML = "Eu îs fată tinerică, tre’ să fiu cuminte,&#13;&#10;Îi-e ruşine şi e frig, aşa o zis părintele.&#13;&#10;Dar eu m-am săturat să stau la colţ de masă,&#13;&#10;Eu azi m-am îmbracat în rochia cea frumoasă.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă.&#13;&#10;&#13;&#10;Spune, ce n-ar spune, nu mă interesează,&#13;&#10;De ce să stau de-o parte când sufletu-mi dansează.&#13;&#10;Mi-e a început să-mi placă după colivie,&#13;&#10;Şi am să gust oleacă, diseară, de rachie.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă.";
 	JSvalue1 = document.getElementById("PHPvalue1");
 	JSvalue2 = document.getElementById("PHPvalue2");
 	JSvalue3 = document.getElementById("PHPvalue3");
@@ -772,7 +772,7 @@ for (i = 0; i < close.length; i++) {
   close[i].onclick = function() {
 	lyrics = 1;
 	player.loadVideoById("TH0oCDziVQQ", 0, "large");
-	document.getElementById("p2").innerHTML = "Eu îs fată tinerică, tre’ să fiu cuminte,&#13;&#10;Îi-e ruşine şi e frig, aşa o zis părintele.&#13;&#10;Dar eu m-am săturat să stau la colţ de masă,&#13;&#10;Eu azi m-am îmbracat în rochia cea frumoasă.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă (x2).&#13;&#10;&#13;&#10;Spune, ce n-ar spune, nu mă interesează,&#13;&#10;De ce să stau de-o parte când sufletu-mi dansează.&#13;&#10;Mi-e a început să-mi placă după colivie,&#13;&#10;Şi am să gust oleacă, diseară, de rachie.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă (x4).";
+	document.getElementById("p2").innerHTML = "Eu îs fată tinerică, tre’ să fiu cuminte,&#13;&#10;Îi-e ruşine şi e frig, aşa o zis părintele.&#13;&#10;Dar eu m-am săturat să stau la colţ de masă,&#13;&#10;Eu azi m-am îmbracat în rochia cea frumoasă.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă.&#13;&#10;&#13;&#10;Spune, ce n-ar spune, nu mă interesează,&#13;&#10;De ce să stau de-o parte când sufletu-mi dansează.&#13;&#10;Mi-e a început să-mi placă după colivie,&#13;&#10;Şi am să gust oleacă, diseară, de rachie.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă .";
 	document.getElementById("p3").innerHTML = "Я молоденькая девушка, я должна быть послушной,&#13;&#10;Она стесняется, ей холодно, - так сказал батюшка.&#13;&#10;Но мне надоело сидеть в углу стола,&#13;&#10;Сегодня я надела красивое платье.&#13;&#10;&#13;&#10;На этой свадьбе играет только весёлая музыка,&#13;&#10;Все говорят, никто не слушает.&#13;&#10;Я так много сегодня поработала с утра,&#13;&#10;Станцую-ка я хоть разок (х2).&#13;&#10;&#13;&#10;Пусть говорят что угодно, меня не волнует,&#13;&#10;Почему я должна стоять в стороне, когда моя душа хочет танцевать?&#13;&#10;Мне нравится то, что я вырвалась из клетки,&#13;&#10;Сегодня вечером я попробую немножечко вина.&#13;&#10;&#13;&#10;На этой свадьбе играет только весёлая музыка,&#13;&#10;Все говорят, никто не слушает.&#13;&#10;Я так много сегодня поработала с утра,&#13;&#10;Станцую-ка я хоть разок (х4).";
   }
   }
@@ -780,15 +780,15 @@ for (i = 0; i < close.length; i++) {
   close[i].onclick = function() {
 	lyrics = 2;
 	player.loadVideoById("YnopHCL1Jk8", 45, "large");
-	document.getElementById("p2").innerHTML = "Mai-ha-hi&#13;&#10;Mai-ha-hu&#13;&#10;Mai-ha-ha&#13;&#10;Mai-ha-ha-ha (x2)&#13;&#10;&#13;&#10;Alo, salut,&#13;&#10;Sunt eu, un haiduc&#13;&#10;Și te rog, iubirea mea, primește fericirea.&#13;&#10;Alo, alo,&#13;&#10;Sunt eu, Picasso,&#13;&#10;Ți-am dat bip&#13;&#10;și sunt voinic,&#13;&#10;dar să știi, nu-ți cer nimic.&#13;&#10;&#13;&#10;Vrei să pleci, dar nu mă, nu mă iei,&#13;&#10;Nu mă, nu mă iei,&#13;&#10;Nu mă, nu mă, nu mă iei,&#13;&#10;Chipul tău și dragostea din tei&#13;&#10;Mi-amintesc de ochii tăi (x2)&#13;&#10;&#13;&#10;Te sun să-ți spun&#13;&#10;ce simt acum,&#13;&#10;Alo, iubirea mea, sunt eu, fericirea.&#13;&#10;Alo, alo,&#13;&#10;sunt iarăși eu, Picasso,&#13;&#10;Ți-am dat bip, și sunt voinic&#13;&#10;Dar să știi nu-ți cer nimic.&#13;&#10;&#13;&#10;Vrei să pleci, dar nu mă, nu mă iei,&#13;&#10;Nu mă, nu mă iei,&#13;&#10;Nu mă, nu mă, nu mă iei,&#13;&#10;Chipul tău și dragostea din tei&#13;&#10;Mi-amintesc de ochii tăi. (x2)&#13;&#10;&#13;&#10;Mai-ha-hi&#13;&#10;Mai-ha-hu&#13;&#10;Mai-ha-ha&#13;&#10;Mai-ha-ha-ha (x2)&#13;&#10;&#13;&#10;Vrei să pleci, dar nu mă, nu mă iei&#13;&#10;Nu mă, nu mă iei&#13;&#10;Nu mă, nu mă, nu mă iei,&#13;&#10;Chipul tău și dragostea din tei,&#13;&#10;Mi-amintesc de ochii tăi. (x2)";
-	document.getElementById("p3").innerHTML = "Mai-ha-hi&#13;&#10;Mai-ha-hi&#13;&#10;Mai-ha-hu&#13;&#10;Mai-ha-ha<br/>Mai-ha-ha-ha (x2)&#13;&#10;&#13;&#10;Алло, привет,&#13;&#10;Это я… Хайдук&#13;&#10;И я прошу, моя любимая, сделай меня счастливым,&#13;&#10;Алло… алло,&#13;&#10;Это я… Пикассо,&#13;&#10;Я тебе звоню,&#13;&#10;И я чист перед тобой,&#13;&#10;Знай, я ни о чем тебя не прошу&#13;&#10;&#13;&#10;Ты хочешь идти, но ты не берёшь меня с собой,&#13;&#10;нет, ты не берёшь меня с собой,&#13;&#10;не берёшь меня с собой, нет&#13;&#10;Твоё лицо и любовь под липами&#13;&#10;Напоминают мне о твоих глазах (х2)&#13;&#10;&#13;&#10;Я звоню тебе, чтобы сказать,&#13;&#10;Что я чувствую сейчас.&#13;&#10;Алло, любовь моя, это я, счастье моё,&#13;&#10;Алло, алло, это опять я, Пикассо.&#13;&#10;Я тебе звоню, я чист перед тобой&#13;&#10;Знай, я ни о чем тебя не прошу&#13;&#10;&#13;&#10;Ты хочешь идти, но ты не берёшь меня с собой,&#13;&#10;Нет, ты не берёшь меня с собой,&#13;&#10;Не берёшь меня с собой, нет&#13;&#10;Твоё лицо и любовь под липами&#13;&#10;Напоминают мне о твоих глазах (х2)&#13;&#10;&#13;&#10;Mai-ha-hi&#13;&#10;Mai-ha-hu&#13;&#10;Mai-ha-ha&#13;&#10;Mai-ha-ha-ha (x2)&#13;&#10;&#13;&#10;Ты хочешь идти, но ты не берёшь меня с собой,&#13;&#10;Нет, ты не берёшь меня с собой,&#13;&#10;Не берёшь меня с собой, нет&#13;&#10;Tвоё лицо и любовь под липами&#13;&#10;Напоминают мне о твоих глазах (х2)&#13;&#10;Mai-ha-hu&#13;&#10;Mai-ha-ha&#13;&#10;Mai-ha-ha-ha (x2)";
+	document.getElementById("p2").innerHTML = "Mai-ha-hi&#13;&#10;Mai-ha-hu&#13;&#10;Mai-ha-ha&#13;&#10;Mai-ha-ha-ha&#13;&#10;&#13;&#10;Alo, salut,&#13;&#10;Sunt eu, un haiduc&#13;&#10;Și te rog, iubirea mea, primește fericirea.&#13;&#10;Alo, alo,&#13;&#10;Sunt eu, Picasso,&#13;&#10;Ți-am dat bip&#13;&#10;și sunt voinic,&#13;&#10;dar să știi, nu-ți cer nimic.&#13;&#10;&#13;&#10;Vrei să pleci, dar nu mă, nu mă iei,&#13;&#10;Nu mă, nu mă iei,&#13;&#10;Nu mă, nu mă, nu mă iei,&#13;&#10;Chipul tău și dragostea din tei&#13;&#10;Mi-amintesc de ochii tăi&#13;&#10;&#13;&#10;Te sun să-ți spun&#13;&#10;ce simt acum,&#13;&#10;Alo, iubirea mea, sunt eu, fericirea.&#13;&#10;Alo, alo,&#13;&#10;sunt iarăși eu, Picasso,&#13;&#10;Ți-am dat bip, și sunt voinic&#13;&#10;Dar să știi nu-ți cer nimic.&#13;&#10;&#13;&#10;Vrei să pleci, dar nu mă, nu mă iei,&#13;&#10;Nu mă, nu mă iei,&#13;&#10;Nu mă, nu mă, nu mă iei,&#13;&#10;Chipul tău și dragostea din tei&#13;&#10;Mi-amintesc de ochii tăi.&#13;&#10;&#13;&#10;Mai-ha-hi&#13;&#10;Mai-ha-hu&#13;&#10;Mai-ha-ha&#13;&#10;Mai-ha-ha-ha&#13;&#10;&#13;&#10;Vrei să pleci, dar nu mă, nu mă iei&#13;&#10;Nu mă, nu mă iei&#13;&#10;Nu mă, nu mă, nu mă iei,&#13;&#10;Chipul tău și dragostea din tei,&#13;&#10;Mi-amintesc de ochii tăi.";
+	document.getElementById("p3").innerHTML = "Mai-ha-hi&#13;&#10;Mai-ha-hi&#13;&#10;Mai-ha-hu&#13;&#10;Mai-ha-ha<br/>Mai-ha-ha-ha &#13;&#10;&#13;&#10;Алло, привет,&#13;&#10;Это я… Хайдук&#13;&#10;И я прошу, моя любимая, сделай меня счастливым,&#13;&#10;Алло… алло,&#13;&#10;Это я… Пикассо,&#13;&#10;Я тебе звоню,&#13;&#10;И я чист перед тобой,&#13;&#10;Знай, я ни о чем тебя не прошу&#13;&#10;&#13;&#10;Ты хочешь идти, но ты не берёшь меня с собой,&#13;&#10;нет, ты не берёшь меня с собой,&#13;&#10;не берёшь меня с собой, нет&#13;&#10;Твоё лицо и любовь под липами&#13;&#10;Напоминают мне о твоих глазах (х2)&#13;&#10;&#13;&#10;Я звоню тебе, чтобы сказать,&#13;&#10;Что я чувствую сейчас.&#13;&#10;Алло, любовь моя, это я, счастье моё,&#13;&#10;Алло, алло, это опять я, Пикассо.&#13;&#10;Я тебе звоню, я чист перед тобой&#13;&#10;Знай, я ни о чем тебя не прошу&#13;&#10;&#13;&#10;Ты хочешь идти, но ты не берёшь меня с собой,&#13;&#10;Нет, ты не берёшь меня с собой,&#13;&#10;Не берёшь меня с собой, нет&#13;&#10;Твоё лицо и любовь под липами&#13;&#10;Напоминают мне о твоих глазах (х2)&#13;&#10;&#13;&#10;Mai-ha-hi&#13;&#10;Mai-ha-hu&#13;&#10;Mai-ha-ha&#13;&#10;Mai-ha-ha-ha &#13;&#10;&#13;&#10;Ты хочешь идти, но ты не берёшь меня с собой,&#13;&#10;Нет, ты не берёшь меня с собой,&#13;&#10;Не берёшь меня с собой, нет&#13;&#10;Tвоё лицо и любовь под липами&#13;&#10;Напоминают мне о твоих глазах (х2)&#13;&#10;Mai-ha-hu&#13;&#10;Mai-ha-ha&#13;&#10;Mai-ha-ha-ha ";
   }
   }
   if (i == 3){
   close[i].onclick = function() {
 	lyrics = 3;
 	player.loadVideoById("gViaOYgV8yI", 0, "large");
-	document.getElementById("p2").innerHTML = "My baby came down from Romania&#13;&#10;She was the queen of Transylvania&#13;&#10;But now we live in suburbia&#13;&#10;Without any friends buzzing you(x2)&#13;&#10;&#13;&#10;Tsiganizatsia tsiganizatsia&#13;&#10;Come on baby this is what you need&#13;&#10;Tsiganizatsia tsiganizatsia&#13;&#10;Everybody dancing to this beat&#13;&#10;Tsiganizatsia tsiganizatsia&#13;&#10;Come on baby this is what you need&#13;&#10;Tsiganizatsia tsiganizatsia&#13;&#10;&#13;&#10;Disko disko partizani&#13;&#10;Disko disko partizani&#13;&#10;Parti parti partizani(x2)&#13;&#10;&#13;&#10;Zece, alege,&#13;&#10;Nu am, înțelege,&#13;&#10;Opt, un tot, (upgrade)&#13;&#10;Muzica nonstop.(x2)&#13;&#10;&#13;&#10;Când te văd mă pierd cu firea,&#13;&#10;Nu-mi pot stăpâni privirea,&#13;&#10;Dansezi bine, ești mortală,&#13;&#10;Și cu frumusețea ta îi bagi pe toți în boală;&#13;&#10;Orice bărbat te dorește,&#13;&#10;Când te vede înnebunește,&#13;&#10;Ți-ar da bani, ți-ar da orice, ți-ar da și casa,&#13;&#10;Pentru tine și-ar lăsa nevasta.&#13;&#10;&#13;&#10;Tsiganizatsia tsiganizatsia&#13;&#10;Come on baby this is what you need&#13;&#10;Tsiganizatsia tsiganizatsia&#13;&#10;Everybody dancing to this beat&#13;&#10;Tsiganizatsia tsiganizatsia&#13;&#10;Come on baby this is what you need&#13;&#10;Tsiganizatsia tsiganizatsia&#13;&#10;&#13;&#10;Disko disko partizani&#13;&#10;Disko disko partizani&#13;&#10;Parti parti partizani(x2)&#13;&#10;&#13;&#10;Zece, alege,&#13;&#10;Nu am, înțelege,&#13;&#10;Opt, un tot, (upgrade)&#13;&#10;Muzica nonstop.(x2)&#13;&#10;&#13;&#10;Disko disko partizani&#13;&#10;Parti parti partizani";
+	document.getElementById("p2").innerHTML = "My baby came down from Romania&#13;&#10;She was the queen of Transylvania&#13;&#10;But now we live in suburbia&#13;&#10;Without any friends buzzing you&#13;&#10;&#13;&#10;Tsiganizatsia tsiganizatsia&#13;&#10;Come on baby this is what you need&#13;&#10;Tsiganizatsia tsiganizatsia&#13;&#10;Everybody dancing to this beat&#13;&#10;Tsiganizatsia tsiganizatsia&#13;&#10;Come on baby this is what you need&#13;&#10;Tsiganizatsia tsiganizatsia&#13;&#10;&#13;&#10;Disko disko partizani&#13;&#10;Disko disko partizani&#13;&#10;Parti parti partizani&#13;&#10;&#13;&#10;Zece, alege,&#13;&#10;Nu am, înțelege,&#13;&#10;Opt, un tot, (upgrade)&#13;&#10;Muzica nonstop.&#13;&#10;&#13;&#10;Când te văd mă pierd cu firea,&#13;&#10;Nu-mi pot stăpâni privirea,&#13;&#10;Dansezi bine, ești mortală,&#13;&#10;Și cu frumusețea ta îi bagi pe toți în boală;&#13;&#10;Orice bărbat te dorește,&#13;&#10;Când te vede înnebunește,&#13;&#10;Ți-ar da bani, ți-ar da orice, ți-ar da și casa,&#13;&#10;Pentru tine și-ar lăsa nevasta.&#13;&#10;&#13;&#10;Tsiganizatsia tsiganizatsia&#13;&#10;Come on baby this is what you need&#13;&#10;Tsiganizatsia tsiganizatsia&#13;&#10;Everybody dancing to this beat&#13;&#10;Tsiganizatsia tsiganizatsia&#13;&#10;Come on baby this is what you need&#13;&#10;Tsiganizatsia tsiganizatsia&#13;&#10;&#13;&#10;Disko disko partizani&#13;&#10;Disko disko partizani&#13;&#10;Parti parti partizani&#13;&#10;&#13;&#10;Zece, alege,&#13;&#10;Nu am, înțelege,&#13;&#10;Opt, un tot, (upgrade)&#13;&#10;Muzica nonstop.&#13;&#10;&#13;&#10;Disko disko partizani&#13;&#10;Parti parti partizani";
 	document.getElementById("p3").innerHTML = "Моя любимая родом из Румынии,&#13;&#10;Она была королевой Трансильвании*,&#13;&#10;Но сейчас мы живем в пригороде&#13;&#10;Без жужжания друзей вокруг тебя.&#13;&#10;&#13;&#10;Цыганизация, цыганизация&#13;&#10;Давай, детка, это то, что тебе нужно&#13;&#10;Цыганизация, цыганизация&#13;&#10;Все танцуют в этом ритме&#13;&#10;Цыганизация, цыганизация&#13;&#10;Давай, детка, это то, что тебе нужно&#13;&#10;Цыганизация цыганизация&#13;&#10;&#13;&#10;Диско диско партизаны&#13;&#10;Диско диско партизаны&#13;&#10;Парти парти партизаны&#13;&#10;&#13;&#10;Десять-выбирай&#13;&#10;Я не получил что мне было нужно, пойми&#13;&#10;Восемь-объединились&#13;&#10;Музыка бесконечна!...&#13;&#10;&#13;&#10;Когда я вижу тебя, я теряю голову,&#13;&#10;Я не могу контролировать свои глаза,&#13;&#10;Ты хорошо танцуешь, ты сногшибательно красива,&#13;&#10;И твоя красота сводит всех с ума,&#13;&#10;Каждый мужчина хочет тебя,&#13;&#10;Они становятся дикими, когда смотрят на тебя,&#13;&#10;Они отдали бы тебе деньги, отдали бы тебе все, даже дом свой​​,&#13;&#10;Они оставили бы своих девушек ради тебя.&#13;&#10;Музыка бесконечна.&#13;&#10;&#13;&#10;Цыганизация, цыганизация&#13;&#10;Давай, детка, это то, что тебе нужно&#13;&#10;Цыганизация, цыганизация&#13;&#10;Все танцуют в этом ритме&#13;&#10;Цыганизация, цыганизация&#13;&#10;Давай, детка, это то, что тебе нужно&#13;&#10;&#13;&#10;Диско диско партизаны&#13;&#10;Диско диско партизаны&#13;&#10;Парти парти партизаны";
   }
   }
@@ -810,6 +810,9 @@ list.addEventListener('click', function(ev) {
 		if (song == "La nunta asta"){
 		index = 1;
 		document.rebuslot.subjectquantity.src = index+".jpg";
+		if (index == 1){
+			document.rebuslot.subjectquantity.title = "1";
+		}
 		}else{
 		index = getRndmFromSet([0,1,2,3,4,5,6,7,8,9]);
 		document.rebuslot.subjectquantity.src = index+".jpg";
@@ -852,9 +855,99 @@ list.addEventListener('click', function(ev) {
 		if (song == "La nunta asta"){
 		index1 = getRndmFromSet([72,73,74,75,76,77,78,79,80,81,82,83,84,85,86]);
 		document.rebuslot.subjectessence.src = index1+"n.jpg";
+		if (index1 == 72){
+			document.rebuslot.subjectessence.title = "я";
+		}
+		if (index1 == 73){
+			document.rebuslot.subjectessence.title = "девушка";
+		}
+		if (index1 == 74){
+			document.rebuslot.subjectessence.title = "она";
+		}
+		if (index1 == 75){
+			document.rebuslot.subjectessence.title = "батюшка";
+		}
+		if (index1 == 76){
+			document.rebuslot.subjectessence.title = "угол";
+		}
+		if (index1 == 77){
+			document.rebuslot.subjectessence.title = "стол";
+		}
+		if (index1 == 78){
+			document.rebuslot.subjectessence.title = "платье";
+		}
+		if (index1 == 79){
+			document.rebuslot.subjectessence.title = "свадьба";
+		}
+		if (index1 == 80){
+			document.rebuslot.subjectessence.title = "музыка";
+		}
+		if (index1 == 81){
+			document.rebuslot.subjectessence.title = "все";
+		}
+		if (index1 == 82){
+			document.rebuslot.subjectessence.title = "никто";
+		}
+		if (index1 == 83){
+			document.rebuslot.subjectessence.title = "жизнь";
+		}
+		if (index1 == 84){
+			document.rebuslot.subjectessence.title = "душа";
+		}
+		if (index1 == 85){
+			document.rebuslot.subjectessence.title = "клетка";
+		}
+		if (index1 == 86){
+			document.rebuslot.subjectessence.title = "вино";
+		}
 		}else{
 		index1 = getRndmFromSet([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86]);
 		document.rebuslot.subjectessence.src = index1+"n.jpg";
+		if (index1 == 72){
+			document.rebuslot.subjectessence.title = "я";
+		}
+		if (index1 == 73){
+			document.rebuslot.subjectessence.title = "девушка";
+		}
+		if (index1 == 74){
+			document.rebuslot.subjectessence.title = "она";
+		}
+		if (index1 == 75){
+			document.rebuslot.subjectessence.title = "батюшка";
+		}
+		if (index1 == 76){
+			document.rebuslot.subjectessence.title = "угол";
+		}
+		if (index1 == 77){
+			document.rebuslot.subjectessence.title = "стол";
+		}
+		if (index1 == 78){
+			document.rebuslot.subjectessence.title = "платье";
+		}
+		if (index1 == 79){
+			document.rebuslot.subjectessence.title = "свадьба";
+		}
+		if (index1 == 80){
+			document.rebuslot.subjectessence.title = "музыка";
+		}
+		if (index1 == 81){
+			document.rebuslot.subjectessence.title = "все";
+		}
+		if (index1 == 82){
+			document.rebuslot.subjectessence.title = "никто";
+		}
+		if (index1 == 83){
+			document.rebuslot.subjectessence.title = "жизнь";
+		}
+		if (index1 == 84){
+			document.rebuslot.subjectessence.title = "душа";
+		}
+		if (index1 == 85){
+			document.rebuslot.subjectessence.title = "клетка";
+		}
+		if (index1 == 86){
+			document.rebuslot.subjectessence.title = "вино";
+		}
 		}
 		}else{
 		index1 = 0;
@@ -864,9 +957,34 @@ list.addEventListener('click', function(ev) {
 	if (song == "La nunta asta"){
 		index2 = getRndmFromSet([1,23,24,25,26,27,28,29]);
 		document.rebuslot.subjectquality.src = index2+"adj.jpg";
+		if (index2 == 1){
+			document.rebuslot.subjectquality.title = "красивый";
+		}
+		if (index2 == 23){
+			document.rebuslot.subjectquality.title = "молодой";
+		}
+		if (index2 == 24){
+			document.rebuslot.subjectquality.title = "послушный";
+		}
+		if (index2 == 25){
+			document.rebuslot.subjectquality.title = "сыт";
+		}
+		if (index2 == 26){
+			document.rebuslot.subjectquality.title = "одет";
+		}
+		if (index2 == 27){
+			document.rebuslot.subjectquality.title = "этот";
+		}
+		if (index2 == 28){
+			document.rebuslot.subjectquality.title = "работающий";
+		}
+		if (index2 == 29){
+			document.rebuslot.subjectquality.title = "начинающийся";
+		}
 		}else{
 		index2 = getRndmFromSet([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29]);
 		document.rebuslot.subjectquality.src = index2+"adj.jpg";
+		
 		}
 		}else{
 		index2 = 0;
@@ -1394,7 +1512,7 @@ context.addEventListener("click", e => {
 lang = e.target.textContent;
 if (lyrics == 1){
 if (lang == "Russian"){
-document.getElementById("p3").innerHTML = "Я молоденькая девушка, я должна быть послушной,&#13;&#10;Она стесняется, ей холодно, - так сказал батюшка.&#13;&#10;Но мне надоело сидеть в углу стола,&#13;&#10;Сегодня я надела красивое платье.&#13;&#10;&#13;&#10;На этой свадьбе играет только весёлая музыка,&#13;&#10;Все говорят, никто не слушает.&#13;&#10;Я так много сегодня поработала с утра,&#13;&#10;Станцую-ка я хоть разок (х2).&#13;&#10;&#13;&#10;Пусть говорят что угодно, меня не волнует,&#13;&#10;Почему я должна стоять в стороне, когда моя душа хочет танцевать?&#13;&#10;Мне нравится то, что я вырвалась из клетки,&#13;&#10;Сегодня вечером я попробую немножечко вина.&#13;&#10;&#13;&#10;На этой свадьбе играет только весёлая музыка,&#13;&#10;Все говорят, никто не слушает.&#13;&#10;Я так много сегодня поработала с утра,&#13;&#10;Станцую-ка я хоть разок (х4).";
+document.getElementById("p3").innerHTML = "Я молоденькая девушка, я должна быть послушной,&#13;&#10;Она стесняется, ей холодно, - так сказал батюшка.&#13;&#10;Но мне надоело сидеть в углу стола,&#13;&#10;Сегодня я надела красивое платье.&#13;&#10;&#13;&#10;На этой свадьбе играет только весёлая музыка,&#13;&#10;Все говорят, никто не слушает.&#13;&#10;Я так много сегодня поработала с утра,&#13;&#10;Станцую-ка я хоть разок.&#13;&#10;&#13;&#10;Пусть говорят что угодно, меня не волнует,&#13;&#10;Почему я должна стоять в стороне, когда моя душа хочет танцевать?&#13;&#10;Мне нравится то, что я вырвалась из клетки,&#13;&#10;Сегодня вечером я попробую немножечко вина.&#13;&#10;&#13;&#10;На этой свадьбе играет только весёлая музыка,&#13;&#10;Все говорят, никто не слушает.&#13;&#10;Я так много сегодня поработала с утра,&#13;&#10;Станцую-ка я хоть разок.";
 }
 if (lang == "Surżyk"){
 document.getElementById("p3").innerHTML = "Ja is girl молодая, have to be posłuszną,&#13;&#10;Їй стыдно і є frost, so did said parent.&#13;&#10;But ja mam saturant to stać at kąt ze парти,&#13;&#10;Ja dziś mam ubrana in suknia the вродлива.&#13;&#10;&#13;&#10;At ślub этот no more music ze ślub,&#13;&#10;All говорять, ніхто не слухає,&#13;&#10;Tyle am worked ze morning,&#13;&#10;Am to grać хочаб a time in życie.&#13;&#10;&#13;&#10;Mówić, co no би mówić, no me интересуюсь,&#13;&#10;Ze co to stać ze a встороне kiedy soul my dancing.&#13;&#10;My є починаю to my like после klatki,&#13;&#10;I mam to вкус немного, wieczorem, ze wine.&#13;&#10;At ślub этот no more music ze ślub,&#13;&#10;All говорять, ніхто не слухає,&#13;&#10;Tyle am worked ze morning,&#13;&#10;Am to grać хочаб a time in życie.";
