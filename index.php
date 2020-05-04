@@ -53,6 +53,7 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 </ul>
 	
 	<script>
+	var current;
 	var synthesis = window.speechSynthesis;
 	var JSvalue1, JSvalue2, JSvalue3, JSvalue4, JSvalue5, JSvalue6; 
 	var song;
@@ -702,7 +703,7 @@ wordcount = indexarray.length + index1array.length + index2array.length + index3
 
       // 3. This function creates an <iframe> (and YouTube player)
       //    after the API code downloads.
-      var player;
+      
       function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
           height: '300',
@@ -712,8 +713,7 @@ wordcount = indexarray.length + index1array.length + index2array.length + index3
             color: 'white'
 			},
           events: {
-            'onReady': onPlayerReady,
-			'onStateChange': onPlayerStateChange
+            'onReady': onPlayerReady
           }
         });
 	  }
@@ -745,13 +745,8 @@ wordcount = indexarray.length + index1array.length + index2array.length + index3
  
 		document.getElementById("p3").innerHTML = "Я молоденькая девушка, я должна быть послушной,&#13;&#10;Она стесняется, ей холодно, - так сказал батюшка.&#13;&#10;Но мне надоело сидеть в углу стола,&#13;&#10;Сегодня я надела красивое платье.&#13;&#10;&#13;&#10;На этой свадьбе играет только весёлая музыка,&#13;&#10;Все говорят, никто не слушает.&#13;&#10;Я так много сегодня поработала с утра,&#13;&#10;Станцую-ка я хоть разок.&#13;&#10;&#13;&#10;Пусть говорят что угодно, меня не волнует,&#13;&#10;Почему я должна стоять в стороне, когда моя душа хочет танцевать?&#13;&#10;Мне нравится то, что я вырвалась из клетки,&#13;&#10;Сегодня вечером я попробую немножечко вина.&#13;&#10;&#13;&#10;На этой свадьбе играет только весёлая музыка,&#13;&#10;Все говорят, никто не слушает.&#13;&#10;Я так много сегодня поработала с утра,&#13;&#10;Станцую-ка я хоть разок.";
 	  }
-	  var videoPos;
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PLAYING) {
-			videoPos = player.playerInfo.currentTime;
-		}
-	  console.log(videoPos);
-	  }
+	 
+    
 		// Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
 var i;
@@ -766,8 +761,10 @@ var lyrics = 1;
 // Click on a close button to hide the current list item
 var close = document.getElementsByClassName("close");
 var i;
+var intervalID = window.setInterval(myCallback, 100);
 
 
+	  
 for (i = 0; i < close.length; i++) {
 	
   if (i == 0){
@@ -783,9 +780,8 @@ for (i = 0; i < close.length; i++) {
 	player.loadVideoById("TH0oCDziVQQ", 0, "large");
 	document.getElementById("p2").innerHTML = "Eu îs fată tinerică, tre’ să fiu cuminte,&#13;&#10;Îi-e ruşine şi e frig, aşa o zis părintele.&#13;&#10;Dar eu m-am săturat să stau la colţ de masă,&#13;&#10;Eu azi m-am îmbracat în rochia cea frumoasă.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă.&#13;&#10;&#13;&#10;Spune, ce n-ar spune, nu mă interesează,&#13;&#10;De ce să stau de-o parte când sufletu-mi dansează.&#13;&#10;Mi-e a început să-mi placă după colivie,&#13;&#10;Şi am să gust oleacă, diseară, de rachie.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă .";
 	document.getElementById("p3").innerHTML = "Я молоденькая девушка, я должна быть послушной,&#13;&#10;Она стесняется, ей холодно, - так сказал батюшка.&#13;&#10;Но мне надоело сидеть в углу стола,&#13;&#10;Сегодня я надела красивое платье.&#13;&#10;&#13;&#10;На этой свадьбе играет только весёлая музыка,&#13;&#10;Все говорят, никто не слушает.&#13;&#10;Я так много сегодня поработала с утра,&#13;&#10;Станцую-ка я хоть разок.&#13;&#10;&#13;&#10;Пусть говорят что угодно, меня не волнует,&#13;&#10;Почему я должна стоять в стороне, когда моя душа хочет танцевать?&#13;&#10;Мне нравится то, что я вырвалась из клетки,&#13;&#10;Сегодня вечером я попробую немножечко вина.&#13;&#10;&#13;&#10;На этой свадьбе играет только весёлая музыка,&#13;&#10;Все говорят, никто не слушает.&#13;&#10;Я так много сегодня поработала с утра,&#13;&#10;Станцую-ка я хоть разок.";
-	//now 
-	
   }
+
   }
   if (i == 2){
   close[i].onclick = function() {
@@ -804,7 +800,24 @@ for (i = 0; i < close.length; i++) {
   }
   }
 }
-
+function myCallback() {
+ // Your code here
+ current = player.playerInfo.currentTime;
+if (lyrics == 1){
+if (current < 12){
+	document.getElementById("p2").innerHTML = "Eu îs fată tinerică, tre’ să fiu cuminte,&#13;&#10;Îi-e ruşine şi e frig, aşa o zis părintele.&#13;&#10;Dar eu m-am săturat să stau la colţ de masă,&#13;&#10;Eu azi m-am îmbracat în rochia cea frumoasă.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă.&#13;&#10;&#13;&#10;Spune, ce n-ar spune, nu mă interesează,&#13;&#10;De ce să stau de-o parte când sufletu-mi dansează.&#13;&#10;Mi-e a început să-mi placă după colivie,&#13;&#10;Şi am să gust oleacă, diseară, de rachie.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă .";
+	document.getElementById("p3").innerHTML = "Я молоденькая девушка, я должна быть послушной,&#13;&#10;Она стесняется, ей холодно, - так сказал батюшка.&#13;&#10;Но мне надоело сидеть в углу стола,&#13;&#10;Сегодня я надела красивое платье.&#13;&#10;&#13;&#10;На этой свадьбе играет только весёлая музыка,&#13;&#10;Все говорят, никто не слушает.&#13;&#10;Я так много сегодня поработала с утра,&#13;&#10;Станцую-ка я хоть разок.&#13;&#10;&#13;&#10;Пусть говорят что угодно, меня не волнует,&#13;&#10;Почему я должна стоять в стороне, когда моя душа хочет танцевать?&#13;&#10;Мне нравится то, что я вырвалась из клетки,&#13;&#10;Сегодня вечером я попробую немножечко вина.&#13;&#10;&#13;&#10;На этой свадьбе играет только весёлая музыка,&#13;&#10;Все говорят, никто не слушает.&#13;&#10;Я так много сегодня поработала с утра,&#13;&#10;Станцую-ка я хоть разок.";
+}
+if (current >= 12 && current < 14){
+		document.getElementById("p2").innerHTML = "Eu îs fată tinerică";
+		document.getElementById("p3").innerHTML = "Я молоденькая девушка";
+	}
+if (current >= 13.5){
+		document.getElementById("p2").innerHTML = "tre’ să fiu cuminte";
+		document.getElementById("p3").innerHTML = "я должна быть послушной";
+	}
+}
+}
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
