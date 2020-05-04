@@ -708,9 +708,9 @@ wordcount = indexarray.length + index1array.length + index2array.length + index3
         player = new YT.Player('player', {
           height: '300',
           width: '540',
-          videoId: 'TH0oCDziVQQ',
+          videoId: 'TH0oCDziVQQ', 
 		  playerVars: {
-            color: 'white'
+            color: 'white',
 			},
           events: {
             'onReady': onPlayerReady
@@ -812,9 +812,33 @@ if (current >= 12 && current < 14){
 		document.getElementById("p2").innerHTML = "Eu îs fată tinerică";
 		document.getElementById("p3").innerHTML = "Я молоденькая девушка";
 	}
-if (current >= 13.5){
+if (current >= 13.5 && current < 15){
 		document.getElementById("p2").innerHTML = "tre’ să fiu cuminte";
 		document.getElementById("p3").innerHTML = "я должна быть послушной";
+	}
+if (current >= 15 && current < 16.5){
+		document.getElementById("p2").innerHTML = "Îi-e ruşine şi e frig";
+		document.getElementById("p3").innerHTML = "Она стесняется, ей холодно";
+	}
+	if (current >= 16.5 && current < 17.75){
+		document.getElementById("p2").innerHTML = "aşa o zis părintele";
+		document.getElementById("p3").innerHTML = "так сказал батюшка";
+	}
+	if (current >= 17.75 && current < 19){
+		document.getElementById("p2").innerHTML = "Dar eu m-am săturat";
+		document.getElementById("p3").innerHTML = "Но мне надоело";
+	}
+	if (current >= 19 && current < 20.5){
+		document.getElementById("p2").innerHTML = "să stau la colţ de masă";
+		document.getElementById("p3").innerHTML = "сидеть в углу стола";
+	}
+	if (current >= 20.5 && current < 22){
+		document.getElementById("p2").innerHTML = "Eu azi m-am îmbracat";
+		document.getElementById("p3").innerHTML = "Сегодня я надела";
+	}
+	if (current >= 22){
+		document.getElementById("p2").innerHTML = "în rochia cea frumoasă";
+		document.getElementById("p3").innerHTML = "красивое платье";
 	}
 }
 }
