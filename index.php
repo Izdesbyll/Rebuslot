@@ -53,7 +53,7 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 </ul>
 	
 	<script>
-	var current;
+	var current = 0;
 	var synthesis = window.speechSynthesis;
 	var JSvalue1, JSvalue2, JSvalue3, JSvalue4, JSvalue5, JSvalue6; 
 	var song;
@@ -711,6 +711,7 @@ wordcount = indexarray.length + index1array.length + index2array.length + index3
           videoId: 'TH0oCDziVQQ', 
 		  playerVars: {
             color: 'white',
+			playlist: "YnopHCL1Jk8,gViaOYgV8yI"
 			},
           events: {
             'onReady': onPlayerReady
@@ -836,9 +837,17 @@ if (current >= 15 && current < 16.5){
 		document.getElementById("p2").innerHTML = "Eu azi m-am îmbracat";
 		document.getElementById("p3").innerHTML = "Сегодня я надела";
 	}
-	if (current >= 22){
+	if (current >= 22 && current < 23.25){
 		document.getElementById("p2").innerHTML = "în rochia cea frumoasă";
 		document.getElementById("p3").innerHTML = "красивое платье";
+	}
+	if (current >= 23.25 && current < 26){
+		document.getElementById("p2").innerHTML = "La nunta asta-i numa’ muzică de nuntă";
+		document.getElementById("p3").innerHTML = "На этой свадьбе играет только весёлая музыка";
+	}
+	if (current >= 26){
+		document.getElementById("p2").innerHTML = "Toţi vorbesc, nimeni n-ascultă";
+		document.getElementById("p3").innerHTML = "Все говорят, никто не слушает";
 	}
 }
 }
