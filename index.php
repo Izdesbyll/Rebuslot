@@ -837,17 +837,57 @@ if (current >= 15 && current < 16.5){
 		document.getElementById("p2").innerHTML = "Eu azi m-am îmbracat";
 		document.getElementById("p3").innerHTML = "Сегодня я надела";
 	}
-	if (current >= 22 && current < 23.25){
+	if (current >= 22 && current < 23){
 		document.getElementById("p2").innerHTML = "în rochia cea frumoasă";
 		document.getElementById("p3").innerHTML = "красивое платье";
 	}
-	if (current >= 23.25 && current < 26){
+	if ((current >= 23 && current < 26) || (current >= 34.25 && current < 37.5) || (current >= 68.5 && current < 71.5) || (current >= 79.5 && current < 82.5) || (current >= 124.5 && current < 128) || (current >= 135.5 && current < 139) || (current >= 149.5 && current < 155) || (current >= 164.5 && current < 167.5) || (current >= 174.5 && current < 177.5)){
 		document.getElementById("p2").innerHTML = "La nunta asta-i numa’ muzică de nuntă";
 		document.getElementById("p3").innerHTML = "На этой свадьбе играет только весёлая музыка";
 	}
-	if (current >= 26){
+	if ((current >= 26 && current < 28.5) || (current >= 37.5 && current < 40) || (current >= 71.5 && current < 73.75) || (current >= 82.5 && current < 85) || (current >= 128 && current < 130.5) || (current >= 139 && current < 141.5) || (current >= 155 && current < 158) || (current >= 167.5 && current < 169.5) || (current >= 177.5 && current < 179.5)){
 		document.getElementById("p2").innerHTML = "Toţi vorbesc, nimeni n-ascultă";
 		document.getElementById("p3").innerHTML = "Все говорят, никто не слушает";
+	}
+	if ((current >= 28.5 && current < 31.5) || (current >= 40 && current < 43) || (current >= 73.75 && current < 76.5) || (current >= 85 && current < 87.75) || (current >= 130.5 && current < 133) || (current >= 141.5 && current < 144.5) || (current >= 158 && current < 161.5) || (current >= 169.5 && current < 172) || (current >= 179.5 && current < 182)){
+		document.getElementById("p2").innerHTML = "Atâta am muncit de dimineaţă";
+		document.getElementById("p3").innerHTML = "Я так много сегодня поработала с утра";
+	}
+	if ((current >= 31.5 && current < 34.25) || (current >= 43 && current < 46) || (current >= 76.5 && current < 79.5) || (current >= 87.75 && current < 90.5) || (current >= 133 && current < 135.5) || (current >= 144.5 && current < 149.5) || (current >= 161.5 && current < 164.5) || (current >= 172 && current < 174.5) || (current >= 182 && current < 184.5)){
+		document.getElementById("p2").innerHTML = "Am să joc măcar o dată-n viaţă";
+		document.getElementById("p3").innerHTML = "Станцую-ка я хоть разок";
+	}
+	if (current >= 57.5 && current < 58.5){
+		document.getElementById("p2").innerHTML = "Spune, ce n-ar spune";
+		document.getElementById("p3").innerHTML = "Пусть говорят что угодно";
+	}
+	if (current >= 58.5 && current < 60){
+		document.getElementById("p2").innerHTML = "nu mă interesează";
+		document.getElementById("p3").innerHTML = "меня не волнует";
+	}
+	if (current >= 60 && current < 61.5){
+		document.getElementById("p2").innerHTML = "De ce să stau de-o parte";
+		document.getElementById("p3").innerHTML = "Почему я должна стоять в стороне";
+	}
+	if (current >= 61.5 && current < 63){
+		document.getElementById("p2").innerHTML = "când sufletu-mi dansează";
+		document.getElementById("p3").innerHTML = "когда моя душа хочет танцевать";
+	}
+	if (current >= 63 && current < 64.25){
+		document.getElementById("p2").innerHTML = "Mi-e a început să-mi placă";
+		document.getElementById("p3").innerHTML = "Мне нравится то, что я вырвалась";
+	}
+	if (current >= 64.25 && current < 65.75){
+		document.getElementById("p2").innerHTML = "după colivie";
+		document.getElementById("p3").innerHTML = "из клетки";
+	}
+	if (current >= 65.75 && current < 67){
+		document.getElementById("p2").innerHTML = "Şi am să gust oleacă";
+		document.getElementById("p3").innerHTML = "я попробую немножечко";
+	}
+	if (current >= 67 && current < 68.5){
+		document.getElementById("p2").innerHTML = "diseară, de rachie";
+		document.getElementById("p3").innerHTML = "Сегодня вечером вина";
 	}
 }
 }
@@ -1288,12 +1328,14 @@ list.addEventListener('click', function(ev) {
 	top: 60%;
 	background-color: black;
 	color: white;
+
 	}
 	.posit-7 {
 	left: 78%;
 	top: 60%;
 	background-color: black;
 	color: white;
+
 	}
 	.posit-8 {
 	left: 0%;
