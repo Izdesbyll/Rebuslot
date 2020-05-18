@@ -977,6 +977,92 @@ if (current >= 15 && current < 16.5){
 		document.getElementById("p3").innerHTML = "wieczorem, ze wine";
 	}
 	}
+	if (lang == "Surance"){
+		if (current < 12){
+	document.getElementById("p2").innerHTML = "Eu îs fată tinerică, tre’ să fiu cuminte,&#13;&#10;Îi-e ruşine şi e frig, aşa o zis părintele.&#13;&#10;Dar eu m-am săturat să stau la colţ de masă,&#13;&#10;Eu azi m-am îmbracat în rochia cea frumoasă.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă.&#13;&#10;&#13;&#10;Spune, ce n-ar spune, nu mă interesează,&#13;&#10;De ce să stau de-o parte când sufletu-mi dansează.&#13;&#10;Mi-e a început să-mi placă după colivie,&#13;&#10;Şi am să gust oleacă, diseară, de rachie.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă .";
+	document.getElementById("p3").innerHTML = "Ya is giorl molodaya, hăv tu bi poslușnou,&#13;&#10;Yiy stîdna i e frost, sou did sed părent.&#13;&#10;Bat ya ăm saturant tu stac ăt cont ze partâ,&#13;&#10;Ya dziș ăm ubrana in suknia ze vrodlîva.&#13;&#10;&#13;&#10;Ăt șlub ătot nou mor miuzic ze șlub,&#13;&#10;Ol hovoriat, nihto ne sluhaie,&#13;&#10;Tâle ăm worked ze mornin,&#13;&#10;Am tu grac hocab ă taim in jâce.&#13;&#10;&#13;&#10;Muvic, țo nou bâ muvic, nou mi interesuiusi,&#13;&#10;Ze țo tu stac ze ă vstronie ciedâ soul mai danțin&#13;&#10;Mai e pocînayu tu mai laic posliă clatcâ,&#13;&#10;I mam tu vcus niemnoga, wiecorăm, ze wain.&#13;&#10;&#13;&#10;Ăt șlub ătot nou mor miuzic ze șlub,&#13;&#10;Ol hovoriat, nihto ne sluhaie,&#13;&#10;Tâle am worked ze mornin,&#13;&#10;Am tu grac hocab ă taim in jâce.";
+}
+if (current >= 12 && current < 14){
+		document.getElementById("p2").innerHTML = "Eu îs fată tinerică";
+		document.getElementById("p3").innerHTML = "Ya is giorl molodaya";
+	}
+if (current >= 13.5 && current < 15){
+		document.getElementById("p2").innerHTML = "tre’ să fiu cuminte";
+		document.getElementById("p3").innerHTML = "hăv tu bi poslușnou";
+	}
+if (current >= 15 && current < 16.5){
+		document.getElementById("p2").innerHTML = "Îi-e ruşine şi e frig";
+		document.getElementById("p3").innerHTML = "Yiy stîdna i e frost";
+	}
+	if (current >= 16.5 && current < 17.75){
+		document.getElementById("p2").innerHTML = "aşa o zis părintele";
+		document.getElementById("p3").innerHTML = "sou did sed părent";
+	}
+	if (current >= 17.75 && current < 19){
+		document.getElementById("p2").innerHTML = "Dar eu m-am săturat";
+		document.getElementById("p3").innerHTML = "Bat ya ăm saturant";
+	}
+	if (current >= 19 && current < 20.5){
+		document.getElementById("p2").innerHTML = "să stau la colţ de masă";
+		document.getElementById("p3").innerHTML = "tu stac ăt cont ze partâ";
+	}
+	if (current >= 20.5 && current < 22){
+		document.getElementById("p2").innerHTML = "Eu azi m-am îmbracat";
+		document.getElementById("p3").innerHTML = "Ya dziș ăm ubrana";
+	}
+	if (current >= 22 && current < 23){
+		document.getElementById("p2").innerHTML = "în rochia cea frumoasă";
+		document.getElementById("p3").innerHTML = "in suknia ze vrodlîva";
+	}
+	if ((current >= 23 && current < 26) || (current >= 34.25 && current < 37.5) || (current >= 68.5 && current < 71.5) || (current >= 79.5 && current < 82.5) || (current >= 124.5 && current < 128) || (current >= 135.5 && current < 139) || (current >= 149.5 && current < 155) || (current >= 164.5 && current < 167.5) || (current >= 174.5 && current < 177.5)){
+		document.getElementById("p2").innerHTML = "La nunta asta-i numa’ muzică de nuntă";
+		document.getElementById("p3").innerHTML = "Ăt șlub ătot nou mor miuzic ze șlub";
+	}
+	if ((current >= 26 && current < 28.5) || (current >= 37.5 && current < 40) || (current >= 71.5 && current < 73.75) || (current >= 82.5 && current < 85) || (current >= 128 && current < 130.5) || (current >= 139 && current < 141.5) || (current >= 155 && current < 158) || (current >= 167.5 && current < 169.5) || (current >= 177.5 && current < 179.5)){
+		document.getElementById("p2").innerHTML = "Toţi vorbesc, nimeni n-ascultă";
+		document.getElementById("p3").innerHTML = "Ol hovoriat, nihto ne sluhaie";
+	}
+	if ((current >= 28.5 && current < 31.5) || (current >= 40 && current < 43) || (current >= 73.75 && current < 76.5) || (current >= 85 && current < 87.75) || (current >= 130.5 && current < 133) || (current >= 141.5 && current < 144.5) || (current >= 158 && current < 161.5) || (current >= 169.5 && current < 172) || (current >= 179.5 && current < 182)){
+		document.getElementById("p2").innerHTML = "Atâta am muncit de dimineaţă";
+		document.getElementById("p3").innerHTML = "Tăle ăm worked ze mornin";
+	}
+	if ((current >= 31.5 && current < 34.25) || (current >= 43 && current < 46) || (current >= 76.5 && current < 79.5) || (current >= 87.75 && current < 90.5) || (current >= 133 && current < 135.5) || (current >= 144.5 && current < 149.5) || (current >= 161.5 && current < 164.5) || (current >= 172 && current < 174.5) || (current >= 182 && current < 184.5)){
+		document.getElementById("p2").innerHTML = "Am să joc măcar o dată-n viaţă";
+		document.getElementById("p3").innerHTML = "Am tu grac hocab ă taim in jâce";
+	}
+	if (current >= 57.5 && current < 58.5){
+		document.getElementById("p2").innerHTML = "Spune, ce n-ar spune";
+		document.getElementById("p3").innerHTML = "Muvic, țo nou bâ muvic";
+	}
+	if (current >= 58.5 && current < 60){
+		document.getElementById("p2").innerHTML = "nu mă interesează";
+		document.getElementById("p3").innerHTML = "nou mi interesuiusi";
+	}
+	if (current >= 60 && current < 61.5){
+		document.getElementById("p2").innerHTML = "De ce să stau de-o parte";
+		document.getElementById("p3").innerHTML = "Ze țo tu stac ze-ă vstronie";
+	}
+	if (current >= 61.5 && current < 63){
+		document.getElementById("p2").innerHTML = "când sufletu-mi dansează";
+		document.getElementById("p3").innerHTML = "ciedâ soul mai danțin";
+	}
+	if (current >= 63 && current < 64.25){
+		document.getElementById("p2").innerHTML = "Mi-e a început să-mi placă";
+		document.getElementById("p3").innerHTML = "Mai ă pocînayu tu mai laic";
+	}
+	if (current >= 64.25 && current < 65.75){
+		document.getElementById("p2").innerHTML = "după colivie";
+		document.getElementById("p3").innerHTML = "posliă clatcâ";
+	}
+	if (current >= 65.75 && current < 67){
+		document.getElementById("p2").innerHTML = "Şi am să gust oleacă";
+		document.getElementById("p3").innerHTML = "I mam tu vcus niemnoga";
+	}
+	if (current >= 67 && current < 68.5){
+		document.getElementById("p2").innerHTML = "diseară, de rachie";
+		document.getElementById("p3").innerHTML = "wiecorăm, ze wain.";
+	}
+	}
 }
 }
 // Add a "checked" symbol when clicking on a list item
