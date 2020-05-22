@@ -53,6 +53,7 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 </ul>
 	
 	<script>
+	var lang = "Russian";
 	var current = 0;
 	var synthesis = window.speechSynthesis;
 	var JSvalue1, JSvalue2, JSvalue3, JSvalue4, JSvalue5, JSvalue6; 
@@ -1061,6 +1062,92 @@ if (current >= 15 && current < 16.5){
 	if (current >= 67 && current < 68.5){
 		document.getElementById("p2").innerHTML = "diseară, de rachie";
 		document.getElementById("p3").innerHTML = "wiecorăm, ze wain.";
+	}
+	}
+	if (lang == "Surid"){
+		if (current < 12){
+	document.getElementById("p2").innerHTML = "Eu îs fată tinerică, tre’ să fiu cuminte,&#13;&#10;Îi-e ruşine şi e frig, aşa o zis părintele.&#13;&#10;Dar eu m-am săturat să stau la colţ de masă,&#13;&#10;Eu azi m-am îmbracat în rochia cea frumoasă.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă.&#13;&#10;&#13;&#10;Spune, ce n-ar spune, nu mă interesează,&#13;&#10;De ce să stau de-o parte când sufletu-mi dansează.&#13;&#10;Mi-e a început să-mi placă după colivie,&#13;&#10;Şi am să gust oleacă, diseară, de rachie.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă .";
+	document.getElementById("p3").innerHTML = "Ea is giotă tinedaya, trăv tă biu poslinte,&#13;&#10;Îiy rușîdna și e frist, asou dod ses părentele.&#13;&#10;Bar ea ăm săturant tă stauc lăt colt dze mastâ,&#13;&#10;Ea aziș ăm ubracat in ruknia zea vrodoasă.&#13;&#10;&#13;&#10;Lăt șlunta ăsto nu mar muzic dze șlunta,&#13;&#10;Tolți hovorbesc, nihteni n-asluhtă,&#13;&#10;Atâle am worcit dze dimorneață,&#13;&#10;Am tă groc măcab o dataim in jață.&#13;&#10;&#13;&#10;Spuvic, țe nou bâr spuvic, nou me interesuză,&#13;&#10;Dze țe tă stauc dze partoronie cândâ soufletu mai danțează.&#13;&#10;Mai e poceput tă mai plaică duposiliă colitca,&#13;&#10;Și am tă vgust nieacă, disorăm, dze wachin.&#13;&#10;&#13;&#10;Lăt șlunta ăsto nu mar muzic dze șlunta,&#13;&#10;Tolți hovorbesc, nihteni n-asluhtă,&#13;&#10;Atâle am worcit dze dimorneață,&#13;&#10;Am tă groc măcab o dataim in jață.";
+}
+if (current >= 12 && current < 14){
+		document.getElementById("p2").innerHTML = "Eu îs fată tinerică";
+		document.getElementById("p3").innerHTML = "Ea is giotă tinedaya";
+	}
+if (current >= 13.5 && current < 15){
+		document.getElementById("p2").innerHTML = "tre’ să fiu cuminte";
+		document.getElementById("p3").innerHTML = "trăv tă biu poslinte";
+	}
+if (current >= 15 && current < 16.5){
+		document.getElementById("p2").innerHTML = "Îi-e ruşine şi e frig";
+		document.getElementById("p3").innerHTML = "Îiy rușîdna și e frist";
+	}
+	if (current >= 16.5 && current < 17.75){
+		document.getElementById("p2").innerHTML = "aşa o zis părintele";
+		document.getElementById("p3").innerHTML = "asou dod ses părentele";
+	}
+	if (current >= 17.75 && current < 19){
+		document.getElementById("p2").innerHTML = "Dar eu m-am săturat";
+		document.getElementById("p3").innerHTML = "Bar ea am săturant";
+	}
+	if (current >= 19 && current < 20.5){
+		document.getElementById("p2").innerHTML = "să stau la colţ de masă";
+		document.getElementById("p3").innerHTML = "tă stauc lăt colt dze mastâ";
+	}
+	if (current >= 20.5 && current < 22){
+		document.getElementById("p2").innerHTML = "Eu azi m-am îmbracat";
+		document.getElementById("p3").innerHTML = "Ea aziș ăm ubracat";
+	}
+	if (current >= 22 && current < 23){
+		document.getElementById("p2").innerHTML = "în rochia cea frumoasă";
+		document.getElementById("p3").innerHTML = "in ruknia zea vrodoasă";
+	}
+	if ((current >= 23 && current < 26) || (current >= 34.25 && current < 37.5) || (current >= 68.5 && current < 71.5) || (current >= 79.5 && current < 82.5) || (current >= 124.5 && current < 128) || (current >= 135.5 && current < 139) || (current >= 149.5 && current < 155) || (current >= 164.5 && current < 167.5) || (current >= 174.5 && current < 177.5)){
+		document.getElementById("p2").innerHTML = "La nunta asta-i numa’ muzică de nuntă";
+		document.getElementById("p3").innerHTML = "Lăt șlunta ăsto nu mar muzic dze șlunta";
+	}
+	if ((current >= 26 && current < 28.5) || (current >= 37.5 && current < 40) || (current >= 71.5 && current < 73.75) || (current >= 82.5 && current < 85) || (current >= 128 && current < 130.5) || (current >= 139 && current < 141.5) || (current >= 155 && current < 158) || (current >= 167.5 && current < 169.5) || (current >= 177.5 && current < 179.5)){
+		document.getElementById("p2").innerHTML = "Toţi vorbesc, nimeni n-ascultă";
+		document.getElementById("p3").innerHTML = "Tolți hovorbesc, nihteni n-asluhtă";
+	}
+	if ((current >= 28.5 && current < 31.5) || (current >= 40 && current < 43) || (current >= 73.75 && current < 76.5) || (current >= 85 && current < 87.75) || (current >= 130.5 && current < 133) || (current >= 141.5 && current < 144.5) || (current >= 158 && current < 161.5) || (current >= 169.5 && current < 172) || (current >= 179.5 && current < 182)){
+		document.getElementById("p2").innerHTML = "Atâta am muncit de dimineaţă";
+		document.getElementById("p3").innerHTML = "Atâle am worcit dze dimorneață";
+	}
+	if ((current >= 31.5 && current < 34.25) || (current >= 43 && current < 46) || (current >= 76.5 && current < 79.5) || (current >= 87.75 && current < 90.5) || (current >= 133 && current < 135.5) || (current >= 144.5 && current < 149.5) || (current >= 161.5 && current < 164.5) || (current >= 172 && current < 174.5) || (current >= 182 && current < 184.5)){
+		document.getElementById("p2").innerHTML = "Am să joc măcar o dată-n viaţă";
+		document.getElementById("p3").innerHTML = "Am tă groc măcab o dataim in jață";
+	}
+	if (current >= 57.5 && current < 58.5){
+		document.getElementById("p2").innerHTML = "Spune, ce n-ar spune";
+		document.getElementById("p3").innerHTML = "Spuvic, țe nou bâr spuvic";
+	}
+	if (current >= 58.5 && current < 60){
+		document.getElementById("p2").innerHTML = "nu mă interesează";
+		document.getElementById("p3").innerHTML = "nou me interesuză";
+	}
+	if (current >= 60 && current < 61.5){
+		document.getElementById("p2").innerHTML = "De ce să stau de-o parte";
+		document.getElementById("p3").innerHTML = "Dze țe tă stauc dze partoronie";
+	}
+	if (current >= 61.5 && current < 63){
+		document.getElementById("p2").innerHTML = "când sufletu-mi dansează";
+		document.getElementById("p3").innerHTML = "cândâ soufletu mai danțează";
+	}
+	if (current >= 63 && current < 64.25){
+		document.getElementById("p2").innerHTML = "Mi-e a început să-mi placă";
+		document.getElementById("p3").innerHTML = "Mai e poceput tă mai plaică";
+	}
+	if (current >= 64.25 && current < 65.75){
+		document.getElementById("p2").innerHTML = "după colivie";
+		document.getElementById("p3").innerHTML = "duposiliă colitca";
+	}
+	if (current >= 65.75 && current < 67){
+		document.getElementById("p2").innerHTML = "Şi am să gust oleacă";
+		document.getElementById("p3").innerHTML = "Și am tă vgust nieacă";
+	}
+	if (current >= 67 && current < 68.5){
+		document.getElementById("p2").innerHTML = "diseară, de rachie";
+		document.getElementById("p3").innerHTML = "disorăm, dze wachin.";
 	}
 	}
 }
