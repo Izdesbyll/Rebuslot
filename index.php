@@ -105,6 +105,7 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 	"tineric", "cuminte", "săturat", "îmbracat", "ăsta", "muncit", "început"];
 	var index3, imagearray3 = ["canta", "intra", "intarzie", "lucreaza", "copiaza", 
 	"vad", "pot", "merg", "vin", "opresc", "locuiesc", "hotarasc"];
+	//here
 	var index4, imagearray4 = ["asa", "altfel", "bine", "degeaba", "impreuna", "incet", "repede", "separat", "pe neasteptate", "pe de rost"];
 	var index5, imagearray5 = ["acasa", "acolo", "afara", "aici", "apoi", "departe", "inainte", "inapoi", "inauntru", "jos", "pretutindeni", "sus", "undevai", 
 	"acum", "alaltaieri", "aseara", "astazi", "candva", "cateodata", "curand", "demult", "deocamdata", "devreme", "dimineata", "iarna", "ieri", "imediat", "maine", "noaptea", "poimaine", "seara", "tarziu", "intotdeauna", "ziua", "zi de zi",
@@ -460,7 +461,7 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 		}
 	answer = document.getElementById("p1").textContent;
 	
-	if (document.getElementById("3").src == "http://localhost/off.jpg")
+	if ((document.getElementById("3").src == "http://localhost/off.jpg") || (index1 == 81) || (index1 == 82) || (index1 == 72) || (index1 == 74))
 	{
 		answer = answer.replace("un ", "");
 		answer = answer.replace("o ", "");
@@ -803,7 +804,6 @@ for (i = 0; i < close.length; i++) {
   }
 }
 function myCallback() {
- // Your code here
  current = player.playerInfo.currentTime;
 if (lyrics == 1){
 	if (lang == "Russian"){
