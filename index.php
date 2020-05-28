@@ -104,13 +104,14 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 	"eficace", "cumsecade", "roz", "kaki", "gri", "bleu", "maro",
 	"tineric", "cuminte", "săturat", "îmbracat", "ăsta", "muncit", "început"];
 	var index3, imagearray3 = ["canta", "intra", "intarzie", "lucreaza", "copiaza", 
-	"vad", "pot", "merg", "vin", "opresc", "locuiesc", "hotarasc"];
-	//here
-	var index4, imagearray4 = ["asa", "altfel", "bine", "degeaba", "impreuna", "incet", "repede", "separat", "pe neasteptate", "pe de rost"];
-	var index5, imagearray5 = ["acasa", "acolo", "afara", "aici", "apoi", "departe", "inainte", "inapoi", "inauntru", "jos", "pretutindeni", "sus", "undevai", 
+	"vad", "pot", "merg", "vin", "opresc", "locuiesc", "hotarasc",
+	"fi", "zice", "sta", "vorbi", "asculta", "joc", "spune", "dansa", "interesa", "plăcea", "gusta"];
+	var index4, imagearray4 = ["asa", "altfel", "bine", "degeaba", "impreuna", "incet", "repede", "separat", "pe neasteptate", "pe de rost",
+	"acasa", "acolo", "afara", "aici", "apoi", "departe", "inainte", "inapoi", "inauntru", "jos", "pretutindeni", "sus", "undevai", 
 	"acum", "alaltaieri", "aseara", "astazi", "candva", "cateodata", "curand", "demult", "deocamdata", "devreme", "dimineata", "iarna", "ieri", "imediat", "maine", "noaptea", "poimaine", "seara", "tarziu", "intotdeauna", "ziua", "zi de zi",
 	"destul", "mult", "putin",
 	"nicaieri", "niciodata"];
+	var index5, imagearray5 = ["trebui"];
 	var index6, index7, index8;
 	var guess, videoPlayer;
 	var videoList = ["TH0oCDziVQQ", "YnopHCL1Jk8", "gViaOYgV8yI"];
@@ -226,11 +227,12 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 			document.getElementById("p1").innerHTML = answer + " " + imagearray2[index2];
 		}
 		}
-		answer = document.getElementById("p1").textContent;
-		if ((index5 != 14) && (index5 != 15) && (index5 != 17) && (index5 != 19) && (index5 != 20) && (index5 != 25) && (index5 != 27)  && (index5 != 29)){
-		document.getElementById("p1").innerHTML = answer + " " + imagearray3[index3];
+		//here
+		answer = document.getElementById("p1").textContent + " " + imagearray5[index5] + " să";
+		if ((index4 != 24) && (index4 != 25) && (index4 != 27) && (index4 != 29) && (index4 != 40) && (index4 != 45) && (index4 != 47)  && (index4 != 49)){
+		document.getElementById("p1").innerHTML = answer +  " " + imagearray3[index3];
 		}else{
-		if ((index5 == 14) || (index5 == 15) || (index5 == 20) || (index5 == 25) ){
+		if ((index4 == 24) || (index4 == 25) || (index4 == 40) || (index4 == 45) ){
 		if ((index3 == 0) || (index3 == 1)){
 		document.getElementById("p1").innerHTML = answer + " au " + imagearray3[index3] + "t";
 		}
@@ -262,12 +264,12 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 		document.getElementById("p1").innerHTML = answer + " au " + imagearray3[index3].substring(0, imagearray3[index3].length-3) + "t";
 		}
 		}
-		if ((index5 == 17) || (index5 == 19) || (index5 == 27) || (index5 == 29)){ 
+		if ((index4 == 27) || (index4 == 29) || (index4 == 37) || (index4 == 39)){ 
 		document.getElementById("p1").innerHTML = answer + " o sa " + imagearray3[index3];
 		}
 		}
 		answer = document.getElementById("p1").textContent;
-		document.getElementById("p1").innerHTML = answer +  " " +imagearray4[index4]+ " " +imagearray5[index5];
+		document.getElementById("p1").innerHTML = answer +  " " + imagearray4[index4];
 		}else{
 		if((index1 > 26 && index1 < 56) || (index1 > 72 && index1 < 75) || (index1 > 76 && index1 < 81) || (index1 == 83) || (index1 > 84 && index1 < 87))
 		{
@@ -294,7 +296,7 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 		document.getElementById("p1").innerHTML = "o "+imagearray1[index1]+" "+imagearray2[index2].replace("ă", "a");
 		}
 		}
-		answer = document.getElementById("p1").textContent;
+		answer = document.getElementById("p1").textContent + " " + imagearray5[index5] + " să";
 		document.getElementById("p1").innerHTML = answer+ " " +imagearray3[index3];
 		if (index3 == 5){
 		document.getElementById("p1").innerHTML = answer+ " " +imagearray3[index3].substring(0, imagearray3[index3].length-2)+"ede";
@@ -308,9 +310,9 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 		if (index3 > 8 && index3 < 12){
 		document.getElementById("p1").innerHTML = answer+ " " +imagearray3[index3].substring(0, imagearray3[index3].length-1)+"te";
 		}
-		if ((index5 != 14) && (index5 != 15) && (index5 != 17) && (index5 != 19) && (index5 != 20) && (index5 != 25) && (index5 != 27)  && (index5 != 29)){
+		if ((index4 != 24) && (index4 != 25) && (index4 != 27) && (index4 != 29) && (index4 != 40) && (index4 != 45) && (index4 != 47)  && (index4 != 49)){
 		}else{
-		if ((index5 == 14) || (index5 == 15) || (index5 == 20) || (index5 == 25) ){
+		if ((index4 == 24) || (index4 == 25) || (index4 == 30) || (index4 == 35) ){
 		if (index3 == 5){
 		document.getElementById("p1").innerHTML = answer + " " + imagearray3[index3].substring(0, imagearray3[index3].length-2) + "ede";
 		}
@@ -326,7 +328,7 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 		}
 		}
 		answer = document.getElementById("p1").textContent;
-		document.getElementById("p1").innerHTML = answer+ " " +imagearray4[index4]+ " " +imagearray5[index5];
+		document.getElementById("p1").innerHTML = answer+ " " + imagearray4[index4];
 		}
 		answer = document.getElementById("p1").textContent;
 		if (document.getElementById("7").src != "http://localhost/off.jpg"){
@@ -482,7 +484,7 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 	}
 	if (document.getElementById("6").src == "http://localhost/off.jpg")
 	{
-		answer = answer.replace(" astazi ", " ");
+		answer = answer.replace(" trebui să ", " ");
 		image5 = false;
 	}else{
 		image5 = true;
@@ -725,7 +727,7 @@ wordcount = indexarray.length + index1array.length + index2array.length + index3
 	
       function onPlayerReady(event) {
         event.target.playVideo();
-		document.getElementById("p2").innerHTML = "Eu îs fată tinerică, tre’ să fiu cuminte,&#13;&#10;Îi-e ruşine şi e frig, aşa o zis părintele.&#13;&#10;Dar eu m-am săturat să stau la colţ de masă,&#13;&#10;Eu azi m-am îmbracat în rochia cea frumoasă.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă.&#13;&#10;&#13;&#10;Spune, ce n-ar spune, nu mă interesează,&#13;&#10;De ce să stau de-o parte când sufletu-mi dansează.&#13;&#10;Mi-e a început să-mi placă după colivie,&#13;&#10;Şi am să gust oleacă, diseară, de rachie.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă.";
+		document.getElementById("p2").innerHTML = "";
 	JSvalue1 = document.getElementById("PHPvalue1");
 	JSvalue2 = document.getElementById("PHPvalue2");
 	JSvalue3 = document.getElementById("PHPvalue3");
@@ -746,7 +748,7 @@ wordcount = indexarray.length + index1array.length + index2array.length + index3
 	index5array = index11array.map(Number);
 
  
-		document.getElementById("p3").innerHTML = "Я молоденькая девушка, я должна быть послушной,&#13;&#10;Она стесняется, ей холодно, - так сказал батюшка.&#13;&#10;Но мне надоело сидеть в углу стола,&#13;&#10;Сегодня я надела красивое платье.&#13;&#10;&#13;&#10;На этой свадьбе играет только весёлая музыка,&#13;&#10;Все говорят, никто не слушает.&#13;&#10;Я так много сегодня поработала с утра,&#13;&#10;Станцую-ка я хоть разок.&#13;&#10;&#13;&#10;Пусть говорят что угодно, меня не волнует,&#13;&#10;Почему я должна стоять в стороне, когда моя душа хочет танцевать?&#13;&#10;Мне нравится то, что я вырвалась из клетки,&#13;&#10;Сегодня вечером я попробую немножечко вина.&#13;&#10;&#13;&#10;На этой свадьбе играет только весёлая музыка,&#13;&#10;Все говорят, никто не слушает.&#13;&#10;Я так много сегодня поработала с утра,&#13;&#10;Станцую-ка я хоть разок.";
+		document.getElementById("p3").innerHTML = "";
 	  }
 	 
     
@@ -781,8 +783,8 @@ for (i = 0; i < close.length; i++) {
   close[i].onclick = function() {
 	lyrics = 1;
 	player.loadVideoById("TH0oCDziVQQ", 0, "large");
-	document.getElementById("p2").innerHTML = "Eu îs fată tinerică, tre’ să fiu cuminte,&#13;&#10;Îi-e ruşine şi e frig, aşa o zis părintele.&#13;&#10;Dar eu m-am săturat să stau la colţ de masă,&#13;&#10;Eu azi m-am îmbracat în rochia cea frumoasă.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă.&#13;&#10;&#13;&#10;Spune, ce n-ar spune, nu mă interesează,&#13;&#10;De ce să stau de-o parte când sufletu-mi dansează.&#13;&#10;Mi-e a început să-mi placă după colivie,&#13;&#10;Şi am să gust oleacă, diseară, de rachie.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă .";
-	document.getElementById("p3").innerHTML = "Я молоденькая девушка, я должна быть послушной,&#13;&#10;Она стесняется, ей холодно, - так сказал батюшка.&#13;&#10;Но мне надоело сидеть в углу стола,&#13;&#10;Сегодня я надела красивое платье.&#13;&#10;&#13;&#10;На этой свадьбе играет только весёлая музыка,&#13;&#10;Все говорят, никто не слушает.&#13;&#10;Я так много сегодня поработала с утра,&#13;&#10;Станцую-ка я хоть разок.&#13;&#10;&#13;&#10;Пусть говорят что угодно, меня не волнует,&#13;&#10;Почему я должна стоять в стороне, когда моя душа хочет танцевать?&#13;&#10;Мне нравится то, что я вырвалась из клетки,&#13;&#10;Сегодня вечером я попробую немножечко вина.&#13;&#10;&#13;&#10;На этой свадьбе играет только весёлая музыка,&#13;&#10;Все говорят, никто не слушает.&#13;&#10;Я так много сегодня поработала с утра,&#13;&#10;Станцую-ка я хоть разок.";
+	document.getElementById("p2").innerHTML = "";
+	document.getElementById("p3").innerHTML = "";
   }
 
   }
@@ -808,8 +810,8 @@ function myCallback() {
 if (lyrics == 1){
 	if (lang == "Russian"){
 if (current < 12){
-	document.getElementById("p2").innerHTML = "Eu îs fată tinerică, tre’ să fiu cuminte,&#13;&#10;Îi-e ruşine şi e frig, aşa o zis părintele.&#13;&#10;Dar eu m-am săturat să stau la colţ de masă,&#13;&#10;Eu azi m-am îmbracat în rochia cea frumoasă.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă.&#13;&#10;&#13;&#10;Spune, ce n-ar spune, nu mă interesează,&#13;&#10;De ce să stau de-o parte când sufletu-mi dansează.&#13;&#10;Mi-e a început să-mi placă după colivie,&#13;&#10;Şi am să gust oleacă, diseară, de rachie.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă .";
-	document.getElementById("p3").innerHTML = "Я молоденькая девушка, я должна быть послушной,&#13;&#10;Она стесняется, ей холодно, - так сказал батюшка.&#13;&#10;Но мне надоело сидеть в углу стола,&#13;&#10;Сегодня я надела красивое платье.&#13;&#10;&#13;&#10;На этой свадьбе играет только весёлая музыка,&#13;&#10;Все говорят, никто не слушает.&#13;&#10;Я так много сегодня поработала с утра,&#13;&#10;Станцую-ка я хоть разок.&#13;&#10;&#13;&#10;Пусть говорят что угодно, меня не волнует,&#13;&#10;Почему я должна стоять в стороне, когда моя душа хочет танцевать?&#13;&#10;Мне нравится то, что я вырвалась из клетки,&#13;&#10;Сегодня вечером я попробую немножечко вина.&#13;&#10;&#13;&#10;На этой свадьбе играет только весёлая музыка,&#13;&#10;Все говорят, никто не слушает.&#13;&#10;Я так много сегодня поработала с утра,&#13;&#10;Станцую-ка я хоть разок.";
+	document.getElementById("p2").innerHTML = "";
+	document.getElementById("p3").innerHTML = "";
 }
 if (current >= 12 && current < 14){
 		document.getElementById("p2").innerHTML = "Eu îs fată tinerică";
@@ -894,8 +896,8 @@ if (current >= 15 && current < 16.5){
 	}
 	if (lang == "Surżyk"){
 		if (current < 12){
-	document.getElementById("p2").innerHTML = "Eu îs fată tinerică, tre’ să fiu cuminte,&#13;&#10;Îi-e ruşine şi e frig, aşa o zis părintele.&#13;&#10;Dar eu m-am săturat să stau la colţ de masă,&#13;&#10;Eu azi m-am îmbracat în rochia cea frumoasă.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă.&#13;&#10;&#13;&#10;Spune, ce n-ar spune, nu mă interesează,&#13;&#10;De ce să stau de-o parte când sufletu-mi dansează.&#13;&#10;Mi-e a început să-mi placă după colivie,&#13;&#10;Şi am să gust oleacă, diseară, de rachie.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă .";
-	document.getElementById("p3").innerHTML = "Ja is girl молодая, have to be posłuszną,&#13;&#10;Їй стыдно і є frost, so did said parent.&#13;&#10;But ja am saturant to stać at kąt ze парти,&#13;&#10;Ja dziś am ubrana in suknia the вродлива.&#13;&#10;&#13;&#10;At ślub этот no more music ze ślub,&#13;&#10;All говорять, ніхто не слухає,&#13;&#10;Tyle am worked ze morning,&#13;&#10;Am to grać хочаб a time in życie.&#13;&#10;&#13;&#10;Mówić, co no би mówić, no me интересуюсь,&#13;&#10;Ze co to stać ze a встороне kiedy soul my dancing.&#13;&#10;My є починаю to my like после klatki,&#13;&#10;I mam to вкус немного, wieczorem, ze wine.&#13;&#10;At ślub этот no more music ze ślub,&#13;&#10;All говорять, ніхто не слухає,&#13;&#10;Tyle am worked ze morning,&#13;&#10;Am to grać хочаб a time in życie.";
+	document.getElementById("p2").innerHTML = "";
+	document.getElementById("p3").innerHTML = "";
 }
 if (current >= 12 && current < 14){
 		document.getElementById("p2").innerHTML = "Eu îs fată tinerică";
@@ -980,8 +982,8 @@ if (current >= 15 && current < 16.5){
 	}
 	if (lang == "Surance"){
 		if (current < 12){
-	document.getElementById("p2").innerHTML = "Eu îs fată tinerică, tre’ să fiu cuminte,&#13;&#10;Îi-e ruşine şi e frig, aşa o zis părintele.&#13;&#10;Dar eu m-am săturat să stau la colţ de masă,&#13;&#10;Eu azi m-am îmbracat în rochia cea frumoasă.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă.&#13;&#10;&#13;&#10;Spune, ce n-ar spune, nu mă interesează,&#13;&#10;De ce să stau de-o parte când sufletu-mi dansează.&#13;&#10;Mi-e a început să-mi placă după colivie,&#13;&#10;Şi am să gust oleacă, diseară, de rachie.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă .";
-	document.getElementById("p3").innerHTML = "Ya is giorl molodaya, hăv tu bi poslușnou,&#13;&#10;Yiy stîdna i e frost, sou did sed părent.&#13;&#10;Bat ya ăm saturant tu stac ăt cont ze partâ,&#13;&#10;Ya dziș ăm ubrana in suknia ze vrodlîva.&#13;&#10;&#13;&#10;Ăt șlub ătot nou mor miuzic ze șlub,&#13;&#10;Ol hovoriat, nihto ne sluhaie,&#13;&#10;Tâle ăm worked ze mornin,&#13;&#10;Am tu grac hocab ă taim in jâce.&#13;&#10;&#13;&#10;Muvic, țo nou bâ muvic, nou mi interesuiusi,&#13;&#10;Ze țo tu stac ze ă vstronie ciedâ soul mai danțin&#13;&#10;Mai e pocînayu tu mai laic posliă clatcâ,&#13;&#10;I mam tu vcus niemnoga, wiecorăm, ze wain.&#13;&#10;&#13;&#10;Ăt șlub ătot nou mor miuzic ze șlub,&#13;&#10;Ol hovoriat, nihto ne sluhaie,&#13;&#10;Tâle am worked ze mornin,&#13;&#10;Am tu grac hocab ă taim in jâce.";
+	document.getElementById("p2").innerHTML = "";
+	document.getElementById("p3").innerHTML = "";
 }
 if (current >= 12 && current < 14){
 		document.getElementById("p2").innerHTML = "Eu îs fată tinerică";
@@ -1066,8 +1068,8 @@ if (current >= 15 && current < 16.5){
 	}
 	if (lang == "Surid"){
 		if (current < 12){
-	document.getElementById("p2").innerHTML = "Eu îs fată tinerică, tre’ să fiu cuminte,&#13;&#10;Îi-e ruşine şi e frig, aşa o zis părintele.&#13;&#10;Dar eu m-am săturat să stau la colţ de masă,&#13;&#10;Eu azi m-am îmbracat în rochia cea frumoasă.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă.&#13;&#10;&#13;&#10;Spune, ce n-ar spune, nu mă interesează,&#13;&#10;De ce să stau de-o parte când sufletu-mi dansează.&#13;&#10;Mi-e a început să-mi placă după colivie,&#13;&#10;Şi am să gust oleacă, diseară, de rachie.&#13;&#10;&#13;&#10;La nunta asta-i numa’ muzică de nuntă,&#13;&#10;Toţi vorbesc, nimeni n-ascultă.&#13;&#10;Atâta am muncit de dimineaţă,&#13;&#10;Am să joc măcar o dată-n viaţă .";
-	document.getElementById("p3").innerHTML = "Ea is giotă tinedaya, trăv tă biu poslinte,&#13;&#10;Îiy rușîdna și e frist, asou dod ses părentele.&#13;&#10;Bar ea ăm săturant tă stauc lăt colt dze mastâ,&#13;&#10;Ea aziș ăm ubracat in ruknia zea vrodoasă.&#13;&#10;&#13;&#10;Lăt șlunta ăsto nu mar muzic dze șlunta,&#13;&#10;Tolți hovorbesc, nihteni n-asluhtă,&#13;&#10;Atâle am worcit dze dimorneață,&#13;&#10;Am tă groc măcab o dataim in jață.&#13;&#10;&#13;&#10;Spuvic, țe nou bâr spuvic, nou me interesuză,&#13;&#10;Dze țe tă stauc dze partoronie cândâ soufletu mai danțează.&#13;&#10;Mai e poceput tă mai plaică duposiliă colitca,&#13;&#10;Și am tă vgust nieacă, disorăm, dze wachin.&#13;&#10;&#13;&#10;Lăt șlunta ăsto nu mar muzic dze șlunta,&#13;&#10;Tolți hovorbesc, nihteni n-asluhtă,&#13;&#10;Atâle am worcit dze dimorneață,&#13;&#10;Am tă groc măcab o dataim in jață.";
+	document.getElementById("p2").innerHTML = "";
+	document.getElementById("p3").innerHTML = "";
 }
 if (current >= 12 && current < 14){
 		document.getElementById("p2").innerHTML = "Eu îs fată tinerică";
@@ -1163,55 +1165,21 @@ list.addEventListener('click', function(ev) {
 	
 	function RandomImage()
 	{
-		if (document.getElementById("3").src != "http://localhost/off.jpg") 
-        {
+		
 		if (song == "La nunta asta"){
+			if (document.getElementById("3").src != "http://localhost/off.jpg") 
+        {
 		index = 1;
 		document.rebuslot.subjectquantity.src = index+".jpg";
 		if (index == 1){
 			document.rebuslot.subjectquantity.title = "1";
 		}
 		}else{
-		index = getRndmFromSet([0,1,2,3,4,5,6,7,8,9]);
-		document.rebuslot.subjectquantity.src = index+".jpg";
-		if (index == 0){
-			document.rebuslot.subjectquantity.title = "0";
-		}
-		if (index == 1){
-			document.rebuslot.subjectquantity.title = "1";
-		}
-		if (index == 2){
-			document.rebuslot.subjectquantity.title = "2";
-		}
-		if (index == 3){
-			document.rebuslot.subjectquantity.title = "3";
-		}
-		if (index == 4){
-			document.rebuslot.subjectquantity.title = "4";
-		}
-		if (index == 5){
-			document.rebuslot.subjectquantity.title = "5";
-		}
-		if (index == 6){
-			document.rebuslot.subjectquantity.title = "6";
-		}
-		if (index == 7){
-			document.rebuslot.subjectquantity.title = "7";
-		}
-		if (index == 8){
-			document.rebuslot.subjectquantity.title = "8";
-		}
-		if (index == 9){
-			document.rebuslot.subjectquantity.title = "9";
-		}
-		}
-		}else{
-		index = 1; 
+			index = 1; 
 		}
 		if (document.getElementById("1").src != "http://localhost/off.jpg") 
         {
-		if (song == "La nunta asta"){
-		index1 = getRndmFromSet([72,73,74,75,76,77,78,79,80,81,82,83,84,85,86]);
+			index1 = getRndmFromSet([72,73,74,75,76,77,78,79,80,81,82,83,84,85,86]);
 		document.rebuslot.subjectessence.src = index1+"n.jpg";
 		if (index1 == 72){
 			document.rebuslot.subjectessence.title = "я";
@@ -1259,6 +1227,87 @@ list.addEventListener('click', function(ev) {
 			document.rebuslot.subjectessence.title = "вино";
 		}
 		}else{
+		index1 = 0;
+		}
+		if (document.getElementById("2").src != "http://localhost/off.jpg") 
+        {
+		index2 = getRndmFromSet([1,23,24,25,26,27,28,29]);
+		document.rebuslot.subjectquality.src = index2+"adj.jpg";
+		if (index2 == 1){
+			document.rebuslot.subjectquality.title = "красивый";
+		}
+		if (index2 == 23){
+			document.rebuslot.subjectquality.title = "молодой";
+		}
+		if (index2 == 24){
+			document.rebuslot.subjectquality.title = "послушный";
+		}
+		if (index2 == 25){
+			document.rebuslot.subjectquality.title = "сыт";
+		}
+		if (index2 == 26){
+			document.rebuslot.subjectquality.title = "одет";
+		}
+		if (index2 == 27){
+			document.rebuslot.subjectquality.title = "этот";
+		}
+		if (index2 == 28){
+			document.rebuslot.subjectquality.title = "работающий";
+		}
+		if (index2 == 29){
+			document.rebuslot.subjectquality.title = "начинающийся";
+		}
+ 		}else{
+		index2 = 0;
+		}
+	
+		if (document.getElementById("4").src != "http://localhost/off.jpg") 
+        {
+			index3 = getRndmFromSet([12,13,14,15,16,17,18,19,20,21,22]);
+			document.rebuslot.verbessence.src = index3+"v.jpg";
+	}else{
+		index3 = 5;
+		}
+	}else{
+		if (document.getElementById("3").src != "http://localhost/off.jpg") 
+        {
+		index = getRndmFromSet([0,1,2,3,4,5,6,7,8,9]);
+		document.rebuslot.subjectquantity.src = index+".jpg";
+		if (index == 0){
+			document.rebuslot.subjectquantity.title = "0";
+		}
+		if (index == 1){
+			document.rebuslot.subjectquantity.title = "1";
+		}
+		if (index == 2){
+			document.rebuslot.subjectquantity.title = "2";
+		}
+		if (index == 3){
+			document.rebuslot.subjectquantity.title = "3";
+		}
+		if (index == 4){
+			document.rebuslot.subjectquantity.title = "4";
+		}
+		if (index == 5){
+			document.rebuslot.subjectquantity.title = "5";
+		}
+		if (index == 6){
+			document.rebuslot.subjectquantity.title = "6";
+		}
+		if (index == 7){
+			document.rebuslot.subjectquantity.title = "7";
+		}
+		if (index == 8){
+			document.rebuslot.subjectquantity.title = "8";
+		}
+		if (index == 9){
+			document.rebuslot.subjectquantity.title = "9";
+		}
+		}else{
+			index = 1; 
+		}
+		if (document.getElementById("1").src != "http://localhost/off.jpg") 
+        {
 		index1 = getRndmFromSet([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86]);
 		document.rebuslot.subjectessence.src = index1+"n.jpg";
 		if (index1 == 72){
@@ -1306,57 +1355,27 @@ list.addEventListener('click', function(ev) {
 		if (index1 == 86){
 			document.rebuslot.subjectessence.title = "вино";
 		}
-		}
 		}else{
 		index1 = 0;
 		}
 		if (document.getElementById("2").src != "http://localhost/off.jpg") 
         {
-	if (song == "La nunta asta"){
-		index2 = getRndmFromSet([1,23,24,25,26,27,28,29]);
-		document.rebuslot.subjectquality.src = index2+"adj.jpg";
-		if (index2 == 1){
-			document.rebuslot.subjectquality.title = "красивый";
-		}
-		if (index2 == 23){
-			document.rebuslot.subjectquality.title = "молодой";
-		}
-		if (index2 == 24){
-			document.rebuslot.subjectquality.title = "послушный";
-		}
-		if (index2 == 25){
-			document.rebuslot.subjectquality.title = "сыт";
-		}
-		if (index2 == 26){
-			document.rebuslot.subjectquality.title = "одет";
-		}
-		if (index2 == 27){
-			document.rebuslot.subjectquality.title = "этот";
-		}
-		if (index2 == 28){
-			document.rebuslot.subjectquality.title = "работающий";
-		}
-		if (index2 == 29){
-			document.rebuslot.subjectquality.title = "начинающийся";
-		}
-		}else{
 		index2 = getRndmFromSet([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29]);
 		document.rebuslot.subjectquality.src = index2+"adj.jpg";
 		
-		}
 		}else{
 		index2 = 0;
 		}
+		
 		if (document.getElementById("4").src != "http://localhost/off.jpg") 
         {
-		index3 = Math.random();
-		index3 = Math.floor(index3*50);
-		if(index3 > (imagearray3.length-1))
-		index3 = index3%(imagearray3.length-1);
-		document.rebuslot.verbessence.src = index3+"v.jpg";
+			index3 = getRndmFromSet([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22]);
+			document.rebuslot.verbessence.src = index3+"v.jpg";
 		}else{
 		index3 = 5;
 		}
+	}
+	
 		if (document.getElementById("5").src != "http://localhost/off.jpg") 
         {
 		index4 = Math.random();
@@ -1369,13 +1388,18 @@ list.addEventListener('click', function(ev) {
 		}
 		if (document.getElementById("6").src != "http://localhost/off.jpg") 
         {
-		index5 = Math.random();
-		index5 = Math.floor(index5*50);
-		if(index5 > (imagearray5.length-1))
-		index5 = index5%(imagearray5.length-1);
-		document.rebuslot.verbquantity.src = index5+"adv2.jpg";
+		//index5 = Math.random();
+		//index5 = Math.floor(index5*50);
+		//if(index5 > (imagearray5.length-1))
+		//index5 = index5%(imagearray5.length-1);
+		index5 = 0;
+		if (index5 == 0){
+			document.rebuslot.verbquantity.title = "должен";
+		}
+		document.rebuslot.verbquantity.src = index5+"m.jpg";
+		
 		}else{
-		index5 = 16;
+		index5 = 0;
 		}
 		if (document.getElementById("7").src != "http://localhost/off.jpg") 
         {
@@ -1586,17 +1610,17 @@ list.addEventListener('click', function(ev) {
 	}
 	.posit-6 {
 	left: 57%;
-	top: 60%;
+	top: 65%;
 	background-color: black;
 	color: white;
-
+	font-size: 18;
 	}
 	.posit-7 {
-	left: 78%;
-	top: 60%;
+	left: 57%;
+	top: 75%;
 	background-color: black;
 	color: white;
-
+	font-size: 18;
 	}
 	.posit-8 {
 	left: 0%;
@@ -1814,8 +1838,8 @@ ul li.checked::before {
 	<button id="right" class="posit posit-4" onclick="RightAnswer()">Show the right answer</button>
 	<img id="10" name="sound" class="posit posit-10" height ="50" width="50" src="soundon.jpg" onclick="off10()" />
 
-	<textarea rows="13" cols="35" class="posit posit-6" id="p2">Song lyrics</textarea> 
-	<textarea rows="13" cols="35" class="posit posit-7" id="p3">Lyrics translation</textarea> 
+	<p class="posit posit-6" id="p2">Song lyrics</p> 
+	<p class="posit posit-7" id="p3">Lyrics translation</p> 
 	
 	<div class="menu">
   <ul class="menu-options" id="context">
@@ -1870,20 +1894,7 @@ var lang;
 var context = document.getElementById("context");
 context.addEventListener("click", e => {
 lang = e.target.textContent;
-if (lyrics == 1){
-if (lang == "Russian"){
-document.getElementById("p3").innerHTML = "Я молоденькая девушка, я должна быть послушной,&#13;&#10;Она стесняется, ей холодно, - так сказал батюшка.&#13;&#10;Но мне надоело сидеть в углу стола,&#13;&#10;Сегодня я надела красивое платье.&#13;&#10;&#13;&#10;На этой свадьбе играет только весёлая музыка,&#13;&#10;Все говорят, никто не слушает.&#13;&#10;Я так много сегодня поработала с утра,&#13;&#10;Станцую-ка я хоть разок.&#13;&#10;&#13;&#10;Пусть говорят что угодно, меня не волнует,&#13;&#10;Почему я должна стоять в стороне, когда моя душа хочет танцевать?&#13;&#10;Мне нравится то, что я вырвалась из клетки,&#13;&#10;Сегодня вечером я попробую немножечко вина.&#13;&#10;&#13;&#10;На этой свадьбе играет только весёлая музыка,&#13;&#10;Все говорят, никто не слушает.&#13;&#10;Я так много сегодня поработала с утра,&#13;&#10;Станцую-ка я хоть разок.";
-}
-if (lang == "Surżyk"){
-document.getElementById("p3").innerHTML = "Ja is girl молодая, have to be posłuszną,&#13;&#10;Їй стыдно і є frost, so did said parent.&#13;&#10;But ja am saturant to stać at kąt ze парти,&#13;&#10;Ja dziś am ubrana in suknia the вродлива.&#13;&#10;&#13;&#10;At ślub этот no more music ze ślub,&#13;&#10;All говорять, ніхто не слухає,&#13;&#10;Tyle am worked ze morning,&#13;&#10;Am to grać хочаб a time in życie.&#13;&#10;&#13;&#10;Mówić, co no би mówić, no me интересуюсь,&#13;&#10;Ze co to stać ze a встороне kiedy soul my dancing.&#13;&#10;My є починаю to my like после klatki,&#13;&#10;I mam to вкус немного, wieczorem, ze wine.&#13;&#10;At ślub этот no more music ze ślub,&#13;&#10;All говорять, ніхто не слухає,&#13;&#10;Tyle am worked ze morning,&#13;&#10;Am to grać хочаб a time in życie.";
-}
-if (lang == "Surance"){
-document.getElementById("p3").innerHTML = "Ya is giorl molodaya, hăv tu bi poslușnou,&#13;&#10;Yiy stîdna i e frost, sou did sed părent.&#13;&#10;Bat ya mam saturant tu stac ăt cont ze partâ,&#13;&#10;Ya dziș mam ubrana in suknia ze vrodlîva.&#13;&#10;&#13;&#10;Ăt șlub ătot nou mor miuzic ze șlub,&#13;&#10;Ol hovoriat, nihto ne sluhaie,&#13;&#10;Tâle am worked ze mornin,&#13;&#10;Am tu grac hocab ă taim in jâce.&#13;&#10;&#13;&#10;Muvic, țo nou bâ muvic, nou mi intieriesuiusi,&#13;&#10;Ze țo tu stac ze e vstoronie ciedâ soul mai danțin&#13;&#10;Mai e pocînayu tu mai laic posliă clatcâ,&#13;&#10;I mam tu vcus niemnoga, wiecorăm, ze wain.&#13;&#10;&#13;&#10;Ăt șlub ătot nou mor miuzic ze șlub,&#13;&#10;Ol hovoriat, nihto ne sluhaie,&#13;&#10;Tâle am worked ze mornin,&#13;&#10;Am tu grac hocab ă taim in jâce.";
-}
-if (lang == "Surid"){
-document.getElementById("p3").innerHTML = "Ea is giotă tinedaya, trăv tă biu poslinte,&#13;&#10;Îiy rușîdna și e frist, asou dod ses părentele.&#13;&#10;Bar ea mam săturant tă stauc lăt colt dze mastâ,&#13;&#10;Ea aziș mam ubracat in ruknia zea vrodoasă.&#13;&#10;&#13;&#10;Lăt șlunta ăsto nu mar muzic dze șlunta,&#13;&#10;Tolți hovorbesc, nihteni n-asluhtă,&#13;&#10;Atâle am worcit dze dimorneață,&#13;&#10;Am tă groc măcab o dataim in jață.&#13;&#10;&#13;&#10;Spuvic, țe nou bâr spuvic, nou me interesuză,&#13;&#10;Dze țe tă stauc dze partoronie cândâ soufletu mai danțează.&#13;&#10;Mai e poceput tă mai plaică duposiliă colitca,&#13;&#10;Și mam tă vgust nieacă, disorăm, dze wachin.&#13;&#10;&#13;&#10;Lăt șlunta ăsto nu mar muzic dze șlunta,&#13;&#10;Tolți hovorbesc, nihteni n-asluhtă,&#13;&#10;Atâle am worcit dze dimorneață,&#13;&#10;Am tă groc măcab o dataim in jață.";
-}
-}})
+})
 </script>
 </body>
 </html>
