@@ -1171,9 +1171,9 @@ list.addEventListener('click', function(ev) {
         {
 		index = 1;
 		document.rebuslot.subjectquantity.src = index+".jpg";
-		if (index == 1){
-			document.rebuslot.subjectquantity.title = "1";
-		}
+		//if (index == 1){
+		//	document.rebuslot.subjectquantity.title = "1";
+		//}
 		}else{
 			index = 1; 
 		}
@@ -1181,51 +1181,51 @@ list.addEventListener('click', function(ev) {
         {
 			index1 = getRndmFromSet([72,73,74,75,76,77,78,79,80,81,82,83,84,85,86]);
 		document.rebuslot.subjectessence.src = index1+"n.jpg";
-		if (index1 == 72){
-			document.rebuslot.subjectessence.title = "я";
-		}
-		if (index1 == 73){
-			document.rebuslot.subjectessence.title = "девушка";
-		}
-		if (index1 == 74){
-			document.rebuslot.subjectessence.title = "она";
-		}
-		if (index1 == 75){
-			document.rebuslot.subjectessence.title = "батюшка";
-		}
-		if (index1 == 76){
-			document.rebuslot.subjectessence.title = "угол";
-		}
-		if (index1 == 77){
-			document.rebuslot.subjectessence.title = "стол";
-		}
-		if (index1 == 78){
-			document.rebuslot.subjectessence.title = "платье";
-		}
-		if (index1 == 79){
-			document.rebuslot.subjectessence.title = "свадьба";
-		}
-		if (index1 == 80){
-			document.rebuslot.subjectessence.title = "музыка";
-		}
-		if (index1 == 81){
-			document.rebuslot.subjectessence.title = "все";
-		}
-		if (index1 == 82){
-			document.rebuslot.subjectessence.title = "никто";
-		}
-		if (index1 == 83){
-			document.rebuslot.subjectessence.title = "жизнь";
-		}
-		if (index1 == 84){
-			document.rebuslot.subjectessence.title = "душа";
-		}
-		if (index1 == 85){
-			document.rebuslot.subjectessence.title = "клетка";
-		}
-		if (index1 == 86){
-			document.rebuslot.subjectessence.title = "вино";
-		}
+		//if (index1 == 72){
+		//	document.rebuslot.subjectessence.title = "я";
+		//}
+		//if (index1 == 73){
+	//		document.rebuslot.subjectessence.title = "девушка";
+	//	}
+	//	if (index1 == 74){
+	//		document.rebuslot.subjectessence.title = "она";
+	//	}
+	//	if (index1 == 75){
+	//		document.rebuslot.subjectessence.title = "батюшка";
+	//	}
+	//	if (index1 == 76){
+	//		document.rebuslot.subjectessence.title = "угол";
+	//	}
+	//	if (index1 == 77){
+	//		document.rebuslot.subjectessence.title = "стол";
+	//	}
+	//	if (index1 == 78){
+	//		document.rebuslot.subjectessence.title = "платье";
+	//	}
+	//	if (index1 == 79){
+	//		document.rebuslot.subjectessence.title = "свадьба";
+	//	}
+	//	if (index1 == 80){
+	//		document.rebuslot.subjectessence.title = "музыка";
+	//	}
+	//	if (index1 == 81){
+	//		document.rebuslot.subjectessence.title = "все";
+	//	}
+	//	if (index1 == 82){
+	//		document.rebuslot.subjectessence.title = "никто";
+	//	}
+	//	if (index1 == 83){
+	//		document.rebuslot.subjectessence.title = "жизнь";
+	//	}
+	//	if (index1 == 84){
+	//		document.rebuslot.subjectessence.title = "душа";
+	//	}
+	//	if (index1 == 85){
+	//		document.rebuslot.subjectessence.title = "клетка";
+	//	}
+	//	if (index1 == 86){
+	//		document.rebuslot.subjectessence.title = "вино";
+	//	}
 		}else{
 		index1 = 0;
 		}
@@ -1233,30 +1233,30 @@ list.addEventListener('click', function(ev) {
         {
 		index2 = getRndmFromSet([1,23,24,25,26,27,28,29]);
 		document.rebuslot.subjectquality.src = index2+"adj.jpg";
-		if (index2 == 1){
-			document.rebuslot.subjectquality.title = "красивый";
-		}
-		if (index2 == 23){
-			document.rebuslot.subjectquality.title = "молодой";
-		}
-		if (index2 == 24){
-			document.rebuslot.subjectquality.title = "послушный";
-		}
-		if (index2 == 25){
-			document.rebuslot.subjectquality.title = "сыт";
-		}
-		if (index2 == 26){
-			document.rebuslot.subjectquality.title = "одет";
-		}
-		if (index2 == 27){
-			document.rebuslot.subjectquality.title = "этот";
-		}
-		if (index2 == 28){
-			document.rebuslot.subjectquality.title = "работающий";
-		}
-		if (index2 == 29){
-			document.rebuslot.subjectquality.title = "начинающийся";
-		}
+	//	if (index2 == 1){
+	//		document.rebuslot.subjectquality.title = "красивый";
+	//	}
+	//	if (index2 == 23){
+	//		document.rebuslot.subjectquality.title = "молодой";
+	//	}
+	//	if (index2 == 24){
+	//		document.rebuslot.subjectquality.title = "послушный";
+	//	}
+	//	if (index2 == 25){
+	//		document.rebuslot.subjectquality.title = "сыт";
+	//	}
+	//	if (index2 == 26){
+	//		document.rebuslot.subjectquality.title = "одет";
+	//	}
+	//	if (index2 == 27){
+	//		document.rebuslot.subjectquality.title = "этот";
+	//	}
+	//	if (index2 == 28){
+	//		document.rebuslot.subjectquality.title = "работающий";
+	//	}
+	//	if (index2 == 29){
+	//		document.rebuslot.subjectquality.title = "начинающийся";
+	//	}
  		}else{
 		index2 = 0;
 		}
@@ -1265,6 +1265,7 @@ list.addEventListener('click', function(ev) {
         {
 			index3 = getRndmFromSet([12,13,14,15,16,17,18,19,20,21,22]);
 			document.rebuslot.verbessence.src = index3+"v.jpg";
+			//here
 	}else{
 		index3 = 5;
 		}

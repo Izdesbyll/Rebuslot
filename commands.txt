@@ -1,0 +1,5 @@
+sudo a2ensite 000-default.conf
+sudo a2dissite wordpress.conf
+sudo a2dissite 000-default.conf
+sudo a2ensite wordpress.conf
+sudo systemctl reload apache2
