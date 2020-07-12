@@ -1,7 +1,7 @@
  <?php
 $servername = "localhost";
-$username = "izdesbyll";
-$password = "q14103755.";
+$username = "root";
+$password = "";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password);
@@ -66,7 +66,7 @@ mysqli_query($conn,$sql);
 
 mysqli_query($conn,$sql);
 
-header("Location: http://localhost/index.php");
+header("Location: http://localhost/index.phpf");
 ?> 
 
 	
