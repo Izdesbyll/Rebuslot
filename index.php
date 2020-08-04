@@ -1171,9 +1171,7 @@ list.addEventListener('click', function(ev) {
         {
 		index = 1;
 		document.rebuslot.subjectquantity.src = index+".jpg";
-		//if (index == 1){
-		//	document.rebuslot.subjectquantity.title = "1";
-		//}
+		
 		}else{
 			index = 1; 
 		}
@@ -1181,51 +1179,7 @@ list.addEventListener('click', function(ev) {
         {
 			index1 = getRndmFromSet([72,73,74,75,76,77,78,79,80,81,82,83,84,85,86]);
 		document.rebuslot.subjectessence.src = index1+"n.jpg";
-		//if (index1 == 72){
-		//	document.rebuslot.subjectessence.title = "я";
-		//}
-		//if (index1 == 73){
-	//		document.rebuslot.subjectessence.title = "девушка";
-	//	}
-	//	if (index1 == 74){
-	//		document.rebuslot.subjectessence.title = "она";
-	//	}
-	//	if (index1 == 75){
-	//		document.rebuslot.subjectessence.title = "батюшка";
-	//	}
-	//	if (index1 == 76){
-	//		document.rebuslot.subjectessence.title = "угол";
-	//	}
-	//	if (index1 == 77){
-	//		document.rebuslot.subjectessence.title = "стол";
-	//	}
-	//	if (index1 == 78){
-	//		document.rebuslot.subjectessence.title = "платье";
-	//	}
-	//	if (index1 == 79){
-	//		document.rebuslot.subjectessence.title = "свадьба";
-	//	}
-	//	if (index1 == 80){
-	//		document.rebuslot.subjectessence.title = "музыка";
-	//	}
-	//	if (index1 == 81){
-	//		document.rebuslot.subjectessence.title = "все";
-	//	}
-	//	if (index1 == 82){
-	//		document.rebuslot.subjectessence.title = "никто";
-	//	}
-	//	if (index1 == 83){
-	//		document.rebuslot.subjectessence.title = "жизнь";
-	//	}
-	//	if (index1 == 84){
-	//		document.rebuslot.subjectessence.title = "душа";
-	//	}
-	//	if (index1 == 85){
-	//		document.rebuslot.subjectessence.title = "клетка";
-	//	}
-	//	if (index1 == 86){
-	//		document.rebuslot.subjectessence.title = "вино";
-	//	}
+
 		}else{
 		index1 = 0;
 		}
@@ -1233,30 +1187,7 @@ list.addEventListener('click', function(ev) {
         {
 		index2 = getRndmFromSet([1,23,24,25,26,27,28,29]);
 		document.rebuslot.subjectquality.src = index2+"adj.jpg";
-	//	if (index2 == 1){
-	//		document.rebuslot.subjectquality.title = "красивый";
-	//	}
-	//	if (index2 == 23){
-	//		document.rebuslot.subjectquality.title = "молодой";
-	//	}
-	//	if (index2 == 24){
-	//		document.rebuslot.subjectquality.title = "послушный";
-	//	}
-	//	if (index2 == 25){
-	//		document.rebuslot.subjectquality.title = "сыт";
-	//	}
-	//	if (index2 == 26){
-	//		document.rebuslot.subjectquality.title = "одет";
-	//	}
-	//	if (index2 == 27){
-	//		document.rebuslot.subjectquality.title = "этот";
-	//	}
-	//	if (index2 == 28){
-	//		document.rebuslot.subjectquality.title = "работающий";
-	//	}
-	//	if (index2 == 29){
-	//		document.rebuslot.subjectquality.title = "начинающийся";
-	//	}
+	
  		}else{
 		index2 = 0;
 		}
@@ -1274,88 +1205,15 @@ list.addEventListener('click', function(ev) {
         {
 		index = getRndmFromSet([0,1,2,3,4,5,6,7,8,9]);
 		document.rebuslot.subjectquantity.src = index+".jpg";
-		if (index == 0){
-			document.rebuslot.subjectquantity.title = "0";
-		}
-		if (index == 1){
-			document.rebuslot.subjectquantity.title = "1";
-		}
-		if (index == 2){
-			document.rebuslot.subjectquantity.title = "2";
-		}
-		if (index == 3){
-			document.rebuslot.subjectquantity.title = "3";
-		}
-		if (index == 4){
-			document.rebuslot.subjectquantity.title = "4";
-		}
-		if (index == 5){
-			document.rebuslot.subjectquantity.title = "5";
-		}
-		if (index == 6){
-			document.rebuslot.subjectquantity.title = "6";
-		}
-		if (index == 7){
-			document.rebuslot.subjectquantity.title = "7";
-		}
-		if (index == 8){
-			document.rebuslot.subjectquantity.title = "8";
-		}
-		if (index == 9){
-			document.rebuslot.subjectquantity.title = "9";
-		}
 		}else{
-			index = 1; 
+			index =1;
 		}
+
 		if (document.getElementById("1").src != "http://localhost/off.jpg") 
         {
 		index1 = getRndmFromSet([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86]);
 		document.rebuslot.subjectessence.src = index1+"n.jpg";
-		if (index1 == 72){
-			document.rebuslot.subjectessence.title = "я";
-		}
-		if (index1 == 73){
-			document.rebuslot.subjectessence.title = "девушка";
-		}
-		if (index1 == 74){
-			document.rebuslot.subjectessence.title = "она";
-		}
-		if (index1 == 75){
-			document.rebuslot.subjectessence.title = "батюшка";
-		}
-		if (index1 == 76){
-			document.rebuslot.subjectessence.title = "угол";
-		}
-		if (index1 == 77){
-			document.rebuslot.subjectessence.title = "стол";
-		}
-		if (index1 == 78){
-			document.rebuslot.subjectessence.title = "платье";
-		}
-		if (index1 == 79){
-			document.rebuslot.subjectessence.title = "свадьба";
-		}
-		if (index1 == 80){
-			document.rebuslot.subjectessence.title = "музыка";
-		}
-		if (index1 == 81){
-			document.rebuslot.subjectessence.title = "все";
-		}
-		if (index1 == 82){
-			document.rebuslot.subjectessence.title = "никто";
-		}
-		if (index1 == 83){
-			document.rebuslot.subjectessence.title = "жизнь";
-		}
-		if (index1 == 84){
-			document.rebuslot.subjectessence.title = "душа";
-		}
-		if (index1 == 85){
-			document.rebuslot.subjectessence.title = "клетка";
-		}
-		if (index1 == 86){
-			document.rebuslot.subjectessence.title = "вино";
-		}
+		
 		}else{
 		index1 = 0;
 		}
@@ -1432,6 +1290,139 @@ list.addEventListener('click', function(ev) {
 		}else{
 		index7 = 0;
 		}
+		if (index1 == 72){
+			document.rebuslot.subjectessence.title = "я";
+		}
+		if (index1 == 73){
+			document.rebuslot.subjectessence.title = "девушка";
+		}
+		if (index1 == 74){
+			document.rebuslot.subjectessence.title = "она";
+		}
+		if (index1 == 75){
+			document.rebuslot.subjectessence.title = "батюшка";
+		}
+		if (index1 == 76){
+			document.rebuslot.subjectessence.title = "угол";
+		}
+		if (index1 == 77){
+			document.rebuslot.subjectessence.title = "стол";
+		}
+		if (index1 == 78){
+			document.rebuslot.subjectessence.title = "платье";
+		}
+		if (index1 == 79){
+			document.rebuslot.subjectessence.title = "свадьба";
+		}
+		if (index1 == 80){
+			document.rebuslot.subjectessence.title = "музыка";
+		}
+		if (index1 == 81){
+			document.rebuslot.subjectessence.title = "все";
+		}
+		if (index1 == 82){
+			document.rebuslot.subjectessence.title = "никто";
+		}
+		if (index1 == 83){
+			document.rebuslot.subjectessence.title = "жизнь";
+		}
+		if (index1 == 84){
+			document.rebuslot.subjectessence.title = "душа";
+		}
+		if (index1 == 85){
+			document.rebuslot.subjectessence.title = "клетка";
+		}
+		if (index1 == 86){
+			document.rebuslot.subjectessence.title = "вино";
+		}
+        if (index2 == 1){
+			document.rebuslot.subjectquality.title = "красивый";
+		}
+		if (index2 == 23){
+			document.rebuslot.subjectquality.title = "молодой";
+        }
+		if (index2 == 24){
+			document.rebuslot.subjectquality.title = "послушный";
+		}
+		if (index2 == 25){
+			document.rebuslot.subjectquality.title = "сыт";
+		}
+		if (index2 == 26){
+			document.rebuslot.subjectquality.title = "одет";
+		}
+		if (index2 == 27){
+			document.rebuslot.subjectquality.title = "этот";
+		}
+		if (index2 == 28){
+			document.rebuslot.subjectquality.title = "работающий";
+		}
+		if (index2 == 29){
+			document.rebuslot.subjectquality.title = "начинающийся";
+		}
+        if (index == 0){
+			document.rebuslot.subjectquantity.title = "0";
+		}
+		if (index == 1){
+			document.rebuslot.subjectquantity.title = "1";
+		}
+		if (index == 2){
+			document.rebuslot.subjectquantity.title = "2";
+        }
+		if (index == 3){
+			document.rebuslot.subjectquantity.title = "3";
+		}
+		if (index == 4){
+			document.rebuslot.subjectquantity.title = "4";
+		}
+		if (index == 5){
+			document.rebuslot.subjectquantity.title = "5";
+		}
+		if (index == 6){
+			document.rebuslot.subjectquantity.title = "6";
+		}
+		if (index == 7){
+			document.rebuslot.subjectquantity.title = "7";
+		}
+		if (index == 8){
+			document.rebuslot.subjectquantity.title = "8";
+		}
+		if (index == 9){
+			document.rebuslot.subjectquantity.title = "9";
+		}
+        if (index3 == 12){
+            document.rebuslot.verbessence.title = "быть";
+        }
+        if (index3 == 13){
+            document.rebuslot.verbessence.title = "рассказать";
+        }
+        if (index3 == 14){
+            document.rebuslot.verbessence.title = "стоять";
+        }
+        if (index3 == 15){
+            document.rebuslot.verbessence.title = "говорить";
+        }
+        if (index3 == 16){
+            document.rebuslot.verbessence.title = "слушать";
+        }
+        if (index3 == 17){
+            document.rebuslot.verbessence.title = "играть";
+        }
+        if (index3 == 18){
+            document.rebuslot.verbessence.title = "сказать";
+        }
+        if (index3 == 19){
+            document.rebuslot.verbessence.title = "танцевать";
+        }
+        if (index3 == 20){
+            document.rebuslot.verbessence.title = "интересоваться";
+        }
+        if (index3 == 21){
+            document.rebuslot.verbessence.title = "удовлетворяться";
+        }
+        if (index3 == 22){
+            document.rebuslot.verbessence.title = "пробовать";
+        }
+        
 	}
 	function off1()
 	{
