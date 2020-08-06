@@ -793,7 +793,7 @@ for (i = 0; i < close.length; i++) {
 	lyrics = 2;
 	player.loadVideoById("YnopHCL1Jk8", 45, "large");
 	document.getElementById("p2").innerHTML = "Mai-ha-hi&#13;&#10;Mai-ha-hu&#13;&#10;Mai-ha-ha&#13;&#10;Mai-ha-ha-ha&#13;&#10;&#13;&#10;Alo, salut,&#13;&#10;Sunt eu, un haiduc&#13;&#10;Și te rog, iubirea mea, primește fericirea.&#13;&#10;Alo, alo,&#13;&#10;Sunt eu, Picasso,&#13;&#10;Ți-am dat bip&#13;&#10;și sunt voinic,&#13;&#10;dar să știi, nu-ți cer nimic.&#13;&#10;&#13;&#10;Vrei să pleci, dar nu mă, nu mă iei,&#13;&#10;Nu mă, nu mă iei,&#13;&#10;Nu mă, nu mă, nu mă iei,&#13;&#10;Chipul tău și dragostea din tei&#13;&#10;Mi-amintesc de ochii tăi&#13;&#10;&#13;&#10;Te sun să-ți spun&#13;&#10;ce simt acum,&#13;&#10;Alo, iubirea mea, sunt eu, fericirea.&#13;&#10;Alo, alo,&#13;&#10;sunt iarăși eu, Picasso,&#13;&#10;Ți-am dat bip, și sunt voinic&#13;&#10;Dar să știi nu-ți cer nimic.&#13;&#10;&#13;&#10;Vrei să pleci, dar nu mă, nu mă iei,&#13;&#10;Nu mă, nu mă iei,&#13;&#10;Nu mă, nu mă, nu mă iei,&#13;&#10;Chipul tău și dragostea din tei&#13;&#10;Mi-amintesc de ochii tăi.&#13;&#10;&#13;&#10;Mai-ha-hi&#13;&#10;Mai-ha-hu&#13;&#10;Mai-ha-ha&#13;&#10;Mai-ha-ha-ha&#13;&#10;&#13;&#10;Vrei să pleci, dar nu mă, nu mă iei&#13;&#10;Nu mă, nu mă iei&#13;&#10;Nu mă, nu mă, nu mă iei,&#13;&#10;Chipul tău și dragostea din tei,&#13;&#10;Mi-amintesc de ochii tăi.";
-	document.getElementById("p3").innerHTML = "Mai-ha-hi&#13;&#10;Mai-ha-hi&#13;&#10;Mai-ha-hu&#13;&#10;Mai-ha-ha<br/>Mai-ha-ha-ha &#13;&#10;&#13;&#10;Алло, привет,&#13;&#10;Это я… Хайдук&#13;&#10;И я прошу, любимая моя, сделай меня счастливым,&#13;&#10;Алло… алло,&#13;&#10;Это я… Пикассо,&#13;&#10;Я тебе звоню,&#13;&#10;И я чист перед тобой,&#13;&#10;Знай, я ни о чем тебя не прошу&#13;&#10;&#13;&#10;Ты хочешь идти, но ты не берёшь меня с собой,&#13;&#10;нет, ты не берёшь меня с собой,&#13;&#10;не берёшь меня с собой, нет&#13;&#10;Твоё лицо и любовь под липами&#13;&#10;Напоминают мне о твоих глазах&#13;&#10;&#13;&#10;Я звоню тебе, чтобы сказать,&#13;&#10;Что я чувствую сейчас.&#13;&#10;Алло, любовь моя, это я, счастье моё,&#13;&#10;Алло, алло, это опять я, Пикассо.&#13;&#10;Я тебе звоню, я чист перед тобой&#13;&#10;Знай, я ни о чем тебя не прошу&#13;&#10;&#13;&#10;Ты хочешь идти, но ты не берёшь меня с собой,&#13;&#10;Нет, ты не берёшь меня с собой,&#13;&#10;Не берёшь меня с собой, нет&#13;&#10;Твоё лицо и любовь под липами&#13;&#10;Напоминают мне о твоих глазах&#13;&#10;&#13;&#10;Mai-ha-hi&#13;&#10;Mai-ha-hu&#13;&#10;Mai-ha-ha&#13;&#10;Mai-ha-ha-ha &#13;&#10;&#13;&#10;Ты хочешь идти, но ты не берёшь меня с собой,&#13;&#10;Нет, ты не берёшь меня с собой,&#13;&#10;Не берёшь меня с собой, нет&#13;&#10;Tвоё лицо и любовь под липами&#13;&#10;Напоминают мне о твоих глазах&#13;&#10;Mai-ha-hu&#13;&#10;Mai-ha-ha&#13;&#10;Mai-ha-ha-ha ";
+	document.getElementById("p3").innerHTML = "Mai-ha-hi&#13;&#10;Mai-ha-hi&#13;&#10;Mai-ha-hu&#13;&#10;Mai-ha-ha<br/>Mai-ha-ha-ha &#13;&#10;&#13;&#10;Алло, привет,&#13;&#10;Это я… Хайдук&#13;&#10;И я прошу, любимая моя, сделай меня счастливым,&#13;&#10;Алло… алло,&#13;&#10;Это я… Пикассо,&#13;&#10;Я тебе звоню,&#13;&#10;И я чист,&#13;&#10;но знай, я ни о чем тебя не прошу&#13;&#10;&#13;&#10;Ты хочешь идти, но ты не берёшь меня с собой,&#13;&#10;нет, ты не берёшь меня с собой,&#13;&#10;не берёшь меня с собой, нет&#13;&#10;Твоё лицо и любовь под липами&#13;&#10;Напоминают мне о твоих глазах&#13;&#10;&#13;&#10;Я звоню тебе, чтобы сказать,&#13;&#10;Что я чувствую сейчас.&#13;&#10;Алло, любовь моя, это я, счастье моё,&#13;&#10;Алло, алло, это опять я, Пикассо.&#13;&#10;Я тебе звоню, я чист перед тобой&#13;&#10;Знай, я ни о чем тебя не прошу&#13;&#10;&#13;&#10;Ты хочешь идти, но ты не берёшь меня с собой,&#13;&#10;Нет, ты не берёшь меня с собой,&#13;&#10;Не берёшь меня с собой, нет&#13;&#10;Твоё лицо и любовь под липами&#13;&#10;Напоминают мне о твоих глазах&#13;&#10;&#13;&#10;Mai-ha-hi&#13;&#10;Mai-ha-hu&#13;&#10;Mai-ha-ha&#13;&#10;Mai-ha-ha-ha &#13;&#10;&#13;&#10;Ты хочешь идти, но ты не берёшь меня с собой,&#13;&#10;Нет, ты не берёшь меня с собой,&#13;&#10;Не берёшь меня с собой, нет&#13;&#10;Tвоё лицо и любовь под липами&#13;&#10;Напоминают мне о твоих глазах&#13;&#10;Mai-ha-hu&#13;&#10;Mai-ha-ha&#13;&#10;Mai-ha-ha-ha ";
   }
   }
   if (i == 3){
@@ -1170,9 +1170,33 @@ if (current >= 70 && current < 73.5){
 		document.getElementById("p2").innerHTML = "Și te rog, iubirea mea";
 		document.getElementById("p3").innerHTML = "И я прошу, любимая моя";
 	}
-	if (current >= 81 && current < 82){
+	if (current >= 81 && current < 85){
 		document.getElementById("p2").innerHTML = "primește fericirea";
 		document.getElementById("p3").innerHTML = "сделай меня счастливым";
+	}
+	if (current >= 85 && current < 88){
+		document.getElementById("p2").innerHTML = "Alo, alo";
+		document.getElementById("p3").innerHTML = "Алло… алло";
+	}
+	if (current >= 88 && current < 91){
+		document.getElementById("p2").innerHTML = "Sunt eu, Picasso";
+		document.getElementById("p3").innerHTML = "Это я… Пикассо";
+	}
+	if (current >= 91 && current < 94){
+		document.getElementById("p2").innerHTML = "Ți-am dat bip";
+		document.getElementById("p3").innerHTML = "Я тебе звоню";
+	}
+	if (current >= 94 && current < 95){
+		document.getElementById("p2").innerHTML = "și sunt voinic";
+		document.getElementById("p3").innerHTML = "И я чист перед тобой";
+	}
+	if (current >= 95 && current < 97){
+		document.getElementById("p2").innerHTML = "dar să știi";
+		document.getElementById("p3").innerHTML = "но знай";
+	}
+	if (current >= 97 && current < 98){
+		document.getElementById("p2").innerHTML = "nu-ți cer nimic";
+		document.getElementById("p3").innerHTML = "я ни о чем тебя не прошу";
 	}
 }
 }
