@@ -1194,10 +1194,23 @@ if (current >= 70 && current < 73.5){
 		document.getElementById("p2").innerHTML = "dar să știi";
 		document.getElementById("p3").innerHTML = "но знай";
 	}
-	if (current >= 97 && current < 98){
+	if (current >= 97 && current < 99){
 		document.getElementById("p2").innerHTML = "nu-ți cer nimic";
 		document.getElementById("p3").innerHTML = "я ни о чем тебя не прошу";
 	}
+	if (current >= 99 && current < 100){
+		document.getElementById("p2").innerHTML = "Vrei să pleci, dar nu mă, nu mă iei";
+		document.getElementById("p3").innerHTML = "Ты хочешь идти, но ты не берёшь меня с собой";
+	}
+	if (current >= 106 && current < 110){
+		document.getElementById("p2").innerHTML = "Chipul tău și dragostea din tei";
+		document.getElementById("p3").innerHTML = "Твоё лицо и твоя любовь";
+	}
+	if (current >= 110 && current < 117){
+		document.getElementById("p2").innerHTML = "Mi-amintesc de ochii tăi";
+		document.getElementById("p3").innerHTML = "Напоминают мне о твоих глазах";
+	}
+
 }
 }
 // Add a "checked" symbol when clicking on a list item
