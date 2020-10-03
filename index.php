@@ -48,7 +48,7 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 	<ul id="myUL">
   <li>All songs</li>
   <li>La nunta asta</li>
-  <li>Dragostea din tej</li>
+  <li>Dragostea din tei</li>
   <li>Disko partizani</li>
 </ul>
 	
@@ -793,7 +793,7 @@ for (i = 0; i < close.length; i++) {
 	lyrics = 2;
 	player.loadVideoById("YnopHCL1Jk8", 45, "large");
 	document.getElementById("p2").innerHTML = "Mai-ha-hi&#13;&#10;Mai-ha-hu&#13;&#10;Mai-ha-ha&#13;&#10;Mai-ha-ha-ha&#13;&#10;&#13;&#10;Alo, salut,&#13;&#10;Sunt eu, un haiduc&#13;&#10;Și te rog, iubirea mea, primește fericirea.&#13;&#10;Alo, alo,&#13;&#10;Sunt eu, Picasso,&#13;&#10;Ți-am dat bip&#13;&#10;și sunt voinic,&#13;&#10;dar să știi, nu-ți cer nimic.&#13;&#10;&#13;&#10;Vrei să pleci, dar nu mă, nu mă iei,&#13;&#10;Nu mă, nu mă iei,&#13;&#10;Nu mă, nu mă, nu mă iei,&#13;&#10;Chipul tău și dragostea din tei&#13;&#10;Mi-amintesc de ochii tăi&#13;&#10;&#13;&#10;Te sun să-ți spun&#13;&#10;ce simt acum,&#13;&#10;Alo, iubirea mea, sunt eu, fericirea.&#13;&#10;Alo, alo,&#13;&#10;sunt iarăși eu, Picasso,&#13;&#10;Ți-am dat bip, și sunt voinic&#13;&#10;Dar să știi nu-ți cer nimic.&#13;&#10;&#13;&#10;Vrei să pleci, dar nu mă, nu mă iei,&#13;&#10;Nu mă, nu mă iei,&#13;&#10;Nu mă, nu mă, nu mă iei,&#13;&#10;Chipul tău și dragostea din tei&#13;&#10;Mi-amintesc de ochii tăi.&#13;&#10;&#13;&#10;Mai-ha-hi&#13;&#10;Mai-ha-hu&#13;&#10;Mai-ha-ha&#13;&#10;Mai-ha-ha-ha&#13;&#10;&#13;&#10;Vrei să pleci, dar nu mă, nu mă iei&#13;&#10;Nu mă, nu mă iei&#13;&#10;Nu mă, nu mă, nu mă iei,&#13;&#10;Chipul tău și dragostea din tei,&#13;&#10;Mi-amintesc de ochii tăi.";
-	document.getElementById("p3").innerHTML = "Mai-ha-hi&#13;&#10;Mai-ha-hi&#13;&#10;Mai-ha-hu&#13;&#10;Mai-ha-ha<br/>Mai-ha-ha-ha &#13;&#10;&#13;&#10;Алло, привет,&#13;&#10;Это я… Хайдук&#13;&#10;И я прошу, моя любимая, сделай меня счастливым,&#13;&#10;Алло… алло,&#13;&#10;Это я… Пикассо,&#13;&#10;Я тебе звоню,&#13;&#10;И я чист перед тобой,&#13;&#10;Знай, я ни о чем тебя не прошу&#13;&#10;&#13;&#10;Ты хочешь идти, но ты не берёшь меня с собой,&#13;&#10;нет, ты не берёшь меня с собой,&#13;&#10;не берёшь меня с собой, нет&#13;&#10;Твоё лицо и любовь под липами&#13;&#10;Напоминают мне о твоих глазах&#13;&#10;&#13;&#10;Я звоню тебе, чтобы сказать,&#13;&#10;Что я чувствую сейчас.&#13;&#10;Алло, любовь моя, это я, счастье моё,&#13;&#10;Алло, алло, это опять я, Пикассо.&#13;&#10;Я тебе звоню, я чист перед тобой&#13;&#10;Знай, я ни о чем тебя не прошу&#13;&#10;&#13;&#10;Ты хочешь идти, но ты не берёшь меня с собой,&#13;&#10;Нет, ты не берёшь меня с собой,&#13;&#10;Не берёшь меня с собой, нет&#13;&#10;Твоё лицо и любовь под липами&#13;&#10;Напоминают мне о твоих глазах&#13;&#10;&#13;&#10;Mai-ha-hi&#13;&#10;Mai-ha-hu&#13;&#10;Mai-ha-ha&#13;&#10;Mai-ha-ha-ha &#13;&#10;&#13;&#10;Ты хочешь идти, но ты не берёшь меня с собой,&#13;&#10;Нет, ты не берёшь меня с собой,&#13;&#10;Не берёшь меня с собой, нет&#13;&#10;Tвоё лицо и любовь под липами&#13;&#10;Напоминают мне о твоих глазах&#13;&#10;Mai-ha-hu&#13;&#10;Mai-ha-ha&#13;&#10;Mai-ha-ha-ha ";
+	document.getElementById("p3").innerHTML = "Mai-ha-hi&#13;&#10;Mai-ha-hi&#13;&#10;Mai-ha-hu&#13;&#10;Mai-ha-ha<br/>Mai-ha-ha-ha &#13;&#10;&#13;&#10;Алло, привет,&#13;&#10;Это я… Хайдук&#13;&#10;И я прошу, любимая моя, сделай меня счастливым,&#13;&#10;Алло… алло,&#13;&#10;Это я… Пикассо,&#13;&#10;Я тебе звоню,&#13;&#10;И я чист,&#13;&#10;но знай, я ни о чем тебя не прошу&#13;&#10;&#13;&#10;Ты хочешь идти, но ты не берёшь меня с собой,&#13;&#10;нет, ты не берёшь меня с собой,&#13;&#10;не берёшь меня с собой, нет&#13;&#10;Твоё лицо и любовь под липами&#13;&#10;Напоминают мне о твоих глазах&#13;&#10;&#13;&#10;Я звоню тебе, чтобы сказать,&#13;&#10;Что я чувствую сейчас.&#13;&#10;Алло, любовь моя, это я, счастье моё,&#13;&#10;Алло, алло, это опять я, Пикассо.&#13;&#10;Я тебе звоню, я чист перед тобой&#13;&#10;Знай, я ни о чем тебя не прошу&#13;&#10;&#13;&#10;Ты хочешь идти, но ты не берёшь меня с собой,&#13;&#10;Нет, ты не берёшь меня с собой,&#13;&#10;Не берёшь меня с собой, нет&#13;&#10;Твоё лицо и любовь под липами&#13;&#10;Напоминают мне о твоих глазах&#13;&#10;&#13;&#10;Mai-ha-hi&#13;&#10;Mai-ha-hu&#13;&#10;Mai-ha-ha&#13;&#10;Mai-ha-ha-ha &#13;&#10;&#13;&#10;Ты хочешь идти, но ты не берёшь меня с собой,&#13;&#10;Нет, ты не берёшь меня с собой,&#13;&#10;Не берёшь меня с собой, нет&#13;&#10;Tвоё лицо и любовь под липами&#13;&#10;Напоминают мне о твоих глазах&#13;&#10;Mai-ha-hu&#13;&#10;Mai-ha-ha&#13;&#10;Mai-ha-ha-ha ";
   }
   }
   if (i == 3){
@@ -1153,6 +1153,93 @@ if (current >= 15 && current < 16.5){
 	}
 	}
 }
+if (lyrics == 2){
+	if (current < 70){
+	document.getElementById("p2").innerHTML = "";
+	document.getElementById("p3").innerHTML = "";
+}
+if (current >= 70 && current < 73.5){
+		document.getElementById("p2").innerHTML = "Alo, salut";
+		document.getElementById("p3").innerHTML = "Алло, привет";
+	}
+	if (current >= 73.5 && current < 77.5){
+		document.getElementById("p2").innerHTML = "Sunt eu, un Haiduc";
+		document.getElementById("p3").innerHTML = "Это я… Хайдук";
+	}
+	if (current >= 77.5 && current < 81){
+		document.getElementById("p2").innerHTML = "Și te rog, iubirea mea";
+		document.getElementById("p3").innerHTML = "И я прошу, любимая моя";
+	}
+	if (current >= 81 && current < 85){
+		document.getElementById("p2").innerHTML = "primește fericirea";
+		document.getElementById("p3").innerHTML = "сделай меня счастливым";
+	}
+	if (current >= 85 && current < 88){
+		document.getElementById("p2").innerHTML = "Alo, alo";
+		document.getElementById("p3").innerHTML = "Алло… алло";
+	}
+	if (current >= 88 && current < 91){
+		document.getElementById("p2").innerHTML = "Sunt eu, Picasso";
+		document.getElementById("p3").innerHTML = "Это я… Пикассо";
+	}
+	if (current >= 91 && current < 94){
+		document.getElementById("p2").innerHTML = "Ți-am dat bip";
+		document.getElementById("p3").innerHTML = "Я тебе звоню";
+	}
+	if (current >= 94 && current < 95){
+		document.getElementById("p2").innerHTML = "și sunt voinic";
+		document.getElementById("p3").innerHTML = "И я чист перед тобой";
+	}
+	if (current >= 95 && current < 97){
+		document.getElementById("p2").innerHTML = "dar să știi";
+		document.getElementById("p3").innerHTML = "но знай";
+	}
+	if (current >= 97 && current < 99){
+		document.getElementById("p2").innerHTML = "nu-ți cer nimic";
+		document.getElementById("p3").innerHTML = "я ни о чем тебя не прошу";
+	}
+	if ((current >= 99 && current < 100) || (current >= 114 && current < 121) ){
+		document.getElementById("p2").innerHTML = "Vrei să pleci, dar nu mă, nu mă iei";
+		document.getElementById("p3").innerHTML = "Ты хочешь идти, но ты не берёшь меня с собой";
+	}
+	if ((current >= 106 && current < 110) || (current >= 121 && current < 125) ){
+		document.getElementById("p2").innerHTML = "Chipul tău și dragostea din tei";
+		document.getElementById("p3").innerHTML = "Твоё лицо и твоя любовь";
+	}
+	if ((current >= 110 && current < 114) || (current >= 125 && current < 129) ){
+		document.getElementById("p2").innerHTML = "Mi-amintesc de ochii tăi";
+		document.getElementById("p3").innerHTML = "Напоминают мне о твоих глазах";
+	}
+	if (current >= 129 && current < 131){
+		document.getElementById("p2").innerHTML = "Te sun";
+		document.getElementById("p3").innerHTML = "Тебе звоню";
+	}
+	if (current >= 131 && current < 133){
+		document.getElementById("p2").innerHTML = "să-ți spun";
+		document.getElementById("p3").innerHTML = "чтобы сказать";
+	}
+	if (current >= 133 && current < 137){
+		document.getElementById("p2").innerHTML = "ce simt acum";
+		document.getElementById("p3").innerHTML = "Что я чувствую сейчас";
+	}
+	if (current >= 137 && current < 140){
+		document.getElementById("p2").innerHTML = "Alo, iubirea mea";
+		document.getElementById("p3").innerHTML = "Алло, любовь моя";
+	}
+	if (current >= 140 && current < 142){
+		document.getElementById("p2").innerHTML = "sunt eu, fericirea";
+		document.getElementById("p3").innerHTML = "это я, счастье моё";
+	}
+	if (current >= 143 && current < 146){
+		document.getElementById("p2").innerHTML = "Alo, alo";
+		document.getElementById("p3").innerHTML = "Алло… алло";
+	}
+	if (current >= 147 && current < 148){
+		document.getElementById("p2").innerHTML = "sunt iarăși eu, Picasso";
+		document.getElementById("p3").innerHTML = "это опять я, Пикассо";
+	}
+
+}
 }
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ul');
@@ -1171,9 +1258,7 @@ list.addEventListener('click', function(ev) {
         {
 		index = 1;
 		document.rebuslot.subjectquantity.src = index+".jpg";
-		if (index == 1){
-			document.rebuslot.subjectquantity.title = "1";
-		}
+		
 		}else{
 			index = 1; 
 		}
@@ -1181,51 +1266,7 @@ list.addEventListener('click', function(ev) {
         {
 			index1 = getRndmFromSet([72,73,74,75,76,77,78,79,80,81,82,83,84,85,86]);
 		document.rebuslot.subjectessence.src = index1+"n.jpg";
-		if (index1 == 72){
-			document.rebuslot.subjectessence.title = "я";
-		}
-		if (index1 == 73){
-			document.rebuslot.subjectessence.title = "девушка";
-		}
-		if (index1 == 74){
-			document.rebuslot.subjectessence.title = "она";
-		}
-		if (index1 == 75){
-			document.rebuslot.subjectessence.title = "батюшка";
-		}
-		if (index1 == 76){
-			document.rebuslot.subjectessence.title = "угол";
-		}
-		if (index1 == 77){
-			document.rebuslot.subjectessence.title = "стол";
-		}
-		if (index1 == 78){
-			document.rebuslot.subjectessence.title = "платье";
-		}
-		if (index1 == 79){
-			document.rebuslot.subjectessence.title = "свадьба";
-		}
-		if (index1 == 80){
-			document.rebuslot.subjectessence.title = "музыка";
-		}
-		if (index1 == 81){
-			document.rebuslot.subjectessence.title = "все";
-		}
-		if (index1 == 82){
-			document.rebuslot.subjectessence.title = "никто";
-		}
-		if (index1 == 83){
-			document.rebuslot.subjectessence.title = "жизнь";
-		}
-		if (index1 == 84){
-			document.rebuslot.subjectessence.title = "душа";
-		}
-		if (index1 == 85){
-			document.rebuslot.subjectessence.title = "клетка";
-		}
-		if (index1 == 86){
-			document.rebuslot.subjectessence.title = "вино";
-		}
+
 		}else{
 		index1 = 0;
 		}
@@ -1233,30 +1274,7 @@ list.addEventListener('click', function(ev) {
         {
 		index2 = getRndmFromSet([1,23,24,25,26,27,28,29]);
 		document.rebuslot.subjectquality.src = index2+"adj.jpg";
-		if (index2 == 1){
-			document.rebuslot.subjectquality.title = "красивый";
-		}
-		if (index2 == 23){
-			document.rebuslot.subjectquality.title = "молодой";
-		}
-		if (index2 == 24){
-			document.rebuslot.subjectquality.title = "послушный";
-		}
-		if (index2 == 25){
-			document.rebuslot.subjectquality.title = "сыт";
-		}
-		if (index2 == 26){
-			document.rebuslot.subjectquality.title = "одет";
-		}
-		if (index2 == 27){
-			document.rebuslot.subjectquality.title = "этот";
-		}
-		if (index2 == 28){
-			document.rebuslot.subjectquality.title = "работающий";
-		}
-		if (index2 == 29){
-			document.rebuslot.subjectquality.title = "начинающийся";
-		}
+	
  		}else{
 		index2 = 0;
 		}
@@ -1265,6 +1283,7 @@ list.addEventListener('click', function(ev) {
         {
 			index3 = getRndmFromSet([12,13,14,15,16,17,18,19,20,21,22]);
 			document.rebuslot.verbessence.src = index3+"v.jpg";
+			//here
 	}else{
 		index3 = 5;
 		}
@@ -1273,88 +1292,15 @@ list.addEventListener('click', function(ev) {
         {
 		index = getRndmFromSet([0,1,2,3,4,5,6,7,8,9]);
 		document.rebuslot.subjectquantity.src = index+".jpg";
-		if (index == 0){
-			document.rebuslot.subjectquantity.title = "0";
-		}
-		if (index == 1){
-			document.rebuslot.subjectquantity.title = "1";
-		}
-		if (index == 2){
-			document.rebuslot.subjectquantity.title = "2";
-		}
-		if (index == 3){
-			document.rebuslot.subjectquantity.title = "3";
-		}
-		if (index == 4){
-			document.rebuslot.subjectquantity.title = "4";
-		}
-		if (index == 5){
-			document.rebuslot.subjectquantity.title = "5";
-		}
-		if (index == 6){
-			document.rebuslot.subjectquantity.title = "6";
-		}
-		if (index == 7){
-			document.rebuslot.subjectquantity.title = "7";
-		}
-		if (index == 8){
-			document.rebuslot.subjectquantity.title = "8";
-		}
-		if (index == 9){
-			document.rebuslot.subjectquantity.title = "9";
-		}
 		}else{
-			index = 1; 
+			index =1;
 		}
+
 		if (document.getElementById("1").src != "http://localhost/off.jpg") 
         {
 		index1 = getRndmFromSet([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86]);
 		document.rebuslot.subjectessence.src = index1+"n.jpg";
-		if (index1 == 72){
-			document.rebuslot.subjectessence.title = "я";
-		}
-		if (index1 == 73){
-			document.rebuslot.subjectessence.title = "девушка";
-		}
-		if (index1 == 74){
-			document.rebuslot.subjectessence.title = "она";
-		}
-		if (index1 == 75){
-			document.rebuslot.subjectessence.title = "батюшка";
-		}
-		if (index1 == 76){
-			document.rebuslot.subjectessence.title = "угол";
-		}
-		if (index1 == 77){
-			document.rebuslot.subjectessence.title = "стол";
-		}
-		if (index1 == 78){
-			document.rebuslot.subjectessence.title = "платье";
-		}
-		if (index1 == 79){
-			document.rebuslot.subjectessence.title = "свадьба";
-		}
-		if (index1 == 80){
-			document.rebuslot.subjectessence.title = "музыка";
-		}
-		if (index1 == 81){
-			document.rebuslot.subjectessence.title = "все";
-		}
-		if (index1 == 82){
-			document.rebuslot.subjectessence.title = "никто";
-		}
-		if (index1 == 83){
-			document.rebuslot.subjectessence.title = "жизнь";
-		}
-		if (index1 == 84){
-			document.rebuslot.subjectessence.title = "душа";
-		}
-		if (index1 == 85){
-			document.rebuslot.subjectessence.title = "клетка";
-		}
-		if (index1 == 86){
-			document.rebuslot.subjectessence.title = "вино";
-		}
+		
 		}else{
 		index1 = 0;
 		}
@@ -1431,6 +1377,139 @@ list.addEventListener('click', function(ev) {
 		}else{
 		index7 = 0;
 		}
+		if (index1 == 72){
+			document.rebuslot.subjectessence.title = "я";
+		}
+		if (index1 == 73){
+			document.rebuslot.subjectessence.title = "девушка";
+		}
+		if (index1 == 74){
+			document.rebuslot.subjectessence.title = "она";
+		}
+		if (index1 == 75){
+			document.rebuslot.subjectessence.title = "батюшка";
+		}
+		if (index1 == 76){
+			document.rebuslot.subjectessence.title = "угол";
+		}
+		if (index1 == 77){
+			document.rebuslot.subjectessence.title = "стол";
+		}
+		if (index1 == 78){
+			document.rebuslot.subjectessence.title = "платье";
+		}
+		if (index1 == 79){
+			document.rebuslot.subjectessence.title = "свадьба";
+		}
+		if (index1 == 80){
+			document.rebuslot.subjectessence.title = "музыка";
+		}
+		if (index1 == 81){
+			document.rebuslot.subjectessence.title = "все";
+		}
+		if (index1 == 82){
+			document.rebuslot.subjectessence.title = "никто";
+		}
+		if (index1 == 83){
+			document.rebuslot.subjectessence.title = "жизнь";
+		}
+		if (index1 == 84){
+			document.rebuslot.subjectessence.title = "душа";
+		}
+		if (index1 == 85){
+			document.rebuslot.subjectessence.title = "клетка";
+		}
+		if (index1 == 86){
+			document.rebuslot.subjectessence.title = "вино";
+		}
+        if (index2 == 1){
+			document.rebuslot.subjectquality.title = "красивый";
+		}
+		if (index2 == 23){
+			document.rebuslot.subjectquality.title = "молодой";
+        }
+		if (index2 == 24){
+			document.rebuslot.subjectquality.title = "послушный";
+		}
+		if (index2 == 25){
+			document.rebuslot.subjectquality.title = "сыт";
+		}
+		if (index2 == 26){
+			document.rebuslot.subjectquality.title = "одет";
+		}
+		if (index2 == 27){
+			document.rebuslot.subjectquality.title = "этот";
+		}
+		if (index2 == 28){
+			document.rebuslot.subjectquality.title = "работающий";
+		}
+		if (index2 == 29){
+			document.rebuslot.subjectquality.title = "начинающийся";
+		}
+        if (index == 0){
+			document.rebuslot.subjectquantity.title = "0";
+		}
+		if (index == 1){
+			document.rebuslot.subjectquantity.title = "1";
+		}
+		if (index == 2){
+			document.rebuslot.subjectquantity.title = "2";
+        }
+		if (index == 3){
+			document.rebuslot.subjectquantity.title = "3";
+		}
+		if (index == 4){
+			document.rebuslot.subjectquantity.title = "4";
+		}
+		if (index == 5){
+			document.rebuslot.subjectquantity.title = "5";
+		}
+		if (index == 6){
+			document.rebuslot.subjectquantity.title = "6";
+		}
+		if (index == 7){
+			document.rebuslot.subjectquantity.title = "7";
+		}
+		if (index == 8){
+			document.rebuslot.subjectquantity.title = "8";
+		}
+		if (index == 9){
+			document.rebuslot.subjectquantity.title = "9";
+		}
+        if (index3 == 12){
+            document.rebuslot.verbessence.title = "быть";
+        }
+        if (index3 == 13){
+            document.rebuslot.verbessence.title = "рассказать";
+        }
+        if (index3 == 14){
+            document.rebuslot.verbessence.title = "стоять";
+        }
+        if (index3 == 15){
+            document.rebuslot.verbessence.title = "говорить";
+        }
+        if (index3 == 16){
+            document.rebuslot.verbessence.title = "слушать";
+        }
+        if (index3 == 17){
+            document.rebuslot.verbessence.title = "играть";
+        }
+        if (index3 == 18){
+            document.rebuslot.verbessence.title = "сказать";
+        }
+        if (index3 == 19){
+            document.rebuslot.verbessence.title = "танцевать";
+        }
+        if (index3 == 20){
+            document.rebuslot.verbessence.title = "интересоваться";
+        }
+        if (index3 == 21){
+            document.rebuslot.verbessence.title = "удовлетворяться";
+        }
+        if (index3 == 22){
+            document.rebuslot.verbessence.title = "пробовать";
+        }
+        
 	}
 	function off1()
 	{
