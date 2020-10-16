@@ -50,6 +50,14 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
   <li>La nunta asta</li>
   <li>Dragostea din tei</li>
   <li>Disko partizani</li>
+  <li>Odata in viata</li>
+  <li>Ia spune-i luna</li>
+  <li>1234</li>
+  <li>Ale</li>
+  <li>Când Eu Iubesc</li>
+  <li>Cuscra</li>
+  <li>Melancolie</li>
+ 
 </ul>
 	
 	<script>
@@ -114,7 +122,7 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 	var index5, imagearray5 = ["trebui"];
 	var index6, index7, index8;
 	var guess, videoPlayer;
-	var videoList = ["TH0oCDziVQQ", "YnopHCL1Jk8", "gViaOYgV8yI"];
+	var videoList = ["TH0oCDziVQQ", "YnopHCL1Jk8", "gViaOYgV8yI", "GN7H2vfh3SM", "591Ur1h0ons", "PojdI2shbaI", "vdcXsBJwBrg", "-yIUzB_CI0Y", "VzUMqkKoTmg", "NFBXOlsvHh4", ];
 	var curVideo = 0;
 
 	function getRndmFromSet(set){
@@ -715,7 +723,7 @@ wordcount = indexarray.length + index1array.length + index2array.length + index3
           videoId: 'TH0oCDziVQQ', 
 		  playerVars: {
             color: 'white',
-			playlist: "YnopHCL1Jk8,gViaOYgV8yI"
+			playlist: "YnopHCL1Jk8,gViaOYgV8yI,GN7H2vfh3SM,591Ur1h0ons,vIxyYqg4Kdw,PojdI2shbaI,-yIUzB_CI0Y,VzUMqkKoTmg,NFBXOlsvHh4"
 			},
           events: {
             'onReady': onPlayerReady
@@ -792,18 +800,75 @@ for (i = 0; i < close.length; i++) {
   close[i].onclick = function() {
 	lyrics = 2;
 	player.loadVideoById("YnopHCL1Jk8", 45, "large");
-	document.getElementById("p2").innerHTML = "Mai-ha-hi&#13;&#10;Mai-ha-hu&#13;&#10;Mai-ha-ha&#13;&#10;Mai-ha-ha-ha&#13;&#10;&#13;&#10;Alo, salut,&#13;&#10;Sunt eu, un haiduc&#13;&#10;Și te rog, iubirea mea, primește fericirea.&#13;&#10;Alo, alo,&#13;&#10;Sunt eu, Picasso,&#13;&#10;Ți-am dat bip&#13;&#10;și sunt voinic,&#13;&#10;dar să știi, nu-ți cer nimic.&#13;&#10;&#13;&#10;Vrei să pleci, dar nu mă, nu mă iei,&#13;&#10;Nu mă, nu mă iei,&#13;&#10;Nu mă, nu mă, nu mă iei,&#13;&#10;Chipul tău și dragostea din tei&#13;&#10;Mi-amintesc de ochii tăi&#13;&#10;&#13;&#10;Te sun să-ți spun&#13;&#10;ce simt acum,&#13;&#10;Alo, iubirea mea, sunt eu, fericirea.&#13;&#10;Alo, alo,&#13;&#10;sunt iarăși eu, Picasso,&#13;&#10;Ți-am dat bip, și sunt voinic&#13;&#10;Dar să știi nu-ți cer nimic.&#13;&#10;&#13;&#10;Vrei să pleci, dar nu mă, nu mă iei,&#13;&#10;Nu mă, nu mă iei,&#13;&#10;Nu mă, nu mă, nu mă iei,&#13;&#10;Chipul tău și dragostea din tei&#13;&#10;Mi-amintesc de ochii tăi.&#13;&#10;&#13;&#10;Mai-ha-hi&#13;&#10;Mai-ha-hu&#13;&#10;Mai-ha-ha&#13;&#10;Mai-ha-ha-ha&#13;&#10;&#13;&#10;Vrei să pleci, dar nu mă, nu mă iei&#13;&#10;Nu mă, nu mă iei&#13;&#10;Nu mă, nu mă, nu mă iei,&#13;&#10;Chipul tău și dragostea din tei,&#13;&#10;Mi-amintesc de ochii tăi.";
-	document.getElementById("p3").innerHTML = "Mai-ha-hi&#13;&#10;Mai-ha-hi&#13;&#10;Mai-ha-hu&#13;&#10;Mai-ha-ha<br/>Mai-ha-ha-ha &#13;&#10;&#13;&#10;Алло, привет,&#13;&#10;Это я… Хайдук&#13;&#10;И я прошу, любимая моя, сделай меня счастливым,&#13;&#10;Алло… алло,&#13;&#10;Это я… Пикассо,&#13;&#10;Я тебе звоню,&#13;&#10;И я чист,&#13;&#10;но знай, я ни о чем тебя не прошу&#13;&#10;&#13;&#10;Ты хочешь идти, но ты не берёшь меня с собой,&#13;&#10;нет, ты не берёшь меня с собой,&#13;&#10;не берёшь меня с собой, нет&#13;&#10;Твоё лицо и любовь под липами&#13;&#10;Напоминают мне о твоих глазах&#13;&#10;&#13;&#10;Я звоню тебе, чтобы сказать,&#13;&#10;Что я чувствую сейчас.&#13;&#10;Алло, любовь моя, это я, счастье моё,&#13;&#10;Алло, алло, это опять я, Пикассо.&#13;&#10;Я тебе звоню, я чист перед тобой&#13;&#10;Знай, я ни о чем тебя не прошу&#13;&#10;&#13;&#10;Ты хочешь идти, но ты не берёшь меня с собой,&#13;&#10;Нет, ты не берёшь меня с собой,&#13;&#10;Не берёшь меня с собой, нет&#13;&#10;Твоё лицо и любовь под липами&#13;&#10;Напоминают мне о твоих глазах&#13;&#10;&#13;&#10;Mai-ha-hi&#13;&#10;Mai-ha-hu&#13;&#10;Mai-ha-ha&#13;&#10;Mai-ha-ha-ha &#13;&#10;&#13;&#10;Ты хочешь идти, но ты не берёшь меня с собой,&#13;&#10;Нет, ты не берёшь меня с собой,&#13;&#10;Не берёшь меня с собой, нет&#13;&#10;Tвоё лицо и любовь под липами&#13;&#10;Напоминают мне о твоих глазах&#13;&#10;Mai-ha-hu&#13;&#10;Mai-ha-ha&#13;&#10;Mai-ha-ha-ha ";
+	document.getElementById("p2").innerHTML = "";
+	document.getElementById("p3").innerHTML = "";
   }
   }
   if (i == 3){
   close[i].onclick = function() {
 	lyrics = 3;
 	player.loadVideoById("gViaOYgV8yI", 0, "large");
-	document.getElementById("p2").innerHTML = "My baby came down from Romania&#13;&#10;She was the queen of Transylvania&#13;&#10;But now we live in suburbia&#13;&#10;Without any friends buzzing you&#13;&#10;&#13;&#10;Tsiganizatsia tsiganizatsia&#13;&#10;Come on baby this is what you need&#13;&#10;Tsiganizatsia tsiganizatsia&#13;&#10;Everybody dancing to this beat&#13;&#10;Tsiganizatsia tsiganizatsia&#13;&#10;Come on baby this is what you need&#13;&#10;Tsiganizatsia tsiganizatsia&#13;&#10;&#13;&#10;Disko disko partizani&#13;&#10;Disko disko partizani&#13;&#10;Parti parti partizani&#13;&#10;&#13;&#10;Zece, alege,&#13;&#10;Nu am, înțelege,&#13;&#10;Opt, un tot, (upgrade)&#13;&#10;Muzica nonstop.&#13;&#10;&#13;&#10;Când te văd mă pierd cu firea,&#13;&#10;Nu-mi pot stăpâni privirea,&#13;&#10;Dansezi bine, ești mortală,&#13;&#10;Și cu frumusețea ta îi bagi pe toți în boală;&#13;&#10;Orice bărbat te dorește,&#13;&#10;Când te vede înnebunește,&#13;&#10;Ți-ar da bani, ți-ar da orice, ți-ar da și casa,&#13;&#10;Pentru tine și-ar lăsa nevasta.&#13;&#10;&#13;&#10;Tsiganizatsia tsiganizatsia&#13;&#10;Come on baby this is what you need&#13;&#10;Tsiganizatsia tsiganizatsia&#13;&#10;Everybody dancing to this beat&#13;&#10;Tsiganizatsia tsiganizatsia&#13;&#10;Come on baby this is what you need&#13;&#10;Tsiganizatsia tsiganizatsia&#13;&#10;&#13;&#10;Disko disko partizani&#13;&#10;Disko disko partizani&#13;&#10;Parti parti partizani&#13;&#10;&#13;&#10;Zece, alege,&#13;&#10;Nu am, înțelege,&#13;&#10;Opt, un tot, (upgrade)&#13;&#10;Muzica nonstop.&#13;&#10;&#13;&#10;Disko disko partizani&#13;&#10;Parti parti partizani";
-	document.getElementById("p3").innerHTML = "Моя любимая родом из Румынии,&#13;&#10;Она была королевой Трансильвании*,&#13;&#10;Но сейчас мы живем в пригороде&#13;&#10;Без жужжания друзей вокруг тебя.&#13;&#10;&#13;&#10;Цыганизация, цыганизация&#13;&#10;Давай, детка, это то, что тебе нужно&#13;&#10;Цыганизация, цыганизация&#13;&#10;Все танцуют в этом ритме&#13;&#10;Цыганизация, цыганизация&#13;&#10;Давай, детка, это то, что тебе нужно&#13;&#10;Цыганизация цыганизация&#13;&#10;&#13;&#10;Диско диско партизаны&#13;&#10;Диско диско партизаны&#13;&#10;Парти парти партизаны&#13;&#10;&#13;&#10;Десять-выбирай&#13;&#10;Я не получил что мне было нужно, пойми&#13;&#10;Восемь-объединились&#13;&#10;Музыка бесконечна!...&#13;&#10;&#13;&#10;Когда я вижу тебя, я теряю голову,&#13;&#10;Я не могу контролировать свои глаза,&#13;&#10;Ты хорошо танцуешь, ты сногшибательно красива,&#13;&#10;И твоя красота сводит всех с ума,&#13;&#10;Каждый мужчина хочет тебя,&#13;&#10;Они становятся дикими, когда смотрят на тебя,&#13;&#10;Они отдали бы тебе деньги, отдали бы тебе все, даже дом свой​​,&#13;&#10;Они оставили бы своих девушек ради тебя.&#13;&#10;Музыка бесконечна.&#13;&#10;&#13;&#10;Цыганизация, цыганизация&#13;&#10;Давай, детка, это то, что тебе нужно&#13;&#10;Цыганизация, цыганизация&#13;&#10;Все танцуют в этом ритме&#13;&#10;Цыганизация, цыганизация&#13;&#10;Давай, детка, это то, что тебе нужно&#13;&#10;&#13;&#10;Диско диско партизаны&#13;&#10;Диско диско партизаны&#13;&#10;Парти парти партизаны";
+	document.getElementById("p2").innerHTML = "";
+	document.getElementById("p3").innerHTML = "";
   }
   }
+  if (i == 4){
+  close[i].onclick = function() {
+	lyrics = 4;
+	player.loadVideoById("GN7H2vfh3SM", 0, "large");
+	document.getElementById("p2").innerHTML = "";
+	document.getElementById("p3").innerHTML = "";
+  }
+  }
+  if (i == 5){
+  close[i].onclick = function() {
+	lyrics = 5;
+	player.loadVideoById("591Ur1h0ons", 0, "large");
+	document.getElementById("p2").innerHTML = "";
+	document.getElementById("p3").innerHTML = "";
+  }
+  }
+  if (i == 6){
+  close[i].onclick = function() {
+	lyrics = 6;
+	player.loadVideoById("PojdI2shbaI", 0, "large");
+	document.getElementById("p2").innerHTML = "";
+	document.getElementById("p3").innerHTML = "";
+  }
+  }
+  if (i == 7){
+  close[i].onclick = function() {
+	lyrics = 7;
+	player.loadVideoById("vdcXsBJwBrg", 0, "large");
+	document.getElementById("p2").innerHTML = "";
+	document.getElementById("p3").innerHTML = "";
+  }
+  }
+  if (i == 8){
+  close[i].onclick = function() {
+	lyrics = 8;
+	player.loadVideoById("-yIUzB_CI0Y", 0, "large");
+	document.getElementById("p2").innerHTML = "";
+	document.getElementById("p3").innerHTML = "";
+  }
+  }
+  if (i == 9){
+  close[i].onclick = function() {
+	lyrics = 9;
+	player.loadVideoById("VzUMqkKoTmg", 0, "large");
+	document.getElementById("p2").innerHTML = "";
+	document.getElementById("p3").innerHTML = "";
+  }
+  }
+  if (i == 10){
+  close[i].onclick = function() {
+	lyrics = 10;
+	player.loadVideoById("NFBXOlsvHh4", 0, "large");
+	document.getElementById("p2").innerHTML = "";
+	document.getElementById("p3").innerHTML = "";
+  }
+  }
+
 }
 function myCallback() {
  current = player.playerInfo.currentTime;
@@ -1182,31 +1247,31 @@ if (current >= 70 && current < 73.5){
 		document.getElementById("p2").innerHTML = "Sunt eu, Picasso";
 		document.getElementById("p3").innerHTML = "Это я… Пикассо";
 	}
-	if (current >= 91 && current < 94){
+	if ((current >= 91 && current < 94) || (current >= 150 && current < 152)){
 		document.getElementById("p2").innerHTML = "Ți-am dat bip";
 		document.getElementById("p3").innerHTML = "Я тебе звоню";
 	}
-	if (current >= 94 && current < 95){
+	if ((current >= 94 && current < 95) || (current >= 153 && current < 154)){
 		document.getElementById("p2").innerHTML = "și sunt voinic";
 		document.getElementById("p3").innerHTML = "И я чист перед тобой";
 	}
-	if (current >= 95 && current < 97){
+	if ((current >= 95 && current < 97) || (current >= 154.5 && current < 155)){
 		document.getElementById("p2").innerHTML = "dar să știi";
 		document.getElementById("p3").innerHTML = "но знай";
 	}
-	if (current >= 97 && current < 99){
+	if ((current >= 97 && current < 99) || (current >= 156 && current < 157)){
 		document.getElementById("p2").innerHTML = "nu-ți cer nimic";
 		document.getElementById("p3").innerHTML = "я ни о чем тебя не прошу";
 	}
-	if ((current >= 99 && current < 100) || (current >= 114 && current < 121) ){
+	if ((current >= 99 && current < 100) || (current >= 114 && current < 121) || (current >= 158 && current < 164) || (current >= 173 && current < 179) || (current >= 217 && current < 224) || (current >= 232 && current < 238)){
 		document.getElementById("p2").innerHTML = "Vrei să pleci, dar nu mă, nu mă iei";
 		document.getElementById("p3").innerHTML = "Ты хочешь идти, но ты не берёшь меня с собой";
 	}
-	if ((current >= 106 && current < 110) || (current >= 121 && current < 125) ){
+	if ((current >= 106 && current < 110) || (current >= 121 && current < 125) || (current >= 165 && current < 168) || (current >= 180 && current < 183) || (current >= 225 && current < 227) || (current >= 239 && current < 242)){
 		document.getElementById("p2").innerHTML = "Chipul tău și dragostea din tei";
 		document.getElementById("p3").innerHTML = "Твоё лицо и твоя любовь";
 	}
-	if ((current >= 110 && current < 114) || (current >= 125 && current < 129) ){
+	if ((current >= 110 && current < 114) || (current >= 125 && current < 129) || (current >= 169 && current < 172) || (current >= 184 && current < 216) || (current >= 228 && current < 231) || (current >= 243 && current < 244)){
 		document.getElementById("p2").innerHTML = "Mi-amintesc de ochii tăi";
 		document.getElementById("p3").innerHTML = "Напоминают мне о твоих глазах";
 	}
@@ -1234,13 +1299,103 @@ if (current >= 70 && current < 73.5){
 		document.getElementById("p2").innerHTML = "Alo, alo";
 		document.getElementById("p3").innerHTML = "Алло… алло";
 	}
-	if (current >= 147 && current < 148){
+	if (current >= 147 && current < 149){
 		document.getElementById("p2").innerHTML = "sunt iarăși eu, Picasso";
 		document.getElementById("p3").innerHTML = "это опять я, Пикассо";
 	}
+}
+if (lyrics == 3){
+	if (current < 23){
+	document.getElementById("p2").innerHTML = "";
+	document.getElementById("p3").innerHTML = "";
+}
+if ((current >= 23 && current < 24) || (current >= 33 && current < 34)){
+		document.getElementById("p2").innerHTML = "My baby came down from Romania";
+		document.getElementById("p3").innerHTML = "Моя любимая родом из Румынии";
+	}
+	if ((current >= 25 && current < 27) || (current >= 35 && current < 37)){
+		document.getElementById("p2").innerHTML = "She was the queen of Transylvania";
+		document.getElementById("p3").innerHTML = "Она была королевой Трансильвании";
+	}
+	if ((current >= 28 && current < 29) || (current >= 38 && current < 39)){
+		document.getElementById("p2").innerHTML = "But now we live in suburbia";
+		document.getElementById("p3").innerHTML = "Но сейчас мы живем в пригороде";
+	}
+	if ((current >= 30 && current < 32) || (current >= 40 && current < 42)){
+		document.getElementById("p2").innerHTML = "Without any friends buzzing you";
+		document.getElementById("p3").innerHTML = "Без жужжания друзей вокруг тебя";
+	}
+	if ((current >= 42 && current < 45) || (current >= 47 && current < 49) || (current >= 51 && current < 54) || (current >= 56 && current < 59) || (current >= 119 && current < 121) || (current >= 124 && current < 126) || (current >= 129 && current < 131) || (current >= 134 && current < 136)){
+		document.getElementById("p2").innerHTML = "Tsiganizatsia tsiganizatsia";
+		document.getElementById("p3").innerHTML = "Цыганизация, цыганизация";
+	}
+	if ((current >= 45 && current < 47) || (current >= 54 && current < 56) || (current >= 121 && current < 124) || (current >= 131 && current < 134)){
+		document.getElementById("p2").innerHTML = "Come on baby this is what you need";
+		document.getElementById("p3").innerHTML = "Давай, детка, это то, что тебе нужно";
+	}
+	if ((current >= 49 && current < 51) || (current >= 126 && current < 129)){
+		document.getElementById("p2").innerHTML = "Everybody dancing to this beat";
+		document.getElementById("p3").innerHTML = "Все танцуют в этом ритме";
+	}
+	if ((current >= 59 && current < 68) || (current >= 73 && current < 78) || (current >= 136 && current < 145) || (current >= 150 && current < 155) || (current >= 229 && current < 234)  || (current >= 239 && current < 244)){
+		document.getElementById("p2").innerHTML = "Disko disko partizani";
+		document.getElementById("p3").innerHTML = "Диско диско партизаны";
+	}
+	if ((current >= 68 && current < 73) || (current >= 78 && current < 80) || (current >= 145 && current < 150) || (current >= 155 && current < 157) || (current >= 234 && current < 239)  || (current >= 244)){
+		document.getElementById("p2").innerHTML = "Parti parti partizani";
+		document.getElementById("p3").innerHTML = "Парти парти партизаны";
+	}
+	if ((current >= 80 && current < 83) || (current >= 90 && current < 93) || (current >= 157 && current < 160) || (current >= 167 && current < 169)){
+		document.getElementById("p2").innerHTML = "Zece, alege";
+		document.getElementById("p3").innerHTML = "Десять-выбирай";
+	}
+	if ((current >= 83 && current < 85) || (current >= 93 && current < 95) || (current >= 160 && current < 162) || (current >= 169 && current < 172)){
+		document.getElementById("p2").innerHTML = "Nu am, înțelege";
+		document.getElementById("p3").innerHTML = "Я не получил что мне было нужно, пойми";
+	}
+	if ((current >= 85 && current < 88) || (current >= 95 && current < 97) || (current >= 162 && current < 165) || (current >= 172 && current < 174)){
+		document.getElementById("p2").innerHTML = "Opt, un tot";
+		document.getElementById("p3").innerHTML = "Восемь-объединились";
+	}
+	if ((current >= 88 && current < 90) || (current >= 97 && current < 100) || (current >= 165 && current < 167) || (current >= 174 && current < 229)){
+		document.getElementById("p2").innerHTML = "Muzica nonstop";
+		document.getElementById("p3").innerHTML = "Музыка бесконечна";
+	}
+	if (current >= 100 && current < 102){
+		document.getElementById("p2").innerHTML = "Când te văd mă pierd cu firea";
+		document.getElementById("p3").innerHTML = "Когда я вижу тебя, я теряю голову";
+	}
+	if (current >= 102 && current < 105){
+		document.getElementById("p2").innerHTML = "Nu-mi pot stăpâni privirea";
+		document.getElementById("p3").innerHTML = "Я не могу контролировать свои глаза";
+	}
+	if (current >= 105 && current < 106){
+		document.getElementById("p2").innerHTML = "Dansezi bine, ești mortală";
+		document.getElementById("p3").innerHTML = "Ты хорошо танцуешь, ты сногшибательно красива";
+	}
+	if (current >= 106 && current < 109){
+		document.getElementById("p2").innerHTML = "Și cu frumusețea ta îi bagi pe toți în boală";
+		document.getElementById("p3").innerHTML = "И твоя красота сводит всех с ума";
+	}
+	if (current >= 109 && current < 112){
+		document.getElementById("p2").innerHTML = "Orice bărbat te dorește";
+		document.getElementById("p3").innerHTML = "Каждый мужчина хочет тебя";
+	}
+	if (current >= 112 && current < 114){
+		document.getElementById("p2").innerHTML = "Când te vede înnebunește";
+		document.getElementById("p3").innerHTML = "Они становятся дикими, когда смотрят на тебя";
+	}
+	if (current >= 114 && current < 116){
+		document.getElementById("p2").innerHTML = "Ți-ar da bani, ți-ar da orice, ți-ar da și casa";
+		document.getElementById("p3").innerHTML = "Они отдали бы тебе деньги, отдали бы тебе все, даже дом свой";
+	}
+	if (current >= 116 && current < 119){
+		document.getElementById("p2").innerHTML = "Pentru tine și-ar lăsa nevasta";
+		document.getElementById("p3").innerHTML = "Они оставили бы своих девушек ради тебя";
+	}
+}
+}
 
-}
-}
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
