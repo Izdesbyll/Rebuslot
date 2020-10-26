@@ -1394,6 +1394,57 @@ if ((current >= 23 && current < 24) || (current >= 33 && current < 34)){
 		document.getElementById("p3").innerHTML = "Они оставили бы своих девушек ради тебя";
 	}
 }
+if (lyrics == 4){
+	if ((current < 4.12) || (current >= 16.24 && current < 19.58) || (current >= 128.52 && current < 132.33)){
+	document.getElementById("p2").innerHTML = "O data in viata s'a intamplat";
+	document.getElementById("p3").innerHTML = "Once in my life happened to me";
+}
+if ((current >= 4.12 && current < 8.03) || (current >= 19.58 && current < 24.19) || (current >= 132.33 && current < 136.37)){
+	document.getElementById("p2").innerHTML = "Sa iubesc si eu cu adevarat";
+	document.getElementById("p3").innerHTML = "To really love someone";
+}
+if ((current >= 8.03 && current < 11.48) || (current >= 24.19 && current < 27.25) || (current >= 136.37 && current < 139.56)){
+	document.getElementById("p2").innerHTML = "La inima mea el ma secat";
+	document.getElementById("p3").innerHTML = "He broke my heart";
+}
+if ((current >= 11.48 && current < 16.24) || (current >= 27.25 && current < 32.04) || (current >= 139.56 && current < 144.36)){
+	document.getElementById("p2").innerHTML = "Ca e insurat";
+	document.getElementById("p3").innerHTML = "Because he's married";
+}
+if ((current >= 32.04 && current < 36.2) || (current >= 48.13 && current < 52.14) || (current >= 96.52 && current < 100.3) || (current >= 112.38 && current < 116.34) || (current >= 160.38 && current < 164.32) || (current >= 176.54 && current < 180.51) || (current >= 192.59 && current < 196.45) || (current >= 208.45 && current < 212.36)){
+	document.getElementById("p2").innerHTML = "Eu nu vreau sa-ti lasi nevasta pentru ochii mei";
+	document.getElementById("p3").innerHTML = "I don't want you to leave your wife for my eyes";
+}
+if ((current >= 36.2 && current < 40.06) || (current >= 52.14 && current < 56.04) || (current >= 100.3 && current < 104.34) || (current >= 116.34 && current < 120.35) || (current >= 164.32 && current < 168.38) || (current >= 180.51 && current < 184.46) || (current >= 196.45 && current < 200.31) || (current >= 212.36 && current < 216.14)){
+	document.getElementById("p2").innerHTML = "Nici copii tai";
+	document.getElementById("p3").innerHTML = "Nor your children";
+}
+if ((current >= 40.06 && current < 44.07) || (current >= 56.04 && current < 60.25) || (current >= 104.34 && current < 108.32) || (current >= 120.35 && current < 124.44) || (current >= 168.38 && current < 172.48) || (current >= 184.46 && current < 188.5) || (current >= 200.31 && current < 204.41) || (current >= 216.14 && current < 220.46)){
+	document.getElementById("p2").innerHTML = "Viata merge inainte orice sa-rantampla";
+	document.getElementById("p3").innerHTML = "Life goes on no matter what";
+}
+if ((current >= 44.07 && current < 48.13) || (current >= 60.25 && current < 64.42) || (current >= 108.32 && current < 112.38) || (current >= 124.44 && current < 128.52) || (current >= 172.48 && current < 176.54) || (current >= 188.5 && current < 192.59) || (current >= 204.41 && current < 208.45) || (current >= 220.46 && current < 223.46)){
+	document.getElementById("p2").innerHTML = "Vreau sa'mi vad de viata mea";
+	document.getElementById("p3").innerHTML = "I want to move on with mine";
+}
+if ((current >= 64.42 && current < 68.5) || (current >= 80.31 && current < 84.44) || (current >= 144.36 && current < 148.4)){
+	document.getElementById("p2").innerHTML = "Cate chinuri grele eu am tras";
+	document.getElementById("p3").innerHTML = "How many bad things I've suffered";
+}
+if ((current >= 68.5 && current < 72.38) || (current >= 84.44 && current < 88.37) || (current >= 148.4 && current < 152.46)){
+	document.getElementById("p2").innerHTML = "Numai ca sa nu te las";
+	document.getElementById("p3").innerHTML = "Only because I didn't want to leave you";
+}
+if ((current >= 72.38 && current < 75.49) || (current >= 88.37 && current < 91.49) || (current >= 152.46 && current < 155.47)){
+	document.getElementById("p2").innerHTML = "Eu m'am certat cu toata lumea";
+	document.getElementById("p3").innerHTML = "I've fought with everybody";
+}
+if ((current >= 75.49 && current < 80.31) || (current >= 91.49 && current < 96.52) || (current >= 155.47 && current < 160.38)){
+	document.getElementById("p2").innerHTML = "Din cauza ta";
+	document.getElementById("p3").innerHTML = "Because of you";
+}
+
+}
 }
 
 // Add a "checked" symbol when clicking on a list item
