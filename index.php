@@ -1445,8 +1445,74 @@ if ((current >= 75.49 && current < 80.31) || (current >= 91.49 && current < 96.5
 }
 
 }
+if (lyrics == 5){
+	if ((current >= 19.44 && current < 24.06) || (current >= 37.74 && current < 42.27)){
+	document.getElementById("p2").innerHTML = "Un milion de gânduri am în mintea mea";
+	document.getElementById("p3").innerHTML = "I have a million thoughts in my mind";
+}
+if ((current >= 24.06 && current < 28.62) || (current >= 42.27 && current < 47.11)){
+	document.getElementById("p2").innerHTML = "Și toate vor iubirea ta";
+	document.getElementById("p3").innerHTML = "And all of them want your love";
+}
+if ((current >= 28.62 && current < 33.15) || (current >= 47.11 && current < 51.39)){
+	document.getElementById("p2").innerHTML = "Zile și nopți de-ar trece, nu ar mai conta";
+	document.getElementById("p3").innerHTML = "Days and nights if would pass, it would not matter";
+}
+if ((current >= 33.15 && current < 37.74) || (current >= 51.39 && current < 56.17)){
+	document.getElementById("p2").innerHTML = "Dacă ești tu în dreapta mea";
+	document.getElementById("p3").innerHTML = "If you're by my side";
+}
+if ((current >= 56.17 && current < 60.71) || (current >= 74.73 && current < 79.08) || (current >= 148.63 && current < 153.1) || (current >= 167.08 && current < 171.62) || (current >= 240.93 && current < 245.46) || (current >= 259.36 && current < 263.94)){
+	document.getElementById("p2").innerHTML = "Ia spune-i, lună, spune-i ce să-mi spună";
+	document.getElementById("p3").innerHTML = "Tell him, moon, tell him what to tell me";
+}
+if ((current >= 60.71 && current < 65.63) || (current >= 79.08 && current < 83.99) || (current >= 153.1 && current < 157.77) || (current >= 171.62 && current < 176.35) || (current >= 245.46 && current < 250.1) || (current >= 263.94 && current < 268.48)){
+	document.getElementById("p2").innerHTML = "Că-mi este dor de vorba lui";
+	document.getElementById("p3").innerHTML = "Because I miss his words";
+}
+if ((current >= 65.63 && current < 69.95) || (current >= 83.99 && current < 88.17) || (current >= 157.77 && current < 162.13) || (current >= 176.35 && current < 180.73) || (current >= 250.1 && current < 254.41) || (current >= 268.48 && current < 273.01)){
+	document.getElementById("p2").innerHTML = "Ia spune-i, soare, ce arde așa tare";
+	document.getElementById("p3").innerHTML = "Tell him, sun, what burns so badly";
+}
+if ((current >= 69.95 && current < 74.73) || (current >= 88.17 && current < 111.46) || (current >= 162.13 && current < 167.08) || (current >= 180.73 && current < 203.95) || (current >= 254.41 && current < 259.36) || (current >= 273.01 && current < 277.07)){
+	document.getElementById("p2").innerHTML = "Când vine focul dorului";
+	document.getElementById("p3").innerHTML = "When the fire of longing is coming";
+}
+if ((current >= 111.46 && current < 116.1) || (current >= 130.07 && current < 134.55)){
+	document.getElementById("p2").innerHTML = "Cine ar putea să-mi spună acum tot ce gândești";
+	document.getElementById("p3").innerHTML = "Who could tell me now everything you think";
+}
+if ((current >= 116.1 && current < 120.65) || (current >= 134.55 && current < 139.26)){
+	document.getElementById("p2").innerHTML = "Și dacă poți să mai iubești";
+	document.getElementById("p3").innerHTML = "And if you can still love";
+}
+if ((current >= 120.65 && current < 125.38) || (current >= 139.26 && current < 143.8)){
+	document.getElementById("p2").innerHTML = "Cum aș putea să îți mai simt inima ta";
+	document.getElementById("p3").innerHTML = "How could I feel your heart";
+}
+if ((current >= 125.38 && current < 130.07) || (current >= 143.8 && current < 148.63)){
+	document.getElementById("p2").innerHTML = "De-ai m-ai avea un dor în ea";
+	document.getElementById("p3").innerHTML = "If you would have a longing in it";
+}
+if ((current >= 203.95 && current < 208.48) || (current >= 222.4 && current < 226.86)){
+	document.getElementById("p2").innerHTML = "Cum e când vine dorul greu în mintea ta";
+	document.getElementById("p3").innerHTML = "How is it like when the hard longing is coming on your mind";
+}
+if ((current >= 208.48 && current < 213.14) || (current >= 226.86 && current < 231.72)){
+	document.getElementById("p2").innerHTML = "Cum poți să mai traiești așa";
+	document.getElementById("p3").innerHTML = "How could you live like this";
+}
+if ((current >= 213.14 && current < 217.74) || (current >= 231.72 && current < 236.17)){
+	document.getElementById("p2").innerHTML = "Cum e să simți și nu poți să spui nimic";
+	document.getElementById("p3").innerHTML = "How is it to feel it and cannot say anything";
+}
+if ((current >= 217.74 && current < 222.4) || (current >= 236.17 && current < 240.93)){
+	document.getElementById("p2").innerHTML = "Ca un biet suflet rătăcit";
+	document.getElementById("p3").innerHTML = "Like a miserable/lost soul";
 }
 
+}
+}
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
