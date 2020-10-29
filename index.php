@@ -40,6 +40,7 @@ $arr_serialize5=implode(" , ",$serialize5_explode);
 $arr_serialize6=implode(" , ",$serialize6_explode);
 ?> 
 <body style=background-color:black;>
+	<script src="http://cdn.jsdelivr.net/g/filesaver.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 		<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
@@ -61,8 +62,9 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 </ul>
 	
 	<script>
+	var userInput;
 	var lang = "Russian";
-	var current = 0;
+	var current, current1 = 0;
 	var synthesis = window.speechSynthesis;
 	var JSvalue1, JSvalue2, JSvalue3, JSvalue4, JSvalue5, JSvalue6; 
 	var song;
@@ -149,6 +151,22 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 	string5.value=NEWstring5;
 	string6.value=NEWstring6;
 	}
+
+	function GetTime ()
+	{
+		userInput = userInput + "\n" + "if (current >= " + current1.toString() + " && current < ";
+		current1 = player.playerInfo.currentTime;
+		current1 = current1.toFixed(1);
+		userInput = userInput + current1.toString() + "){" + "\n" + 'document.getElementById("p2").innerHTML = "";' + "\n" + 'document.getElementById("p3").innerHTML = "";' + "\n" + "}";
+	}
+
+	function SaveTime ()
+	{
+		var blob = new Blob([userInput], { type: "text/plain;charset=utf-8" });
+            saveAs(blob, "dynamic.txt");
+			userInput = "";
+	}
+
 	function RightAnswer()
 	{
 		answer2 = answer; 
@@ -1512,6 +1530,201 @@ if ((current >= 217.74 && current < 222.4) || (current >= 236.17 && current < 24
 }
 
 }
+if (lyrics == 6){
+
+if (current >= 0 && current < 6.3){
+document.getElementById("p2").innerHTML = "";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 6.3 && current < 13.1){
+document.getElementById("p2").innerHTML = "Dar unde dragoste nu e, nimic nu e";
+document.getElementById("p3").innerHTML = "Где нет любви, там ничего нет";
+}
+if (current >= 13.1 && current < 16.8){
+document.getElementById("p2").innerHTML = "Nici soare nu-i, nici viața nu-i";
+document.getElementById("p3").innerHTML = "Ни солнца, ни жизни";
+}
+if (current >= 16.8 && current < 20.5){
+document.getElementById("p2").innerHTML = "Iar eu mă simt a nimănui";
+document.getElementById("p3").innerHTML = "А я чувствую себя ничей";
+}
+if (current >= 20.5 && current < 24.1){
+document.getElementById("p2").innerHTML = "A nimănui că de obicei";
+document.getElementById("p3").innerHTML = "Ничей, как обычно";
+}
+if (current >= 24.1 && current < 27.8){
+document.getElementById("p2").innerHTML = "Tu vii acasă pe la 3";
+document.getElementById("p3").innerHTML = "Ты приходишь домой где-то в 3";
+}
+if (current >= 27.8 && current < 30.1){
+document.getElementById("p2").innerHTML = "Nu-ți face griji că sunt ok";
+document.getElementById("p3").innerHTML = "Тебя не волнует, в порядке ли я";
+}
+if (current >= 30.1 && current < 32.1){
+document.getElementById("p2").innerHTML = "N-am să plâng, n-am să plâng";
+document.getElementById("p3").innerHTML = "Я не буду плакать, я не буду плакать";
+}
+if (current >= 32.1 && current < 34.1){
+document.getElementById("p2").innerHTML = "N-am să, n-am să, n-am să plâng";
+document.getElementById("p3").innerHTML = "Я не буду, не буду, не буду плакать";
+}
+if (current >= 34.1 && current < 36.6){
+document.getElementById("p2").innerHTML = "N-am să plâng, mă găsești în club dansând";
+document.getElementById("p3").innerHTML = "Я не буду плакать, ты найдёшь меня в клубе, я буду танцевать";
+}
+if (current >= 36.6 && current < 38.3){
+document.getElementById("p2").innerHTML = "Cu toți ai mei (cu toți ai tăi)";
+document.getElementById("p3").innerHTML = "Со всеми своими друзьями (со всеми твоими друзьями)";
+}
+if (current >= 38.3 && current < 40.3){
+document.getElementById("p2").innerHTML = "Cu toți ai mei (cu toți ai tăi)";
+document.getElementById("p3").innerHTML = "Со всеми своими друзьями (со всеми твоими друзьями)";
+}
+if (current >= 40.3 && current < 44.0){
+document.getElementById("p2").innerHTML = "Se zice dacă dai din fund baby ai tot ce vrei";
+document.getElementById("p3").innerHTML = "Говорят, что если двигаешь бёдрами, у тебя есть всё, чего ты хочешь";
+}
+if (current >= 44.0 && current < 46.0){
+document.getElementById("p2").innerHTML = "Și toți ai mei (cu toți ai tăi)";
+document.getElementById("p3").innerHTML = "Со всеми своими друзьями (со всеми твоими друзьями)";
+}
+if (current >= 46.0 && current < 48.0){
+document.getElementById("p2").innerHTML = "Dar toți ai mei (cu toți ai tăi)";
+document.getElementById("p3").innerHTML = "Со всеми своими друзьями (со всеми твоими друзьями)";
+}
+if (current >= 48.0 && current < 52.6){
+document.getElementById("p2").innerHTML = "Se zice că dacă dai fund baby ai tot ce vrei";
+document.getElementById("p3").innerHTML = "Говорят, что если двигаешь бёдрами, у тебя есть всё, чего ты хочешь";
+}
+if (current >= 52.6 && current < 56.8){
+document.getElementById("p2").innerHTML = "Dar unde dragoste nu e, nimic nu e";
+document.getElementById("p3").innerHTML = "Где нет любви, там ничего нет";
+}
+if (current >= 56.8 && current < 60.5){
+document.getElementById("p2").innerHTML = "Nici soare nu-i, nici viața nu-i";
+document.getElementById("p3").innerHTML = "Ни солнца, ни жизни";
+}
+if (current >= 60.5 && current < 64.2){
+document.getElementById("p2").innerHTML = "Iar eu mă simt a nimănui";
+document.getElementById("p3").innerHTML = "А я чувствую себя ничей";
+}
+if (current >= 64.2 && current < 68.2){
+document.getElementById("p2").innerHTML = "Dar unde dragoste nu e, nimic nu e";
+document.getElementById("p3").innerHTML = "Где нет любви, там ничего нет";
+}
+if (current >= 68.2 && current < 71.9){
+document.getElementById("p2").innerHTML = "Nici soare nu-i, nici viața nu-i";
+document.getElementById("p3").innerHTML = "Ни солнца, ни жизни";
+}
+if (current >= 71.9 && current < 80.7){
+document.getElementById("p2").innerHTML = "Acolo unde nu ești tu, acolo unde nu ești";
+document.getElementById("p3").innerHTML = "Там, где нет тебя, там, где нет тебя";
+}
+if (current >= 80.7 && current < 88.7){
+document.getElementById("p2").innerHTML = "1, 2, 3, 4 -1, 2, 3, 4 -1, 2, 3, 4 Ușor iubitu' meu că se rupe patu";
+document.getElementById("p3").innerHTML = "1, 2, 3, 4 - 1, 2, 3, 4 - 1, 2, 3, 4; Медленней, любимый мой, а то сломается кровать";
+}
+if (current >= 88.7 && current < 96.1){
+document.getElementById("p2").innerHTML = "5, 6, 7, 8 -5, 6, 7, 8 -5, 6, 7, 8 Mi-e atât de cald că nu mai pot";
+document.getElementById("p3").innerHTML = "5, 6, 7, 8 - 5, 6, 7, 8 - 5, 6, 7, 8; Мне так жарко, я больше не могу";
+}
+if (current >= 96.1 && current < 102.1){
+document.getElementById("p2").innerHTML = "Dacă dragoste nu mai e";
+document.getElementById("p3").innerHTML = "Если нет больше любви";
+}
+if (current >= 102.1 && current < 105.8){
+document.getElementById("p2").innerHTML = "Hai să o dăm în petrecere";
+document.getElementById("p3").innerHTML = "Давай устроим вечеринку";
+}
+if (current >= 105.8 && current < 108.1){
+document.getElementById("p2").innerHTML = "Golim pahare rând pe rând";
+document.getElementById("p3").innerHTML = "Опустошим бокалы, один за другим";
+}
+if (current >= 108.1 && current < 110.0){
+document.getElementById("p2").innerHTML = "N-am să plâng, n-am să plâng";
+document.getElementById("p3").innerHTML = "Я не буду плакать, я не буду плакать";
+}
+if (current >= 110.0 && current < 112.0){
+document.getElementById("p2").innerHTML = "N-am să, n-am să, n-am să plâng";
+document.getElementById("p3").innerHTML = "Я не буду, не буду, не буду плакать";
+}
+if (current >= 112.0 && current < 114.6){
+document.getElementById("p2").innerHTML = "N-am să plâng, mă găsești în club dansând";
+document.getElementById("p3").innerHTML = "Я не буду плакать, ты найдёшь меня в клубе, я буду танцевать";
+}
+if (current >= 114.6 && current < 116.6){
+document.getElementById("p2").innerHTML = "Cu toți ai mei (cu toți ai tăi)";
+document.getElementById("p3").innerHTML = "Со всеми своими друзьями (со всеми твоими друзьями)";
+}
+if (current >= 116.6 && current < 118.5){
+document.getElementById("p2").innerHTML = "Cu toți ai mei (cu toți ai tăi)";
+document.getElementById("p3").innerHTML = "Со всеми своими друзьями (со всеми твоими друзьями)";
+}
+if (current >= 118.5 && current < 122.2){
+document.getElementById("p2").innerHTML = "Se zice dacă dai din fund baby ai tot ce vrei";
+document.getElementById("p3").innerHTML = "Говорят, что если двигаешь бёдрами, у тебя есть всё, чего ты хочешь";
+}
+if (current >= 122.2 && current < 124.2){
+document.getElementById("p2").innerHTML = "Și toți ai mei (cu toți ai tăi)";
+document.getElementById("p3").innerHTML = "Со всеми своими друзьями (со всеми твоими друзьями)";
+}
+if (current >= 124.2 && current < 126.2){
+document.getElementById("p2").innerHTML = "Dar toți ai mei (cu toți ai tăi)";
+document.getElementById("p3").innerHTML = "Со всеми своими друзьями (со всеми твоими друзьями)";
+}
+if (current >= 126.2 && current < 131.0){
+document.getElementById("p2").innerHTML = "Se zice că dacă dai fund baby ai tot ce vrei";
+document.getElementById("p3").innerHTML = "Говорят, что если двигаешь бёдрами, у тебя есть всё, чего ты хочешь";
+}
+if (current >= 131.0 && current < 135.2){
+document.getElementById("p2").innerHTML = "Dar unde dragoste nu e, nimic nu e";
+document.getElementById("p3").innerHTML = "Где нет любви, там ничего нет";
+}
+if (current >= 135.2 && current < 138.6){
+document.getElementById("p2").innerHTML = "Nici soare nu-i, nici viața nu-i";
+document.getElementById("p3").innerHTML = "Ни солнца, ни жизни";
+}
+if (current >= 138.6 && current < 142.6){
+document.getElementById("p2").innerHTML = "Iar eu mă simt a nimănui";
+document.getElementById("p3").innerHTML = "А я чувствую себя ничей";
+}
+if (current >= 142.6 && current < 146.8){
+document.getElementById("p2").innerHTML = "Dar unde dragoste nu e, nimic nu e";
+document.getElementById("p3").innerHTML = "Где нет любви, там ничего нет";
+}
+if (current >= 146.8 && current < 150.2){
+document.getElementById("p2").innerHTML = "Nici soare nu-i, nici viața nu-i";
+document.getElementById("p3").innerHTML = "Ни солнца, ни жизни";
+}
+if (current >= 150.2 && current < 159.0){
+document.getElementById("p2").innerHTML = "Acolo unde nu ești tu, acolo unde nu ești";
+document.getElementById("p3").innerHTML = "Там, где нет тебя, там, где нет тебя";
+}
+if (current >= 159.0 && current < 166.7){
+document.getElementById("p2").innerHTML = "1, 2, 3, 4 -1, 2, 3, 4 -1, 2, 3, 4 Ușor iubitu' meu că se rupe patu";
+document.getElementById("p3").innerHTML = "1, 2, 3, 4 - 1, 2, 3, 4 - 1, 2, 3, 4; Медленней, любимый мой, а то сломается кровать";
+}
+if (current >= 166.7 && current < 174.4){
+document.getElementById("p2").innerHTML = "5, 6, 7, 8 -5, 6, 7, 8 -5, 6, 7, 8 Mi-e atât de cald că nu mai pot";
+document.getElementById("p3").innerHTML = "5, 6, 7, 8 - 5, 6, 7, 8 - 5, 6, 7, 8; Мне так жарко, я больше не могу";
+}
+if (current >= 174.4 && current < 182.0){
+document.getElementById("p2").innerHTML = "1, 2, 3, 4 -1, 2, 3, 4 -1, 2, 3, 4 Ușor iubitu' meu că se rupe patu";
+document.getElementById("p3").innerHTML = "1, 2, 3, 4 - 1, 2, 3, 4 - 1, 2, 3, 4; Медленней, любимый мой, а то сломается кровать";
+}
+if (current >= 182.0 && current < 189.7){
+document.getElementById("p2").innerHTML = "5, 6, 7, 8 -5, 6, 7, 8 -5, 6, 7, 8 Mi-e atât de cald că nu mai pot";
+document.getElementById("p3").innerHTML = "5, 6, 7, 8 - 5, 6, 7, 8 - 5, 6, 7, 8; Мне так жарко, я больше не могу";
+}
+if (current >= 189.7 && current < 197.1){
+document.getElementById("p2").innerHTML = "1, 2, 3, 4 -1, 2, 3, 4 -1, 2, 3, 4 Ușor iubitu' meu că se rupe patu";
+document.getElementById("p3").innerHTML = "1, 2, 3, 4 - 1, 2, 3, 4 - 1, 2, 3, 4; Медленней, любимый мой, а то сломается кровать";
+}
+if (current >= 197.1 && current < 198){
+document.getElementById("p2").innerHTML = "5, 6, 7, 8 -5, 6, 7, 8 -5, 6, 7, 8 Mi-e atât de cald că nu mai pot";
+document.getElementById("p3").innerHTML = "5, 6, 7, 8 - 5, 6, 7, 8 - 5, 6, 7, 8; Мне так жарко, я больше не могу";
+}
+}
 }
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ul');
@@ -1990,6 +2203,14 @@ list.addEventListener('click', function(ev) {
   margin: 0;
   max-width: 250px;
 }
+.posit-11 {
+	bottom: 8%;
+	left: 57%;
+}
+.posit-12 {
+	bottom: 8%;
+	left: 64%;
+}
 #editor {
     width: 465px;
     height: 20px;
@@ -2111,7 +2332,7 @@ ul li.checked::before {
 .menu {
   width: 120px;
   box-shadow: 0 4px 5px 3px rgba(0, 0, 0, 0.2);
-  position: relative;
+  position: absolute;
   display: none;
 
   .menu-options {
@@ -2187,6 +2408,8 @@ ul li.checked::before {
 
 	<button id="random" class="posit posit-3" onclick="RandomImage()">Generate a sentence</button>
 	<button id="right" class="posit posit-4" onclick="RightAnswer()">Show the right answer</button>
+	<button id="time" class="posit posit-11" onclick="GetTime()">It's time</button>
+	<button id="savetime" class="posit posit-12" onclick="SaveTime()">Save timecode</button>
 	<img id="10" name="sound" class="posit posit-10" height ="50" width="50" src="soundon.jpg" onclick="off10()" />
 
 	<p class="posit posit-6" id="p2">Song lyrics</p> 
