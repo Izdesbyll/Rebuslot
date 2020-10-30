@@ -1725,6 +1725,312 @@ document.getElementById("p2").innerHTML = "5, 6, 7, 8 -5, 6, 7, 8 -5, 6, 7, 8 Mi
 document.getElementById("p3").innerHTML = "5, 6, 7, 8 - 5, 6, 7, 8 - 5, 6, 7, 8; Мне так жарко, я больше не могу";
 }
 }
+if (lyrics == 7){
+
+if (current >= 0 && current < 28.5){
+document.getElementById("p2").innerHTML = "";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 28.5 && current < 31.3){
+document.getElementById("p2").innerHTML = "Eu sunt căpitan major";
+document.getElementById("p3").innerHTML = "I am a captain major";
+}
+if (current >= 31.3 && current < 39.9){
+document.getElementById("p2").innerHTML = "Reclama țiganilor";
+document.getElementById("p3").innerHTML = "Pride of the gypsies";
+}
+if (current >= 39.9 && current < 43.0){
+document.getElementById("p2").innerHTML = "Eu sunt căpitan major";
+document.getElementById("p3").innerHTML = "I am a captain major";
+}
+if (current >= 43.0 && current < 51.5){
+document.getElementById("p2").innerHTML = "Reclama țiganilor";
+document.getElementById("p3").innerHTML = "Pride of the gypsies";
+}
+if (current >= 51.5 && current < 57.4){
+document.getElementById("p2").innerHTML = "Și am nevastă șucară, ale";
+document.getElementById("p3").innerHTML = "And I have a sweet wife , ale";
+}
+if (current >= 57.4 && current < 63.4){
+document.getElementById("p2").innerHTML = "Cum nu e nici în reclamă, ale";
+document.getElementById("p3").innerHTML = "How come she is not in commercials, ale";
+}
+if (current >= 63.4 && current < 69.1){
+document.getElementById("p2").innerHTML = "Și am nevastă șucară, ale";
+document.getElementById("p3").innerHTML = "And I have a sweet wife , ale";
+}
+if (current >= 69.1 && current < 101.1){
+document.getElementById("p2").innerHTML = "Cum nu e nici în reclamă, ale";
+document.getElementById("p3").innerHTML = "How come she is not in commercials, ale";
+}
+if (current >= 101.1 && current < 104.0){
+document.getElementById("p2").innerHTML = "Eu am trecut prin furtună";
+document.getElementById("p3").innerHTML = "I have been through the storms";
+}
+if (current >= 104.0 && current < 112.7){
+document.getElementById("p2").innerHTML = "Dar acuma-i vreme bună";
+document.getElementById("p3").innerHTML = "But now the weather is good";
+}
+if (current >= 112.7 && current < 115.8){
+document.getElementById("p2").innerHTML = "Eu am trecut prin furtună";
+document.getElementById("p3").innerHTML = "I have been through the storms";
+}
+if (current >= 115.8 && current < 124.4){
+document.getElementById("p2").innerHTML = "Dar acuma-i vreme bună";
+document.getElementById("p3").innerHTML = "But now the weather is good";
+}
+if (current >= 124.4 && current < 130.0){
+document.getElementById("p2").innerHTML = "Nu-i nimic, că m-am călit, ale-d";
+document.getElementById("p3").innerHTML = "There's nothing, I just got hard, ale'd";
+}
+if (current >= 130.0 && current < 135.7){
+document.getElementById("p2").innerHTML = "Ca și fierul oțelit, ale-d";
+document.getElementById("p3").innerHTML = "As if iron steeled, ale'd";
+}
+if (current >= 135.7 && current < 141.7){
+document.getElementById("p2").innerHTML = "Nu-i nimic, că m-am călit, ale-d";
+document.getElementById("p3").innerHTML = "There's nothing, I just got hard, ale'd";
+}
+if (current >= 141.7 && current < 173.7){
+document.getElementById("p2").innerHTML = "Ca și fierul oțelit, ale-d";
+document.getElementById("p3").innerHTML = "As if iron steeled, ale'd";
+}
+if (current >= 173.7 && current < 176.8){
+document.getElementById("p2").innerHTML = "Când ești căpitan major";
+document.getElementById("p3").innerHTML = "If you are a captain major";
+}
+if (current >= 176.8 && current < 185.3){
+document.getElementById("p2").innerHTML = "N-ai nevoie de pistol";
+document.getElementById("p3").innerHTML = "You don't need a pistol";
+}
+if (current >= 185.3 && current < 188.5){
+document.getElementById("p2").innerHTML = "Când ești căpitan major";
+document.getElementById("p3").innerHTML = "If you are a captain major";
+}
+if (current >= 188.5 && current < 197.0){
+document.getElementById("p2").innerHTML = "N-ai nevoie de pistol";
+document.getElementById("p3").innerHTML = "You don't need a pistol";
+}
+if (current >= 197.0 && current < 202.9){
+document.getElementById("p2").innerHTML = "Când ai grade-n buzunar, ale-d";
+document.getElementById("p3").innerHTML = "If you have good rank of pocket, ale'd";
+}
+if (current >= 202.9 && current < 208.6){
+document.getElementById("p2").innerHTML = "Stă drept și un general, ale-d";
+document.getElementById("p3").innerHTML = "Even a general stands straight , ale'd";
+}
+if (current >= 208.6 && current < 214.6){
+document.getElementById("p2").innerHTML = "Când ai grade-n buzunar, ale-d";
+document.getElementById("p3").innerHTML = "If you have good rank of pocket, ale'd";
+}
+if (current >= 214.6 && current < 215.6){
+document.getElementById("p2").innerHTML = "Stă drept și un general, ale-d";
+document.getElementById("p3").innerHTML = "Even a general stands straight , ale'd";
+}
+}
+if (lyrics == 8){
+
+if (current >= 0 && current < 22.9){
+document.getElementById("p2").innerHTML = "";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 22.9 && current < 25.7){
+document.getElementById("p2").innerHTML = "O femeie moldoveancă îndrăgostită";
+document.getElementById("p3").innerHTML = "Влюблённая молдаванка";
+}
+if (current >= 25.7 && current < 28.6){
+document.getElementById("p2").innerHTML = "Răstoarnă și munții numai să fie împlinită";
+document.getElementById("p3").innerHTML = "И горы перевернёт, только чтобы быть найти свою половину";
+}
+if (current >= 28.6 && current < 31.7){
+document.getElementById("p2").innerHTML = "O femeie moldoveancă plină de amor";
+document.getElementById("p3").innerHTML = "Молдаванка, переполненная любовью";
+}
+if (current >= 31.7 && current < 34.8){
+document.getElementById("p2").innerHTML = "Se învârtește ca morișca la avion cu motor";
+document.getElementById("p3").innerHTML = "Крутится, как пропеллер на самолёте с мотором";
+}
+if (current >= 34.8 && current < 37.7){
+document.getElementById("p2").innerHTML = "Pe femeia moldoveancă n-o oprești cu Nică";
+document.getElementById("p3").innerHTML = "Молдаванку никем не остановишь";
+}
+if (current >= 37.7 && current < 40.2){
+document.getElementById("p2").innerHTML = "Și n-o amăgești numa' cu o bombonică";
+document.getElementById("p3").innerHTML = "Её не обманешь лишь конфеткой";
+}
+if (current >= 40.2 && current < 42.0){
+document.getElementById("p2").innerHTML = "Moldoveanca când iubește";
+document.getElementById("p3").innerHTML = "Когда любит молдаванка";
+}
+if (current >= 42.0 && current < 43.4){
+document.getElementById("p2").innerHTML = "Soarele asfinte";
+document.getElementById("p3").innerHTML = "Солнце прячется от зависти";
+}
+if (current >= 43.4 && current < 46.2){
+document.getElementById("p2").innerHTML = "De invidie că ea amu îi mai fierbinte";
+document.getElementById("p3").innerHTML = "Что она его горячее";
+}
+if (current >= 46.2 && current < 48.8){
+document.getElementById("p2").innerHTML = "Când eu iubesc, apu și pământu' geme";
+document.getElementById("p3").innerHTML = "Когда я люблю, земля сотрясается";
+}
+if (current >= 48.8 && current < 51.9){
+document.getElementById("p2").innerHTML = "Așa că să nu-mi spui amuia că ți-e lene";
+document.getElementById("p3").innerHTML = "Поэтому не говори сейчас, что тебе лень";
+}
+if (current >= 51.9 && current < 54.8){
+document.getElementById("p2").innerHTML = "Când eu iubesc apu parcă am aripioare";
+document.getElementById("p3").innerHTML = "Когда я люблю, у меня будто возникают крылья";
+}
+if (current >= 54.8 && current < 57.9){
+document.getElementById("p2").innerHTML = "Inima în jurul lumii ar vrea să zboare";
+document.getElementById("p3").innerHTML = "Сердце хотело бы полететь вокруг всего мира";
+}
+if (current >= 57.9 && current < 60.4){
+document.getElementById("p2").innerHTML = "Când eu iubesc, apu și pământu' geme";
+document.getElementById("p3").innerHTML = "Когда я люблю, земля сотрясается";
+}
+if (current >= 60.4 && current < 63.9){
+document.getElementById("p2").innerHTML = "Așa că să nu-mi spui amuia că ți-e lene";
+document.getElementById("p3").innerHTML = "Поэтому не говори сейчас, что тебе лень";
+}
+if (current >= 63.9 && current < 66.4){
+document.getElementById("p2").innerHTML = "Când eu iubesc apu parcă am aripioare";
+document.getElementById("p3").innerHTML = "Когда я люблю, у меня будто возникают крылья";
+}
+if (current >= 66.4 && current < 81.2){
+document.getElementById("p2").innerHTML = "Inima în jurul lumii ar vrea să zboare";
+document.getElementById("p3").innerHTML = "Сердце хотело бы полететь вокруг всего мира";
+}
+if (current >= 81.2 && current < 84.0){
+document.getElementById("p2").innerHTML = "Moldoveanca nu asteaptă scuză că nu poți";
+document.getElementById("p3").innerHTML = "Молдаванка не ждёт отговорки, что ты не можешь";
+}
+if (current >= 84.0 && current < 86.9){
+document.getElementById("p2").innerHTML = "Dacă vrei să ai copii, dacă vrei nepoți";
+document.getElementById("p3").innerHTML = "Если ты хочешь детей, если ты хочешь внуков";
+}
+if (current >= 86.9 && current < 89.7){
+document.getElementById("p2").innerHTML = "Moldoveanca îndrăgostită limită nu are";
+document.getElementById("p3").innerHTML = "У влюблённой молдаванки нет ограничений";
+}
+if (current >= 89.7 && current < 92.8){
+document.getElementById("p2").innerHTML = "Și rușinea îi dispare și astâmpăr n-are";
+document.getElementById("p3").innerHTML = "Ей совсем не стыдно, ей не сидится на месте";
+}
+if (current >= 92.8 && current < 96.2){
+document.getElementById("p2").innerHTML = "Moldoveanca tot iubește luna și cu stelele";
+document.getElementById("p3").innerHTML = "Молдаванка любит луну со звёздами";
+}
+if (current >= 96.2 && current < 99.3){
+document.getElementById("p2").innerHTML = "Dar mai tare sub ogheal sărutul și gâdilelile";
+document.getElementById("p3").innerHTML = "Но больше всего она любит поцелуи и ласки под одеялом";
+}
+if (current >= 99.3 && current < 101.6){
+document.getElementById("p2").innerHTML = "Să iubești o moldoveancă nu-i așa de greu";
+document.getElementById("p3").innerHTML = "Любить молдаванку не так и сложно";
+}
+if (current >= 101.6 && current < 104.7){
+document.getElementById("p2").innerHTML = "De două ori de dimineață și seara mereu";
+document.getElementById("p3").innerHTML = "Два раза утром и вечером всегда";
+}
+if (current >= 104.7 && current < 107.2){
+document.getElementById("p2").innerHTML = "Când eu iubesc, apu și pământu' geme";
+document.getElementById("p3").innerHTML = "Когда я люблю, земля сотрясается";
+}
+if (current >= 107.2 && current < 110.4){
+document.getElementById("p2").innerHTML = "Așa că să nu-mi spui amuia că ți-e lene";
+document.getElementById("p3").innerHTML = "Поэтому не говори сейчас, что тебе лень";
+}
+if (current >= 110.4 && current < 113.2){
+document.getElementById("p2").innerHTML = "Când eu iubesc apu parcă am aripioare";
+document.getElementById("p3").innerHTML = "Когда я люблю, у меня будто возникают крылья";
+}
+if (current >= 113.2 && current < 116.1){
+document.getElementById("p2").innerHTML = "Inima în jurul lumii ar vrea să zboare";
+document.getElementById("p3").innerHTML = "Сердце хотело бы полететь вокруг всего мира";
+}
+if (current >= 116.1 && current < 118.6){
+document.getElementById("p2").innerHTML = "Când eu iubesc, apu și pământu' geme";
+document.getElementById("p3").innerHTML = "Когда я люблю, земля сотрясается";
+}
+if (current >= 118.6 && current < 122.0){
+document.getElementById("p2").innerHTML = "Așa că să nu-mi spui amuia că ți-e lene";
+document.getElementById("p3").innerHTML = "Поэтому не говори сейчас, что тебе лень";
+}
+if (current >= 122.0 && current < 124.9){
+document.getElementById("p2").innerHTML = "Când eu iubesc apu parcă am aripioare";
+document.getElementById("p3").innerHTML = "Когда я люблю, у меня будто возникают крылья";
+}
+if (current >= 124.9 && current < 139.6){
+document.getElementById("p2").innerHTML = "Inima în jurul lumii ar vrea să zboare";
+document.getElementById("p3").innerHTML = "Сердце хотело бы полететь вокруг всего мира";
+}
+if (current >= 139.6 && current < 141.9){
+document.getElementById("p2").innerHTML = "Când eu iubesc, apu și pământu' geme";
+document.getElementById("p3").innerHTML = "Когда я люблю, земля сотрясается";
+}
+if (current >= 141.9 && current < 145.0){
+document.getElementById("p2").innerHTML = "Așa că să nu-mi spui amuia că ți-e lene";
+document.getElementById("p3").innerHTML = "Поэтому не говори сейчас, что тебе лень";
+}
+if (current >= 145.0 && current < 147.9){
+document.getElementById("p2").innerHTML = "Când eu iubesc apu parcă am aripioare";
+document.getElementById("p3").innerHTML = "Когда я люблю, у меня будто возникают крылья";
+}
+if (current >= 147.9 && current < 151.0){
+document.getElementById("p2").innerHTML = "Inima în jurul lumii ar vrea să zboare";
+document.getElementById("p3").innerHTML = "Сердце хотело бы полететь вокруг всего мира";
+}
+if (current >= 151.0 && current < 153.6){
+document.getElementById("p2").innerHTML = "Când eu iubesc, apu și pământu' geme";
+document.getElementById("p3").innerHTML = "Когда я люблю, земля сотрясается";
+}
+if (current >= 153.6 && current < 156.7){
+document.getElementById("p2").innerHTML = "Așa că să nu-mi spui amuia că ți-e lene";
+document.getElementById("p3").innerHTML = "Поэтому не говори сейчас, что тебе лень";
+}
+if (current >= 156.7 && current < 159.5){
+document.getElementById("p2").innerHTML = "Când eu iubesc apu parcă am aripioare";
+document.getElementById("p3").innerHTML = "Когда я люблю, у меня будто возникают крылья";
+}
+if (current >= 159.5 && current < 174.3){
+document.getElementById("p2").innerHTML = "Inima în jurul lumii ar vrea să zboare";
+document.getElementById("p3").innerHTML = "Сердце хотело бы полететь вокруг всего мира";
+}
+if (current >= 174.3 && current < 176.9){
+document.getElementById("p2").innerHTML = "Când eu iubesc, apu și pământu' geme";
+document.getElementById("p3").innerHTML = "Когда я люблю, земля сотрясается";
+}
+if (current >= 176.9 && current < 180.0){
+document.getElementById("p2").innerHTML = "Așa că să nu-mi spui amuia că ți-e lene";
+document.getElementById("p3").innerHTML = "Поэтому не говори сейчас, что тебе лень";
+}
+if (current >= 180.0 && current < 183.1){
+document.getElementById("p2").innerHTML = "Când eu iubesc apu parcă am aripioare";
+document.getElementById("p3").innerHTML = "Когда я люблю, у меня будто возникают крылья";
+}
+if (current >= 183.1 && current < 185.7){
+document.getElementById("p2").innerHTML = "Inima în jurul lumii ar vrea să zboare";
+document.getElementById("p3").innerHTML = "Сердце хотело бы полететь вокруг всего мира";
+}
+if (current >= 185.7 && current < 188.5){
+document.getElementById("p2").innerHTML = "Când eu iubesc, apu și pământu' geme";
+document.getElementById("p3").innerHTML = "Когда я люблю, земля сотрясается";
+}
+if (current >= 188.5 && current < 191.7){
+document.getElementById("p2").innerHTML = "Așa că să nu-mi spui amuia că ți-e lene";
+document.getElementById("p3").innerHTML = "Поэтому не говори сейчас, что тебе лень";
+}
+if (current >= 191.7 && current < 194.5){
+document.getElementById("p2").innerHTML = "Când eu iubesc apu parcă am aripioare";
+document.getElementById("p3").innerHTML = "Когда я люблю, у меня будто возникают крылья";
+}
+if (current >= 194.5 && current < 195.7){
+document.getElementById("p2").innerHTML = "Inima în jurul lumii ar vrea să zboare";
+document.getElementById("p3").innerHTML = "Сердце хотело бы полететь вокруг всего мира";
+}
+}
 }
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ul');
