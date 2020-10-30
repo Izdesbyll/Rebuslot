@@ -2637,13 +2637,14 @@ ul li.checked::before {
 
 .menu {
   width: 120px;
-  box-shadow: 0 4px 5px 3px rgba(0, 0, 0, 0.2);
+
   position: absolute;
   display: none;
 
   .menu-options {
     list-style: none;
     padding: 10px 0;
+	
 
     .menu-option {
       font-weight: 500;
@@ -2764,8 +2765,8 @@ output.addEventListener("click", e => {
 output.addEventListener("contextmenu", e => {
 	e.preventDefault();
 	const origin = {
-    left: 600,
-    top: 170
+    left: 700,
+    top: 400
   };
   setPosition(origin);
   return false;
