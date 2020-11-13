@@ -162,6 +162,10 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 
 	function SaveTime ()
 	{
+		userInput = userInput + "\n" + "if (current >= " + current1.toString() + " && current < ";
+		current1 = player.playerInfo.currentTime;
+		current1 = current1.toFixed(1);
+		userInput = userInput + current1.toString() + "){" + "\n" + 'document.getElementById("p2").innerHTML = "";' + "\n" + 'document.getElementById("p3").innerHTML = "";' + "\n" + "}";
 		var blob = new Blob([userInput], { type: "text/plain;charset=utf-8" });
             saveAs(blob, "dynamic.txt");
 			userInput = "";
@@ -2029,6 +2033,253 @@ document.getElementById("p3").innerHTML = "Когда я люблю, у меня
 if (current >= 194.5 && current < 195.7){
 document.getElementById("p2").innerHTML = "Inima în jurul lumii ar vrea să zboare";
 document.getElementById("p3").innerHTML = "Сердце хотело бы полететь вокруг всего мира";
+}
+}
+if (lyrics == 9){
+
+	if (current >= 0 && current < 6.0){
+document.getElementById("p2").innerHTML = "Cuscră, ia și de mă scuză";
+document.getElementById("p3").innerHTML = "Сватья, ну прости же меня";
+}
+if (current >= 6.0 && current < 11.6){
+document.getElementById("p2").innerHTML = "Că băiatul meu comoara ți-o furat";
+document.getElementById("p3").innerHTML = "Ведь мой мальчик украл твоё сокровище";
+}
+if (current >= 11.6 && current < 16.7){
+document.getElementById("p2").innerHTML = "Da’ n-o să-ți pară rău, crede-mă cuscră";
+document.getElementById("p3").innerHTML = "Но не расстраивайся, поверь мне, сватья";
+}
+if (current >= 16.7 && current < 23.8){
+document.getElementById("p2").innerHTML = "Să iubească o fată, tac-su l-o-nvățat";
+document.getElementById("p3").innerHTML = "Отец его научил, как любить девушек";
+}
+if (current >= 23.8 && current < 25.8){
+document.getElementById("p2").innerHTML = "Un', doi, trei și...";
+document.getElementById("p3").innerHTML = "Раз, два, три...";
+}
+if (current >= 25.8 && current < 28.6){
+document.getElementById("p2").innerHTML = "Cuscră, ia și de mă scuză";
+document.getElementById("p3").innerHTML = "Сватья, ну прости же меня";
+}
+if (current >= 28.6 && current < 31.2){
+document.getElementById("p2").innerHTML = "Că băiatul meu comoara ți-o furat";
+document.getElementById("p3").innerHTML = "Ведь мой мальчик украл твоё сокровище";
+}
+if (current >= 31.2 && current < 34.3){
+document.getElementById("p2").innerHTML = "Da’ n-o să-ți pară rău, crede-mă cuscră";
+document.getElementById("p3").innerHTML = "Но не расстраивайся, поверь мне, сватья";
+}
+if (current >= 34.3 && current < 37.1){
+document.getElementById("p2").innerHTML = "Să iubească o fată, tac-su l-o-nvățat";
+document.getElementById("p3").innerHTML = "Отец его научил, как любить девушек";
+}
+if (current >= 37.1 && current < 40.0){
+document.getElementById("p2").innerHTML = "Cuscră, ia și de mă scuză";
+document.getElementById("p3").innerHTML = "Сватья, ну прости же меня";
+}
+if (current >= 40.0 && current < 42.5){
+document.getElementById("p2").innerHTML = "Că băiatul meu comoara ți-o furat";
+document.getElementById("p3").innerHTML = "Ведь мой мальчик украл твоё сокровище";
+}
+if (current >= 42.5 && current < 45.6){
+document.getElementById("p2").innerHTML = "Da’ n-o să-ți pară rău, crede-mă cuscră";
+document.getElementById("p3").innerHTML = "Но не расстраивайся, поверь мне, сватья";
+}
+if (current >= 45.6 && current < 59.5){
+document.getElementById("p2").innerHTML = "Să iubească o fată, tac-su l-o-nvățat";
+document.getElementById("p3").innerHTML = "Отец его научил, как любить девушек";
+}
+if (current >= 59.5 && current < 62.3){
+document.getElementById("p2").innerHTML = "El dacă azi o spus, mâine o și făcut";
+document.getElementById("p3").innerHTML = "Если он пообщела сегодня, то завтра всё обязательно исполнит";
+}
+if (current >= 62.3 && current < 65.2){
+document.getElementById("p2").innerHTML = "Azi muncește, chiar de ieri o petrecut";
+document.getElementById("p3").innerHTML = "Сегодня он работает, даже если вчера был на гулянке";
+}
+if (current >= 65.2 && current < 68.0){
+document.getElementById("p2").innerHTML = "Când trebuie spune, tace când îi de tăcut";
+document.getElementById("p3").innerHTML = "Когда нужно говорить - говорит, когда нужно молчать - молчит";
+}
+if (current >= 68.0 && current < 70.8){
+document.getElementById("p2").innerHTML = "N-are scăpare fata care i-o plăcut";
+document.getElementById("p3").innerHTML = "Некуда деваться от него девушке, которая ему понравилась";
+}
+if (current >= 70.8 && current < 73.7){
+document.getElementById("p2").innerHTML = "El apare parcă din senin când dai de-un greu";
+document.getElementById("p3").innerHTML = "Он появляется словно из неоткуда, когда тебе нужна помощь";
+}
+if (current >= 73.7 && current < 76.5){
+document.getElementById("p2").innerHTML = "Dacă cheltuie un bănuț, să știi că mâine aduce un leu";
+document.getElementById("p3").innerHTML = "Если он тратит копейку, знай, что завтра он принесёт рубль";
+}
+if (current >= 76.5 && current < 79.4){
+document.getElementById("p2").innerHTML = "Cel mai frumos era Ion ca-n tinerețe eu";
+document.getElementById("p3").innerHTML = "Самым красивый мой Ион, как я в молодости";
+}
+if (current >= 79.4 && current < 82.5){
+document.getElementById("p2").innerHTML = "Dintre Ioni cel mai Ion, băiatu’ meu";
+document.getElementById("p3").innerHTML = "Среди Ионов он всем Ион, сынок мой";
+}
+if (current >= 82.5 && current < 85.3){
+document.getElementById("p2").innerHTML = "Cuscră, ia și de mă scuză";
+document.getElementById("p3").innerHTML = "Сватья, ну прости же меня";
+}
+if (current >= 85.3 && current < 88.2){
+document.getElementById("p2").innerHTML = "Că băiatul meu comoara ți-o furat";
+document.getElementById("p3").innerHTML = "Ведь мой мальчик украл твоё сокровище";
+}
+if (current >= 88.2 && current < 91.0){
+document.getElementById("p2").innerHTML = "Da’ n-o să-ți pară rău, crede-mă cuscră";
+document.getElementById("p3").innerHTML = "Но не расстраивайся, поверь мне, сватья";
+}
+if (current >= 91.0 && current < 93.9){
+document.getElementById("p2").innerHTML = "Să iubească o fată, tac-su l-o-nvățat";
+document.getElementById("p3").innerHTML = "Отец его научил, как любить девушек";
+}
+if (current >= 93.9 && current < 96.7){
+document.getElementById("p2").innerHTML = "Cuscră, ia și de mă scuză";
+document.getElementById("p3").innerHTML = "Сватья, ну прости же меня";
+}
+if (current >= 96.7 && current < 99.3){
+document.getElementById("p2").innerHTML = "Că băiatul meu comoara ți-o furat";
+document.getElementById("p3").innerHTML = "Ведь мой мальчик украл твоё сокровище";
+}
+if (current >= 99.3 && current < 102.4){
+document.getElementById("p2").innerHTML = "Da’ n-o să-ți pară rău, crede-mă cuscră";
+document.getElementById("p3").innerHTML = "Но не расстраивайся, поверь мне, сватья";
+}
+if (current >= 102.4 && current < 116.3){
+document.getElementById("p2").innerHTML = "Să iubească o fată, tac-su l-o-nvățat";
+document.getElementById("p3").innerHTML = "Отец его научил, как любить девушек";
+}
+if (current >= 116.3 && current < 119.2){
+document.getElementById("p2").innerHTML = "Vorbește lumea despre fata ta de bine";
+document.getElementById("p3").innerHTML = "Люди хорошо говорят о твоей дочери";
+}
+if (current >= 119.2 && current < 122.0){
+document.getElementById("p2").innerHTML = "Îi dintre acelea care știe de rușine";
+document.getElementById("p3").innerHTML = "Она не одна из тех, кому стоило бы постыдиться";
+}
+if (current >= 122.0 && current < 124.6){
+document.getElementById("p2").innerHTML = "Care ia aur la concurs de gospodine";
+document.getElementById("p3").innerHTML = "Которые приносят золото на конкурс домохозяек";
+}
+if (current >= 124.6 && current < 127.7){
+document.getElementById("p2").innerHTML = "Fata ta, cuscră, seamănă cu mine";
+document.getElementById("p3").innerHTML = "Дочь твоя, сватья, похожа на меня";
+}
+if (current >= 127.7 && current < 130.5){
+document.getElementById("p2").innerHTML = "Ea știe, pe bărbat că trebui’ l-asculta";
+document.getElementById("p3").innerHTML = "Она знает, что мужчину нужно слушать";
+}
+if (current >= 130.5 && current < 133.4){
+document.getElementById("p2").innerHTML = "Pe aici îl ajuta, pe-acolo-l îndrepta";
+document.getElementById("p3").innerHTML = "Здесь ему поможет, там его направит";
+}
+if (current >= 133.4 && current < 135.9){
+document.getElementById("p2").innerHTML = "Știe să muncească, știe și-a cânta";
+document.getElementById("p3").innerHTML = "Она умеет работать, она умеет петь";
+}
+if (current >= 135.9 && current < 139.4){
+document.getElementById("p2").innerHTML = "Ca tre’ … îi fata ta";
+document.getElementById("p3").innerHTML = "Как надо... это дочь твоя";
+}
+if (current >= 139.4 && current < 142.2){
+document.getElementById("p2").innerHTML = "Cuscră, ia și de mă scuză";
+document.getElementById("p3").innerHTML = "Сватья, ну прости же меня";
+}
+if (current >= 142.2 && current < 145.0){
+document.getElementById("p2").innerHTML = "Că băiatul meu comoara ți-o furat";
+document.getElementById("p3").innerHTML = "Ведь мой мальчик украл твоё сокровище";
+}
+if (current >= 145.0 && current < 147.9){
+document.getElementById("p2").innerHTML = "Da’ n-o să-ți pară rău, crede-mă cuscră";
+document.getElementById("p3").innerHTML = "Но не расстраивайся, поверь мне, сватья";
+}
+if (current >= 147.9 && current < 150.7){
+document.getElementById("p2").innerHTML = "Să iubească o fată, tac-su l-o-nvățat";
+document.getElementById("p3").innerHTML = "Отец его научил, как любить девушек";
+}
+if (current >= 150.7 && current < 153.5){
+document.getElementById("p2").innerHTML = "Cuscră, ia și de mă scuză";
+document.getElementById("p3").innerHTML = "Сватья, ну прости же меня";
+}
+if (current >= 153.5 && current < 156.4){
+document.getElementById("p2").innerHTML = "Că băiatul meu comoara ți-o furat";
+document.getElementById("p3").innerHTML = "Ведь мой мальчик украл твоё сокровище";
+}
+if (current >= 156.4 && current < 159.2){
+document.getElementById("p2").innerHTML = "Da’ n-o să-ți pară rău, crede-mă cuscră";
+document.getElementById("p3").innerHTML = "Но не расстраивайся, поверь мне, сватья";
+}
+if (current >= 159.2 && current < 161.6){
+document.getElementById("p2").innerHTML = "Să iubească o fată, tac-su l-o-nvățat";
+document.getElementById("p3").innerHTML = "Отец его научил, как любить девушек";
+}
+if (current >= 161.6 && current < 164.6){
+document.getElementById("p2").innerHTML = "Cel mai frumos era Ion ca-n tinerețe eu";
+document.getElementById("p3").innerHTML = "Самым красивый мой Ион, как я в молодости";
+}
+if (current >= 164.6 && current < 167.5){
+document.getElementById("p2").innerHTML = "Dintre Ioni cel mai Ion, băiatu’ meu";
+document.getElementById("p3").innerHTML = "Среди Ионов он всем Ион, сынок мой";
+}
+if (current >= 167.5 && current < 170.0){
+document.getElementById("p2").innerHTML = "Vorbește lumea despre fata ta de bine";
+document.getElementById("p3").innerHTML = "Люди хорошо говорят о твоей дочери";
+}
+if (current >= 170.0 && current < 173.4){
+document.getElementById("p2").innerHTML = "Fata ta, cuscră, seamănă cu mine";
+document.getElementById("p3").innerHTML = "Дочь твоя, сватья, похожа на меня";
+}
+if (current >= 173.4 && current < 176.3){
+document.getElementById("p2").innerHTML = "Cuscră, ia și de mă scuză";
+document.getElementById("p3").innerHTML = "Сватья, ну прости же меня";
+}
+if (current >= 176.3 && current < 178.8){
+document.getElementById("p2").innerHTML = "Că băiatul meu comoara ți-o furat";
+document.getElementById("p3").innerHTML = "Ведь мой мальчик украл твоё сокровище";
+}
+if (current >= 178.8 && current < 182.0){
+document.getElementById("p2").innerHTML = "Da’ n-o să-ți pară rău, crede-mă cuscră";
+document.getElementById("p3").innerHTML = "Но не расстраивайся, поверь мне, сватья";
+}
+if (current >= 182.0 && current < 184.8){
+document.getElementById("p2").innerHTML = "Să iubească o fată, tac-su l-o-nvățat";
+document.getElementById("p3").innerHTML = "Отец его научил, как любить девушек";
+}
+if (current >= 184.8 && current < 187.6){
+document.getElementById("p2").innerHTML = "Cuscră, ia și de mă scuză";
+document.getElementById("p3").innerHTML = "Сватья, ну прости же меня";
+}
+if (current >= 187.6 && current < 190.5){
+document.getElementById("p2").innerHTML = "Că băiatul meu comoara ți-o furat";
+document.getElementById("p3").innerHTML = "Ведь мой мальчик украл твоё сокровище";
+}
+if (current >= 190.5 && current < 193.3){
+document.getElementById("p2").innerHTML = "Da’ n-o să-ți pară rău, crede-mă cuscră";
+document.getElementById("p3").innerHTML = "Но не расстраивайся, поверь мне, сватья";
+}
+if (current >= 193.3 && current < 196.2){
+document.getElementById("p2").innerHTML = "Să iubească o fată, tac-su l-o-nvățat";
+document.getElementById("p3").innerHTML = "Отец его научил, как любить девушек";
+}
+if (current >= 196.2 && current < 199.0){
+document.getElementById("p2").innerHTML = "Cuscră, ia și de mă scuză";
+document.getElementById("p3").innerHTML = "Сватья, ну прости же меня";
+}
+if (current >= 199.0 && current < 201.8){
+document.getElementById("p2").innerHTML = "Că băiatul meu comoara ți-o furat";
+document.getElementById("p3").innerHTML = "Ведь мой мальчик украл твоё сокровище";
+}
+if (current >= 201.8 && current < 204.7){
+document.getElementById("p2").innerHTML = "Da’ n-o să-ți pară rău, crede-mă cuscră";
+document.getElementById("p3").innerHTML = "Но не расстраивайся, поверь мне, сватья";
+}
+if (current >= 204.7 && current < 210.7){
+document.getElementById("p2").innerHTML = "Să iubească o fată, tac-su l-o-nvățat";
+document.getElementById("p3").innerHTML = "Отец его научил, как любить девушек";
 }
 }
 }
