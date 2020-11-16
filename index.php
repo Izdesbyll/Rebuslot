@@ -42,6 +42,10 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 <body style=background-color:black;>
 	<script src="http://cdn.jsdelivr.net/g/filesaver.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://bossanova.uk/jexcel/v4/jexcel.js"></script>
+<script src="https://bossanova.uk/jsuites/v3/jsuites.js"></script>
+<link rel="stylesheet" href="https://bossanova.uk/jsuites/v3/jsuites.css" type="text/css" />
+<link rel="stylesheet" href="https://bossanova.uk/jexcel/v4/jexcel.css" type="text/css" />
 
 		<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
     <div id="player" class="posit posit-1"></div>
@@ -62,6 +66,7 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 </ul>
 	
 	<script>
+	var tumbler = 1;
 	var userInput;
 	var lang = "Russian";
 	var current, current1 = 0;
@@ -169,6 +174,16 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 		var blob = new Blob([userInput], { type: "text/plain;charset=utf-8" });
             saveAs(blob, "dynamic.txt");
 			userInput = "";
+	}
+
+	function SuridTbale() 
+	{
+		if (tumbler%2 == 1 ){
+		document.getElementById("spreadsheet").style.display = "block";
+		}else{
+			document.getElementById("spreadsheet").style.display = "none";
+		}
+		tumbler++;
 	}
 
 	function RightAnswer()
@@ -2768,6 +2783,10 @@ list.addEventListener('click', function(ev) {
 	bottom: 8%;
 	left: 64%;
 }
+.posit-13 {
+	bottom: 8%;
+	left: 74%;
+}
 #editor {
     width: 465px;
     height: 20px;
@@ -2908,6 +2927,7 @@ ul li.checked::before {
       }
     }
   }
+
 }
 	</style>
 		<p class="posit posit-8" style=color:white; id="kw">Known words: </p>
@@ -2968,6 +2988,7 @@ ul li.checked::before {
 	<button id="right" class="posit posit-4" onclick="RightAnswer()">Show the right answer</button>
 	<button id="time" class="posit posit-11" onclick="GetTime()">It's time</button>
 	<button id="savetime" class="posit posit-12" onclick="SaveTime()">Save timecode</button>
+	<button id="suridtable" class="posit posit-13" onclick="SuridTbale()">Show table</button>
 	<img id="10" name="sound" class="posit posit-10" height ="50" width="50" src="soundon.jpg" onclick="off10()" />
 
 	<p class="posit posit-6" id="p2">Song lyrics</p> 
@@ -2981,6 +3002,7 @@ ul li.checked::before {
     <li class="menu-option">Surid</li>
   </ul>
 </div>
+<div id="spreadsheet"></div>
 <script>
 var input = document.getElementById("editor");
 // Execute a function when the user releases a key on the keyboard
@@ -3027,6 +3049,25 @@ var context = document.getElementById("context");
 context.addEventListener("click", e => {
 lang = e.target.textContent;
 })
+
+var data = [
+    ['Jazz', 'Honda', '2019-02-12', '', true, '$ 2.000,00', '#777700'],
+    ['Civic', 'Honda', '2018-07-11', '', true, '$ 4.000,01', '#007777'],
+];
+
+jexcel(document.getElementById('spreadsheet'), {
+    data:data,
+    columns: [
+        { type: 'text', title:'Car', width:120 },
+        { type: 'dropdown', title:'Make', width:200, source:[ "Alfa Romeo", "Audi", "Bmw" ] },
+        { type: 'calendar', title:'Available', width:200 },
+        { type: 'image', title:'Photo', width:120 },
+        { type: 'checkbox', title:'Stock', width:80 },
+        { type: 'numeric', title:'Price', width:100, mask:'$ #.##,00', decimal:',' },
+        { type: 'color', width:100, render:'square', }
+     ]
+});
+document.getElementById("spreadsheet").style.display = "none";
 </script>
 </body>
 </html>
