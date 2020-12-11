@@ -2297,6 +2297,125 @@ document.getElementById("p2").innerHTML = "Să iubească o fată, tac-su l-o-nv�
 document.getElementById("p3").innerHTML = "Отец его научил, как любить девушек";
 }
 }
+if (lyrics == 10){
+	
+if (current >= 0 && current < 8.2){
+document.getElementById("p2").innerHTML = "";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 8.2 && current < 13.9){
+document.getElementById("p2").innerHTML = "Eu nu mă-ntreb de unde vine, vine";
+document.getElementById("p3").innerHTML = "Я не спрашиваю откуда она приходит, откуда";
+}
+if (current >= 13.9 && current < 19.6){
+document.getElementById("p2").innerHTML = "De unde doru-şi ia izvorul, dorul";
+document.getElementById("p3").innerHTML = "Откуда тоска берет свое начало , тоска";
+}
+if (current >= 19.6 && current < 24.7){
+document.getElementById("p2").innerHTML = "Mă luminez şi-mi pare bine, bine";
+document.getElementById("p3").innerHTML = "Я сияю, мне хорошо , мне хорошо";
+}
+if (current >= 24.7 && current < 30.4){
+document.getElementById("p2").innerHTML = "Când vine dorul, când vine dorul";
+document.getElementById("p3").innerHTML = "Когда тоска приходит , когда тоска приходит";
+}
+if (current >= 30.4 && current < 36.3){
+document.getElementById("p2").innerHTML = "Melancolie, dulce melodie";
+document.getElementById("p3").innerHTML = "Меланхолия , сладкая мелодия";
+}
+if (current >= 36.3 && current < 42.3){
+document.getElementById("p2").innerHTML = "Melancolie, misterios amor";
+document.getElementById("p3").innerHTML = "Меланхолия , таинственная любовь";
+}
+if (current >= 42.3 && current < 47.7){
+document.getElementById("p2").innerHTML = "Melancolie, melancolie";
+document.getElementById("p3").innerHTML = "Меланхолия , меланхолия";
+}
+if (current >= 47.7 && current < 53.6){
+document.getElementById("p2").innerHTML = "Din armonia inimii cu dor";
+document.getElementById("p3").innerHTML = "В гармонии с жаждущим сердцем";
+}
+if (current >= 53.6 && current < 59.3){
+document.getElementById("p2").innerHTML = "Melancolie, dulce melodie";
+document.getElementById("p3").innerHTML = "Меланхолия , сладкая мелодия";
+}
+if (current >= 59.3 && current < 64.7){
+document.getElementById("p2").innerHTML = "Melancolie, misterios amor";
+document.getElementById("p3").innerHTML = "Меланхолия , таинственная любовь";
+}
+if (current >= 64.7 && current < 70.3){
+document.getElementById("p2").innerHTML = "Melancolie, melancolie";
+document.getElementById("p3").innerHTML = "Меланхолия , меланхолия";
+}
+if (current >= 70.3 && current < 99.8){
+document.getElementById("p2").innerHTML = "Din armonia inimii cu dor";
+document.getElementById("p3").innerHTML = "В гармонии с жаждущим сердцем";
+}
+if (current >= 99.8 && current < 105.8){
+document.getElementById("p2").innerHTML = "Mai drag mi-e amorul meu târziu, mai dragă";
+document.getElementById("p3").innerHTML = "Мне дорога моя поздняя любовь , дорога";
+}
+if (current >= 105.8 && current < 111.7){
+document.getElementById("p2").innerHTML = "Mai dragă mi-e mândruţa dragă, dragă";
+document.getElementById("p3").innerHTML = "Мне дорога моя гордость, дорога";
+}
+if (current >= 111.7 && current < 116.5){
+document.getElementById("p2").innerHTML = "Mai drag mi-e codrul şi izvorul, dorul";
+document.getElementById("p3").innerHTML = "Мне дороги лес и источник, и тоска";
+}
+if (current >= 116.5 && current < 122.5){
+document.getElementById("p2").innerHTML = "Când vine dorul, când vine dorul";
+document.getElementById("p3").innerHTML = "Когда тоска приходит, когда тоска приходит";
+}
+if (current >= 122.5 && current < 128.2){
+document.getElementById("p2").innerHTML = "Melancolie, dulce melodie";
+document.getElementById("p3").innerHTML = "Меланхолия , сладкая мелодия";
+}
+if (current >= 128.2 && current < 133.9){
+document.getElementById("p2").innerHTML = "Melancolie, misterios amor";
+document.getElementById("p3").innerHTML = "Меланхолия , таинственная любовь";
+}
+if (current >= 133.9 && current < 139.5){
+document.getElementById("p2").innerHTML = "Melancolie, melancolie";
+document.getElementById("p3").innerHTML = "Меланхолия , меланхолия";
+}
+if (current >= 139.5 && current < 145.8){
+document.getElementById("p2").innerHTML = "Din armonia inimii cu dor";
+document.getElementById("p3").innerHTML = "В гармонии с жаждущим сердцем";
+}
+if (current >= 145.8 && current < 151.4){
+document.getElementById("p2").innerHTML = "Melancolie, dulce melodie";
+document.getElementById("p3").innerHTML = "Меланхолия , сладкая мелодия";
+}
+if (current >= 151.4 && current < 157.1){
+document.getElementById("p2").innerHTML = "Melancolie, misterios amor";
+document.getElementById("p3").innerHTML = "Меланхолия , таинственная любовь";
+}
+if (current >= 157.1 && current < 162.2){
+document.getElementById("p2").innerHTML = "Melancolie, melancolie";
+document.getElementById("p3").innerHTML = "Меланхолия , меланхолия";
+}
+if (current >= 162.2 && current < 182.3){
+document.getElementById("p2").innerHTML = "Din armonia inimii cu dor";
+document.getElementById("p3").innerHTML = "В гармонии с жаждущим сердцем";
+}
+if (current >= 182.3 && current < 188.0){
+document.getElementById("p2").innerHTML = "Dulce melodie";
+document.getElementById("p3").innerHTML = "Cладкая мелодия";
+}
+if (current >= 188.0 && current < 191.7){
+document.getElementById("p2").innerHTML = "Misterios amor";
+document.getElementById("p3").innerHTML = "Tаинственная любовь";
+}
+if (current >= 191.7 && current < 197.4){
+document.getElementById("p2").innerHTML = "Melancolie, melancolie";
+document.getElementById("p3").innerHTML = "Меланхолия , меланхолия";
+}
+if (current >= 197.4 && current < 212.1){
+document.getElementById("p2").innerHTML = "Din armonia inimii cu dor";
+document.getElementById("p3").innerHTML = "В гармонии с жаждущим сердцем";
+}
+}
 }
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ul');
