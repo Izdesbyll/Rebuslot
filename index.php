@@ -47,6 +47,7 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 <link rel="stylesheet" href="https://bossanova.uk/jsuites/v3/jsuites.css" type="text/css" />
 <link rel="stylesheet" href="https://bossanova.uk/jexcel/v4/jexcel.css" type="text/css" />
 
+
 		<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
     <div id="player" class="posit posit-1"></div>
     
@@ -1007,7 +1008,7 @@ if (current >= 12 && current < 14){
 	}
 if (current >= 13.5 && current < 15){
 		document.getElementById("p2").innerHTML = "tre’ să fiu cuminte";
-		document.getElementById("p3").innerHTML = "have to be posłuszną";
+		document.getElementById("p3").innerHTML = "треба to be posłuszną";
 	}
 if (current >= 15 && current < 16.5){
 		document.getElementById("p2").innerHTML = "Îi-e ruşine şi e frig";
@@ -1093,7 +1094,7 @@ if (current >= 12 && current < 14){
 	}
 if (current >= 13.5 && current < 15){
 		document.getElementById("p2").innerHTML = "tre’ să fiu cuminte";
-		document.getElementById("p3").innerHTML = "hăv tu bi poslușnou";
+		document.getElementById("p3").innerHTML = "treba tu bi poslușnou";
 	}
 if (current >= 15 && current < 16.5){
 		document.getElementById("p2").innerHTML = "Îi-e ruşine şi e frig";
@@ -1179,7 +1180,7 @@ if (current >= 12 && current < 14){
 	}
 if (current >= 13.5 && current < 15){
 		document.getElementById("p2").innerHTML = "tre’ să fiu cuminte";
-		document.getElementById("p3").innerHTML = "trăv tă biu poslinte";
+		document.getElementById("p3").innerHTML = "treb tă biu poslinte";
 	}
 if (current >= 15 && current < 16.5){
 		document.getElementById("p2").innerHTML = "Îi-e ruşine şi e frig";
@@ -3112,7 +3113,7 @@ ul li.checked::before {
 
 	<p class="posit posit-6" id="p2">Song lyrics</p> 
 	<p class="posit posit-7" id="p3">Lyrics translation</p> 
-	
+	<div id="spreadsheet" class="spread"></div>
 	<div class="menu">
   <ul class="menu-options" id="context">
     <li class="menu-option">Russian</li>
@@ -3121,7 +3122,7 @@ ul li.checked::before {
     <li class="menu-option">Surid</li>
   </ul>
 </div>
-<div id="spreadsheet"></div>
+
 <script>
 var input = document.getElementById("editor");
 // Execute a function when the user releases a key on the keyboard
@@ -3181,8 +3182,62 @@ var data = [
 	['îi', 'їй', 'yiy', 'їiy'],
 	['rușine', 'стыдно', 'stîdna', 'rușîdna'],
 	['și', 'i', 'i', 'și'],
-	['e', 'є', 'e', 'e']
+	['e', 'є', 'e', 'e'],
+	['frig',	'frost',	'frost',	'frist'],
+['așa',	'so',	'sou',	'asou'],
+['o',	'did',	'did',	'dod'],
+['zis',	'said',	'sed',	'ses'],
+['părintele',	'parent',	'părent',	'părentele'],
+['dar',	'but',	'bat',	'bar'],
+['am',	'mam',	'mam',	'mam'],
+['săturat',	'saturant',	'saturant',	'săturant'],
+['stau',	'stać',	'stac',	'stauc'],
+['la',	'at',	'ăt',	'lăt'],
+['colț',	'kąt',	'cont',	'colt'],
+['de',	'ze',	'ze',	'dze'],
+['masă',	'парти',	'partâ',	'mastâ'],
+['azi',	'dziś',	'dziș',	'aziș'],
+['îmbracat',	'ubrana',	'ubrana',	'ubracat'],
+['rochia',	'suknia',	'suknia',	'ruknia'],
+['cea',	'the',	'ze',	'zea'],
+['frumoasă',	'вродлива',	'vrodlîva',	'vrodoasă'],
+['nunta',	'ślub',	'șlub',	'șlunta'],
+['asta',	'это',	'ăto',	'ăsto'],
+['mai',	'more',	'mor',	'mar'],
+['muzică',	'music',	'miuzic',	'muzic'],
+['toți',	'all',	'ol',	'tolți'],
+['vorbesc',	'говорити',	'hovorytî',	'hovorbesc'],
+['nimeni',	'ніхто',	'nihto',	'nihteni'],
+['ascultă',	'слухати',	'sluhatâ',	'asluhtă'],
+['atâta',	'tyle',	'tâle',	'atâle'],
+['muncit',	'worked',	'worked',	'worcit'],
+['dimineață',	'morning',	'mornin',	'dimorneață'],
+['joc',	'grać',	'grac',	'groc'],
+['măcar',	'хочаб',	'hocab',	'măcab'],
+['dată',	'time',	'taim',	'dataim'],
+['viață',	'życie',	'jâce',	'jață'],
+['spune',	'mówić',	'muvic',	'spuvic'],
+['ce',	'co',	'țo',	'țe'],
+['ar',	'би',	'bâ',	'bâr'],
+['nu',	'no',	'nou',	'nou'],
+['mă',	'me',	'mi',	'me'],
+['interesează',	'интересуюсь',	'intieriesuiusi',	'interesuză'],
+['parte',	'встороне',	'vstoronie',	'partoronie'],
+['când',	'kiedy',	'ciedâ',	'cândâ'],
+['sufletu',	'soul',	'soul',	'soufletu'],
+['dansează',	'dancing',	'danțin',	'danțează'],
+['mi',	'my',	'mai',	'mai'],
+['început',	'починаю',	'pocînayu',	'poceput'],
+['placă',	'like',	'laic',	'plaică'],
+['după',	'после',	'posliă',	'duposliă'],
+['colivie',	'klatka',	'clatca',	'colitca'],
+['gust',	'вкус',	'vcus',	'vgust'],
+['oleacă',	'немного',	'niemnoga',	'nieacă'],
+['diseară',	'wieczorem',	'wiecorăm',	'disorăm'],
+['rachie',	'wine',	'wain',	'wachin']
+
 ];
+
 
 jexcel(document.getElementById('spreadsheet'), {
     data:data,
@@ -3192,6 +3247,7 @@ jexcel(document.getElementById('spreadsheet'), {
 		{ type: 'text', title:'Suranț', width:200 },
 		{ type: 'text', title:'Surid', width:200 }
      ]
+
 });
 document.getElementById("spreadsheet").style.display = "none";
 </script>
