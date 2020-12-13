@@ -154,6 +154,180 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 			else if(this[i] === "să"){
 				this[i] = "to";
 			}
+			else if(this[i] === "fiu"){
+				this[i] = "be";
+			}
+			else if(this[i] === "cuminte"){
+				this[i] = "posłuszną";
+			}
+			else if(this[i] === "îi"){
+				this[i] = "їй";
+			}
+			else if(this[i] === "rușine"){
+				this[i] = "стыдно";
+			}
+			else if(this[i] === "și"){
+				this[i] = "i";
+			}
+			else if(this[i] === "e"){
+				this[i] = "є";
+			}
+			else if(this[i] === "frig"){
+				this[i] = "frost";
+			}
+			else if(this[i] === "așa"){
+				this[i] = "so";
+			}
+			else if(this[i] === "o"){
+				this[i] = "did";
+			}
+			else if(this[i] === "zis"){
+				this[i] = "said";
+			}
+			else if(this[i] === "părintele"){
+				this[i] = "parent";
+			}
+			else if(this[i] === "dar"){
+				this[i] = "but";
+			}
+			else if(this[i] === "am"){
+				this[i] = "mam";
+			}
+			else if(this[i] === "săturat"){
+				this[i] = "saturant";
+			}
+			else if(this[i] === "stau"){
+				this[i] = "stać";
+			}
+			else if(this[i] === "la"){
+				this[i] = "at";
+			}
+			else if(this[i] === "colț"){
+				this[i] = "kąt";
+			}
+			else if(this[i] === "de"){
+				this[i] = "ze";
+			}
+			else if(this[i] === "masă"){
+				this[i] = "парти";
+			}
+			else if(this[i] === "azi"){
+				this[i] = "dziś";
+			}
+			else if(this[i] === "îmbracat"){
+				this[i] = "ubrana";
+			}
+			else if(this[i] === "rochia"){
+				this[i] = "suknia";
+			}
+			else if(this[i] === "cea"){
+				this[i] = "the";
+			}
+			else if(this[i] === "frumoasă"){
+				this[i] = "вродлива";
+			}
+			else if(this[i] === "nunta"){
+				this[i] = "ślub";
+			}
+			else if(this[i] === "asta"){
+				this[i] = "это";
+			}
+			else if(this[i] === "mai"){
+				this[i] = "more";
+			}
+			else if(this[i] === "dar"){
+				this[i] = "but";
+			}
+			else if(this[i] === "dar"){
+				this[i] = "but";
+			}
+			else if(this[i] === "dar"){
+				this[i] = "but";
+			}
+			else if(this[i] === "dar"){
+				this[i] = "but";
+			}
+			else if(this[i] === "dar"){
+				this[i] = "but";
+			}
+			else if(this[i] === "dar"){
+				this[i] = "but";
+			}
+			else if(this[i] === "dar"){
+				this[i] = "but";
+			}
+			else if(this[i] === "dar"){
+				this[i] = "but";
+			}
+			else if(this[i] === "dar"){
+				this[i] = "but";
+			}
+			else if(this[i] === "dar"){
+				this[i] = "but";
+			}
+			else if(this[i] === "dar"){
+				this[i] = "but";
+			}
+			else if(this[i] === "dar"){
+				this[i] = "but";
+			}
+			else if(this[i] === "dar"){
+				this[i] = "but";
+			}
+			else if(this[i] === "dar"){
+				this[i] = "but";
+			}
+			else if(this[i] === "dar"){
+				this[i] = "but";
+			}
+			else if(this[i] === "dar"){
+				this[i] = "but";
+			}
+			else if(this[i] === "dar"){
+				this[i] = "but";
+			}
+			else if(this[i] === "dar"){
+				this[i] = "but";
+			}
+			else if(this[i] === "dar"){
+				this[i] = "but";
+			}
+			else if(this[i] === "dar"){
+				this[i] = "but";
+			}
+			else if(this[i] === "dar"){
+				this[i] = "but";
+			}
+			else if(this[i] === "dar"){
+				this[i] = "but";
+			}
+			else if(this[i] === "dar"){
+				this[i] = "but";
+			}
+			else if(this[i] === "dar"){
+				this[i] = "but";
+			}
+			else if(this[i] === "dar"){
+				this[i] = "but";
+			}
+			else if(this[i] === "dar"){
+				this[i] = "but";
+			}
+			else if(this[i] === "dar"){
+				this[i] = "but";
+			}
+			else if(this[i] === "dar"){
+				this[i] = "but";
+			}
+			else if(this[i] === "dar"){
+				this[i] = "but";
+			}
+			else if(this[i] === "dar"){
+				this[i] = "but";
+			}
+			else if(this[i] === "dar"){
+				this[i] = "but";
+			}
 		}
 		return this;
 	}
