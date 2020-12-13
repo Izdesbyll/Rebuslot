@@ -132,6 +132,31 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 	var guess, videoPlayer;
 	var videoList = ["TH0oCDziVQQ", "YnopHCL1Jk8", "gViaOYgV8yI", "GN7H2vfh3SM", "591Ur1h0ons", "PojdI2shbaI", "vdcXsBJwBrg", "-yIUzB_CI0Y", "VzUMqkKoTmg", "NFBXOlsvHh4", ];
 	var curVideo = 0;
+	
+	
+	Array.prototype.surzyk = function(){
+		for(var i = 0; i < this.length; i++){
+			if(this[i] === "Eu"){
+				this[i] = "Ja";
+			}
+			else if(this[i] === "îs"){
+				this[i] = "is";
+			}
+			else if(this[i] === "fată"){
+				this[i] = "girl";
+			}
+			else if(this[i] === "tinerică"){
+				this[i] = "молодая";
+			}
+			else if(this[i] === "tre"){
+				this[i] = "треба";
+			}
+			else if(this[i] === "să"){
+				this[i] = "to";
+			}
+		}
+		return this;
+	}
 
 	function getRndmFromSet(set){
 		var rndm = Math.floor(Math.random()*set.length);
@@ -273,7 +298,7 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 			document.getElementById("p1").innerHTML = answer + " " + imagearray2[index2];
 		}
 		}
-		//here
+		//grammar here
 		answer = document.getElementById("p1").textContent + " " + imagearray5[index5] + " să";
 		if ((index4 != 24) && (index4 != 25) && (index4 != 27) && (index4 != 29) && (index4 != 40) && (index4 != 45) && (index4 != 47)  && (index4 != 49)){
 		document.getElementById("p1").innerHTML = answer +  " " + imagearray3[index3];
@@ -921,7 +946,7 @@ if (current >= 12 && current < 14){
 		document.getElementById("p3").innerHTML = "Я молоденькая девушка";
 	}
 if (current >= 13.5 && current < 15){
-		document.getElementById("p2").innerHTML = "tre’ să fiu cuminte";
+		document.getElementById("p2").innerHTML = "tre să fiu cuminte";
 		document.getElementById("p3").innerHTML = "я должна быть послушной";
 	}
 if (current >= 15 && current < 16.5){
@@ -1003,11 +1028,14 @@ if (current >= 15 && current < 16.5){
 	document.getElementById("p3").innerHTML = "";
 }
 if (current >= 12 && current < 14){
-		document.getElementById("p2").innerHTML = "Eu îs fată tinerică";
-		document.getElementById("p3").innerHTML = "Ja is girl молодая";
+	document.getElementById("p2").innerHTML = "Eu îs fată tinerică";
+	var original = document.getElementById("p2").textContent;
+	var originalword = original.split(" ");
+	var a = originalword.surzyk();
+	document.getElementById("p3").innerHTML = a.join(" ");
 	}
 if (current >= 13.5 && current < 15){
-		document.getElementById("p2").innerHTML = "tre’ să fiu cuminte";
+		document.getElementById("p2").innerHTML = "tre să fiu cuminte";
 		document.getElementById("p3").innerHTML = "треба to be posłuszną";
 	}
 if (current >= 15 && current < 16.5){
@@ -1093,7 +1121,7 @@ if (current >= 12 && current < 14){
 		document.getElementById("p3").innerHTML = "Ya is giorl molodaya";
 	}
 if (current >= 13.5 && current < 15){
-		document.getElementById("p2").innerHTML = "tre’ să fiu cuminte";
+		document.getElementById("p2").innerHTML = "tre să fiu cuminte";
 		document.getElementById("p3").innerHTML = "treba tu bi poslușnou";
 	}
 if (current >= 15 && current < 16.5){
@@ -1179,7 +1207,7 @@ if (current >= 12 && current < 14){
 		document.getElementById("p3").innerHTML = "Ea is giotă tinedaya";
 	}
 if (current >= 13.5 && current < 15){
-		document.getElementById("p2").innerHTML = "tre’ să fiu cuminte";
+		document.getElementById("p2").innerHTML = "tre să fiu cuminte";
 		document.getElementById("p3").innerHTML = "treb tă biu poslinte";
 	}
 if (current >= 15 && current < 16.5){
