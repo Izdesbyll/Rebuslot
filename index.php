@@ -136,11 +136,14 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 	
 	Array.prototype.surzyk = function(){
 		for(var i = 0; i < this.length; i++){
-			if(this[i] === "Eu"){
-				this[i] = "Ja";
+			if(this[i] === "eu"){
+				this[i] = "ja";
 			}
 			else if(this[i] === "îs"){
 				this[i] = "is";
+			}
+			else if(this[i] === "suflet"){
+				this[i] = "soul";
 			}
 			else if(this[i] === "fată"){
 				this[i] = "girl";
@@ -179,7 +182,7 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 				this[i] = "so";
 			}
 			else if(this[i] === "o"){
-				this[i] = "did";
+				this[i] = "a";
 			}
 			else if(this[i] === "zis"){
 				this[i] = "said";
@@ -226,7 +229,7 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 			else if(this[i] === "frumoasă"){
 				this[i] = "вродлива";
 			}
-			else if(this[i] === "nunta"){
+			else if((this[i] === "nunta") || (this[i] === "nuntă")){
 				this[i] = "ślub";
 			}
 			else if(this[i] === "asta"){
@@ -235,99 +238,100 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 			else if(this[i] === "mai"){
 				this[i] = "more";
 			}
-			else if(this[i] === "dar"){
-				this[i] = "but";
+			else if(this[i] === "muzică"){
+				this[i] = "music";
 			}
-			else if(this[i] === "dar"){
-				this[i] = "but";
+			else if(this[i] === "toți"){
+				this[i] = "all";
 			}
-			else if(this[i] === "dar"){
-				this[i] = "but";
+			else if(this[i] === "vorbesc"){
+				this[i] = "говорити";
 			}
-			else if(this[i] === "dar"){
-				this[i] = "but";
+			else if(this[i] === "nimeni"){
+				this[i] = "ніхто";
 			}
-			else if(this[i] === "dar"){
-				this[i] = "but";
+			else if(this[i] === "ascultă"){
+				this[i] = "слухати";
 			}
-			else if(this[i] === "dar"){
-				this[i] = "but";
+			else if(this[i] === "atâta"){
+				this[i] = "tyle";
 			}
-			else if(this[i] === "dar"){
-				this[i] = "but";
+			else if(this[i] === "muncit"){
+				this[i] = "worked";
 			}
-			else if(this[i] === "dar"){
-				this[i] = "but";
+			else if(this[i] === "dimineață"){
+				this[i] = "morning";
 			}
-			else if(this[i] === "dar"){
-				this[i] = "but";
+			else if(this[i] === "joc"){
+				this[i] = "grać";
 			}
-			else if(this[i] === "dar"){
-				this[i] = "but";
+			else if(this[i] === "măcar"){
+				this[i] = "хочаб";
 			}
-			else if(this[i] === "dar"){
-				this[i] = "but";
+			else if(this[i] === "dată"){
+				this[i] = "time";
 			}
-			else if(this[i] === "dar"){
-				this[i] = "but";
+			else if(this[i] === "viață"){
+				this[i] = "życie";
 			}
-			else if(this[i] === "dar"){
-				this[i] = "but";
+			else if(this[i] === "spune"){
+				this[i] = "mówić";
 			}
-			else if(this[i] === "dar"){
-				this[i] = "but";
+			else if(this[i] === "ce"){
+				this[i] = "co";
 			}
-			else if(this[i] === "dar"){
-				this[i] = "but";
+			else if(this[i] === "are"){
+				this[i] = "має";
 			}
-			else if(this[i] === "dar"){
-				this[i] = "but";
+			else if(this[i] === "nu"){
+				this[i] = "no";
 			}
-			else if(this[i] === "dar"){
-				this[i] = "but";
+			else if(this[i] === "mă"){
+				this[i] = "me";
 			}
-			else if(this[i] === "dar"){
-				this[i] = "but";
+			else if(this[i] === "interesează"){
+				this[i] = "интересуюсь";
 			}
-			else if(this[i] === "dar"){
-				this[i] = "but";
+			else if(this[i] === "parte"){
+				this[i] = "встороне";
 			}
-			else if(this[i] === "dar"){
-				this[i] = "but";
+			else if(this[i] === "când"){
+				this[i] = "kiedy";
 			}
-			else if(this[i] === "dar"){
-				this[i] = "but";
+			else if(this[i] === "dansează"){
+				this[i] = "dancing";
 			}
-			else if(this[i] === "dar"){
-				this[i] = "but";
+			else if(this[i] === "mi"){
+				this[i] = "my";
 			}
-			else if(this[i] === "dar"){
-				this[i] = "but";
+			else if(this[i] === "început"){
+				this[i] = "починаю";
 			}
-			else if(this[i] === "dar"){
-				this[i] = "but";
+			else if(this[i] === "placă"){
+				this[i] = "like";
 			}
-			else if(this[i] === "dar"){
-				this[i] = "but";
+			else if(this[i] === "după"){
+				this[i] = "после";
 			}
-			else if(this[i] === "dar"){
-				this[i] = "but";
+			else if(this[i] === "colivie"){
+				this[i] = "klatka";
 			}
-			else if(this[i] === "dar"){
-				this[i] = "but";
+			else if(this[i] === "gust"){
+				this[i] = "вкус";
 			}
-			else if(this[i] === "dar"){
-				this[i] = "but";
+			else if(this[i] === "oleacă"){
+				this[i] = "немного";
 			}
-			else if(this[i] === "dar"){
-				this[i] = "but";
+			else if(this[i] === "diseară"){
+				this[i] = "wieczorem";
 			}
-			else if(this[i] === "dar"){
-				this[i] = "but";
+			else if(this[i] === "rachie"){
+				this[i] = "wine";
 			}
-			else if(this[i] === "dar"){
-				this[i] = "but";
+			else if(this[i] === "în"){
+				this[i] = "in";
 			}
+		
 		}
 		return this;
 	}
@@ -472,8 +476,9 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 			document.getElementById("p1").innerHTML = answer + " " + imagearray2[index2];
 		}
 		}
-		//grammar here
+		//console.log(answer);
 		answer = document.getElementById("p1").textContent + " " + imagearray5[index5] + " să";
+		//console.log(answer);
 		if ((index4 != 24) && (index4 != 25) && (index4 != 27) && (index4 != 29) && (index4 != 40) && (index4 != 45) && (index4 != 47)  && (index4 != 49)){
 		document.getElementById("p1").innerHTML = answer +  " " + imagearray3[index3];
 		}else{
@@ -542,6 +547,8 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 		}
 		}
 		answer = document.getElementById("p1").textContent + " " + imagearray5[index5] + " să";
+		//console.log(answer);
+		//singular verb here
 		document.getElementById("p1").innerHTML = answer+ " " +imagearray3[index3];
 		if (index3 == 5){
 		document.getElementById("p1").innerHTML = answer+ " " +imagearray3[index3].substring(0, imagearray3[index3].length-2)+"ede";
@@ -555,6 +562,26 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 		if (index3 > 8 && index3 < 12){
 		document.getElementById("p1").innerHTML = answer+ " " +imagearray3[index3].substring(0, imagearray3[index3].length-1)+"te";
 		}
+		//rules here
+		if (index3 == 12) {
+			document.getElementById("p1").innerHTML = answer+ " " +imagearray3[index3].substring(0, imagearray3[index3].length-2)+"e";
+		}
+		if ((index3 == 14) || (index3 == 16) || (index3 == 22)) {
+			document.getElementById("p1").innerHTML = answer+ " " +imagearray3[index3].substring(0, imagearray3[index3].length-1)+"ă";
+		}
+		if (index3 == 15) {
+			document.getElementById("p1").innerHTML = answer+ " " +imagearray3[index3].substring(0, imagearray3[index3].length-1)+"ește";
+		}
+		if (index3 == 17) {
+			document.getElementById("p1").innerHTML = answer+ " " +imagearray3[index3].substring(0, imagearray3[index3].length-1)+"acă";
+		}
+		if ((index3 == 19) || (index3 == 20)) {
+			document.getElementById("p1").innerHTML = answer+ " " +imagearray3[index3].substring(0, imagearray3[index3].length-1)+"ează";
+		}
+		if (index3 == 21) {
+			document.getElementById("p1").innerHTML = answer+ " " +imagearray3[index3].substring(0, imagearray3[index3].length-4)+"ace";
+		}
+		
 		if ((index4 != 24) && (index4 != 25) && (index4 != 27) && (index4 != 29) && (index4 != 40) && (index4 != 45) && (index4 != 47)  && (index4 != 49)){
 		}else{
 		if ((index4 == 24) || (index4 == 25) || (index4 == 30) || (index4 == 35) ){
@@ -573,6 +600,7 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 		}
 		}
 		answer = document.getElementById("p1").textContent;
+		//console.log(answer);
 		document.getElementById("p1").innerHTML = answer+ " " + imagearray4[index4];
 		}
 		answer = document.getElementById("p1").textContent;
@@ -682,6 +710,7 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 		}
 		}	
 		answer = document.getElementById("p1").textContent;
+		//console.log(answer);
 		}else{
 		if(index6 > 26 && index6 < 56)
 		{
@@ -707,6 +736,7 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 		}
 		}
 	answer = document.getElementById("p1").textContent;
+	//console.log(answer);
 	
 	if ((document.getElementById("3").src == "http://localhost/off.jpg") || (index1 == 81) || (index1 == 82) || (index1 == 72) || (index1 == 74))
 	{
@@ -783,6 +813,7 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 		image1 = true;
 	}
 	document.getElementById("p1").innerHTML = answer2;
+	//console.log(answer2);
 
 if ('speechSynthesis' in window) {
 
@@ -1202,88 +1233,69 @@ if (current >= 15 && current < 16.5){
 	document.getElementById("p3").innerHTML = "";
 }
 if (current >= 12 && current < 14){
-	document.getElementById("p2").innerHTML = "Eu îs fată tinerică";
+	document.getElementById("p2").innerHTML = "eu îs fată tinerică";
+	}
+if (current >= 13.5 && current < 15){
+		document.getElementById("p2").innerHTML = "tre să fiu cuminte";
+	}
+if (current >= 15 && current < 16.5){
+		document.getElementById("p2").innerHTML = "îi e ruşine şi e frig";
+	}
+	if (current >= 16.5 && current < 17.75){
+		document.getElementById("p2").innerHTML = "aşa o zis părintele";
+	}
+	if (current >= 17.75 && current < 19){
+		document.getElementById("p2").innerHTML = "dar eu am săturat";
+	}
+	if (current >= 19 && current < 20.5){
+		document.getElementById("p2").innerHTML = "să stau la colţ de masă";
+	}
+	if (current >= 20.5 && current < 22){
+		document.getElementById("p2").innerHTML = "eu azi am îmbracat";
+	}
+	if (current >= 22 && current < 23){
+		document.getElementById("p2").innerHTML = "în rochia cea frumoasă";
+	}
+	if ((current >= 23 && current < 26) || (current >= 34.25 && current < 37.5) || (current >= 68.5 && current < 71.5) || (current >= 79.5 && current < 82.5) || (current >= 124.5 && current < 128) || (current >= 135.5 && current < 139) || (current >= 149.5 && current < 155) || (current >= 164.5 && current < 167.5) || (current >= 174.5 && current < 177.5)){
+		document.getElementById("p2").innerHTML = "la nunta asta nu mai muzică de nuntă";
+	}
+	if ((current >= 26 && current < 28.5) || (current >= 37.5 && current < 40) || (current >= 71.5 && current < 73.75) || (current >= 82.5 && current < 85) || (current >= 128 && current < 130.5) || (current >= 139 && current < 141.5) || (current >= 155 && current < 158) || (current >= 167.5 && current < 169.5) || (current >= 177.5 && current < 179.5)){
+		document.getElementById("p2").innerHTML = "toți vorbesc nimeni nu ascultă";
+	}
+	if ((current >= 28.5 && current < 31.5) || (current >= 40 && current < 43) || (current >= 73.75 && current < 76.5) || (current >= 85 && current < 87.75) || (current >= 130.5 && current < 133) || (current >= 141.5 && current < 144.5) || (current >= 158 && current < 161.5) || (current >= 169.5 && current < 172) || (current >= 179.5 && current < 182)){
+		document.getElementById("p2").innerHTML = "atâta am muncit de dimineață";
+	}
+	if ((current >= 31.5 && current < 34.25) || (current >= 43 && current < 46) || (current >= 76.5 && current < 79.5) || (current >= 87.75 && current < 90.5) || (current >= 133 && current < 135.5) || (current >= 144.5 && current < 149.5) || (current >= 161.5 && current < 164.5) || (current >= 172 && current < 174.5) || (current >= 182 && current < 184.5)){
+		document.getElementById("p2").innerHTML = "am să joc măcar o dată în viață";
+	}
+	if (current >= 57.5 && current < 58.5){
+		document.getElementById("p2").innerHTML = "spune ce nu are spune";
+	}
+	if (current >= 58.5 && current < 60){
+		document.getElementById("p2").innerHTML = "nu mă interesează";
+	}
+	if (current >= 60 && current < 61.5){
+		document.getElementById("p2").innerHTML = "de ce să stau de o parte";
+	}
+	if (current >= 61.5 && current < 63){
+		document.getElementById("p2").innerHTML = "când suflet mi dansează";
+	}
+	if (current >= 63 && current < 64.25){
+		document.getElementById("p2").innerHTML = "mi e a început să mi placă";
+	}
+	if (current >= 64.25 && current < 65.75){
+		document.getElementById("p2").innerHTML = "după colivie";
+	}
+	if (current >= 65.75 && current < 67){
+		document.getElementById("p2").innerHTML = "și am să gust oleacă";
+	}
+	if (current >= 67 && current < 68.5){
+		document.getElementById("p2").innerHTML = "diseară de rachie";
+	}
 	var original = document.getElementById("p2").textContent;
 	var originalword = original.split(" ");
 	var a = originalword.surzyk();
 	document.getElementById("p3").innerHTML = a.join(" ");
-	}
-if (current >= 13.5 && current < 15){
-		document.getElementById("p2").innerHTML = "tre să fiu cuminte";
-		document.getElementById("p3").innerHTML = "треба to be posłuszną";
-	}
-if (current >= 15 && current < 16.5){
-		document.getElementById("p2").innerHTML = "Îi-e ruşine şi e frig";
-		document.getElementById("p3").innerHTML = "Їй стыдно і є frost";
-	}
-	if (current >= 16.5 && current < 17.75){
-		document.getElementById("p2").innerHTML = "aşa o zis părintele";
-		document.getElementById("p3").innerHTML = "so did said parent";
-	}
-	if (current >= 17.75 && current < 19){
-		document.getElementById("p2").innerHTML = "Dar eu m-am săturat";
-		document.getElementById("p3").innerHTML = "But ja am saturant";
-	}
-	if (current >= 19 && current < 20.5){
-		document.getElementById("p2").innerHTML = "să stau la colţ de masă";
-		document.getElementById("p3").innerHTML = "to stać at kąt ze парти";
-	}
-	if (current >= 20.5 && current < 22){
-		document.getElementById("p2").innerHTML = "Eu azi m-am îmbracat";
-		document.getElementById("p3").innerHTML = "Ja dziś am ubrana";
-	}
-	if (current >= 22 && current < 23){
-		document.getElementById("p2").innerHTML = "în rochia cea frumoasă";
-		document.getElementById("p3").innerHTML = "in suknia the вродлива";
-	}
-	if ((current >= 23 && current < 26) || (current >= 34.25 && current < 37.5) || (current >= 68.5 && current < 71.5) || (current >= 79.5 && current < 82.5) || (current >= 124.5 && current < 128) || (current >= 135.5 && current < 139) || (current >= 149.5 && current < 155) || (current >= 164.5 && current < 167.5) || (current >= 174.5 && current < 177.5)){
-		document.getElementById("p2").innerHTML = "La nunta asta-i numa’ muzică de nuntă";
-		document.getElementById("p3").innerHTML = "At ślub этот no more music ze ślub";
-	}
-	if ((current >= 26 && current < 28.5) || (current >= 37.5 && current < 40) || (current >= 71.5 && current < 73.75) || (current >= 82.5 && current < 85) || (current >= 128 && current < 130.5) || (current >= 139 && current < 141.5) || (current >= 155 && current < 158) || (current >= 167.5 && current < 169.5) || (current >= 177.5 && current < 179.5)){
-		document.getElementById("p2").innerHTML = "Toţi vorbesc, nimeni n-ascultă";
-		document.getElementById("p3").innerHTML = "All говорять, ніхто не слухає";
-	}
-	if ((current >= 28.5 && current < 31.5) || (current >= 40 && current < 43) || (current >= 73.75 && current < 76.5) || (current >= 85 && current < 87.75) || (current >= 130.5 && current < 133) || (current >= 141.5 && current < 144.5) || (current >= 158 && current < 161.5) || (current >= 169.5 && current < 172) || (current >= 179.5 && current < 182)){
-		document.getElementById("p2").innerHTML = "Atâta am muncit de dimineaţă";
-		document.getElementById("p3").innerHTML = "Tyle am worked ze morning";
-	}
-	if ((current >= 31.5 && current < 34.25) || (current >= 43 && current < 46) || (current >= 76.5 && current < 79.5) || (current >= 87.75 && current < 90.5) || (current >= 133 && current < 135.5) || (current >= 144.5 && current < 149.5) || (current >= 161.5 && current < 164.5) || (current >= 172 && current < 174.5) || (current >= 182 && current < 184.5)){
-		document.getElementById("p2").innerHTML = "Am să joc măcar o dată-n viaţă";
-		document.getElementById("p3").innerHTML = "Am to grać хочаб a time in życie";
-	}
-	if (current >= 57.5 && current < 58.5){
-		document.getElementById("p2").innerHTML = "Spune, ce n-ar spune";
-		document.getElementById("p3").innerHTML = "Mówić, co no би mówić";
-	}
-	if (current >= 58.5 && current < 60){
-		document.getElementById("p2").innerHTML = "nu mă interesează";
-		document.getElementById("p3").innerHTML = "no me интересуюсь";
-	}
-	if (current >= 60 && current < 61.5){
-		document.getElementById("p2").innerHTML = "De ce să stau de-o parte";
-		document.getElementById("p3").innerHTML = "Ze co to stać ze-a встороне";
-	}
-	if (current >= 61.5 && current < 63){
-		document.getElementById("p2").innerHTML = "când sufletu-mi dansează";
-		document.getElementById("p3").innerHTML = "kiedy soul my dancing";
-	}
-	if (current >= 63 && current < 64.25){
-		document.getElementById("p2").innerHTML = "Mi-e a început să-mi placă";
-		document.getElementById("p3").innerHTML = "My є починаю to my like";
-	}
-	if (current >= 64.25 && current < 65.75){
-		document.getElementById("p2").innerHTML = "după colivie";
-		document.getElementById("p3").innerHTML = "после klatki";
-	}
-	if (current >= 65.75 && current < 67){
-		document.getElementById("p2").innerHTML = "Şi am să gust oleacă";
-		document.getElementById("p3").innerHTML = "I mam to вкус немного";
-	}
-	if (current >= 67 && current < 68.5){
-		document.getElementById("p2").innerHTML = "diseară, de rachie";
-		document.getElementById("p3").innerHTML = "wieczorem, ze wine";
-	}
 	}
 	if (lang == "Surance"){
 		if (current < 12){
@@ -3387,7 +3399,7 @@ var data = [
 	['e', 'є', 'e', 'e'],
 	['frig',	'frost',	'frost',	'frist'],
 ['așa',	'so',	'sou',	'asou'],
-['o',	'did',	'did',	'dod'],
+['o',	'a',	'e',	'ă'],
 ['zis',	'said',	'sed',	'ses'],
 ['părintele',	'parent',	'părent',	'părentele'],
 ['dar',	'but',	'bat',	'bar'],
@@ -3420,13 +3432,13 @@ var data = [
 ['viață',	'życie',	'jâce',	'jață'],
 ['spune',	'mówić',	'muvic',	'spuvic'],
 ['ce',	'co',	'țo',	'țe'],
-['ar',	'би',	'bâ',	'bâr'],
+['are',	'має',	'maie',	'mare'],
 ['nu',	'no',	'nou',	'nou'],
 ['mă',	'me',	'mi',	'me'],
 ['interesează',	'интересуюсь',	'intieriesuiusi',	'interesuză'],
 ['parte',	'встороне',	'vstoronie',	'partoronie'],
 ['când',	'kiedy',	'ciedâ',	'cândâ'],
-['sufletu',	'soul',	'soul',	'soufletu'],
+['suflet',	'soul',	'soul',	'souflet'],
 ['dansează',	'dancing',	'danțin',	'danțează'],
 ['mi',	'my',	'mai',	'mai'],
 ['început',	'починаю',	'pocînayu',	'poceput'],
