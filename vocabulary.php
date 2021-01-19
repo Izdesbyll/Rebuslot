@@ -1,34 +1,72 @@
 <?php
+$servername = "localhost";
+$username = "izdesbyll";
+$password = "q14103755.";
 
+// Create connection
+$conn = new mysqli($servername, $username, $password);
 
-define('DB_NAME', 'vocabulary');
-define('DB_USER', 'izdesbyll');
-define('DB_PASSWORD', 'Qq14103755.');
-define('DB_HOST', 'localhost');
-
-$link = mysql_connect(DB_HOST, DB_USER, DB_PASSWORD);
-
-if (!$link) {
-	die('Could not connect: ' . mysql_error());
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
+//echo "Connected successfully";
 
-$db_selected = mysql_select_db(DB_NAME, $link);
+mysqli_select_db($conn, "vocabulary");
 
-if (!$db_selected) {
-	die('Can\'t use ' . DB_NAME . ': ' .mysql_error());
-}
+//echo " Database vocabulary is selected successfully ";
+
+$arr_serialize7=explode(',',$_POST['arr_serialize1']);
+$arr_serialize8=explode(',',$_POST['arr_serialize2']);
+$arr_serialize9=explode(',',$_POST['arr_serialize3']);
+$arr_serialize10=explode(',',$_POST['arr_serialize4']);
+$arr_serialize11=explode(',',$_POST['arr_serialize5']);
+$arr_serialize12=explode(',',$_POST['arr_serialize6']);
+
+$arr_serialize1=implode(" , ",$arr_serialize7);
+$arr_serialize2=implode(" , ",$arr_serialize8);
+$arr_serialize3=implode(" , ",$arr_serialize9);
+$arr_serialize4=implode(" , ",$arr_serialize10);
+$arr_serialize5=implode(" , ",$arr_serialize11);
+$arr_serialize6=implode(" , ",$arr_serialize12);
+
+$sql = "INSERT INTO contents_arr(arr_serialize1, arr_serialize2, arr_serialize3, arr_serialize4, arr_serialize5, arr_serialize6) VALUES('".$arr_serialize1."','".$arr_serialize2."','".$arr_serialize3."','".$arr_serialize4."','".$arr_serialize5."','".$arr_serialize6."')";
+mysqli_query($conn,$sql);
 
 
+//	echo "<pre>";
+//	echo "1 : ";
+//	print_r($arr_serialize7);
+//	echo "</pre>";
 
-$value = $_POST('word');
+	echo "<pre>";
+	echo "2 : ";
+	print_r($arr_serialize8);
+	echo "</pre>";
 
-$sql = "INSERT INTO wordlist (word) VALUES ('$value')";
+	echo "<pre>";
+	echo "3 : ";
+	print_r($arr_serialize9);
+	echo "</pre>";
 
-if (mysql_query($sql)) {
-	die('Error: ' . mysql_error());
-}
+//	echo "<pre>";
+//	echo "4 : ";
+//	print_r($arr_serialize10);
+//	echo "</pre>";
 
+//	echo "<pre>";
+//	echo "5 : ";
+//	print_r($arr_serialize11);
+//	echo "</pre>";
 
-mysql_close();
-?>
+//	echo "<pre>";
+//	echo "6 : ";
+//	print_r($arr_serialize12);
+//	echo "</pre>";
+
+mysqli_query($conn,$sql);
+
+header("Location: http://localhost/Rebuslot.php");
+?> 
+
 	
