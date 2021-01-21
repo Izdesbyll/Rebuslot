@@ -52,21 +52,20 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
     <div id="player" class="posit posit-1"></div>
     
 	<ul id="myUL">
-  <li>All songs</li>
-  <li>La nunta asta</li>
-  <li>Dragostea din tei</li>
-  <li>Disko partizani</li>
-  <li>Odata in viata</li>
-  <li>Ia spune-i luna</li>
-  <li>1234</li>
-  <li>Ale</li>
-  <li>Când Eu Iubesc</li>
-  <li>Cuscra</li>
-  <li>Melancolie</li>
+  <li>Всі пісні</li>
+  <li>Eye of the tiger</li>
+  <li>Sky is over</li>
+  <li>Carry on Wayward</li>
+  <li>Everybody knows</li>
+  <li>Staring in the dark</li>
+  <li>On my own</li>
+  <li>Goodbye</li>
+
  
 </ul>
 	
 	<script>
+	// я тут
 	var tumbler = 1;
 	var userInput;
 	var lang = "Russian";
@@ -3119,7 +3118,7 @@ list.addEventListener('click', function(ev) {
 }
 .posit-13 {
 	bottom: 8%;
-	left: 74%;
+	left: 78%;
 }
 #editor {
     width: 465px;
@@ -3264,7 +3263,7 @@ ul li.checked::before {
 
 }
 	</style>
-		<p class="posit posit-8" style=color:white; id="kw">Known words: </p>
+		<p class="posit posit-8" style=color:white; id="kw">Вивчені слова: </p>
 <form action="vocabulary.php" method="post">
 	<input name="arr_serialize1" id="arr_serialize1" type="hidden" value=""/>
 <input name="arr_serialize2" id="arr_serialize2" type="hidden" value=""/>
@@ -3273,7 +3272,7 @@ ul li.checked::before {
 <input name="arr_serialize5" id="arr_serialize5" type="hidden" value=""/>
 <input name="arr_serialize6" id="arr_serialize6" type="hidden" value=""/>	
 	
-	<input id="save" class="posit posit-9" onclick="convert();" name="BTN" type="submit" value="Save progress"/>
+	<input id="save" class="posit posit-9" onclick="convert();" name="BTN" type="submit" value="Зберегти результат"/>
 </form>
 <form method="get">
 <input name="PHPvalue1" id="PHPvalue1" type="hidden" value="<?=$arr_serialize1?>"/>
@@ -3288,25 +3287,25 @@ ul li.checked::before {
 		<table>
 		<tr>
 			<td></td>
-			<td><p>Essence</p></td>
-			<td><p>Quality</p></td>
-			<td><p>Quantity</p></td>
+			<td><p>Сутність</p></td>
+			<td><p>Якість</p></td>
+			<td><p>Кількість</p></td>
 		</tr>
 		<tr>
-			<td><p>Subject</p></td>
+			<td><p>Підмет</p></td>
 			<td><img id="1" title="?" name="subjectessence" height="130" width="130" onclick="off1(); return false;"/><br /></td>
 			<td><img id="2" title="?" name="subjectquality" height="130" width="130" onclick="off2()"/><br /></td>
 			<td><img id="3" title="?" name="subjectquantity" height="130" width="130" onclick="off3()"/><br /></td>
 			<td></td>
 		</tr>
 		<tr>
-			<td><p>Verb</p></td>
+			<td><p>Присудок</p></td>
 			<td><img id="4" title="?" name="verbessence" height="130" width="130" onclick="off4()"/><br /></td>
 			<td><img id="5" title="?" name="verbquality" height="130" width="130" onclick="off5()"/><br /></td>
 			<td><img id="6" title="?" name="verbquantity" height="130" width="130" onclick="off6()"/><br /></td>
 		</tr>
 		<tr>
-			<td><p>Object</p></td>
+			<td><p>Додаток</p></td>
 			<td><img id="7" title="?" name="objectessence" height="130" width="130" onclick="off7()"/><br /></td>
 			<td><img id="8" title="?" name="objectquality" height="130" width="130" onclick="off8()"/><br /></td>
 			<td><img id="9" title="?" name="objectquantity" height="130" width="130" onclick="off9()"/><br /></td>
@@ -3315,25 +3314,23 @@ ul li.checked::before {
 		</table>
 		
 		<div id="editor" contenteditable="true"></div>
-		<p id="p1">the right answer</p>	
+		<p id="p1">Правильна відповідь</p>	
 	</form>	
 
-	<button id="random" class="posit posit-3" onclick="RandomImage()">Generate a sentence</button>
-	<button id="right" class="posit posit-4" onclick="RightAnswer()">Show the right answer</button>
-	<button id="time" class="posit posit-11" onclick="GetTime()">It's time</button>
-	<button id="savetime" class="posit posit-12" onclick="SaveTime()">Save timecode</button>
-	<button id="suridtable" class="posit posit-13" onclick="SuridTbale()">Show table</button>
+	<button id="random" class="posit posit-3" onclick="RandomImage()">Наступне речення</button>
+	<button id="right" class="posit posit-4" onclick="RightAnswer()">Правильна відповідь</button>
+	<button id="time" class="posit posit-11" onclick="GetTime()">Абзац</button>
+	<button id="savetime" class="posit posit-12" onclick="SaveTime()">Зберегти таймкоди</button>
+	<button id="suridtable" class="posit posit-13" onclick="SuridTbale()">Словник</button>
 	<img id="10" name="sound" class="posit posit-10" height ="50" width="50" src="soundon.jpg" onclick="off10()" />
 
-	<p class="posit posit-6" id="p2">Song lyrics</p> 
-	<p class="posit posit-7" id="p3">Lyrics translation</p> 
+	<p class="posit posit-6" id="p2">Слова пісні</p> 
+	<p class="posit posit-7" id="p3">Переклад пісні</p> 
 	<div id="spreadsheet" class="spread"></div>
 	<div class="menu">
   <ul class="menu-options" id="context">
-    <li class="menu-option">Russian</li>
-    <li class="menu-option">Surżyk</li>
-	<li class="menu-option">Surance</li>
-    <li class="menu-option">Surid</li>
+    <li class="menu-option">Літературний</li>
+    <li class="menu-option">Дослівний</li>
   </ul>
 </div>
 
