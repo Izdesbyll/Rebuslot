@@ -34,10 +34,10 @@ $sql = "INSERT INTO contents_arr(arr_serialize1, arr_serialize2, arr_serialize3,
 mysqli_query($conn,$sql);
 
 
-//	echo "<pre>";
-//	echo "1 : ";
-//	print_r($arr_serialize7);
-//	echo "</pre>";
+ 	echo "<pre>";
+	echo "1 : ";
+ 	print_r($arr_serialize7);
+	echo "</pre>";
 
 	echo "<pre>";
 	echo "2 : ";
@@ -49,10 +49,10 @@ mysqli_query($conn,$sql);
 	print_r($arr_serialize9);
 	echo "</pre>";
 
-//	echo "<pre>";
-//	echo "4 : ";
-//	print_r($arr_serialize10);
-//	echo "</pre>";
+	echo "<pre>";
+	echo "4 : ";
+	print_r($arr_serialize10);
+	echo "</pre>";
 
 //	echo "<pre>";
 //	echo "5 : ";

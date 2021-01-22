@@ -65,7 +65,6 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 </ul>
 	
 	<script>
-	// я тут
 	var tumbler = 1;
 	var userInput;
 	var lang = "Russian";
@@ -129,7 +128,8 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 	var index5, imagearray5 = ["trebui"];
 	var index6, index7, index8;
 	var guess, videoPlayer;
-	var videoList = ["TH0oCDziVQQ", "YnopHCL1Jk8", "gViaOYgV8yI", "GN7H2vfh3SM", "591Ur1h0ons", "PojdI2shbaI", "vdcXsBJwBrg", "-yIUzB_CI0Y", "VzUMqkKoTmg", "NFBXOlsvHh4", ];
+	//тут
+	var videoList = ["btPJPFnesV4", "GY9kQcWLvEM", "P5ZJui3aPoQ", "zrV5of2p-oc", "slMr8eUnu9Q", "4l7fhxNrrrM", "SjliSRyTjB8" ];
 	var curVideo = 0;
 	
 	
@@ -987,10 +987,10 @@ wordcount = indexarray.length + index1array.length + index2array.length + index3
         player = new YT.Player('player', {
           height: '300',
           width: '540',
-          videoId: 'TH0oCDziVQQ', 
+          videoId: 'btPJPFnesV4', 
 		  playerVars: {
             color: 'white',
-			playlist: "YnopHCL1Jk8,gViaOYgV8yI,GN7H2vfh3SM,591Ur1h0ons,vIxyYqg4Kdw,PojdI2shbaI,-yIUzB_CI0Y,VzUMqkKoTmg,NFBXOlsvHh4"
+			playlist: "GY9kQcWLvEM,P5ZJui3aPoQ,zrV5of2p-oc,slMr8eUnu9Q,4l7fhxNrrrM,SjliSRyTjB8"
 			},
           events: {
             'onReady': onPlayerReady
@@ -1057,7 +1057,7 @@ for (i = 0; i < close.length; i++) {
   if (i == 1){
   close[i].onclick = function() {
 	lyrics = 1;
-	player.loadVideoById("TH0oCDziVQQ", 0, "large");
+	player.loadVideoById("btPJPFnesV4", 0, "large");
 	document.getElementById("p2").innerHTML = "";
 	document.getElementById("p3").innerHTML = "";
   }
@@ -1066,7 +1066,7 @@ for (i = 0; i < close.length; i++) {
   if (i == 2){
   close[i].onclick = function() {
 	lyrics = 2;
-	player.loadVideoById("YnopHCL1Jk8", 45, "large");
+	player.loadVideoById("GY9kQcWLvEM", 0, "large");
 	document.getElementById("p2").innerHTML = "";
 	document.getElementById("p3").innerHTML = "";
   }
@@ -1074,7 +1074,7 @@ for (i = 0; i < close.length; i++) {
   if (i == 3){
   close[i].onclick = function() {
 	lyrics = 3;
-	player.loadVideoById("gViaOYgV8yI", 0, "large");
+	player.loadVideoById("P5ZJui3aPoQ", 0, "large");
 	document.getElementById("p2").innerHTML = "";
 	document.getElementById("p3").innerHTML = "";
   }
@@ -1082,7 +1082,7 @@ for (i = 0; i < close.length; i++) {
   if (i == 4){
   close[i].onclick = function() {
 	lyrics = 4;
-	player.loadVideoById("GN7H2vfh3SM", 0, "large");
+	player.loadVideoById("zrV5of2p-oc", 0, "large");
 	document.getElementById("p2").innerHTML = "";
 	document.getElementById("p3").innerHTML = "";
   }
@@ -1090,7 +1090,7 @@ for (i = 0; i < close.length; i++) {
   if (i == 5){
   close[i].onclick = function() {
 	lyrics = 5;
-	player.loadVideoById("591Ur1h0ons", 0, "large");
+	player.loadVideoById("slMr8eUnu9Q", 0, "large");
 	document.getElementById("p2").innerHTML = "";
 	document.getElementById("p3").innerHTML = "";
   }
@@ -1098,7 +1098,7 @@ for (i = 0; i < close.length; i++) {
   if (i == 6){
   close[i].onclick = function() {
 	lyrics = 6;
-	player.loadVideoById("PojdI2shbaI", 0, "large");
+	player.loadVideoById("4l7fhxNrrrM", 0, "large");
 	document.getElementById("p2").innerHTML = "";
 	document.getElementById("p3").innerHTML = "";
   }
@@ -1106,35 +1106,12 @@ for (i = 0; i < close.length; i++) {
   if (i == 7){
   close[i].onclick = function() {
 	lyrics = 7;
-	player.loadVideoById("vdcXsBJwBrg", 0, "large");
+	player.loadVideoById("SjliSRyTjB8", 0, "large");
 	document.getElementById("p2").innerHTML = "";
 	document.getElementById("p3").innerHTML = "";
   }
   }
-  if (i == 8){
-  close[i].onclick = function() {
-	lyrics = 8;
-	player.loadVideoById("-yIUzB_CI0Y", 0, "large");
-	document.getElementById("p2").innerHTML = "";
-	document.getElementById("p3").innerHTML = "";
-  }
-  }
-  if (i == 9){
-  close[i].onclick = function() {
-	lyrics = 9;
-	player.loadVideoById("VzUMqkKoTmg", 0, "large");
-	document.getElementById("p2").innerHTML = "";
-	document.getElementById("p3").innerHTML = "";
-  }
-  }
-  if (i == 10){
-  close[i].onclick = function() {
-	lyrics = 10;
-	player.loadVideoById("NFBXOlsvHh4", 0, "large");
-	document.getElementById("p2").innerHTML = "";
-	document.getElementById("p3").innerHTML = "";
-  }
-  }
+
 
 }
 function myCallback() {
