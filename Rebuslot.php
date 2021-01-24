@@ -67,7 +67,7 @@ $arr_serialize6=implode(" , ",$serialize6_explode);
 	<script>
 	var tumbler = 1;
 	var userInput;
-	var lang = "Russian";
+	var lang = "Literature";
 	var current, current1 = 0;
 	var synthesis = window.speechSynthesis;
 	var JSvalue1, JSvalue2, JSvalue3, JSvalue4, JSvalue5, JSvalue6; 
@@ -1117,91 +1117,148 @@ for (i = 0; i < close.length; i++) {
 function myCallback() {
  current = player.playerInfo.currentTime;
 if (lyrics == 1){
-	if (lang == "Russian"){
-if (current < 12){
-	document.getElementById("p2").innerHTML = "";
-	document.getElementById("p3").innerHTML = "";
+	if (lang == "Literature"){
+
+		if (current >= 49.3 && current < 53.0){
+document.getElementById("p2").innerHTML = "rising up, back on the street";
+document.getElementById("p3").innerHTML = "поднявшись на ноги, возвращаюсь на улицу";
 }
-if (current >= 12 && current < 14){
-		document.getElementById("p2").innerHTML = "Eu îs fată tinerică";
-		document.getElementById("p3").innerHTML = "Я молоденькая девушка";
-	}
-if (current >= 13.5 && current < 15){
-		document.getElementById("p2").innerHTML = "tre să fiu cuminte";
-		document.getElementById("p3").innerHTML = "я должна быть послушной";
-	}
-if (current >= 15 && current < 16.5){
-		document.getElementById("p2").innerHTML = "Îi-e ruşine şi e frig";
-		document.getElementById("p3").innerHTML = "Она стесняется, ей холодно";
-	}
-	if (current >= 16.5 && current < 17.75){
-		document.getElementById("p2").innerHTML = "aşa o zis părintele";
-		document.getElementById("p3").innerHTML = "так сказал батюшка";
-	}
-	if (current >= 17.75 && current < 19){
-		document.getElementById("p2").innerHTML = "Dar eu m-am săturat";
-		document.getElementById("p3").innerHTML = "Но мне надоело";
-	}
-	if (current >= 19 && current < 20.5){
-		document.getElementById("p2").innerHTML = "să stau la colţ de masă";
-		document.getElementById("p3").innerHTML = "сидеть в углу стола";
-	}
-	if (current >= 20.5 && current < 22){
-		document.getElementById("p2").innerHTML = "Eu azi m-am îmbracat";
-		document.getElementById("p3").innerHTML = "Сегодня я надела";
-	}
-	if (current >= 22 && current < 23){
-		document.getElementById("p2").innerHTML = "în rochia cea frumoasă";
-		document.getElementById("p3").innerHTML = "красивое платье";
-	}
-	if ((current >= 23 && current < 26) || (current >= 34.25 && current < 37.5) || (current >= 68.5 && current < 71.5) || (current >= 79.5 && current < 82.5) || (current >= 124.5 && current < 128) || (current >= 135.5 && current < 139) || (current >= 149.5 && current < 155) || (current >= 164.5 && current < 167.5) || (current >= 174.5 && current < 177.5)){
-		document.getElementById("p2").innerHTML = "La nunta asta-i numa’ muzică de nuntă";
-		document.getElementById("p3").innerHTML = "На этой свадьбе играет только весёлая музыка";
-	}
-	if ((current >= 26 && current < 28.5) || (current >= 37.5 && current < 40) || (current >= 71.5 && current < 73.75) || (current >= 82.5 && current < 85) || (current >= 128 && current < 130.5) || (current >= 139 && current < 141.5) || (current >= 155 && current < 158) || (current >= 167.5 && current < 169.5) || (current >= 177.5 && current < 179.5)){
-		document.getElementById("p2").innerHTML = "Toţi vorbesc, nimeni n-ascultă";
-		document.getElementById("p3").innerHTML = "Все говорят, никто не слушает";
-	}
-	if ((current >= 28.5 && current < 31.5) || (current >= 40 && current < 43) || (current >= 73.75 && current < 76.5) || (current >= 85 && current < 87.75) || (current >= 130.5 && current < 133) || (current >= 141.5 && current < 144.5) || (current >= 158 && current < 161.5) || (current >= 169.5 && current < 172) || (current >= 179.5 && current < 182)){
-		document.getElementById("p2").innerHTML = "Atâta am muncit de dimineaţă";
-		document.getElementById("p3").innerHTML = "Я так много сегодня поработала с утра";
-	}
-	if ((current >= 31.5 && current < 34.25) || (current >= 43 && current < 46) || (current >= 76.5 && current < 79.5) || (current >= 87.75 && current < 90.5) || (current >= 133 && current < 135.5) || (current >= 144.5 && current < 149.5) || (current >= 161.5 && current < 164.5) || (current >= 172 && current < 174.5) || (current >= 182 && current < 184.5)){
-		document.getElementById("p2").innerHTML = "Am să joc măcar o dată-n viaţă";
-		document.getElementById("p3").innerHTML = "Станцую-ка я хоть разок";
-	}
-	if (current >= 57.5 && current < 58.5){
-		document.getElementById("p2").innerHTML = "Spune, ce n-ar spune";
-		document.getElementById("p3").innerHTML = "Пусть говорят что угодно";
-	}
-	if (current >= 58.5 && current < 60){
-		document.getElementById("p2").innerHTML = "nu mă interesează";
-		document.getElementById("p3").innerHTML = "меня не волнует";
-	}
-	if (current >= 60 && current < 61.5){
-		document.getElementById("p2").innerHTML = "De ce să stau de-o parte";
-		document.getElementById("p3").innerHTML = "Почему я должна стоять в стороне";
-	}
-	if (current >= 61.5 && current < 63){
-		document.getElementById("p2").innerHTML = "când sufletu-mi dansează";
-		document.getElementById("p3").innerHTML = "когда моя душа хочет танцевать";
-	}
-	if (current >= 63 && current < 64.25){
-		document.getElementById("p2").innerHTML = "Mi-e a început să-mi placă";
-		document.getElementById("p3").innerHTML = "Мне нравится то, что я вырвалась";
-	}
-	if (current >= 64.25 && current < 65.75){
-		document.getElementById("p2").innerHTML = "după colivie";
-		document.getElementById("p3").innerHTML = "из клетки";
-	}
-	if (current >= 65.75 && current < 67){
-		document.getElementById("p2").innerHTML = "Şi am să gust oleacă";
-		document.getElementById("p3").innerHTML = "я попробую немножечко";
-	}
-	if (current >= 67 && current < 68.5){
-		document.getElementById("p2").innerHTML = "diseară, de rachie";
-		document.getElementById("p3").innerHTML = "Сегодня вечером вина";
-	}
+if (current >= 53.0 && current < 57.6){
+document.getElementById("p2").innerHTML = "did my time, took my chances";
+document.getElementById("p3").innerHTML = "отбыл свой срок, испытал судьбу";
+}
+if (current >= 57.6 && current < 61.6){
+document.getElementById("p2").innerHTML = "went the distance, now I'm back on my feet";
+document.getElementById("p3").innerHTML = "прошёл свой путь и теперь я снова на ногах";
+}
+if (current >= 61.6 && current < 66.1){
+document.getElementById("p2").innerHTML = "just a man and his will to survive";
+document.getElementById("p3").innerHTML = "просто человек с его волей к жизни";
+}
+if (current >= 66.1 && current < 70.9){
+document.getElementById("p2").innerHTML = "so many times, it happens too fast";
+document.getElementById("p3").innerHTML = "так много раз это случалось слишком быстро";
+}
+if (current >= 70.9 && current < 75.2){
+document.getElementById("p2").innerHTML = "you change your passion for glory";
+document.getElementById("p3").innerHTML = "ты променял свою страсть на славу";
+}
+if (current >= 75.2 && current < 79.2){
+document.getElementById("p2").innerHTML = "don't lose your grip on the dreams of the past";
+document.getElementById("p3").innerHTML = "так не растеряй свою хватку на мечты о прошлом";
+}
+if (current >= 79.2 && current < 83.4){
+document.getElementById("p2").innerHTML = "you must fight just to keep them alive";
+document.getElementById("p3").innerHTML = "ты должен сражаться, чтобы они продолжали жить";
+}
+if (current >= 83.4 && current < 86.0){
+document.getElementById("p2").innerHTML = "it is the eye of the tiger";
+document.getElementById("p3").innerHTML = "это взгляд тигра";
+}
+if (current >= 86.0 && current < 88.0){
+document.getElementById("p2").innerHTML = "it is the thrill of the fight";
+document.getElementById("p3").innerHTML = "это азарт схватки";
+}
+if (current >= 88.0 && current < 92.2){
+document.getElementById("p2").innerHTML = "rising up to the challenge of our rival";
+document.getElementById("p3").innerHTML = "поднимающий нас, чтобы ответить на вызов противника";
+}
+if (current >= 92.2 && current < 96.8){
+document.getElementById("p2").innerHTML = "and the last known survivor stalks his prey in the night";
+document.getElementById("p3").innerHTML = "и последний выживший крадётся за своей жертвой в ночи";
+}
+if (current >= 96.8 && current < 101.0){
+document.getElementById("p2").innerHTML = "and he's watching us all with the eye";
+document.getElementById("p3").innerHTML = "провожая нас взглядом";
+}
+if (current >= 101.0 && current < 106.4){
+document.getElementById("p2").innerHTML = "of the tiger";
+document.getElementById("p3").innerHTML = "тигра";
+}
+if (current >= 106.4 && current < 110.4){
+document.getElementById("p2").innerHTML = "face to face, out in the heat";
+document.getElementById("p3").innerHTML = "лицом к лицу, в пламени боя";
+}
+if (current >= 110.4 && current < 114.9){
+document.getElementById("p2").innerHTML = "hanging tough, staying hungry";
+document.getElementById("p3").innerHTML = "не сдаваясь, оставаясь голодными";
+}
+if (current >= 114.9 && current < 119.2){
+document.getElementById("p2").innerHTML = "they stack the odds 'ntil we take to the street";
+document.getElementById("p3").innerHTML = "они копят шансы, пока мы не вышли на улицу";
+}
+if (current >= 119.2 && current < 123.5){
+document.getElementById("p2").innerHTML = "for we kill with the skill to survive";
+document.getElementById("p3").innerHTML = "чтобы учиться выживать, убивая";
+}
+if (current >= 123.5 && current < 125.7){
+document.getElementById("p2").innerHTML = "it is the eye of the tiger";
+document.getElementById("p3").innerHTML = "это взгляд тигра";
+}
+if (current >= 125.7 && current < 127.7){
+document.getElementById("p2").innerHTML = "it is the thrill of the fight";
+document.getElementById("p3").innerHTML = "это азарт схватки";
+}
+if (current >= 127.7 && current < 132.0){
+document.getElementById("p2").innerHTML = "rising up to the challenge of our rival";
+document.getElementById("p3").innerHTML = "поднимающий нас, чтобы ответить на вызов противника";
+}
+if (current >= 132.0 && current < 136.2){
+document.getElementById("p2").innerHTML = "and the last known survivor stalks his prey in the night";
+document.getElementById("p3").innerHTML = "и последний выживший крадётся за своей жертвой в ночи";
+}
+if (current >= 136.2 && current < 141.0){
+document.getElementById("p2").innerHTML = "and he's watching us all with the eye";
+document.getElementById("p3").innerHTML = "провожая нас взглядом";
+}
+if (current >= 141.0 && current < 150.7){
+document.getElementById("p2").innerHTML = "of the tiger";
+document.getElementById("p3").innerHTML = "тигра";
+}
+if (current >= 150.7 && current < 154.7){
+document.getElementById("p2").innerHTML = "rising up, straight to the top";
+document.getElementById("p3").innerHTML = "вновь поднявшись - прямо к вершине";
+}
+if (current >= 154.7 && current < 158.9){
+document.getElementById("p2").innerHTML = "have the guts, got the glory";
+document.getElementById("p3").innerHTML = "посеял мужество, пожал славу";
+}
+if (current >= 158.9 && current < 163.2){
+document.getElementById("p2").innerHTML = "went the distance, now I'm not gonna stop";
+document.getElementById("p3").innerHTML = "прошёл свой путь, и не собираюсь останавливаться";
+}
+if (current >= 163.2 && current < 167.4){
+document.getElementById("p2").innerHTML = "just a man and his will to survive";
+document.getElementById("p3").innerHTML = "просто человек с его волей к жизни";
+}
+if (current >= 167.4 && current < 169.7){
+document.getElementById("p2").innerHTML = "it is the eye of the tiger";
+document.getElementById("p3").innerHTML = "это взгляд тигра";
+}
+if (current >= 169.7 && current < 171.7){
+document.getElementById("p2").innerHTML = "it is the thrill of the fight";
+document.getElementById("p3").innerHTML = "это азарт схватки";
+}
+if (current >= 171.7 && current < 176.2){
+document.getElementById("p2").innerHTML = "rising up to the challenge of our rival";
+document.getElementById("p3").innerHTML = "поднимающий нас, чтобы ответить на вызов противника";
+}
+if (current >= 176.2 && current < 180.4){
+document.getElementById("p2").innerHTML = "and the last known survivor stalks his prey in the night";
+document.getElementById("p3").innerHTML = "и последний выживший крадётся за своей жертвой в ночи";
+}
+if (current >= 180.4 && current < 187){
+document.getElementById("p2").innerHTML = "and he's watching us all with the eye";
+document.getElementById("p3").innerHTML = "провожая нас взглядом";
+}
+if (current >= 187 && current < 200.0){
+document.getElementById("p2").innerHTML = "of the tiger";
+document.getElementById("p3").innerHTML = "тигра";
+}
+if (current >= 200.0 && current < 209.9){
+document.getElementById("p2").innerHTML = "the eye of the tiger";
+document.getElementById("p3").innerHTML = "глаз тигра";
+}
 	}
 	if (lang == "Surżyk"){
 		if (current < 12){
