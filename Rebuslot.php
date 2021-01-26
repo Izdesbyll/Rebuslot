@@ -1510,175 +1510,175 @@ document.getElementById("p3").innerHTML = "";
 }
 if (current >= 16.5 && current < 23.5){
 document.getElementById("p2").innerHTML = "everybody knows";
-document.getElementById("p3").innerHTML = "Все знают";
+document.getElementById("p3").innerHTML = "все знают";
 }
 if (current >= 23.5 && current < 25.8){
 document.getElementById("p2").innerHTML = "that you cradle the sun";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "что ты убаюкиваешь солнце";
 }
 if (current >= 25.8 && current < 27.8){
 document.getElementById("p2").innerHTML = "something I forgive";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "что-то я простил";
 }
 if (current >= 27.8 && current < 32.1){
 document.getElementById("p2").innerHTML = "living in remorse";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "живя с угрызениями совести";
 }
 if (current >= 32.1 && current < 34.6){
 document.getElementById("p2").innerHTML = "sky is over";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "небо умирает";
 }
 if (current >= 34.6 && current < 38.8){
 document.getElementById("p2").innerHTML = "don't you want to hold me, baby";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "разве ты не хочешь меня удержать, детка";
 }
 if (current >= 38.8 && current < 43.4){
 document.getElementById("p2").innerHTML = "disappointed, going crazy?";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "разочарованного, идущего к сумашествию?";
 }
 if (current >= 43.4 && current < 45.6){
 document.getElementById("p2").innerHTML = "even though we can't afford";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "даже если мы не можем себе позволить";
 }
 if (current >= 45.6 && current < 47.9){
 document.getElementById("p2").innerHTML = "the sky is over";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "небо умирает";
 }
 if (current >= 47.9 && current < 50.2){
 document.getElementById("p2").innerHTML = "even though we can't afford";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "даже если мы не можем себе позволить";
 }
 if (current >= 50.2 && current < 52.5){
 document.getElementById("p2").innerHTML = "the sky is over";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "небо умирает";
 }
 if (current >= 52.5 && current < 54.7){
 document.getElementById("p2").innerHTML = "I don't want to see you go";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "я не хочу видеть как ты уходишь";
 }
 if (current >= 54.7 && current < 57.0){
 document.getElementById("p2").innerHTML = "the sky is over";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "небо умирает";
 }
 if (current >= 57.0 && current < 59.3){
 document.getElementById("p2").innerHTML = "even though we can't afford";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "даже если мы не можем себе позволить";
 }
 if (current >= 59.3 && current < 61.5){
 document.getElementById("p2").innerHTML = "the sky is over";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "небо умирает";
 }
 if (current >= 61.5 && current < 64.1){
 document.getElementById("p2").innerHTML = "behind closed eyes lie";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "за закрытыми глазами заключен";
 }
 if (current >= 64.1 && current < 66.3){
 document.getElementById("p2").innerHTML = "the minds ready to awaken you";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "разум, готовый разбудить тебя";
 }
 if (current >= 66.3 && current < 68.3){
 document.getElementById("p2").innerHTML = "are you at war with land";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "когда ты воюешь с землей";
 }
 if (current >= 68.3 && current < 70.6){
 document.getElementById("p2").innerHTML = "and all of its creatures?";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "и всеми живыми созданиями";
 }
 if (current >= 70.6 && current < 73.2){
-document.getElementById("p2").innerHTML = "your not-so-gentle persuasion";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p2").innerHTML = "your not so gentle persuasion";
+document.getElementById("p3").innerHTML = "твои не очень добрые убеждения";
 }
 if (current >= 73.2 && current < 74.9){
 document.getElementById("p2").innerHTML = "has been known to wreck economies";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "уже известно, уничтожают экономику";
 }
 if (current >= 74.9 && current < 80.5){
 document.getElementById("p2").innerHTML = "of countries, of empires, the sky is over";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "стран, империй, небо умирает";
 }
 if (current >= 80.5 && current < 84.5){
 document.getElementById("p2").innerHTML = "don't you want to hold me, baby";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "разве ты не хочешь меня удержать, детка";
 }
 if (current >= 84.5 && current < 107.8){
 document.getElementById("p2").innerHTML = "disappointed, going crazy?";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "разочарованного, идущего к сумашествию?";
 }
 if (current >= 107.8 && current < 121.4){
 document.getElementById("p2").innerHTML = "not even from the sun";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "даже от солнца";
 }
 if (current >= 121.4 && current < 125.6){
 document.getElementById("p2").innerHTML = "don't you want me to run?";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "ты не хочешь, чтоб я убежал?";
 }
 if (current >= 125.6 && current < 127.9){
 document.getElementById("p2").innerHTML = "even though you can't afford";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "даже если мы не можем себе позволить";
 }
 if (current >= 127.9 && current < 130.2){
 document.getElementById("p2").innerHTML = "the sky is over";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "небо умирает";
 }
 if (current >= 130.2 && current < 132.4){
 document.getElementById("p2").innerHTML = "even though we can't afford";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "даже если мы не можем себе позволить";
 }
 if (current >= 132.4 && current < 134.7){
 document.getElementById("p2").innerHTML = "the sky is over";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "небо умирает";
 }
 if (current >= 134.7 && current < 137.0){
 document.getElementById("p2").innerHTML = "I don't want to see you go";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "я не хочу видеть как ты уходишь";
 }
 if (current >= 137.0 && current < 139.2){
 document.getElementById("p2").innerHTML = "the sky is over";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "небо умирает";
 }
 if (current >= 139.2 && current < 141.5){
 document.getElementById("p2").innerHTML = "even though we can't afford";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "даже если мы не можем себе позволить";
 }
 if (current >= 141.5 && current < 144.1){
 document.getElementById("p2").innerHTML = "the sky is over";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "небо умирает";
 }
 if (current >= 144.1 && current < 146.1){
 document.getElementById("p2").innerHTML = "I don't want to see you go";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "я не хочу видеть как ты уходишь";
 }
 if (current >= 146.1 && current < 148.6){
 document.getElementById("p2").innerHTML = "the sky is over";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "небо умирает";
 }
 if (current >= 148.6 && current < 150.6){
 document.getElementById("p2").innerHTML = "even though we can't afford";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "даже если мы не можем себе позволить";
 }
 if (current >= 150.6 && current < 152.9){
 document.getElementById("p2").innerHTML = "the sky is over";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "небо умирает";
 }
 if (current >= 152.9 && current < 155.1){
 document.getElementById("p2").innerHTML = "I don't want to see you go";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "я не хочу видеть как ты уходишь";
 }
 if (current >= 155.1 && current < 157.7){
 document.getElementById("p2").innerHTML = "the sky is over";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "небо умирает";
 }
 if (current >= 157.7 && current < 160.0){
 document.getElementById("p2").innerHTML = "even though we can't afford";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "даже если мы не можем себе позволить";
 }
 if (current >= 160.0 && current < 164.5){
 document.getElementById("p2").innerHTML = "the sky is over";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "небо умирает";
 }
 if (current >= 164.5 && current < 172.4){
 document.getElementById("p2").innerHTML = "sky is over us";
-document.getElementById("p3").innerHTML = "";
+document.getElementById("p3").innerHTML = "небо умирает";
 }
 }
 if (lyrics == 3){
