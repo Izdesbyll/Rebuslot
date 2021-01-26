@@ -1504,90 +1504,182 @@ if (current >= 15 && current < 16.5){
 	}
 }
 if (lyrics == 2){
-	if (current < 70){
-	document.getElementById("p2").innerHTML = "";
-	document.getElementById("p3").innerHTML = "";
+	if (current >= 0 && current < 16.5){
+document.getElementById("p2").innerHTML = "";
+document.getElementById("p3").innerHTML = "";
 }
-if (current >= 70 && current < 73.5){
-		document.getElementById("p2").innerHTML = "Alo, salut";
-		document.getElementById("p3").innerHTML = "Алло, привет";
-	}
-	if (current >= 73.5 && current < 77.5){
-		document.getElementById("p2").innerHTML = "Sunt eu, un Haiduc";
-		document.getElementById("p3").innerHTML = "Это я… Хайдук";
-	}
-	if (current >= 77.5 && current < 81){
-		document.getElementById("p2").innerHTML = "Și te rog, iubirea mea";
-		document.getElementById("p3").innerHTML = "И я прошу, любимая моя";
-	}
-	if (current >= 81 && current < 85){
-		document.getElementById("p2").innerHTML = "primește fericirea";
-		document.getElementById("p3").innerHTML = "сделай меня счастливым";
-	}
-	if (current >= 85 && current < 88){
-		document.getElementById("p2").innerHTML = "Alo, alo";
-		document.getElementById("p3").innerHTML = "Алло… алло";
-	}
-	if (current >= 88 && current < 91){
-		document.getElementById("p2").innerHTML = "Sunt eu, Picasso";
-		document.getElementById("p3").innerHTML = "Это я… Пикассо";
-	}
-	if ((current >= 91 && current < 94) || (current >= 150 && current < 152)){
-		document.getElementById("p2").innerHTML = "Ți-am dat bip";
-		document.getElementById("p3").innerHTML = "Я тебе звоню";
-	}
-	if ((current >= 94 && current < 95) || (current >= 153 && current < 154)){
-		document.getElementById("p2").innerHTML = "și sunt voinic";
-		document.getElementById("p3").innerHTML = "И я чист перед тобой";
-	}
-	if ((current >= 95 && current < 97) || (current >= 154.5 && current < 155)){
-		document.getElementById("p2").innerHTML = "dar să știi";
-		document.getElementById("p3").innerHTML = "но знай";
-	}
-	if ((current >= 97 && current < 99) || (current >= 156 && current < 157)){
-		document.getElementById("p2").innerHTML = "nu-ți cer nimic";
-		document.getElementById("p3").innerHTML = "я ни о чем тебя не прошу";
-	}
-	if ((current >= 99 && current < 100) || (current >= 114 && current < 121) || (current >= 158 && current < 164) || (current >= 173 && current < 179) || (current >= 217 && current < 224) || (current >= 232 && current < 238)){
-		document.getElementById("p2").innerHTML = "Vrei să pleci, dar nu mă, nu mă iei";
-		document.getElementById("p3").innerHTML = "Ты хочешь идти, но ты не берёшь меня с собой";
-	}
-	if ((current >= 106 && current < 110) || (current >= 121 && current < 125) || (current >= 165 && current < 168) || (current >= 180 && current < 183) || (current >= 225 && current < 227) || (current >= 239 && current < 242)){
-		document.getElementById("p2").innerHTML = "Chipul tău și dragostea din tei";
-		document.getElementById("p3").innerHTML = "Твоё лицо и твоя любовь";
-	}
-	if ((current >= 110 && current < 114) || (current >= 125 && current < 129) || (current >= 169 && current < 172) || (current >= 184 && current < 216) || (current >= 228 && current < 231) || (current >= 243 && current < 244)){
-		document.getElementById("p2").innerHTML = "Mi-amintesc de ochii tăi";
-		document.getElementById("p3").innerHTML = "Напоминают мне о твоих глазах";
-	}
-	if (current >= 129 && current < 131){
-		document.getElementById("p2").innerHTML = "Te sun";
-		document.getElementById("p3").innerHTML = "Тебе звоню";
-	}
-	if (current >= 131 && current < 133){
-		document.getElementById("p2").innerHTML = "să-ți spun";
-		document.getElementById("p3").innerHTML = "чтобы сказать";
-	}
-	if (current >= 133 && current < 137){
-		document.getElementById("p2").innerHTML = "ce simt acum";
-		document.getElementById("p3").innerHTML = "Что я чувствую сейчас";
-	}
-	if (current >= 137 && current < 140){
-		document.getElementById("p2").innerHTML = "Alo, iubirea mea";
-		document.getElementById("p3").innerHTML = "Алло, любовь моя";
-	}
-	if (current >= 140 && current < 142){
-		document.getElementById("p2").innerHTML = "sunt eu, fericirea";
-		document.getElementById("p3").innerHTML = "это я, счастье моё";
-	}
-	if (current >= 143 && current < 146){
-		document.getElementById("p2").innerHTML = "Alo, alo";
-		document.getElementById("p3").innerHTML = "Алло… алло";
-	}
-	if (current >= 147 && current < 149){
-		document.getElementById("p2").innerHTML = "sunt iarăși eu, Picasso";
-		document.getElementById("p3").innerHTML = "это опять я, Пикассо";
-	}
+if (current >= 16.5 && current < 23.5){
+document.getElementById("p2").innerHTML = "everybody knows";
+document.getElementById("p3").innerHTML = "Все знают";
+}
+if (current >= 23.5 && current < 25.8){
+document.getElementById("p2").innerHTML = "that you cradle the sun";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 25.8 && current < 27.8){
+document.getElementById("p2").innerHTML = "something I forgive";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 27.8 && current < 32.1){
+document.getElementById("p2").innerHTML = "living in remorse";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 32.1 && current < 34.6){
+document.getElementById("p2").innerHTML = "sky is over";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 34.6 && current < 38.8){
+document.getElementById("p2").innerHTML = "don't you want to hold me, baby";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 38.8 && current < 43.4){
+document.getElementById("p2").innerHTML = "disappointed, going crazy?";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 43.4 && current < 45.6){
+document.getElementById("p2").innerHTML = "even though we can't afford";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 45.6 && current < 47.9){
+document.getElementById("p2").innerHTML = "the sky is over";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 47.9 && current < 50.2){
+document.getElementById("p2").innerHTML = "even though we can't afford";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 50.2 && current < 52.5){
+document.getElementById("p2").innerHTML = "the sky is over";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 52.5 && current < 54.7){
+document.getElementById("p2").innerHTML = "I don't want to see you go";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 54.7 && current < 57.0){
+document.getElementById("p2").innerHTML = "the sky is over";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 57.0 && current < 59.3){
+document.getElementById("p2").innerHTML = "even though we can't afford";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 59.3 && current < 61.5){
+document.getElementById("p2").innerHTML = "the sky is over";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 61.5 && current < 64.1){
+document.getElementById("p2").innerHTML = "behind closed eyes lie";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 64.1 && current < 66.3){
+document.getElementById("p2").innerHTML = "the minds ready to awaken you";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 66.3 && current < 68.3){
+document.getElementById("p2").innerHTML = "are you at war with land";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 68.3 && current < 70.6){
+document.getElementById("p2").innerHTML = "and all of its creatures?";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 70.6 && current < 73.2){
+document.getElementById("p2").innerHTML = "your not-so-gentle persuasion";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 73.2 && current < 74.9){
+document.getElementById("p2").innerHTML = "has been known to wreck economies";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 74.9 && current < 80.5){
+document.getElementById("p2").innerHTML = "of countries, of empires, the sky is over";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 80.5 && current < 84.5){
+document.getElementById("p2").innerHTML = "don't you want to hold me, baby";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 84.5 && current < 107.8){
+document.getElementById("p2").innerHTML = "disappointed, going crazy?";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 107.8 && current < 121.4){
+document.getElementById("p2").innerHTML = "not even from the sun";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 121.4 && current < 125.6){
+document.getElementById("p2").innerHTML = "don't you want me to run?";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 125.6 && current < 127.9){
+document.getElementById("p2").innerHTML = "even though you can't afford";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 127.9 && current < 130.2){
+document.getElementById("p2").innerHTML = "the sky is over";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 130.2 && current < 132.4){
+document.getElementById("p2").innerHTML = "even though we can't afford";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 132.4 && current < 134.7){
+document.getElementById("p2").innerHTML = "the sky is over";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 134.7 && current < 137.0){
+document.getElementById("p2").innerHTML = "I don't want to see you go";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 137.0 && current < 139.2){
+document.getElementById("p2").innerHTML = "the sky is over";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 139.2 && current < 141.5){
+document.getElementById("p2").innerHTML = "even though we can't afford";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 141.5 && current < 144.1){
+document.getElementById("p2").innerHTML = "the sky is over";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 144.1 && current < 146.1){
+document.getElementById("p2").innerHTML = "I don't want to see you go";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 146.1 && current < 148.6){
+document.getElementById("p2").innerHTML = "the sky is over";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 148.6 && current < 150.6){
+document.getElementById("p2").innerHTML = "even though we can't afford";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 150.6 && current < 152.9){
+document.getElementById("p2").innerHTML = "the sky is over";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 152.9 && current < 155.1){
+document.getElementById("p2").innerHTML = "I don't want to see you go";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 155.1 && current < 157.7){
+document.getElementById("p2").innerHTML = "the sky is over";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 157.7 && current < 160.0){
+document.getElementById("p2").innerHTML = "even though we can't afford";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 160.0 && current < 164.5){
+document.getElementById("p2").innerHTML = "the sky is over";
+document.getElementById("p3").innerHTML = "";
+}
+if (current >= 164.5 && current < 172.4){
+document.getElementById("p2").innerHTML = "sky is over us";
+document.getElementById("p3").innerHTML = "";
+}
 }
 if (lyrics == 3){
 	if (current < 23){
