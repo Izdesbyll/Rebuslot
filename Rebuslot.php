@@ -1682,94 +1682,151 @@ document.getElementById("p3").innerHTML = "небо умирает";
 }
 }
 if (lyrics == 3){
-	if (current < 23){
-	document.getElementById("p2").innerHTML = "";
-	document.getElementById("p3").innerHTML = "";
+	﻿
+if (current >= 0 && current < 4.0){
+document.getElementById("p2").innerHTML = "Carry on my wayward son";
+document.getElementById("p3").innerHTML = "Продолжай, мой заблудший сын";
 }
-if ((current >= 23 && current < 24) || (current >= 33 && current < 34)){
-		document.getElementById("p2").innerHTML = "My baby came down from Romania";
-		document.getElementById("p3").innerHTML = "Моя любимая родом из Румынии";
-	}
-	if ((current >= 25 && current < 27) || (current >= 35 && current < 37)){
-		document.getElementById("p2").innerHTML = "She was the queen of Transylvania";
-		document.getElementById("p3").innerHTML = "Она была королевой Трансильвании";
-	}
-	if ((current >= 28 && current < 29) || (current >= 38 && current < 39)){
-		document.getElementById("p2").innerHTML = "But now we live in suburbia";
-		document.getElementById("p3").innerHTML = "Но сейчас мы живем в пригороде";
-	}
-	if ((current >= 30 && current < 32) || (current >= 40 && current < 42)){
-		document.getElementById("p2").innerHTML = "Without any friends buzzing you";
-		document.getElementById("p3").innerHTML = "Без жужжания друзей вокруг тебя";
-	}
-	if ((current >= 42 && current < 45) || (current >= 47 && current < 49) || (current >= 51 && current < 54) || (current >= 56 && current < 59) || (current >= 119 && current < 121) || (current >= 124 && current < 126) || (current >= 129 && current < 131) || (current >= 134 && current < 136)){
-		document.getElementById("p2").innerHTML = "Tsiganizatsia tsiganizatsia";
-		document.getElementById("p3").innerHTML = "Цыганизация, цыганизация";
-	}
-	if ((current >= 45 && current < 47) || (current >= 54 && current < 56) || (current >= 121 && current < 124) || (current >= 131 && current < 134)){
-		document.getElementById("p2").innerHTML = "Come on baby this is what you need";
-		document.getElementById("p3").innerHTML = "Давай, детка, это то, что тебе нужно";
-	}
-	if ((current >= 49 && current < 51) || (current >= 126 && current < 129)){
-		document.getElementById("p2").innerHTML = "Everybody dancing to this beat";
-		document.getElementById("p3").innerHTML = "Все танцуют в этом ритме";
-	}
-	if ((current >= 59 && current < 68) || (current >= 73 && current < 78) || (current >= 136 && current < 145) || (current >= 150 && current < 155) || (current >= 229 && current < 234)  || (current >= 239 && current < 244)){
-		document.getElementById("p2").innerHTML = "Disko disko partizani";
-		document.getElementById("p3").innerHTML = "Диско диско партизаны";
-	}
-	if ((current >= 68 && current < 73) || (current >= 78 && current < 80) || (current >= 145 && current < 150) || (current >= 155 && current < 157) || (current >= 234 && current < 239)  || (current >= 244)){
-		document.getElementById("p2").innerHTML = "Parti parti partizani";
-		document.getElementById("p3").innerHTML = "Парти парти партизаны";
-	}
-	if ((current >= 80 && current < 83) || (current >= 90 && current < 93) || (current >= 157 && current < 160) || (current >= 167 && current < 169)){
-		document.getElementById("p2").innerHTML = "Zece, alege";
-		document.getElementById("p3").innerHTML = "Десять-выбирай";
-	}
-	if ((current >= 83 && current < 85) || (current >= 93 && current < 95) || (current >= 160 && current < 162) || (current >= 169 && current < 172)){
-		document.getElementById("p2").innerHTML = "Nu am, înțelege";
-		document.getElementById("p3").innerHTML = "Я не получил что мне было нужно, пойми";
-	}
-	if ((current >= 85 && current < 88) || (current >= 95 && current < 97) || (current >= 162 && current < 165) || (current >= 172 && current < 174)){
-		document.getElementById("p2").innerHTML = "Opt, un tot";
-		document.getElementById("p3").innerHTML = "Восемь-объединились";
-	}
-	if ((current >= 88 && current < 90) || (current >= 97 && current < 100) || (current >= 165 && current < 167) || (current >= 174 && current < 229)){
-		document.getElementById("p2").innerHTML = "Muzica nonstop";
-		document.getElementById("p3").innerHTML = "Музыка бесконечна";
-	}
-	if (current >= 100 && current < 102){
-		document.getElementById("p2").innerHTML = "Când te văd mă pierd cu firea";
-		document.getElementById("p3").innerHTML = "Когда я вижу тебя, я теряю голову";
-	}
-	if (current >= 102 && current < 105){
-		document.getElementById("p2").innerHTML = "Nu-mi pot stăpâni privirea";
-		document.getElementById("p3").innerHTML = "Я не могу контролировать свои глаза";
-	}
-	if (current >= 105 && current < 106){
-		document.getElementById("p2").innerHTML = "Dansezi bine, ești mortală";
-		document.getElementById("p3").innerHTML = "Ты хорошо танцуешь, ты сногшибательно красива";
-	}
-	if (current >= 106 && current < 109){
-		document.getElementById("p2").innerHTML = "Și cu frumusețea ta îi bagi pe toți în boală";
-		document.getElementById("p3").innerHTML = "И твоя красота сводит всех с ума";
-	}
-	if (current >= 109 && current < 112){
-		document.getElementById("p2").innerHTML = "Orice bărbat te dorește";
-		document.getElementById("p3").innerHTML = "Каждый мужчина хочет тебя";
-	}
-	if (current >= 112 && current < 114){
-		document.getElementById("p2").innerHTML = "Când te vede înnebunește";
-		document.getElementById("p3").innerHTML = "Они становятся дикими, когда смотрят на тебя";
-	}
-	if (current >= 114 && current < 116){
-		document.getElementById("p2").innerHTML = "Ți-ar da bani, ți-ar da orice, ți-ar da și casa";
-		document.getElementById("p3").innerHTML = "Они отдали бы тебе деньги, отдали бы тебе все, даже дом свой";
-	}
-	if (current >= 116 && current < 119){
-		document.getElementById("p2").innerHTML = "Pentru tine și-ar lăsa nevasta";
-		document.getElementById("p3").innerHTML = "Они оставили бы своих девушек ради тебя";
-	}
+if (current >= 4.0 && current < 8.3){
+document.getElementById("p2").innerHTML = "There'll be peace when you are done";
+document.getElementById("p3").innerHTML = "Когда ты закончишь со всем, наступит мир";
+}
+if (current >= 8.3 && current < 12.5){
+document.getElementById("p2").innerHTML = "Lay your weary head to rest";
+document.getElementById("p3").innerHTML = "Дай покоя своей уставшей голове";
+}
+if (current >= 12.5 && current < 67.8){
+document.getElementById("p2").innerHTML = "Don't you cry no more";
+document.getElementById("p3").innerHTML = "И больше не плачь";
+}
+if (current >= 67.8 && current < 72.3){
+document.getElementById("p2").innerHTML = "Once I rose above the noise and confusion";
+document.getElementById("p3").innerHTML = "Однажды я вознесся над шумом и суетой";
+}
+if (current >= 72.3 && current < 76.3){
+document.getElementById("p2").innerHTML = "Just to get a glimpse beyond this illusion";
+document.getElementById("p3").innerHTML = "Чтобы только заглянуть за пределы этого морока";
+}
+if (current >= 76.3 && current < 80.3){
+document.getElementById("p2").innerHTML = "I was soaring ever higher";
+document.getElementById("p3").innerHTML = "Я парил как никогда высоко";
+}
+if (current >= 80.3 && current < 84.6){
+document.getElementById("p2").innerHTML = "But I flew too high";
+document.getElementById("p3").innerHTML = "Но я слишком высоко взлетел";
+}
+if (current >= 84.6 && current < 88.0){
+document.getElementById("p2").innerHTML = "Though my eyes could see I still was a blind man";
+document.getElementById("p3").innerHTML = "И хотя мои глаза могли видеть, я был слепцом";
+}
+if (current >= 88.0 && current < 91.9){
+document.getElementById("p2").innerHTML = "Though my mind could think I still was a mad man";
+document.getElementById("p3").innerHTML = "И хотя я мог мыслить, я был безумцем";
+}
+if (current >= 91.9 && current < 95.3){
+document.getElementById("p2").innerHTML = "I hear the voices when I'm dreaming";
+document.getElementById("p3").innerHTML = "Я спал и слышал голоса";
+}
+if (current >= 95.3 && current < 99.3){
+document.getElementById("p2").innerHTML = "I can hear them say";
+document.getElementById("p3").innerHTML = "Я слышал, как они говорили";
+}
+if (current >= 99.3 && current < 103.3){
+document.getElementById("p2").innerHTML = "Carry on my wayward son";
+document.getElementById("p3").innerHTML = "Продолжай, мой заблудший сын";
+}
+if (current >= 103.3 && current < 106.9){
+document.getElementById("p2").innerHTML = "There'll be peace when you are done";
+document.getElementById("p3").innerHTML = "Когда ты закончишь со всем, наступит мир";
+}
+if (current >= 106.9 && current < 110.9){
+document.getElementById("p2").innerHTML = "Lay your weary head to rest";
+document.getElementById("p3").innerHTML = "Дай покоя своей уставшей голове";
+}
+if (current >= 110.9 && current < 124.4){
+document.getElementById("p2").innerHTML = "Don't you cry no more";
+document.getElementById("p3").innerHTML = "И больше не плачь";
+}
+if (current >= 124.4 && current < 128.1){
+document.getElementById("p2").innerHTML = "Masquerading as a man with a reason";
+document.getElementById("p3").innerHTML = "Притворялся тем, у кого есть план";
+}
+if (current >= 128.1 && current < 131.8){
+document.getElementById("p2").innerHTML = "My charade is the event of the season";
+document.getElementById("p3").innerHTML = "Мой спектакль — событие сезона";
+}
+if (current >= 131.8 && current < 135.5){
+document.getElementById("p2").innerHTML = "And if I claim to be a wise man, well";
+document.getElementById("p3").innerHTML = "И если я выдаю себя за мудреца, то";
+}
+if (current >= 135.5 && current < 139.2){
+document.getElementById("p2").innerHTML = "It surely means that I don't know";
+document.getElementById("p3").innerHTML = "Это значит только то, что я ничего не знаю";
+}
+if (current >= 139.2 && current < 142.9){
+document.getElementById("p2").innerHTML = "On a stormy sea of moving emotion";
+document.getElementById("p3").innerHTML = "В бушующем море эмоций";
+}
+if (current >= 142.9 && current < 146.8){
+document.getElementById("p2").innerHTML = "Tossed about I'm like a ship on the ocean";
+document.getElementById("p3").innerHTML = "Меня мотало, как корабль в океане";
+}
+if (current >= 146.8 && current < 150.5){
+document.getElementById("p2").innerHTML = "I set a course for winds of fortune";
+document.getElementById("p3").innerHTML = "Я следовал по направлению ветров удачи";
+}
+if (current >= 150.5 && current < 154.2){
+document.getElementById("p2").innerHTML = "But I hear the voices say";
+document.getElementById("p3").innerHTML = "Но я слышал, как голоса говорили";
+}
+if (current >= 154.2 && current < 157.9){
+document.getElementById("p2").innerHTML = "Carry on my wayward son";
+document.getElementById("p3").innerHTML = "Продолжай, мой заблудший сын";
+}
+if (current >= 157.9 && current < 161.9){
+document.getElementById("p2").innerHTML = "There'll be peace when you are done";
+document.getElementById("p3").innerHTML = "Когда ты закончишь со всем, наступит мир";
+}
+if (current >= 161.9 && current < 165.6){
+document.getElementById("p2").innerHTML = "Lay your weary head to rest";
+document.getElementById("p3").innerHTML = "Дай покоя своей уставшей голове";
+}
+if (current >= 165.6 && current < 224.0){
+document.getElementById("p2").innerHTML = "Don't you cry no more";
+document.getElementById("p3").innerHTML = "И больше не плачь";
+}
+if (current >= 224.0 && current < 228.8){
+document.getElementById("p2").innerHTML = "(Carry on,) You will always remember";
+document.getElementById("p3").innerHTML = "(Продолжай) Ты всегда будешь помнить";
+}
+if (current >= 228.8 && current < 232.5){
+document.getElementById("p2").innerHTML = "(Carry on,) Nothing equals the splendor";
+document.getElementById("p3").innerHTML = "(Продолжай) Ничто не сравниться с этой славой";
+}
+if (current >= 232.5 && current < 236.2){
+document.getElementById("p2").innerHTML = "Now your life's no longer empty";
+document.getElementById("p3").innerHTML = "Отныне твоя жизнь не бессмысленна";
+}
+if (current >= 236.2 && current < 239.9){
+document.getElementById("p2").innerHTML = "But surely heaven waits for you";
+document.getElementById("p3").innerHTML = "И, конечно же, тебя ждет рай";
+}
+if (current >= 239.9 && current < 243.6){
+document.getElementById("p2").innerHTML = "Carry on my wayward son";
+document.getElementById("p3").innerHTML = "Продолжай, мой заблудший сын";
+}
+if (current >= 243.6 && current < 247.3){
+document.getElementById("p2").innerHTML = "There'll be peace when you are done";
+document.getElementById("p3").innerHTML = "Когда ты закончишь со всем, наступит мир";
+}
+if (current >= 247.3 && current < 251.3){
+document.getElementById("p2").innerHTML = "Lay your weary head to rest";
+document.getElementById("p3").innerHTML = "Дай покоя своей уставшей голове";
+}
+if (current >= 251.3 && current < 317.5){
+document.getElementById("p2").innerHTML = "Don't you cry no more";
+document.getElementById("p3").innerHTML = "И больше не плачь";
+}
 }
 if (lyrics == 4){
 	if ((current < 4.12) || (current >= 16.24 && current < 19.58) || (current >= 128.52 && current < 132.33)){
