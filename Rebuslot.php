@@ -1829,120 +1829,318 @@ document.getElementById("p3").innerHTML = "И больше не плачь";
 }
 }
 if (lyrics == 4){
-	if ((current < 4.12) || (current >= 16.24 && current < 19.58) || (current >= 128.52 && current < 132.33)){
-	document.getElementById("p2").innerHTML = "O data in viata s'a intamplat";
-	document.getElementById("p3").innerHTML = "Once in my life happened to me";
+	﻿
+if (current >= 0 && current < 8){
+document.getElementById("p2").innerHTML = "";
+document.getElementById("p3").innerHTML = "";
 }
-if ((current >= 4.12 && current < 8.03) || (current >= 19.58 && current < 24.19) || (current >= 132.33 && current < 136.37)){
-	document.getElementById("p2").innerHTML = "Sa iubesc si eu cu adevarat";
-	document.getElementById("p3").innerHTML = "To really love someone";
+if (current >= 8 && current < 12.5){
+document.getElementById("p2").innerHTML = "Everybody knows that the dice are loaded";
+document.getElementById("p3").innerHTML = "Все знают, что игральные кости упали";
 }
-if ((current >= 8.03 && current < 11.48) || (current >= 24.19 && current < 27.25) || (current >= 136.37 && current < 139.56)){
-	document.getElementById("p2").innerHTML = "La inima mea el ma secat";
-	document.getElementById("p3").innerHTML = "He broke my heart";
+if (current >= 12.5 && current < 16.8){
+document.getElementById("p2").innerHTML = "Everybody rolls with their fingers crossed";
+document.getElementById("p3").innerHTML = "Все крутятся, скрестив пальцы";
 }
-if ((current >= 11.48 && current < 16.24) || (current >= 27.25 && current < 32.04) || (current >= 139.56 && current < 144.36)){
-	document.getElementById("p2").innerHTML = "Ca e insurat";
-	document.getElementById("p3").innerHTML = "Because he's married";
+if (current >= 16.8 && current < 21.3){
+document.getElementById("p2").innerHTML = "Everybody knows the war is over";
+document.getElementById("p3").innerHTML = "Все знают, что война окончена";
 }
-if ((current >= 32.04 && current < 36.2) || (current >= 48.13 && current < 52.14) || (current >= 96.52 && current < 100.3) || (current >= 112.38 && current < 116.34) || (current >= 160.38 && current < 164.32) || (current >= 176.54 && current < 180.51) || (current >= 192.59 && current < 196.45) || (current >= 208.45 && current < 212.36)){
-	document.getElementById("p2").innerHTML = "Eu nu vreau sa-ti lasi nevasta pentru ochii mei";
-	document.getElementById("p3").innerHTML = "I don't want you to leave your wife for my eyes";
+if (current >= 21.3 && current < 25.8){
+document.getElementById("p2").innerHTML = "Everybody knows the good guys lost";
+document.getElementById("p3").innerHTML = "Все знают, что хорошие ребята потеряли";
 }
-if ((current >= 36.2 && current < 40.06) || (current >= 52.14 && current < 56.04) || (current >= 100.3 && current < 104.34) || (current >= 116.34 && current < 120.35) || (current >= 164.32 && current < 168.38) || (current >= 180.51 && current < 184.46) || (current >= 196.45 && current < 200.31) || (current >= 212.36 && current < 216.14)){
-	document.getElementById("p2").innerHTML = "Nici copii tai";
-	document.getElementById("p3").innerHTML = "Nor your children";
+if (current >= 25.8 && current < 30.4){
+document.getElementById("p2").innerHTML = "Everybody knows the fight was fixed";
+document.getElementById("p3").innerHTML = "Все знают, что бой был исправлен";
 }
-if ((current >= 40.06 && current < 44.07) || (current >= 56.04 && current < 60.25) || (current >= 104.34 && current < 108.32) || (current >= 120.35 && current < 124.44) || (current >= 168.38 && current < 172.48) || (current >= 184.46 && current < 188.5) || (current >= 200.31 && current < 204.41) || (current >= 216.14 && current < 220.46)){
-	document.getElementById("p2").innerHTML = "Viata merge inainte orice sa-rantampla";
-	document.getElementById("p3").innerHTML = "Life goes on no matter what";
+if (current >= 30.4 && current < 34.1){
+document.getElementById("p2").innerHTML = "The poor stay poor, the rich get rich";
+document.getElementById("p3").innerHTML = "Бедные остаются бедными, богатые разбогатеют";
 }
-if ((current >= 44.07 && current < 48.13) || (current >= 60.25 && current < 64.42) || (current >= 108.32 && current < 112.38) || (current >= 124.44 && current < 128.52) || (current >= 172.48 && current < 176.54) || (current >= 188.5 && current < 192.59) || (current >= 204.41 && current < 208.45) || (current >= 220.46 && current < 223.46)){
-	document.getElementById("p2").innerHTML = "Vreau sa'mi vad de viata mea";
-	document.getElementById("p3").innerHTML = "I want to move on with mine";
+if (current >= 34.1 && current < 39.2){
+document.getElementById("p2").innerHTML = "That's how it goes";
+document.getElementById("p3").innerHTML = "Вот как это происходит";
 }
-if ((current >= 64.42 && current < 68.5) || (current >= 80.31 && current < 84.44) || (current >= 144.36 && current < 148.4)){
-	document.getElementById("p2").innerHTML = "Cate chinuri grele eu am tras";
-	document.getElementById("p3").innerHTML = "How many bad things I've suffered";
+if (current >= 39.2 && current < 44.0){
+document.getElementById("p2").innerHTML = "Everybody knows";
+document.getElementById("p3").innerHTML = "Все знают";
 }
-if ((current >= 68.5 && current < 72.38) || (current >= 84.44 && current < 88.37) || (current >= 148.4 && current < 152.46)){
-	document.getElementById("p2").innerHTML = "Numai ca sa nu te las";
-	document.getElementById("p3").innerHTML = "Only because I didn't want to leave you";
+if (current >= 44.0 && current < 48.5){
+document.getElementById("p2").innerHTML = "Everybody knows that the boat is leaking";
+document.getElementById("p3").innerHTML = "Все знают, что лодка течет";
 }
-if ((current >= 72.38 && current < 75.49) || (current >= 88.37 && current < 91.49) || (current >= 152.46 && current < 155.47)){
-	document.getElementById("p2").innerHTML = "Eu m'am certat cu toata lumea";
-	document.getElementById("p3").innerHTML = "I've fought with everybody";
+if (current >= 48.5 && current < 53.1){
+document.getElementById("p2").innerHTML = "Everybody knows that the captain lied";
+document.getElementById("p3").innerHTML = "Все знают, что капитан лгал";
 }
-if ((current >= 75.49 && current < 80.31) || (current >= 91.49 && current < 96.52) || (current >= 155.47 && current < 160.38)){
-	document.getElementById("p2").innerHTML = "Din cauza ta";
-	document.getElementById("p3").innerHTML = "Because of you";
+if (current >= 53.1 && current < 57.9){
+document.getElementById("p2").innerHTML = "Everybody got this broken feeling";
+document.getElementById("p3").innerHTML = "Все получили это разбитое чувство";
+}
+if (current >= 57.9 && current < 62.4){
+document.getElementById("p2").innerHTML = "Like their father or their dog just died";
+document.getElementById("p3").innerHTML = "Как будто их отец или собака умерли";
+}
+if (current >= 62.4 && current < 67.0){
+document.getElementById("p2").innerHTML = "Everybody talking to their pockets";
+document.getElementById("p3").innerHTML = "Все разговаривают со своими карманами";
+}
+if (current >= 67.0 && current < 70.9){
+document.getElementById("p2").innerHTML = "Everybody wants a box of chocolates";
+document.getElementById("p3").innerHTML = "Все хотят коробку шоколада";
+}
+if (current >= 70.9 && current < 75.8){
+document.getElementById("p2").innerHTML = "And a long-stem rose";
+document.getElementById("p3").innerHTML = "И длинный стебель розы";
+}
+if (current >= 75.8 && current < 80.3){
+document.getElementById("p2").innerHTML = "Everybody knows";
+document.getElementById("p3").innerHTML = "Все знают";
+}
+if (current >= 80.3 && current < 84.6){
+document.getElementById("p2").innerHTML = "Everybody knows that you love me baby";
+document.getElementById("p3").innerHTML = "Все знают, что ты любишь меня, детка";
+}
+if (current >= 84.6 && current < 89.1){
+document.getElementById("p2").innerHTML = "Everybody knows that you really do";
+document.getElementById("p3").innerHTML = "Все знают, что ты действительно любишь";
+}
+if (current >= 89.1 && current < 93.9){
+document.getElementById("p2").innerHTML = "Everybody knows that you've been faithful";
+document.getElementById("p3").innerHTML = "Все знают, что вы были верны";
+}
+if (current >= 93.9 && current < 98.2){
+document.getElementById("p2").innerHTML = "Oh, give or take a night or two";
+document.getElementById("p3").innerHTML = "О, дайте или возьмите ночь или две";
+}
+if (current >= 98.2 && current < 102.7){
+document.getElementById("p2").innerHTML = "Everybody knows you've been discreet";
+document.getElementById("p3").innerHTML = "Все знают, что вы были осторожны";
+}
+if (current >= 102.7 && current < 107.6){
+document.getElementById("p2").innerHTML = "But there were so many people you just had to meet";
+document.getElementById("p3").innerHTML = "Но было так много людей, с которыми вам просто нужно было встретиться";
+}
+if (current >= 107.6 && current < 111.3){
+document.getElementById("p2").innerHTML = "Without your clothes";
+document.getElementById("p3").innerHTML = "Без вашей одежды";
+}
+if (current >= 111.3 && current < 125.1){
+document.getElementById("p2").innerHTML = "Everybody knows";
+document.getElementById("p3").innerHTML = "Все знают";
+}
+if (current >= 125.1 && current < 130.0){
+document.getElementById("p2").innerHTML = "That's how it goes";
+document.getElementById("p3").innerHTML = "Вот как это происходит";
+}
+if (current >= 130.0 && current < 143.2){
+document.getElementById("p2").innerHTML = "Everybody knows";
+document.getElementById("p3").innerHTML = "Все знают";
+}
+if (current >= 143.2 && current < 147.4){
+document.getElementById("p2").innerHTML = "That's how it goes";
+document.getElementById("p3").innerHTML = "Вот как это происходит";
+}
+if (current >= 147.4 && current < 152.0){
+document.getElementById("p2").innerHTML = "Everybody knows";
+document.getElementById("p3").innerHTML = "Все знают";
+}
+if (current >= 152.0 && current < 157.1){
+document.getElementById("p2").innerHTML = "And everybody knows that it's now or never";
+document.getElementById("p3").innerHTML = "И все знают, что сейчас или никогда";
+}
+if (current >= 157.1 && current < 161.6){
+document.getElementById("p2").innerHTML = "Everybody knows that it's me or you";
+document.getElementById("p3").innerHTML = "Все знают, что это я или ты";
+}
+if (current >= 161.6 && current < 166.2){
+document.getElementById("p2").innerHTML = "And everybody knows that you live forever";
+document.getElementById("p3").innerHTML = "И все знают, что ты живешь вечно";
+}
+if (current >= 166.2 && current < 170.7){
+document.getElementById("p2").innerHTML = "When you've done a line or two";
+document.getElementById("p3").innerHTML = "Когда вы сделали линию или две";
+}
+if (current >= 170.7 && current < 175.2){
+document.getElementById("p2").innerHTML = "Everybody knows the deal is rotten";
+document.getElementById("p3").innerHTML = "Всем известно, что сделка гнилая";
+}
+if (current >= 175.2 && current < 179.4){
+document.getElementById("p2").innerHTML = "Old Black Joe's still picking cotton";
+document.getElementById("p3").innerHTML = "Старый Черный Джо все еще собирает хлопок";
+}
+if (current >= 179.4 && current < 184.3){
+document.getElementById("p2").innerHTML = "For your ribbons and bows";
+document.getElementById("p3").innerHTML = "Для ваших лент и бантов";
+}
+if (current >= 184.3 && current < 189.1){
+document.getElementById("p2").innerHTML = "And everybody knows";
+document.getElementById("p3").innerHTML = "И все знают";
+}
+if (current >= 189.1 && current < 193.0){
+document.getElementById("p2").innerHTML = "And everybody knows that the Plague is coming";
+document.getElementById("p3").innerHTML = "И все знают, что Чума идет";
+}
+if (current >= 193.0 && current < 197.9){
+document.getElementById("p2").innerHTML = "Everybody knows that it's moving fast";
+document.getElementById("p3").innerHTML = "Все знают, что она движется быстро";
+}
+if (current >= 197.9 && current < 203.0){
+document.getElementById("p2").innerHTML = "Everybody knows that the naked man and woman";
+document.getElementById("p3").innerHTML = "Все знают, что обнаженные мужчина и женщина";
+}
+if (current >= 203.0 && current < 207.5){
+document.getElementById("p2").innerHTML = "Are just a shining artifact of the past";
+document.getElementById("p3").innerHTML = "Просто сияющие артефакты прошлого";
+}
+if (current >= 207.5 && current < 211.5){
+document.getElementById("p2").innerHTML = "Everybody knows the scene is dead";
+document.getElementById("p3").innerHTML = "Все знают, что место действия будет мертво";
+}
+if (current >= 211.5 && current < 216.0){
+document.getElementById("p2").innerHTML = "But there's gonna be a meter on your bed";
+document.getElementById("p3").innerHTML = "Но на твоей кровати будет метр";
+}
+if (current >= 216.0 && current < 220.8){
+document.getElementById("p2").innerHTML = "That will disclose";
+document.getElementById("p3").innerHTML = "Это будет раскрывать";
+}
+if (current >= 220.8 && current < 225.4){
+document.getElementById("p2").innerHTML = "What everybody knows";
+document.getElementById("p3").innerHTML = "Что все знают";
+}
+if (current >= 225.4 && current < 229.6){
+document.getElementById("p2").innerHTML = "And everybody knows that you're in trouble";
+document.getElementById("p3").innerHTML = "И все знают, что ты в беде";
+}
+if (current >= 229.6 && current < 234.2){
+document.getElementById("p2").innerHTML = "Everybody knows what you've been through";
+document.getElementById("p3").innerHTML = "Все знают через что вы прошли";
+}
+if (current >= 234.2 && current < 239.0){
+document.getElementById("p2").innerHTML = "From the bloody cross on top of Calvary";
+document.getElementById("p3").innerHTML = "Из кровавого креста на вершине Голгофы";
+}
+if (current >= 239.0 && current < 243.2){
+document.getElementById("p2").innerHTML = "To the beach of Malibu";
+document.getElementById("p3").innerHTML = "До пляжа Малибу";
+}
+if (current >= 243.2 && current < 247.8){
+document.getElementById("p2").innerHTML = "Everybody knows it's coming apart";
+document.getElementById("p3").innerHTML = "Все знают, что он разваливается";
+}
+if (current >= 247.8 && current < 252.3){
+document.getElementById("p2").innerHTML = "Take one last look at this Sacred Heart";
+document.getElementById("p3").innerHTML = "Посмотрите последний раз на святое сердце";
+}
+if (current >= 252.3 && current < 256.9){
+document.getElementById("p2").innerHTML = "Before it blows";
+document.getElementById("p3").innerHTML = "Прежде чем он ударит";
+}
+if (current >= 256.9 && current < 261.1){
+document.getElementById("p2").innerHTML = "Everybody knows";
+document.getElementById("p3").innerHTML = "Все знают";
 }
 
 }
 if (lyrics == 5){
-	if ((current >= 19.44 && current < 24.06) || (current >= 37.74 && current < 42.27)){
-	document.getElementById("p2").innerHTML = "Un milion de gânduri am în mintea mea";
-	document.getElementById("p3").innerHTML = "I have a million thoughts in my mind";
+	﻿
+if (current >= 0.0 && current < 15.2){
+document.getElementById("p2").innerHTML = "";
+document.getElementById("p3").innerHTML = "";
 }
-if ((current >= 24.06 && current < 28.62) || (current >= 42.27 && current < 47.11)){
-	document.getElementById("p2").innerHTML = "Și toate vor iubirea ta";
-	document.getElementById("p3").innerHTML = "And all of them want your love";
+if (current >= 15.2 && current < 18.9){
+document.getElementById("p2").innerHTML = "Come away, sun is gone";
+document.getElementById("p3").innerHTML = "Уходи, солнце ушло";
 }
-if ((current >= 28.62 && current < 33.15) || (current >= 47.11 && current < 51.39)){
-	document.getElementById("p2").innerHTML = "Zile și nopți de-ar trece, nu ar mai conta";
-	document.getElementById("p3").innerHTML = "Days and nights if would pass, it would not matter";
+if (current >= 18.9 && current < 23.1){
+document.getElementById("p2").innerHTML = "No more day to be won";
+document.getElementById("p3").innerHTML = "Больше не будет выигрыша";
 }
-if ((current >= 33.15 && current < 37.74) || (current >= 51.39 && current < 56.17)){
-	document.getElementById("p2").innerHTML = "Dacă ești tu în dreapta mea";
-	document.getElementById("p3").innerHTML = "If you're by my side";
+if (current >= 23.1 && current < 29.1){
+document.getElementById("p2").innerHTML = "I've waited there for you for a side";
+document.getElementById("p3").innerHTML = "Я ждал тебя там на одной из сторон";
 }
-if ((current >= 56.17 && current < 60.71) || (current >= 74.73 && current < 79.08) || (current >= 148.63 && current < 153.1) || (current >= 167.08 && current < 171.62) || (current >= 240.93 && current < 245.46) || (current >= 259.36 && current < 263.94)){
-	document.getElementById("p2").innerHTML = "Ia spune-i, lună, spune-i ce să-mi spună";
-	document.getElementById("p3").innerHTML = "Tell him, moon, tell him what to tell me";
+if (current >= 29.1 && current < 35.3){
+document.getElementById("p2").innerHTML = "That we've waited in too long";
+document.getElementById("p3").innerHTML = "которую мы слишком долго ждали";
 }
-if ((current >= 60.71 && current < 65.63) || (current >= 79.08 && current < 83.99) || (current >= 153.1 && current < 157.77) || (current >= 171.62 && current < 176.35) || (current >= 245.46 && current < 250.1) || (current >= 263.94 && current < 268.48)){
-	document.getElementById("p2").innerHTML = "Că-mi este dor de vorba lui";
-	document.getElementById("p3").innerHTML = "Because I miss his words";
+if (current >= 35.3 && current < 39.3){
+document.getElementById("p2").innerHTML = "Waited way too long";
+document.getElementById("p3").innerHTML = "Слишком долго ждали";
 }
-if ((current >= 65.63 && current < 69.95) || (current >= 83.99 && current < 88.17) || (current >= 157.77 && current < 162.13) || (current >= 176.35 && current < 180.73) || (current >= 250.1 && current < 254.41) || (current >= 268.48 && current < 273.01)){
-	document.getElementById("p2").innerHTML = "Ia spune-i, soare, ce arde așa tare";
-	document.getElementById("p3").innerHTML = "Tell him, sun, what burns so badly";
+if (current >= 39.3 && current < 47.0){
+document.getElementById("p2").innerHTML = "Today we fall apart";
+document.getElementById("p3").innerHTML = "Сегодня мы расстаемся";
 }
-if ((current >= 69.95 && current < 74.73) || (current >= 88.17 && current < 111.46) || (current >= 162.13 && current < 167.08) || (current >= 180.73 && current < 203.95) || (current >= 254.41 && current < 259.36) || (current >= 273.01 && current < 277.07)){
-	document.getElementById("p2").innerHTML = "Când vine focul dorului";
-	document.getElementById("p3").innerHTML = "When the fire of longing is coming";
+if (current >= 47.0 && current < 54.1){
+document.getElementById("p2").innerHTML = "The way we start again";
+document.getElementById("p3").innerHTML = "Так мы начнем заново";
 }
-if ((current >= 111.46 && current < 116.1) || (current >= 130.07 && current < 134.55)){
-	document.getElementById("p2").innerHTML = "Cine ar putea să-mi spună acum tot ce gândești";
-	document.getElementById("p3").innerHTML = "Who could tell me now everything you think";
+if (current >= 54.1 && current < 62.9){
+document.getElementById("p2").innerHTML = "Staring in the dark";
+document.getElementById("p3").innerHTML = "Глядя в темноту";
 }
-if ((current >= 116.1 && current < 120.65) || (current >= 134.55 && current < 139.26)){
-	document.getElementById("p2").innerHTML = "Și dacă poți să mai iubești";
-	document.getElementById("p3").innerHTML = "And if you can still love";
+if (current >= 62.9 && current < 66.5){
+document.getElementById("p2").innerHTML = "Stay away, keep apart";
+document.getElementById("p3").innerHTML = "Не подходи, держись подальше";
 }
-if ((current >= 120.65 && current < 125.38) || (current >= 139.26 && current < 143.8)){
-	document.getElementById("p2").innerHTML = "Cum aș putea să îți mai simt inima ta";
-	document.getElementById("p3").innerHTML = "How could I feel your heart";
+if (current >= 66.5 && current < 70.8){
+document.getElementById("p2").innerHTML = "Nothing waits for a charge";
+document.getElementById("p3").innerHTML = "Ничто не ждет заряда";
 }
-if ((current >= 125.38 && current < 130.07) || (current >= 143.8 && current < 148.63)){
-	document.getElementById("p2").innerHTML = "De-ai m-ai avea un dor în ea";
-	document.getElementById("p3").innerHTML = "If you would have a longing in it";
+if (current >= 70.8 && current < 76.5){
+document.getElementById("p2").innerHTML = "We're facing energy from a spark";
+document.getElementById("p3").innerHTML = "Мы сталкиваемся с энергией от искры";
 }
-if ((current >= 203.95 && current < 208.48) || (current >= 222.4 && current < 226.86)){
-	document.getElementById("p2").innerHTML = "Cum e când vine dorul greu în mintea ta";
-	document.getElementById("p3").innerHTML = "How is it like when the hard longing is coming on your mind";
+if (current >= 76.5 && current < 82.9){
+document.getElementById("p2").innerHTML = "In the shadows of the heart";
+document.getElementById("p3").innerHTML = "В тени сердца";
 }
-if ((current >= 208.48 && current < 213.14) || (current >= 226.86 && current < 231.72)){
-	document.getElementById("p2").innerHTML = "Cum poți să mai traiești așa";
-	document.getElementById("p3").innerHTML = "How could you live like this";
+if (current >= 82.9 && current < 86.6){
+document.getElementById("p2").innerHTML = "Shadows of the heart";
+document.getElementById("p3").innerHTML = "Тени сердца";
 }
-if ((current >= 213.14 && current < 217.74) || (current >= 231.72 && current < 236.17)){
-	document.getElementById("p2").innerHTML = "Cum e să simți și nu poți să spui nimic";
-	document.getElementById("p3").innerHTML = "How is it to feel it and cannot say anything";
+if (current >= 86.6 && current < 94.6){
+document.getElementById("p2").innerHTML = "Today we fall apart";
+document.getElementById("p3").innerHTML = "Сегодня мы расстаемся";
 }
-if ((current >= 217.74 && current < 222.4) || (current >= 236.17 && current < 240.93)){
-	document.getElementById("p2").innerHTML = "Ca un biet suflet rătăcit";
-	document.getElementById("p3").innerHTML = "Like a miserable/lost soul";
+if (current >= 94.6 && current < 101.4){
+document.getElementById("p2").innerHTML = "The way we start again";
+document.getElementById("p3").innerHTML = "Так мы начнем заново";
+}
+if (current >= 101.4 && current < 229.0){
+document.getElementById("p2").innerHTML = "Staring in the dark";
+document.getElementById("p3").innerHTML = "Глядя в темноту";
+}
+if (current >= 229.0 && current < 236.7){
+document.getElementById("p2").innerHTML = "Today we fall apart";
+document.getElementById("p3").innerHTML = "Сегодня мы расстаемся";
+}
+if (current >= 236.7 && current < 243.8){
+document.getElementById("p2").innerHTML = "The way we start again";
+document.getElementById("p3").innerHTML = "Так мы начнем заново";
+}
+if (current >= 243.8 && current < 248.6){
+document.getElementById("p2").innerHTML = "Staring in the dark";
+document.getElementById("p3").innerHTML = "Глядя в темноту";
+}
+if (current >= 248.6 && current < 251.8){
+document.getElementById("p2").innerHTML = "We fall apart";
+document.getElementById("p3").innerHTML = "Мы расстаемся";
+}
+if (current >= 251.8 && current < 256.3){
+document.getElementById("p2").innerHTML = "Staring in the dark";
+document.getElementById("p3").innerHTML = "Глядя в темноту";
+}
+if (current >= 256.3 && current < 259.7){
+document.getElementById("p2").innerHTML = "We start again";
+document.getElementById("p3").innerHTML = "Мы начнем заново";
+}
+if (current >= 259.7 && current < 282.1){
+document.getElementById("p2").innerHTML = "Staring in the dark";
+document.getElementById("p3").innerHTML = "Глядя в темноту";
 }
 
 }
